@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="81" height="81" viewBox="0 0 81 81">
+  <g id="QualidadeConstrutivaIconRed" transform="translate(3003 -1646)">
+    <rect id="Retângulo_94" data-name="Retângulo 94" width="81" height="81" transform="translate(-3003 1646)" fill="none"/>
+    <g id="Grupo_25" data-name="Grupo 25" transform="translate(-3000 1649)">
+      <g id="Grupo_23" data-name="Grupo 23" transform="translate(0)">
+        <path id="Caminho_44" data-name="Caminho 44" d="M776.812,39.9c0,3.272-3.089,6.1-3.9,9.113-.834,3.123.4,7.107-1.178,9.841-1.6,2.773-5.689,3.683-7.941,5.934s-3.16,6.336-5.933,7.94c-2.734,1.582-6.719.343-9.841,1.178-3.018.807-5.841,3.9-9.113,3.9s-6.1-3.089-9.114-3.9c-3.123-.835-7.107.4-9.841-1.178-2.773-1.6-3.683-5.69-5.933-7.941s-6.337-3.16-7.941-5.934c-1.581-2.734-.343-6.718-1.177-9.841-.807-3.018-3.9-5.841-3.9-9.113s3.088-6.1,3.9-9.114c.834-3.123-.4-7.107,1.177-9.841,1.6-2.773,5.69-3.683,7.941-5.934s3.161-6.336,5.934-7.941c2.734-1.582,6.719-.343,9.841-1.178,3.018-.807,5.842-3.9,9.114-3.9s6.1,3.088,9.113,3.9c3.123.835,7.107-.4,9.841,1.178,2.773,1.605,3.683,5.69,5.934,7.941s6.336,3.161,7.941,5.934c1.581,2.734.343,6.718,1.177,9.841C773.723,33.807,776.812,36.63,776.812,39.9Z" transform="translate(-701.007 -2)" fill="none" stroke="#e46457" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      </g>
+      <g id="Grupo_24" data-name="Grupo 24" transform="translate(15.782 14.367)">
+        <path id="Retângulo_45" data-name="Retângulo 45" d="M0,0H6.705A6.3,6.3,0,0,1,13,6.3V22.161a6.3,6.3,0,0,1-6.3,6.3H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(0 12.173)" fill="none" stroke="#e46457" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+        <path id="Caminho_45" data-name="Caminho 45" d="M743.624,66.918l9.111,3.655h17.2a2.76,2.76,0,0,0,2.761-2.76h0a2.761,2.761,0,0,0-2.761-2.76h4.416a2.76,2.76,0,0,0,2.76-2.76h0a3.005,3.005,0,0,0-3.005-3.005h-.6a3.608,3.608,0,0,0,3.608-3.608h0a3.608,3.608,0,0,0-3.608-3.608h.469a3.139,3.139,0,0,0,3.139-3.139h0a3.138,3.138,0,0,0-3.139-3.139H755.646" transform="translate(-730.622 -30.555)" fill="none" stroke="#e46457" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+        <path id="Caminho_46" data-name="Caminho 46" d="M743.624,39.75l4.042-2.91a16.647,16.647,0,0,0,5.731-7.328l1.86-4.652a2.467,2.467,0,0,1,3.406-1.284h0a8.554,8.554,0,0,1,4.51,9.339l-1.15,5.633" transform="translate(-730.622 -23.309)" fill="none" stroke="#e46457" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      </g>
+    </g>
+  </g>
+</svg>
