@@ -1458,7 +1458,7 @@ class navMenuDesktop extends external_react_.Component {
                                                 /*#__PURE__*/ jsx_runtime_.jsx("li", {
                                                     children: /*#__PURE__*/ jsx_runtime_.jsx(LinkCustom_component/* default */.Z, {
                                                         text: "Ouvidoria",
-                                                        link: "https://qa.alphaville.com.br/fale-conosco#ouvidoria",
+                                                        link: "https://alphaville.com.br/fale-conosco#ouvidoria",
                                                         target: "_blank",
                                                         externalLink: true
                                                     })
@@ -2366,7 +2366,7 @@ class Footer extends external_react_.Component {
                                                         /*#__PURE__*/ jsx_runtime_.jsx("li", {
                                                             children: /*#__PURE__*/ jsx_runtime_.jsx(LinkCustom_component/* default */.Z, {
                                                                 text: "Ouvidoria",
-                                                                link: "https://qa.alphaville.com.br/fale-conosco#ouvidoria",
+                                                                link: "https://alphaville.com.br/fale-conosco#ouvidoria",
                                                                 target: "_blank",
                                                                 externalLink: true
                                                             })
