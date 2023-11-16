@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/hj8Kq8By6FMqBhqp5SSA0/_buildManifest.js",
-    "static/hj8Kq8By6FMqBhqp5SSA0/_ssgManifest.js"
+    "static/pCEtf8xbkMEZYAtUSrMbB/_buildManifest.js",
+    "static/pCEtf8xbkMEZYAtUSrMbB/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
@@ -315,7 +315,7 @@
       "static/chunks/5129-139333b11ec024ce.js",
       "static/chunks/3899-a85c05f63d6ac042.js",
       "static/css/f75cb2d41e33ae05.css",
-      "static/chunks/8957-4f9bdb46fe871c53.js",
+      "static/chunks/8957-4df69064906daa2e.js",
       "static/chunks/pages/residencia/[empreendimento]-0cc4eb71ee4a23f6.js"
     ],
     "/residencia/[empreendimento]/agradecimento": [
@@ -329,9 +329,9 @@
       "static/chunks/5176-544f85c9f074d149.js",
       "static/chunks/4756-a6e123163968ecfb.js",
       "static/chunks/5129-139333b11ec024ce.js",
-      "static/chunks/4276-75c250cea6fde4ed.js",
+      "static/chunks/4276-70cc4d6b6068e9d8.js",
       "static/css/495275bb8224ffd4.css",
-      "static/chunks/pages/residencia/[empreendimento]/agradecimento-9d51f60abfcf217f.js"
+      "static/chunks/pages/residencia/[empreendimento]/agradecimento-af3c9de71759cba6.js"
     ],
     "/residencial/[id]": [
       "static/chunks/webpack-b21db3cbf9d91103.js",
@@ -360,7 +360,7 @@
       "static/chunks/5129-139333b11ec024ce.js",
       "static/chunks/3899-a85c05f63d6ac042.js",
       "static/css/f75cb2d41e33ae05.css",
-      "static/chunks/8957-4f9bdb46fe871c53.js",
+      "static/chunks/8957-4df69064906daa2e.js",
       "static/chunks/pages/teaser/[empreendimento]-ad290c82b38016c4.js"
     ],
     "/teaser/[empreendimento]/agradecimento": [
@@ -374,9 +374,9 @@
       "static/chunks/5176-544f85c9f074d149.js",
       "static/chunks/4756-a6e123163968ecfb.js",
       "static/chunks/5129-139333b11ec024ce.js",
-      "static/chunks/4276-75c250cea6fde4ed.js",
+      "static/chunks/4276-70cc4d6b6068e9d8.js",
       "static/css/495275bb8224ffd4.css",
-      "static/chunks/pages/teaser/[empreendimento]/agradecimento-66d5abfc389eeefe.js"
+      "static/chunks/pages/teaser/[empreendimento]/agradecimento-08a6a0c4053f1179.js"
     ],
     "/termos-de-uso": [
       "static/chunks/webpack-b21db3cbf9d91103.js",
