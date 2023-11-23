@@ -2209,7 +2209,7 @@ class SendRdStation extends react__WEBPACK_IMPORTED_MODULE_1__.Component {
 
 
 class ConstrutorVendasService {
-    sendApiCv = async (name, email, ddd, phone, dddAdicional, celularAdicional, idCv, descricaoCv, tipo, praca, idEmpreendimento)=>{
+    sendApiCv = async (name, email, ddd, phone, dddAdicional, celularAdicional, idCv, descricaoCv, tipo, praca, idEmpreendimento, origemenvio)=>{
         const queryString = window.location.search;
         const urlParams = new URLSearchParams(queryString);
         const utils = new _service_util__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Z();
@@ -2247,8 +2247,11 @@ class ConstrutorVendasService {
         let traffic_campaign = Utm_campaign;
         let traffic_value = Utm_term;
         let traffic_content = Utm_content;
-        //idEmpreendimento = dddAdicional
-        idEmpreendimento = idCv;
+        if (origemenvio == "home_whats.form") {
+            idEmpreendimento = dddAdicional;
+        } else {
+            idEmpreendimento = idCv;
+        }
         const data = {
             "name": name,
             "email": email,
