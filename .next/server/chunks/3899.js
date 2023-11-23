@@ -180,14 +180,14 @@ class ModalEmail extends external_react_.Component {
                                     values.sendSuccess = res.success;
                                     if (res.success) {
                                         window.dataLayer.push({
-                                            event: "novoLead",
+                                            event: "ga_event",
                                             ec: "whatsapp",
                                             ea: "envio",
                                             el: "sucesso"
                                         });
                                     } else {
                                         window.dataLayer.push({
-                                            event: "novoLead",
+                                            event: "ga_event",
                                             ec: "whatsapp",
                                             ea: "envio",
                                             el: "erro"
@@ -625,7 +625,7 @@ class modalChat_component_ModalEmail extends external_react_.Component {
                                 console.log("url chat", url);
                                 if (url.includes("alphaville.housecrm.com.br", 0)) {
                                     window.dataLayer.push({
-                                        event: "novoLead",
+                                        event: "ga_event",
                                         ec: "chat online",
                                         ea: "envio",
                                         el: "sucesso"
@@ -634,7 +634,7 @@ class modalChat_component_ModalEmail extends external_react_.Component {
                                     this.props.onHide();
                                 } else {
                                     window.dataLayer.push({
-                                        event: "novoLead",
+                                        event: "ga_event",
                                         ec: "chat online",
                                         ea: "envio",
                                         el: "erro"
@@ -1030,14 +1030,16 @@ class ModalWhatsapp extends external_react_.Component {
                                     values.sendSuccess = res.success;
                                     if (res.success) {
                                         window.dataLayer.push({
-                                            event: "novoLead",
+                                            event: "ga_event",
+                                            event_name: "conversao_clique_whatsapp",
                                             ec: "whatsapp",
                                             ea: "envio",
                                             el: "sucesso"
                                         });
                                     } else {
                                         window.dataLayer.push({
-                                            event: "novoLead",
+                                            event: "ga_event",
+                                            event_name: "conversao_clique_whatsapp",
                                             ec: "whatsapp",
                                             ea: "envio",
                                             el: "erro"

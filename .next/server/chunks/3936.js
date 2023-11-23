@@ -359,7 +359,8 @@ const FormSaibaMais = ({ setNameFormulario , colors , homeContent , isTeaser ,  
                                             Slug: homeContent.slug
                                         }));
                                         window.dataLayer.push({
-                                            event: "novoLead",
+                                            event: "ga_event",
+                                            event_name: "conversao_formulario_empreendimento",
                                             ec: "whatsapp",
                                             ea: "envio",
                                             el: "sucesso"
@@ -372,7 +373,8 @@ const FormSaibaMais = ({ setNameFormulario , colors , homeContent , isTeaser ,  
                                             setSendSuccess(null);
                                         }, 25000);
                                         window.dataLayer.push({
-                                            event: "novoLead",
+                                            event: "ga_event",
+                                            event_name: "conversao_formulario_empreendimento",
                                             ec: "whatsapp",
                                             ea: "envio",
                                             el: "erro"
