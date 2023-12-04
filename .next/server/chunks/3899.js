@@ -1732,7 +1732,7 @@ class DesktopAlphaMenu extends external_react_.Component {
                                             }),
                                             /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Col, {
                                                 as: "li",
-                                                md: 5,
+                                                md: 6,
                                                 className: "share__item share__item--facebook",
                                                 children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
                                                     href: "#",
@@ -1742,7 +1742,7 @@ class DesktopAlphaMenu extends external_react_.Component {
                                             }),
                                             /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Col, {
                                                 as: "li",
-                                                md: 4,
+                                                md: 6,
                                                 className: "share__item share__item--twitter",
                                                 children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
                                                     href: "#",
@@ -1753,7 +1753,7 @@ class DesktopAlphaMenu extends external_react_.Component {
                                             /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Col, {
                                                 as: "li",
                                                 md: 3,
-                                                className: "share__item share__item--email",
+                                                className: "share__item share__item--email hidden",
                                                 children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
                                                     href: "#",
                                                     className: "share__link",

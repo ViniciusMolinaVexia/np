@@ -78,8 +78,8 @@ var teaser_carrossel_simples = __webpack_require__(5298);
 var teaser_map = __webpack_require__(2434);
 // EXTERNAL MODULE: ./_share/components/teaserSuaSeguranca/teaser-sua-seguranca.jsx
 var teaser_sua_seguranca = __webpack_require__(9123);
-// EXTERNAL MODULE: ./_share/components/teaserVideo/teaser-video.jsx + 1 modules
-var teaser_video = __webpack_require__(4079);
+// EXTERNAL MODULE: ./_share/components/teaserVideo/teaser-video.jsx
+var teaser_video = __webpack_require__(7382);
 // EXTERNAL MODULE: ./_share/service/util.js
 var service_util = __webpack_require__(1659);
 // EXTERNAL MODULE: ./node_modules/next/dynamic.js
@@ -605,7 +605,7 @@ module.exports = require("fs");
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [2952,1270,1664,1890,5152,1790,5176,1659,4756,5129,3899,2750,3936], () => (__webpack_exec__(8273)));
+var __webpack_exports__ = __webpack_require__.X(0, [2952,1270,1664,1890,5152,1790,5176,1659,4756,5129,3899,2750,5557], () => (__webpack_exec__(8273)));
 module.exports = __webpack_exports__;
 
 })();

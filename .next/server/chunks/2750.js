@@ -69,6 +69,9 @@ class EnterpriseModel {
         this.whatsAppAtivo;
         this.telefoneAtivo;
         this.saibaMaisAtivo;
+        this.tituloProjetoUrbanistico;
+        this.descricaoProjetoUrbanistico;
+        this.imagemProjetoUrbanistico;
     }
     setAPI(data, isTeaser) {
         this.id = data.empreendimento.id;
@@ -87,6 +90,13 @@ class EnterpriseModel {
         this.updatedAt = data.empreendimento.updated_at;
         this.idAlphaville = data.empreendimento.id_alphaville;
         this.cidade = data.empreendimento.cidade;
+        this.tituloProjetoUrbanistico = data.empreendimento.prj_ubnt_title;
+        this.descricaoProjetoUrbanistico = data.empreendimento.prj_ubnt_description;
+        this.descricaoPlantaConceitual = data.plt_prj_description;
+        this.descricaoAreaDeLazer = data.plt_area_description;
+        this.areaDeLazer = data.area_lazer;
+        this.titleConceito = data.empreendimento.atm_title;
+        this.descricaoConceito = data.empreendimento.atm_description;
         this.typeId = {
             id: data.empreendimento.type_id,
             title: this.getTypeIdTitle(data.empreendimento.type_id)
@@ -129,7 +139,9 @@ class EnterpriseModel {
         this.titleSuaSeguranca = data.empreendimento.sct_title;
         this.descriptionSuaSeguranca = data.empreendimento.sct_description;
         this.imagemSuaSeguranca = Envirioment/* ENDPOINT_BASE */.GU + "/" + data.empreendimento.sct_first_image;
-        this.imagemSuaSegurancaMob = Envirioment/* ENDPOINT_BASE */.GU + "/" + data.empreendimento.sct_image_mob;
+        this.imagemProjetoUrbanistico = Envirioment/* ENDPOINT_BASE */.GU + "/" + data.empreendimento.prj_ubnt_image;
+        this.imagemSuaSegurancaMob = data.empreendimento.sct_image_mob;
+        this.imgConceito = Envirioment/* ENDPOINT_BASE */.GU + "/" + data.empreendimento.atm_image;
         this.videoTitle = data.empreendimento.video_titulo;
         this.videoDescription = data.empreendimento.video_descricao;
         this.logoType = data.empreendimento.logo_novo == 1 ? "logoNova" : "logoAntiga";
