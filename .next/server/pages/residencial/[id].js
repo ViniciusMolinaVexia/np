@@ -32,6 +32,7 @@ module.exports = {
 	"Conteudo": "residencial-PlantaConceitual_Conteudo__XIMrW",
 	"botaoContainer": "residencial-PlantaConceitual_botaoContainer__G_bWm",
 	"escolhaDescricao": "residencial-PlantaConceitual_escolhaDescricao__HunAf",
+	"colunaLista": "residencial-PlantaConceitual_colunaLista__JUmcL",
 	"produtoTitle": "residencial-PlantaConceitual_produtoTitle__64Ulp",
 	"ConteudoTitle": "residencial-PlantaConceitual_ConteudoTitle__uSHZ0",
 	"produtoSubProjeto": "residencial-PlantaConceitual_produtoSubProjeto__g63Wm",
@@ -303,7 +304,14 @@ function residencial_PlantaConceitual_ProjetoUrbanistico({ homeContent , colors 
     const colorTitle = {
         color: colors.colorFlat
     };
+    const lista = homeContent.areaDeLazer;
     const { 0: conteudo , 1: setConteudo  } = (0,external_react_.useState)("urbanistico");
+    const listaRenderizada = /*#__PURE__*/ jsx_runtime_.jsx("ol", {
+        className: (residencial_PlantaConceitual_module_default()).colunaLista,
+        children: lista.map((item, index)=>/*#__PURE__*/ jsx_runtime_.jsx("li", {
+                children: item.description
+            }, index))
+    });
     const mostrarConteudo = (opcao)=>{
         setConteudo(opcao);
     };
@@ -358,12 +366,17 @@ function residencial_PlantaConceitual_ProjetoUrbanistico({ homeContent , colors 
                                                 })
                                             ]
                                         }),
-                                        conteudo === "lazer" && /*#__PURE__*/ jsx_runtime_.jsx(jsx_runtime_.Fragment, {
-                                            children: /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                                dangerouslySetInnerHTML: {
-                                                    __html: descricaoPlanta
-                                                }
-                                            })
+                                        conteudo === "lazer" && /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
+                                            children: [
+                                                /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                    dangerouslySetInnerHTML: {
+                                                        __html: descricaoPlanta
+                                                    }
+                                                }),
+                                                /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                    children: listaRenderizada
+                                                })
+                                            ]
                                         })
                                     ]
                                 })
