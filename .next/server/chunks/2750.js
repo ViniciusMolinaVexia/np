@@ -92,11 +92,15 @@ class EnterpriseModel {
         this.cidade = data.empreendimento.cidade;
         this.tituloProjetoUrbanistico = data.empreendimento.prj_ubnt_title;
         this.descricaoProjetoUrbanistico = data.empreendimento.prj_ubnt_description;
-        this.descricaoPlantaConceitual = data.plt_prj_description;
-        this.descricaoAreaDeLazer = data.plt_area_description;
+        this.descricaoPlantaConceitual = data.empreendimento.plt_prj_description;
+        this.descricaoAreaDeLazer = data.empreendimento.plt_area_description;
         this.areaDeLazer = data.area_lazer;
         this.titleConceito = data.empreendimento.atm_title;
         this.descricaoConceito = data.empreendimento.atm_description;
+        this.Metros = data.empreendimento.prj_ubnt_itens_area_second;
+        this.Verdes = data.empreendimento.prj_ubnt_itens_area_third;
+        this.Terreno = data.empreendimento.prj_ubnt_itens_area_fourth;
+        this.unidatesTerreno = data.empreendimento.prj_ubnt_itens_desc_second;
         this.typeId = {
             id: data.empreendimento.type_id,
             title: this.getTypeIdTitle(data.empreendimento.type_id)
@@ -142,6 +146,8 @@ class EnterpriseModel {
         this.imagemProjetoUrbanistico = Envirioment/* ENDPOINT_BASE */.GU + "/" + data.empreendimento.prj_ubnt_image;
         this.imagemSuaSegurancaMob = data.empreendimento.sct_image_mob;
         this.imgConceito = Envirioment/* ENDPOINT_BASE */.GU + "/" + data.empreendimento.atm_image;
+        this.imgProjUrbanistico = Envirioment/* ENDPOINT_BASE */.GU + "/" + data.empreendimento.plt_prj_image;
+        this.areaLazer = Envirioment/* ENDPOINT_BASE */.GU + "/" + data.empreendimento.plt_area_image;
         this.videoTitle = data.empreendimento.video_titulo;
         this.videoDescription = data.empreendimento.video_descricao;
         this.logoType = data.empreendimento.logo_novo == 1 ? "logoNova" : "logoAntiga";
