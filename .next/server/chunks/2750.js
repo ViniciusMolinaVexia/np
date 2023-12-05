@@ -101,6 +101,11 @@ class EnterpriseModel {
         this.Verdes = data.empreendimento.prj_ubnt_itens_area_third;
         this.Terreno = data.empreendimento.prj_ubnt_itens_area_fourth;
         this.unidatesTerreno = data.empreendimento.prj_ubnt_itens_desc_second;
+        this.tituloSeguranca = data.empreendimento.sct_first_image_alt;
+        this.servicoSeguranca = data.empreendimento.sct_item_first;
+        this.servicoSegurancaSecond = data.empreendimento.sct_item_second;
+        this.servicoSegurancaThird = data.empreendimento.sct_item_third;
+        this.secondImageAltSeguranca = data.empreendimento.sct_second_image_alt;
         this.typeId = {
             id: data.empreendimento.type_id,
             title: this.getTypeIdTitle(data.empreendimento.type_id)
@@ -144,6 +149,7 @@ class EnterpriseModel {
         this.descriptionSuaSeguranca = data.empreendimento.sct_description;
         this.imagemSuaSeguranca = Envirioment/* ENDPOINT_BASE */.GU + "/" + data.empreendimento.sct_first_image;
         this.imagemProjetoUrbanistico = Envirioment/* ENDPOINT_BASE */.GU + "/" + data.empreendimento.prj_ubnt_image;
+        this.secondImageSeguranca = Envirioment/* ENDPOINT_BASE */.GU + "/" + data.empreendimento.sct_second_image;
         this.imagemSuaSegurancaMob = data.empreendimento.sct_image_mob;
         this.imgConceito = Envirioment/* ENDPOINT_BASE */.GU + "/" + data.empreendimento.atm_image;
         this.imgProjUrbanistico = Envirioment/* ENDPOINT_BASE */.GU + "/" + data.empreendimento.plt_prj_image;
