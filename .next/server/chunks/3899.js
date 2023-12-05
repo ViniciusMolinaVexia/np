@@ -1685,7 +1685,7 @@ class DesktopAlphaMenu extends external_react_.Component {
                         as: "li",
                         className: isInternal ? "alpha-menu__item alpha-menu__item--sales shown" : "alpha-menu__item alpha-menu__item--sales hidden",
                         children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("a", {
-                            href: "#",
+                            href: "#teste",
                             children: [
                                 /*#__PURE__*/ jsx_runtime_.jsx("span", {
                                     className: "icon"
@@ -1735,7 +1735,7 @@ class DesktopAlphaMenu extends external_react_.Component {
                                                 md: 6,
                                                 className: "share__item share__item--facebook",
                                                 children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                                    href: "#",
+                                                    href: "http://www.facebook.com/sharer.php?u=" + `${this.props.homeContent.metaProps.url}` + "residencial/" + `${this.props.homeContent.slug}`,
                                                     className: "share__link",
                                                     children: "facebook"
                                                 })
@@ -1745,7 +1745,7 @@ class DesktopAlphaMenu extends external_react_.Component {
                                                 md: 6,
                                                 className: "share__item share__item--twitter",
                                                 children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                                    href: "#",
+                                                    href: "http://twitter.com/share?text=Alphaville&url=" + `${this.props.homeContent.metaProps.url}` + "residencial/" + `${this.props.homeContent.slug}`,
                                                     className: "share__link",
                                                     children: "twitter"
                                                 })

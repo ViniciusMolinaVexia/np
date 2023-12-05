@@ -41,6 +41,7 @@ module.exports = {
 // Exports
 module.exports = {
 	"areaProdutoAtmosfera": "residencial-Conceito_areaProdutoAtmosfera__BywAd",
+	"containerFluid": "residencial-Conceito_containerFluid__bwe6J",
 	"imgAtmosfera": "residencial-Conceito_imgAtmosfera__LG_B3",
 	"container": "residencial-Conceito_container__VgucK",
 	"conteudoAtmosfera": "residencial-Conceito_conteudoAtmosfera__Xz7cT",
@@ -63,6 +64,11 @@ module.exports = {
 	"Conteudo": "residencial-PlantaConceitual_Conteudo__XIMrW",
 	"botaoContainer": "residencial-PlantaConceitual_botaoContainer__G_bWm",
 	"escolhaDescricao": "residencial-PlantaConceitual_escolhaDescricao__HunAf",
+	"descricaoConceitual": "residencial-PlantaConceitual_descricaoConceitual__gyE1j",
+	"DadosTecnicos": "residencial-PlantaConceitual_DadosTecnicos__hNPZC",
+	"LinkTecnico": "residencial-PlantaConceitual_LinkTecnico__wyBy3",
+	"divTecnico": "residencial-PlantaConceitual_divTecnico__CfpI6",
+	"iconSeta": "residencial-PlantaConceitual_iconSeta__5nthy",
 	"colunaLista": "residencial-PlantaConceitual_colunaLista__JUmcL",
 	"produtoTitle": "residencial-PlantaConceitual_produtoTitle__64Ulp",
 	"ConteudoTitle": "residencial-PlantaConceitual_ConteudoTitle__uSHZ0",
@@ -757,17 +763,34 @@ function residencial_PlantaConceitual_ProjetoUrbanistico({ homeContent , colors 
                                         conteudo === "urbanistico" && /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
                                             children: [
                                                 /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                    className: (residencial_PlantaConceitual_module_default()).descricaoConceitual,
                                                     dangerouslySetInnerHTML: {
                                                         __html: descricao
                                                     }
                                                 }),
-                                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
+                                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                                    className: (residencial_PlantaConceitual_module_default()).divTecnico,
                                                     children: [
-                                                        /*#__PURE__*/ jsx_runtime_.jsx("h6", {
-                                                            children: "Ver dados t\xe9cnicos"
+                                                        /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                            className: (residencial_PlantaConceitual_module_default()).DadosTecnicos,
+                                                            children: /*#__PURE__*/ jsx_runtime_.jsx("h6", {
+                                                                children: "Ver dados t\xe9cnicos"
+                                                            })
                                                         }),
-                                                        /*#__PURE__*/ jsx_runtime_.jsx("h6", {
-                                                            children: "Fazer download da Planta"
+                                                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                                            className: (residencial_PlantaConceitual_module_default()).DadosTecnicos,
+                                                            children: [
+                                                                /*#__PURE__*/ jsx_runtime_.jsx("i", {
+                                                                    className: `${(residencial_PlantaConceitual_module_default()).iconSeta}`
+                                                                }),
+                                                                /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                                                    className: (residencial_PlantaConceitual_module_default()).LinkTecnico,
+                                                                    href: urlUrbanistico,
+                                                                    target: "_blank",
+                                                                    rel: "noreferrer",
+                                                                    children: "Fazer download da Planta"
+                                                                })
+                                                            ]
                                                         })
                                                     ]
                                                 })
@@ -776,12 +799,40 @@ function residencial_PlantaConceitual_ProjetoUrbanistico({ homeContent , colors 
                                         conteudo === "lazer" && /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
                                             children: [
                                                 /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                    className: (residencial_PlantaConceitual_module_default()).descricaoConceitual,
                                                     dangerouslySetInnerHTML: {
                                                         __html: descricaoPlanta
                                                     }
                                                 }),
                                                 /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                    className: (residencial_PlantaConceitual_module_default()).descricaoConceitual,
                                                     children: listaRenderizada
+                                                }),
+                                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                                    className: (residencial_PlantaConceitual_module_default()).divTecnico,
+                                                    children: [
+                                                        /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                            className: (residencial_PlantaConceitual_module_default()).DadosTecnicos,
+                                                            children: /*#__PURE__*/ jsx_runtime_.jsx("h6", {
+                                                                children: "Ver dados t\xe9cnicos"
+                                                            })
+                                                        }),
+                                                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                                            className: (residencial_PlantaConceitual_module_default()).DadosTecnicos,
+                                                            children: [
+                                                                /*#__PURE__*/ jsx_runtime_.jsx("i", {
+                                                                    className: `${(residencial_PlantaConceitual_module_default()).iconSeta}`
+                                                                }),
+                                                                /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                                                    className: (residencial_PlantaConceitual_module_default()).LinkTecnico,
+                                                                    href: urlLazer,
+                                                                    target: "_blank",
+                                                                    rel: "noreferrer",
+                                                                    children: "Fazer download da Planta"
+                                                                })
+                                                            ]
+                                                        })
+                                                    ]
                                                 })
                                             ]
                                         })
@@ -840,14 +891,14 @@ function residencial_Conceito_ProjetoUrbanistico({ homeContent , colors , isMobi
         children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
             className: "hidden-xs",
             children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                className: "container-fluid",
+                className: (residencial_Conceito_module_default()).containerFluid,
                 children: [
                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
                         className: "row",
                         children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
                             className: "col-xs-12 np",
                             children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                className: `col-xs-6`,
+                                className: `col-xs-6 ml-auto`,
                                 children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
                                     className: `${(residencial_Conceito_module_default()).imgAtmosfera}`,
                                     src: url,
