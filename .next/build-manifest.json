@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/WaqF9f6zJv4DtCwghrI4e/_buildManifest.js",
-    "static/WaqF9f6zJv4DtCwghrI4e/_ssgManifest.js"
+    "static/WA4a8h8lNewaX9O0bEh3c/_buildManifest.js",
+    "static/WA4a8h8lNewaX9O0bEh3c/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
@@ -315,7 +315,7 @@
       "static/chunks/5129-139333b11ec024ce.js",
       "static/chunks/3899-90b769c021781d5b.js",
       "static/css/2da0e34815e2372b.css",
-      "static/chunks/9637-5c0a4dbaa756497f.js",
+      "static/chunks/9637-16eef5c3a824796d.js",
       "static/css/28d0db933057af4a.css",
       "static/chunks/pages/residencia/[empreendimento]-7a5963cf02f99ee3.js"
     ],
@@ -330,7 +330,7 @@
       "static/chunks/5176-544f85c9f074d149.js",
       "static/chunks/4756-a6e123163968ecfb.js",
       "static/chunks/5129-139333b11ec024ce.js",
-      "static/chunks/4276-3d097e4323df8185.js",
+      "static/chunks/4276-c1c8504ebebaccf9.js",
       "static/css/495275bb8224ffd4.css",
       "static/chunks/pages/residencia/[empreendimento]/agradecimento-9d51f60abfcf217f.js"
     ],
@@ -344,14 +344,15 @@
       "static/chunks/4592-01bdcf807a8af191.js",
       "static/chunks/1860-bed59601551301cd.js",
       "static/chunks/1428-c98b34044b64a226.js",
+      "static/chunks/8667-c73705e6e3b3d0e9.js",
       "static/chunks/8638-1aa5701137d30bbf.js",
       "static/chunks/5176-544f85c9f074d149.js",
       "static/chunks/4756-a6e123163968ecfb.js",
       "static/chunks/3899-90b769c021781d5b.js",
       "static/css/2da0e34815e2372b.css",
-      "static/chunks/9637-5c0a4dbaa756497f.js",
+      "static/chunks/9637-16eef5c3a824796d.js",
       "static/css/431b9e1ccd4561e9.css",
-      "static/chunks/pages/residencial/[id]-b5b0408f3af5b025.js"
+      "static/chunks/pages/residencial/[id]-22893946bbe37519.js"
     ],
     "/teaser/[empreendimento]": [
       "static/chunks/webpack-437a3d93691f6b86.js",
@@ -369,7 +370,7 @@
       "static/chunks/5129-139333b11ec024ce.js",
       "static/chunks/3899-90b769c021781d5b.js",
       "static/css/2da0e34815e2372b.css",
-      "static/chunks/9637-5c0a4dbaa756497f.js",
+      "static/chunks/9637-16eef5c3a824796d.js",
       "static/css/28d0db933057af4a.css",
       "static/chunks/pages/teaser/[empreendimento]-51e1f4dd32077300.js"
     ],
@@ -384,7 +385,7 @@
       "static/chunks/5176-544f85c9f074d149.js",
       "static/chunks/4756-a6e123163968ecfb.js",
       "static/chunks/5129-139333b11ec024ce.js",
-      "static/chunks/4276-3d097e4323df8185.js",
+      "static/chunks/4276-c1c8504ebebaccf9.js",
       "static/css/495275bb8224ffd4.css",
       "static/chunks/pages/teaser/[empreendimento]/agradecimento-66d5abfc389eeefe.js"
     ],

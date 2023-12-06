@@ -217,7 +217,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 7652:
+/***/ 875:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -1489,12 +1489,318 @@ function TeaserMap({ colors , standVendas , isMobile , id  }) {
     });
 }
 
+// EXTERNAL MODULE: external "react-bootstrap/Button"
+var Button_ = __webpack_require__(1937);
+var Button_default = /*#__PURE__*/__webpack_require__.n(Button_);
+// EXTERNAL MODULE: external "react-bootstrap/Col"
+var Col_ = __webpack_require__(7511);
+var Col_default = /*#__PURE__*/__webpack_require__.n(Col_);
+// EXTERNAL MODULE: ./Envirioment/Envirioment.js
+var Envirioment = __webpack_require__(1790);
+// EXTERNAL MODULE: ./_share/components/LinkCustom/LinkCustom.component.jsx
+var LinkCustom_component = __webpack_require__(7509);
+// EXTERNAL MODULE: external "react-bootstrap/Row"
+var Row_ = __webpack_require__(8907);
+var Row_default = /*#__PURE__*/__webpack_require__.n(Row_);
+// EXTERNAL MODULE: ./_share/service/storage.js + 3 modules
+var storage = __webpack_require__(6008);
+// EXTERNAL MODULE: external "react-id-swiper"
+var external_react_id_swiper_ = __webpack_require__(4967);
+var external_react_id_swiper_default = /*#__PURE__*/__webpack_require__.n(external_react_id_swiper_);
+;// CONCATENATED MODULE: ./_share/components/residencialOutrosEmpreendimentos/residencial-OutrosEmpreendimentos.jsx
+
+
+
+
+
+
+
+
+
+
+
+// import './oferts.scss';
+class Oferts extends external_react_.Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            swiper: null,
+            isMobile: false
+        };
+        this.swiperRef = this.swiperRef.bind(this);
+        this.slideTo = this.slideTo.bind(this);
+    }
+    async componentDidMount() {
+        window.outerWidth <= 768 ? this.setState({
+            isMobile: true,
+            width: window.outerWidth
+        }) : this.setState({
+            isMobile: false,
+            width: window.outerWidth
+        });
+    }
+    swiperRef(ref) {
+        this.setState({
+            swiper: ref
+        });
+    }
+    slideTo(slide) {
+        if (this.state.swiper) this.state.swiper.slideTo(slide);
+    }
+    getBusca = async (e)=>{
+        const uf = await new storage/* default */.Z().getLocationUf();
+        const hrefArray = [
+            "busca",
+            uf
+        ];
+        new service_util/* default */.Z().goToUrl(hrefArray, "_self", false, e);
+    };
+    setClassOfBtn = (typeLote)=>{
+        let classBtnColor = "btn-color-0";
+        switch(typeLote){
+            case 1:
+            case 4:
+                classBtnColor = "btn-color-0";
+                break;
+            case 2:
+            case 5:
+                classBtnColor = "btn-color-1";
+                break;
+            case 3:
+                classBtnColor = "btn-color-2";
+                break;
+            default:
+                classBtnColor = "btn-color-0";
+                break;
+        }
+        return classBtnColor;
+    };
+    render() {
+        const params = {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            }
+        };
+        const htmMobile = /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+            className: "hidden-lg-up",
+            children: [
+                /*#__PURE__*/ jsx_runtime_.jsx((Row_default()), {
+                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)((Col_default()), {
+                        xs: 12,
+                        children: [
+                            /*#__PURE__*/ jsx_runtime_.jsx("h2", {
+                                children: this.props.prmTitleMobile
+                            }),
+                            /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                children: this.props.prmDescription
+                            })
+                        ]
+                    })
+                }),
+                /*#__PURE__*/ jsx_runtime_.jsx((Row_default()), {
+                    children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                        style: {
+                            width: this.state.width + "px"
+                        },
+                        children: this.props.prmItems ? /*#__PURE__*/ jsx_runtime_.jsx((Col_default()), {
+                            xs: 12,
+                            children: /*#__PURE__*/ jsx_runtime_.jsx((external_react_id_swiper_default()), {
+                                ...params,
+                                getSwiper: this.swiperRef,
+                                children: this.props.prmItems.map((ofert, ofertId)=>{
+                                    const imgBannerMobile = Envirioment/* ENDPOINT_BASE */.GU + "/" + ofert.images_default[0].image_mobile || Envirioment/* ENDPOINT_BASE */.GU + "/" + ofert.images_default[0].image;
+                                    const classBtnColor = this.setClassOfBtn(ofert.empreendimento.type_lote);
+                                    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                        className: "banner-images",
+                                        children: [
+                                            /*#__PURE__*/ jsx_runtime_.jsx(external_react_responsive_picture_.Picture, {
+                                                sources: [
+                                                    {
+                                                        srcSet: imgBannerMobile
+                                                    }, 
+                                                ]
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx("h2", {
+                                                className: "title-ofetrs",
+                                                children: ofert.empreendimento.name
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                children: ofert.empreendimento.description
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                className: "btn-oferts",
+                                                children: /*#__PURE__*/ jsx_runtime_.jsx(LinkCustom_component/* default */.Z, {
+                                                    className: classBtnColor,
+                                                    arrayLink: [
+                                                        ofert.type.title.toLowerCase(),
+                                                        ofert.empreendimento.slug
+                                                    ],
+                                                    children: /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                                                        children: "CONHE\xc7A"
+                                                    })
+                                                })
+                                            })
+                                        ]
+                                    }, ofertId);
+                                })
+                            })
+                        }) : ""
+                    })
+                }),
+                /*#__PURE__*/ jsx_runtime_.jsx((Row_default()), {
+                    children: /*#__PURE__*/ jsx_runtime_.jsx((Col_default()), {
+                        xs: 12,
+                        className: "btn-oferts all",
+                        children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                            onClick: (e)=>this.getBusca(e),
+                            className: "no-color",
+                            children: /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                                children: "VER TODOS"
+                            })
+                        })
+                    })
+                })
+            ]
+        });
+        const htmlDesktop = /*#__PURE__*/ jsx_runtime_.jsx("div", {
+            className: "hidden-md-down",
+            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                className: "container np",
+                children: [
+                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                        className: "area-outros-emp-desc",
+                        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)((Row_default()), {
+                            children: [
+                                /*#__PURE__*/ jsx_runtime_.jsx((Col_default()), {
+                                    md: 9,
+                                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                        children: [
+                                            /*#__PURE__*/ jsx_runtime_.jsx("h2", {
+                                                className: "title",
+                                                children: this.props.title
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                className: "sub-title",
+                                                children: this.props.content.out_emp_description
+                                            })
+                                        ]
+                                    })
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx((Col_default()), {
+                                    md: 3,
+                                    children: /*#__PURE__*/ jsx_runtime_.jsx((Button_default()), {
+                                        onClick: ()=>this.getBusca(),
+                                        className: "btn-ver-todos",
+                                        children: /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                                            children: "VER TODOS"
+                                        })
+                                    })
+                                })
+                            ]
+                        })
+                    }),
+                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                        className: "area-outros-emp-carousel",
+                        children: /*#__PURE__*/ jsx_runtime_.jsx((Row_default()), {
+                            children: this.props.prmItems ? /*#__PURE__*/ jsx_runtime_.jsx(jsx_runtime_.Fragment, {
+                                children: this.props.prmItems.map((ofert, ofertId)=>{
+                                    const classBtnColor = "btn-oferts " + this.setClassOfBtn(ofert.empreendimento.type_lote);
+                                    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)((Col_default()), {
+                                        md: 6,
+                                        className: "item-carousel",
+                                        children: [
+                                            /*#__PURE__*/ jsx_runtime_.jsx((external_react_id_swiper_default()), {
+                                                ...params,
+                                                getSwiper: this.swiperRef,
+                                                children: ofert.images_default.map((val, idx)=>{
+                                                    const imgBanner = val.image_desktop || val.image;
+                                                    return /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                        style: {
+                                                            width: 580 + "px",
+                                                            height: 430 + "px",
+                                                            backgroundImage: "url(" + Envirioment/* ENDPOINT_BASE */.GU + "/" + imgBanner + ")",
+                                                            backgroundSize: "cover"
+                                                        }
+                                                    }, idx);
+                                                })
+                                            }),
+                                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                                className: "info-oferts",
+                                                children: [
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                        className: "title-oferts",
+                                                        children: ofert.empreendimento.name
+                                                    }),
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                        className: "sub-conteudo text-center",
+                                                        children: ofert.empreendimento.description
+                                                    }),
+                                                    /*#__PURE__*/ jsx_runtime_.jsx(LinkCustom_component/* default */.Z, {
+                                                        className: classBtnColor,
+                                                        arrayLink: [
+                                                            ofert.type.title.toLowerCase(),
+                                                            ofert.empreendimento.slug
+                                                        ],
+                                                        children: /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                                                            children: "CONHE\xc7A"
+                                                        })
+                                                    })
+                                                ]
+                                            })
+                                        ]
+                                    }, ofertId);
+                                })
+                            }) : ""
+                        })
+                    })
+                ]
+            })
+        });
+        let sectionClasses = [
+            "info-oferts",
+            "np"
+        ];
+        if (this.props.prmContainer) sectionClasses.push("container");
+        if (this.props.prmNostand) sectionClasses.push("no-stand");
+        if (this.props.prmItems && this.props.prmItems.length > this.props.prmMin) {
+            return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("section", {
+                className: sectionClasses.join(" "),
+                children: [
+                    htmMobile,
+                    htmlDesktop
+                ]
+            });
+        } else {
+            return /*#__PURE__*/ jsx_runtime_.jsx("section", {
+                className: "info-oferts-null np",
+                children: /*#__PURE__*/ jsx_runtime_.jsx((Row_default()), {
+                    children: /*#__PURE__*/ jsx_runtime_.jsx((Col_default()), {
+                        md: 12
+                    })
+                })
+            });
+        }
+    }
+}
+
+// EXTERNAL MODULE: ./_share/service/search.js
+var service_search = __webpack_require__(398);
+// EXTERNAL MODULE: ./_share/service/home.js
+var home = __webpack_require__(9590);
 // EXTERNAL MODULE: ./node_modules/next/dynamic.js
 var dynamic = __webpack_require__(5152);
 var dynamic_default = /*#__PURE__*/__webpack_require__.n(dynamic);
 // EXTERNAL MODULE: external "next/router"
 var router_ = __webpack_require__(1853);
 ;// CONCATENATED MODULE: ./pages/residencial/[id]/index.jsx
+
+
+
 
 
 
@@ -1534,7 +1840,7 @@ const TeaserFooterText = dynamic_default()(null, {
     },
     ssr: false
 });
-const ResidencialPage = ({ homeContent , showAlphaMenu , slugDomPedro , location , empreendimentosjson , displayColor ,  })=>{
+const ResidencialPage = ({ homeContent , showAlphaMenu , slugDomPedro , location , empreendimentosjson , displayColor , other ,  })=>{
     const router = (0,router_.useRouter)();
     const { 0: isMobile , 1: setisMobile  } = (0,external_react_.useState)(false);
     const { id , title , banner , metaProps  } = homeContent;
@@ -1543,6 +1849,8 @@ const ResidencialPage = ({ homeContent , showAlphaMenu , slugDomPedro , location
     // console.log(window.outerWidth);
     }, []);
     const util = new service_util/* default */.Z();
+    const otherVentures = other;
+    const ofertsTitle = "Outros empreendimentos";
     return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(layout_main/* default */.Z, {
         metaProps: util.changeTitleMetaProps(metaProps, title),
         homeContent: homeContent,
@@ -1566,31 +1874,6 @@ const ResidencialPage = ({ homeContent , showAlphaMenu , slugDomPedro , location
                     isTeaser: false,
                     homeContent: homeContent,
                     colors: homeContent.displayColors
-                })
-            ]
-        }),
-        outBottomContainer: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-            className: "teaserLayoutPage",
-            children: [
-                /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                    style: {
-                        backgroundColor: "#F7F5F5",
-                        position: "relative"
-                    },
-                    children: /*#__PURE__*/ jsx_runtime_.jsx(formSaibaMais/* default */.Z, {
-                        isTeaser: false,
-                        colors: homeContent.displayColors,
-                        homeContent: homeContent
-                    })
-                }),
-                /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                    style: {
-                        backgroundColor: "#F7F5F5 !important",
-                        paddingTop: "3rem"
-                    },
-                    children: /*#__PURE__*/ jsx_runtime_.jsx(TeaserFooterText, {
-                        id: "footer"
-                    })
                 })
             ]
         }),
@@ -1645,7 +1928,18 @@ const ResidencialPage = ({ homeContent , showAlphaMenu , slugDomPedro , location
                 id: "nosso-stand",
                 colors: homeContent.displayColors,
                 standVendas: homeContent.standVendas
-            }) : null
+            }) : null,
+            /*#__PURE__*/ jsx_runtime_.jsx(Oferts, {
+                content: homeContent,
+                prmContainer: false,
+                prmNostand: false,
+                prmMin: "0",
+                prmItems: otherVentures,
+                prmTitleMobile: "Outros empreendimentos",
+                prmSubTitleMobile: "",
+                title: ofertsTitle,
+                prmDescription: "Os empreendimentos da Alphaville s\xe3o desenvolvidos para oferecer conforto, seguran\xe7a e comodidade para sua fam\xedlia."
+            })
         ]
     });
 };
@@ -1677,8 +1971,22 @@ ResidencialPage.getInitialProps = async (ctx)=>{
             return {};
         }
     }
+    let otherVentures = [];
+    let homeDuoContent = {};
+    const homeService = new home/* default */.Z();
+    homeDuoContent = await homeService.getContent();
+    const search = new service_search/* default */.Z();
+    const searchByLocation = {
+        latitude: -23.5431786,
+        longitude: -46.6291845,
+        query: "where=destaque=1 AND status_obra > 1",
+        limit: 4
+    };
+    const contentBanners = await search.searchPreLoadBanners(searchByLocation.latitude, searchByLocation.longitude, searchByLocation.limit, searchByLocation.query, homeDuoContent.campaings);
+    otherVentures = contentBanners.otherVentures;
     return {
         homeContent: empreendimento,
+        other: otherVentures,
         showAlphaMenu: true,
         location: {},
         empreendimentosjson: {}
@@ -1985,6 +2293,14 @@ module.exports = require("react-bootstrap/Accordion");
 
 /***/ }),
 
+/***/ 1937:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("react-bootstrap/Button");
+
+/***/ }),
+
 /***/ 7511:
 /***/ ((module) => {
 
@@ -2022,6 +2338,14 @@ module.exports = require("react-bootstrap/Row");
 
 "use strict";
 module.exports = require("react-bootstrap/Spinner");
+
+/***/ }),
+
+/***/ 4967:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("react-id-swiper");
 
 /***/ }),
 
@@ -2080,7 +2404,7 @@ module.exports = require("fs");
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [2952,1270,1664,1890,5152,1790,5176,1659,4756,3899,2750,9232], () => (__webpack_exec__(7652)));
+var __webpack_exports__ = __webpack_require__.X(0, [2952,1270,1664,1890,5152,1790,5176,1659,4756,3899,2750,9232], () => (__webpack_exec__(875)));
 module.exports = __webpack_exports__;
 
 })();

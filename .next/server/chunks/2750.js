@@ -117,6 +117,7 @@ class EnterpriseModel {
         this.localizacaoEstrategicas = data.localizacao_estrategicas;
         this.lcz_etg_image_alt = data.empreendimento.lcz_etg_image_alt;
         this.tour360 = data.empreendimento.tour_360;
+        this.out_emp_description = data.empreendimento.out_emp_description;
         this.typeId = {
             id: data.empreendimento.type_id,
             title: this.getTypeIdTitle(data.empreendimento.type_id)
