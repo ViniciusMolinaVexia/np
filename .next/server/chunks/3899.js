@@ -1685,7 +1685,7 @@ class DesktopAlphaMenu extends external_react_.Component {
                         as: "li",
                         className: isInternal ? "alpha-menu__item alpha-menu__item--sales shown" : "alpha-menu__item alpha-menu__item--sales hidden",
                         children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("a", {
-                            href: "#teste",
+                            href: "#stand",
                             children: [
                                 /*#__PURE__*/ jsx_runtime_.jsx("span", {
                                     className: "icon"

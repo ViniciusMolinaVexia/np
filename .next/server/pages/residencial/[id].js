@@ -71,6 +71,25 @@ module.exports = {
 
 /***/ }),
 
+/***/ 9525:
+/***/ ((module) => {
+
+// Exports
+module.exports = {
+	"areaProdutoLocalizacao": "residencial-LocalizacaoEstrategica_areaProdutoLocalizacao__fu4Vd",
+	"titleLocalizacao": "residencial-LocalizacaoEstrategica_titleLocalizacao__511ge",
+	"subtitleLocalizacao": "residencial-LocalizacaoEstrategica_subtitleLocalizacao__SH6C7",
+	"imgLocalizacao": "residencial-LocalizacaoEstrategica_imgLocalizacao__F103X",
+	"descricaoLocalizacao": "residencial-LocalizacaoEstrategica_descricaoLocalizacao__8aBW8",
+	"areaFormLocalizacao": "residencial-LocalizacaoEstrategica_areaFormLocalizacao__lZH7I",
+	"produtoTitleInteresse": "residencial-LocalizacaoEstrategica_produtoTitleInteresse__x63xe",
+	"table": "residencial-LocalizacaoEstrategica_table__wE_XZ",
+	"imgSpaceLocalizacao": "residencial-LocalizacaoEstrategica_imgSpaceLocalizacao__772QN"
+};
+
+
+/***/ }),
+
 /***/ 1954:
 /***/ ((module) => {
 
@@ -99,6 +118,31 @@ module.exports = {
 	"btnLazer": "residencial-PlantaConceitual_btnLazer__wd3pW",
 	"imgProdutoProjeto": "residencial-PlantaConceitual_imgProdutoProjeto__99pBT",
 	"areaTeaserVideo": "residencial-PlantaConceitual_areaTeaserVideo__7QchP"
+};
+
+
+/***/ }),
+
+/***/ 3047:
+/***/ ((module) => {
+
+// Exports
+module.exports = {
+	"areaProdutoInteresse": "residencial-residencial-ProdutoInteresse_areaProdutoInteresse__WE_Ji",
+	"interesse": "residencial-residencial-ProdutoInteresse_interesse__Co30W",
+	"produtoTitleInteresse": "residencial-residencial-ProdutoInteresse_produtoTitleInteresse__DBelB",
+	"b": "residencial-residencial-ProdutoInteresse_b__UGFjz",
+	"produtoSubInteresse": "residencial-residencial-ProdutoInteresse_produtoSubInteresse__JWra_",
+	"produtoSubInfo": "residencial-residencial-ProdutoInteresse_produtoSubInfo__NDQtD",
+	"hasErrorInfo": "residencial-residencial-ProdutoInteresse_hasErrorInfo__Q_9pq",
+	"small-font": "residencial-residencial-ProdutoInteresse_small-font__zMQir",
+	"formNegocio": "residencial-residencial-ProdutoInteresse_formNegocio__DXy3b",
+	"inputProdutoInteresse": "residencial-residencial-ProdutoInteresse_inputProdutoInteresse___mtMa",
+	"btnProdutoInteresse": "residencial-residencial-ProdutoInteresse_btnProdutoInteresse__bwGZq",
+	"alerta": "residencial-residencial-ProdutoInteresse_alerta__f_KAm",
+	"btnMaisqueumlote": "residencial-residencial-ProdutoInteresse_btnMaisqueumlote__PBBXS",
+	"btnMaisqueumlote2": "residencial-residencial-ProdutoInteresse_btnMaisqueumlote2__tUlMF",
+	"table": "residencial-residencial-ProdutoInteresse_table__18LqR"
 };
 
 
@@ -151,7 +195,29 @@ module.exports = {
 
 /***/ }),
 
-/***/ 3131:
+/***/ 8239:
+/***/ ((module) => {
+
+// Exports
+module.exports = {
+	"areaTeaserMap": "residencial-StandVendas_areaTeaserMap__03gsO",
+	"areaTitle": "residencial-StandVendas_areaTitle__u0wQS",
+	"title": "residencial-StandVendas_title__rkLFG",
+	"containerConteudoMap": "residencial-StandVendas_containerConteudoMap__S3or1",
+	"boxConteudoMap": "residencial-StandVendas_boxConteudoMap__NFVCf",
+	"conteudoMap": "residencial-StandVendas_conteudoMap__bpSbm",
+	"dadosEndereco": "residencial-StandVendas_dadosEndereco__E1_Bs",
+	"divBtn": "residencial-StandVendas_divBtn__uJqov",
+	"btnComoChegar": "residencial-StandVendas_btnComoChegar__gnCPE",
+	"map": "residencial-StandVendas_map__wxaVD",
+	"enderecoStand": "residencial-StandVendas_enderecoStand__Yd7tn",
+	"horarioFuncionamento": "residencial-StandVendas_horarioFuncionamento__cduAy"
+};
+
+
+/***/ }),
+
+/***/ 7652:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -544,8 +610,6 @@ var layout_main = __webpack_require__(4756);
 var teaser_carrossel_cada_sorriso = __webpack_require__(7444);
 // EXTERNAL MODULE: ./_share/components/teaserCarrosselSimples/teaser-carrossel-simples.jsx + 31 modules
 var teaser_carrossel_simples = __webpack_require__(5298);
-// EXTERNAL MODULE: ./_share/components/teaserMap/teaser-map.jsx + 1 modules
-var teaser_map = __webpack_require__(2434);
 // EXTERNAL MODULE: ./_share/components/teaserSuaSeguranca/teaser-sua-seguranca.jsx
 var teaser_sua_seguranca = __webpack_require__(9123);
 // EXTERNAL MODULE: ./_share/components/teaserVideo/teaser-video.jsx
@@ -1176,12 +1240,263 @@ function residencial_AutoGestao_ProjetoUrbanistico({ homeContent , colors , isMo
 ;
 /* harmony default export */ const residencial_AutoGestao = (residencial_AutoGestao_ProjetoUrbanistico);
 
+// EXTERNAL MODULE: ./_share/components/residencialLocalizacaoEstrategica/residencial-LocalizacaoEstrategica.module.scss
+var residencial_LocalizacaoEstrategica_module = __webpack_require__(9525);
+var residencial_LocalizacaoEstrategica_module_default = /*#__PURE__*/__webpack_require__.n(residencial_LocalizacaoEstrategica_module);
+;// CONCATENATED MODULE: ./_share/components/residencialLocalizacaoEstrategica/residencial-LocalizacaoEstrategica.jsx
+
+
+
+
+
+
+
+
+
+function residencial_LocalizacaoEstrategica_ProjetoUrbanistico({ homeContent , colors , isMobile , isTeaser  }) {
+    const lcz_etg_sub_title = homeContent.lcz_etg_sub_title;
+    const lcz_etg_description = homeContent.lcz_etg_description;
+    const localizacaoEstrategicas = homeContent.localizacaoEstrategicas;
+    const lcz_etg_image_alt = homeContent.lcz_etg_image_alt;
+    const lczEtgImage = homeContent.lczEtgImage;
+    //const aut_mgnt_item_5 = homeContent.aut_mgnt_item_5;
+    const aut_mgnt_item_5 = homeContent.aut_mgnt_item_5;
+    return /*#__PURE__*/ jsx_runtime_.jsx("section", {
+        className: (residencial_LocalizacaoEstrategica_module_default()).areaProdutoLocalizacao,
+        children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
+            className: "hidden-xs",
+            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                className: "container",
+                children: [
+                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                        className: "row",
+                        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                            className: "col-xs-8",
+                            children: [
+                                /*#__PURE__*/ jsx_runtime_.jsx("h2", {
+                                    className: (residencial_LocalizacaoEstrategica_module_default()).titleLocalizacao,
+                                    children: "LOCALIZA\xc7\xc3O ESTRAT\xc9GICA"
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                    className: (residencial_LocalizacaoEstrategica_module_default()).subtitleLocalizacao,
+                                    children: lcz_etg_sub_title
+                                })
+                            ]
+                        })
+                    }),
+                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                        className: "row",
+                        children: [
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                className: "col-xs-5",
+                                children: [
+                                    /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                        className: (residencial_LocalizacaoEstrategica_module_default()).descricaoLocalizacao,
+                                        dangerouslySetInnerHTML: {
+                                            __html: lcz_etg_description
+                                        }
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("table", {
+                                        className: "table",
+                                        children: /*#__PURE__*/ jsx_runtime_.jsx("tbody", {
+                                            children: localizacaoEstrategicas.map((local, index)=>/*#__PURE__*/ (0,jsx_runtime_.jsxs)("tr", {
+                                                    children: [
+                                                        /*#__PURE__*/ jsx_runtime_.jsx("td", {
+                                                            children: local.title
+                                                        }),
+                                                        /*#__PURE__*/ jsx_runtime_.jsx("td", {
+                                                            children: local.area
+                                                        })
+                                                    ]
+                                                }, index))
+                                        })
+                                    })
+                                ]
+                            }),
+                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                className: `col-xs-7 np ${(residencial_LocalizacaoEstrategica_module_default()).prmSpace ? "img-space-localizacao" : ""}`,
+                                children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
+                                    src: `${lczEtgImage}`,
+                                    alt: lcz_etg_image_alt,
+                                    title: lcz_etg_image_alt,
+                                    className: (residencial_LocalizacaoEstrategica_module_default()).imgResponsive
+                                })
+                            })
+                        ]
+                    })
+                ]
+            })
+        })
+    });
+}
+;
+/* harmony default export */ const residencial_LocalizacaoEstrategica = (residencial_LocalizacaoEstrategica_ProjetoUrbanistico);
+
+// EXTERNAL MODULE: ./_share/components/residencialProdutoInteresse/residencial-residencial-ProdutoInteresse.module.scss
+var residencial_residencial_ProdutoInteresse_module = __webpack_require__(3047);
+var residencial_residencial_ProdutoInteresse_module_default = /*#__PURE__*/__webpack_require__.n(residencial_residencial_ProdutoInteresse_module);
+;// CONCATENATED MODULE: ./_share/components/residencialProdutoInteresse/residencial-ProdutoInteresse.jsx
+
+
+
+
+
+
+
+
+
+function residencial_ProdutoInteresse_ProjetoUrbanistico({ homeContent , colors , isMobile , isTeaser  }) {
+    const typeLote = homeContent.typeLote;
+    const secondName = homeContent.secondName;
+    const tour360 = homeContent.tour360;
+    const lcz_etg_image_alt = homeContent.lcz_etg_image_alt;
+    const lczEtgImage = homeContent.lczEtgImage;
+    //const aut_mgnt_item_5 = homeContent.aut_mgnt_item_5;
+    const aut_mgnt_item_5 = homeContent.aut_mgnt_item_5;
+    return /*#__PURE__*/ jsx_runtime_.jsx("section", {
+        className: (residencial_residencial_ProdutoInteresse_module_default()).areaProdutoInteresse,
+        children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
+            className: (residencial_residencial_ProdutoInteresse_module_default()).interesse,
+            id: "stand",
+            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                className: "container idRemoveInteresse",
+                children: [
+                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                        className: "row",
+                        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                            className: "col-xs-12",
+                            children: [
+                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("h2", {
+                                    className: (residencial_residencial_ProdutoInteresse_module_default()).produtoTitleInteresse,
+                                    children: [
+                                        "Tem interesse no ",
+                                        /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
+                                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("b", {
+                                            className: secondName.length > 13 ? "small-font" : "",
+                                            children: [
+                                                typeLote.title,
+                                                " ",
+                                                secondName
+                                            ]
+                                        }),
+                                        "?"
+                                    ]
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                    className: `${(residencial_residencial_ProdutoInteresse_module_default()).produtoSubInteresse} ${(residencial_residencial_ProdutoInteresse_module_default()).produtoSubInfo}`,
+                                    children: "Preenchendo o formul\xe1rio abaixo, voc\xea est\xe1 de acordo que n\xf3s, do Grupo Alphaville, podemos entrar em contato com voc\xea via WhatsApp no n\xfamero informado."
+                                })
+                            ]
+                        })
+                    }),
+                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                        className: (residencial_residencial_ProdutoInteresse_module_default()).formNegocio,
+                        children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                            className: "row"
+                        })
+                    })
+                ]
+            })
+        })
+    });
+}
+;
+/* harmony default export */ const residencial_ProdutoInteresse = (residencial_ProdutoInteresse_ProjetoUrbanistico);
+
+// EXTERNAL MODULE: ./_share/components/google-maps/google-map.jsx
+var google_map = __webpack_require__(2070);
+// EXTERNAL MODULE: ./_share/components/residencialStandVendas/residencial-StandVendas.module.scss
+var residencial_StandVendas_module = __webpack_require__(8239);
+var residencial_StandVendas_module_default = /*#__PURE__*/__webpack_require__.n(residencial_StandVendas_module);
+;// CONCATENATED MODULE: ./_share/components/residencialStandVendas/residencial-StandVendas.jsx
+
+
+
+
+
+function TeaserMap({ colors , standVendas , isMobile , id  }) {
+    const colorTitle = {
+        color: colors.colorFlat
+    };
+    const defaultProps = {
+        center: {
+            lat: standVendas.stdLatitude,
+            lng: standVendas.stdLongitude
+        }
+    };
+    const url = `https://www.google.com/maps/dir/Current+Location/${standVendas.stdLatitude},${standVendas.stdLongitude}`;
+    return /*#__PURE__*/ jsx_runtime_.jsx("section", {
+        className: (residencial_StandVendas_module_default()).areaTeaserMap,
+        id: id,
+        children: /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Container, {
+            children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                className: (residencial_StandVendas_module_default()).containerConteudoMap,
+                children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                    className: (residencial_StandVendas_module_default()).boxConteudoMap,
+                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                        className: (residencial_StandVendas_module_default()).conteudoMap,
+                        children: [
+                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                className: (residencial_StandVendas_module_default()).map,
+                                children: /*#__PURE__*/ jsx_runtime_.jsx(google_map/* default */.Z, {
+                                    isMobile: isMobile,
+                                    objLatLng: defaultProps.center
+                                })
+                            }),
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                className: (residencial_StandVendas_module_default()).dadosEndereco,
+                                children: [
+                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_bootstrap_.Col, {
+                                        className: (residencial_StandVendas_module_default()).enderecoStand,
+                                        children: [
+                                            /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Row, {
+                                                className: (residencial_StandVendas_module_default()).areaTitle,
+                                                children: /*#__PURE__*/ jsx_runtime_.jsx("h2", {
+                                                    className: (residencial_StandVendas_module_default()).title,
+                                                    dangerouslySetInnerHTML: {
+                                                        __html: standVendas.title
+                                                    }
+                                                })
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                dangerouslySetInnerHTML: {
+                                                    __html: standVendas.subTitle
+                                                }
+                                            })
+                                        ]
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                        className: (residencial_StandVendas_module_default()).divBtn,
+                                        children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                            href: url,
+                                            rel: "noreferrer",
+                                            target: "_blank",
+                                            children: /*#__PURE__*/ jsx_runtime_.jsx("button", {
+                                                className: (residencial_StandVendas_module_default()).btnComoChegar,
+                                                children: /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                                                    children: "COMO CHEGAR"
+                                                })
+                                            })
+                                        })
+                                    })
+                                ]
+                            })
+                        ]
+                    })
+                })
+            })
+        })
+    });
+}
+
 // EXTERNAL MODULE: ./node_modules/next/dynamic.js
 var dynamic = __webpack_require__(5152);
 var dynamic_default = /*#__PURE__*/__webpack_require__.n(dynamic);
 // EXTERNAL MODULE: external "next/router"
 var router_ = __webpack_require__(1853);
 ;// CONCATENATED MODULE: ./pages/residencial/[id]/index.jsx
+
+
 
 
 
@@ -1269,14 +1584,6 @@ const ResidencialPage = ({ homeContent , showAlphaMenu , slugDomPedro , location
                     })
                 }),
                 /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                    children: homeContent.statusStand == 1 ? /*#__PURE__*/ jsx_runtime_.jsx(teaser_map/* default */.Z, {
-                        isMobile: isMobile,
-                        id: "nosso-stand",
-                        colors: homeContent.displayColors,
-                        standVendas: homeContent.standVendas
-                    }) : null
-                }),
-                /*#__PURE__*/ jsx_runtime_.jsx("div", {
                     style: {
                         backgroundColor: "#F7F5F5 !important",
                         paddingTop: "3rem"
@@ -1322,7 +1629,23 @@ const ResidencialPage = ({ homeContent , showAlphaMenu , slugDomPedro , location
                 homeContent: homeContent,
                 colors: homeContent.displayColors,
                 isMobile: isMobile
-            })
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx(residencial_LocalizacaoEstrategica, {
+                homeContent: homeContent,
+                colors: homeContent.displayColors,
+                isMobile: isMobile
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx(residencial_ProdutoInteresse, {
+                homeContent: homeContent,
+                colors: homeContent.displayColors,
+                isMobile: isMobile
+            }),
+            homeContent.statusStand == 1 ? /*#__PURE__*/ jsx_runtime_.jsx(TeaserMap, {
+                isMobile: isMobile,
+                id: "nosso-stand",
+                colors: homeContent.displayColors,
+                standVendas: homeContent.standVendas
+            }) : null
         ]
     });
 };
@@ -1757,7 +2080,7 @@ module.exports = require("fs");
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [2952,1270,1664,1890,5152,1790,5176,1659,4756,3899,2750,5557], () => (__webpack_exec__(3131)));
+var __webpack_exports__ = __webpack_require__.X(0, [2952,1270,1664,1890,5152,1790,5176,1659,4756,3899,2750,9232], () => (__webpack_exec__(7652)));
 module.exports = __webpack_exports__;
 
 })();

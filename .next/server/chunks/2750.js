@@ -112,6 +112,11 @@ class EnterpriseModel {
         this.aut_mgnt_item_3 = data.empreendimento.aut_mgnt_item_3;
         this.aut_mgnt_item_4 = data.empreendimento.aut_mgnt_item_4;
         this.aut_mgnt_item_5 = data.empreendimento.aut_mgnt_item_5;
+        this.lcz_etg_sub_title = data.empreendimento.lcz_etg_sub_title;
+        this.lcz_etg_description = data.empreendimento.lcz_etg_description;
+        this.localizacaoEstrategicas = data.localizacao_estrategicas;
+        this.lcz_etg_image_alt = data.empreendimento.lcz_etg_image_alt;
+        this.tour360 = data.empreendimento.tour_360;
         this.typeId = {
             id: data.empreendimento.type_id,
             title: this.getTypeIdTitle(data.empreendimento.type_id)
@@ -156,6 +161,7 @@ class EnterpriseModel {
         this.imagemSuaSeguranca = Envirioment/* ENDPOINT_BASE */.GU + "/" + data.empreendimento.sct_first_image;
         this.imagemProjetoUrbanistico = Envirioment/* ENDPOINT_BASE */.GU + "/" + data.empreendimento.prj_ubnt_image;
         this.secondImageSeguranca = Envirioment/* ENDPOINT_BASE */.GU + "/" + data.empreendimento.sct_second_image;
+        this.lczEtgImage = Envirioment/* ENDPOINT_BASE */.GU + "/" + data.empreendimento.lcz_etg_image;
         this.imagemSuaSegurancaMob = data.empreendimento.sct_image_mob;
         this.imgConceito = Envirioment/* ENDPOINT_BASE */.GU + "/" + data.empreendimento.atm_image;
         this.imgProjUrbanistico = Envirioment/* ENDPOINT_BASE */.GU + "/" + data.empreendimento.plt_prj_image;
