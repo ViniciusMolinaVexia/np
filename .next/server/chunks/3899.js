@@ -1701,6 +1701,12 @@ class DesktopAlphaMenu extends external_react_.Component {
         }
     }
     render() {
+        let url = "";
+        let slug = "";
+        if (this.props.homeContent !== undefined) {
+            url = this.props.homeContent.metaProps.url;
+            slug = this.props.homeContent.slug;
+        }
         const isInternal = this.props.isInternal;
         const isTeaser = this.props.isTeaser;
         const bgTeaserSaibaMais = isTeaser ? `bg-teaser${this.setColorDisplaySaibaMais(this.props.colors.displayColor, isTeaser)}--saiba-mais` : "";
@@ -1735,7 +1741,9 @@ class DesktopAlphaMenu extends external_react_.Component {
                                                 md: 6,
                                                 className: "share__item share__item--facebook",
                                                 children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                                    href: "http://www.facebook.com/sharer.php?u=" + `${this.props.homeContent.metaProps.url}` + "residencial/" + `${this.props.homeContent.slug}`,
+                                                    href: "http://www.facebook.com/sharer.php?u=" + `${url}` + "residencial/" + `${slug}`,
+                                                    target: "_blank",
+                                                    rel: "noopener noreferrer",
                                                     className: "share__link",
                                                     children: "facebook"
                                                 })
@@ -1745,7 +1753,9 @@ class DesktopAlphaMenu extends external_react_.Component {
                                                 md: 6,
                                                 className: "share__item share__item--twitter",
                                                 children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                                    href: "http://twitter.com/share?text=Alphaville&url=" + `${this.props.homeContent.metaProps.url}` + "residencial/" + `${this.props.homeContent.slug}`,
+                                                    href: "http://twitter.com/share?text=Alphaville&url=" + `${url}` + "residencial/" + `${slug}`,
+                                                    target: "_blank",
+                                                    rel: "noopener noreferrer",
                                                     className: "share__link",
                                                     children: "twitter"
                                                 })

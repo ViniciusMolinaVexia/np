@@ -106,6 +106,12 @@ class EnterpriseModel {
         this.servicoSegurancaSecond = data.empreendimento.sct_item_second;
         this.servicoSegurancaThird = data.empreendimento.sct_item_third;
         this.secondImageAltSeguranca = data.empreendimento.sct_second_image_alt;
+        this.aut_mgnt_sub_title = data.empreendimento.aut_mgnt_sub_title;
+        this.aut_mgnt_item_1 = data.empreendimento.aut_mgnt_item_1;
+        this.aut_mgnt_item_2 = data.empreendimento.aut_mgnt_item_2;
+        this.aut_mgnt_item_3 = data.empreendimento.aut_mgnt_item_3;
+        this.aut_mgnt_item_4 = data.empreendimento.aut_mgnt_item_4;
+        this.aut_mgnt_item_5 = data.empreendimento.aut_mgnt_item_5;
         this.typeId = {
             id: data.empreendimento.type_id,
             title: this.getTypeIdTitle(data.empreendimento.type_id)

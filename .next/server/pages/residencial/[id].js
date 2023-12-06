@@ -4,6 +4,25 @@ exports.id = 1138;
 exports.ids = [1138];
 exports.modules = {
 
+/***/ 2917:
+/***/ ((module) => {
+
+// Exports
+module.exports = {
+	"areaProdutoAutogestao": "residencial-AutoGestao_areaProdutoAutogestao__nf8YD",
+	"imgAutogestao": "residencial-AutoGestao_imgAutogestao__ZBoEr",
+	"divUniao": "residencial-AutoGestao_divUniao__aKxGJ",
+	"divVideo": "residencial-AutoGestao_divVideo__uboL_",
+	"divGestao": "residencial-AutoGestao_divGestao__Lh_dq",
+	"conteudoAutogestao": "residencial-AutoGestao_conteudoAutogestao__28O4v",
+	"autogestaoTitle": "residencial-AutoGestao_autogestaoTitle__QcDFK",
+	"autogestaoSubtxt": "residencial-AutoGestao_autogestaoSubtxt__QfuNe",
+	"autogestaoConteudo": "residencial-AutoGestao_autogestaoConteudo__4jgMN"
+};
+
+
+/***/ }),
+
 /***/ 250:
 /***/ ((module) => {
 
@@ -132,7 +151,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 3721:
+/***/ 3131:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -1043,12 +1062,127 @@ function residencial_Seguranca_ProjetoUrbanistico({ homeContent , colors , isMob
 ;
 /* harmony default export */ const residencial_Seguranca = (residencial_Seguranca_ProjetoUrbanistico);
 
+// EXTERNAL MODULE: ./_share/components/residencialAutoGestao/residencial-AutoGestao.module.scss
+var residencial_AutoGestao_module = __webpack_require__(2917);
+var residencial_AutoGestao_module_default = /*#__PURE__*/__webpack_require__.n(residencial_AutoGestao_module);
+;// CONCATENATED MODULE: ./_share/components/residencialAutoGestao/residencial-AutoGestao.jsx
+
+
+
+
+
+
+
+
+
+function residencial_AutoGestao_ProjetoUrbanistico({ homeContent , colors , isMobile , isTeaser  }) {
+    const aut_mgnt_sub_title = homeContent.aut_mgnt_sub_title;
+    const aut_mgnt_item_1 = homeContent.aut_mgnt_item_1;
+    const aut_mgnt_item_2 = homeContent.aut_mgnt_item_2;
+    const aut_mgnt_item_3 = homeContent.aut_mgnt_item_3;
+    const aut_mgnt_item_4 = homeContent.aut_mgnt_item_4;
+    //const aut_mgnt_item_5 = homeContent.aut_mgnt_item_5;
+    const aut_mgnt_item_5 = homeContent.aut_mgnt_item_5;
+    return /*#__PURE__*/ jsx_runtime_.jsx("section", {
+        className: (residencial_AutoGestao_module_default()).areaProdutoAutogestao,
+        children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
+            className: "hidden-xs",
+            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                className: "container np",
+                children: [
+                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                        className: "row",
+                        children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                            className: "col-xs-offset-2 col-lg-10 col-xs-9 autogestao-fundo",
+                            children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                className: (residencial_AutoGestao_module_default()).fundo
+                            })
+                        })
+                    }),
+                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                        className: "row",
+                        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                            className: (residencial_AutoGestao_module_default()).divUniao,
+                            children: [
+                                /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                    className: (residencial_AutoGestao_module_default()).divVideo,
+                                    children: /*#__PURE__*/ jsx_runtime_.jsx("iframe", {
+                                        width: "100%",
+                                        height: "540",
+                                        src: "https://www.youtube.com/embed/GI0VGwaVnG4",
+                                        frameBorder: "0",
+                                        allowFullScreen: true
+                                    })
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                    className: (residencial_AutoGestao_module_default()).divGestao,
+                                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                        className: (residencial_AutoGestao_module_default()).conteudoAutogestao,
+                                        children: [
+                                            /*#__PURE__*/ jsx_runtime_.jsx("h1", {
+                                                className: (residencial_AutoGestao_module_default()).autogestaoTitle,
+                                                children: "AUTOGEST\xc3O"
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                className: (residencial_AutoGestao_module_default()).autogestaoSubtxt,
+                                                children: aut_mgnt_sub_title
+                                            }),
+                                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
+                                                className: (residencial_AutoGestao_module_default()).autogestaoConteudo,
+                                                children: [
+                                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("span", {
+                                                        children: [
+                                                            aut_mgnt_item_1 !== null ? `- ${aut_mgnt_item_1}` : null,
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("br", {})
+                                                        ]
+                                                    }),
+                                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("span", {
+                                                        children: [
+                                                            aut_mgnt_item_2 !== null ? `- ${aut_mgnt_item_2}` : null,
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("br", {})
+                                                        ]
+                                                    }),
+                                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("span", {
+                                                        children: [
+                                                            aut_mgnt_item_3 !== null ? `- ${aut_mgnt_item_3}` : null,
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("br", {})
+                                                        ]
+                                                    }),
+                                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("span", {
+                                                        children: [
+                                                            aut_mgnt_item_4 !== null ? `- ${aut_mgnt_item_4}` : null,
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("br", {})
+                                                        ]
+                                                    }),
+                                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("span", {
+                                                        children: [
+                                                            aut_mgnt_item_5 !== null ? `- ${aut_mgnt_item_5}` : null,
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("br", {})
+                                                        ]
+                                                    })
+                                                ]
+                                            })
+                                        ]
+                                    })
+                                })
+                            ]
+                        })
+                    })
+                ]
+            })
+        })
+    });
+}
+;
+/* harmony default export */ const residencial_AutoGestao = (residencial_AutoGestao_ProjetoUrbanistico);
+
 // EXTERNAL MODULE: ./node_modules/next/dynamic.js
 var dynamic = __webpack_require__(5152);
 var dynamic_default = /*#__PURE__*/__webpack_require__.n(dynamic);
 // EXTERNAL MODULE: external "next/router"
 var router_ = __webpack_require__(1853);
 ;// CONCATENATED MODULE: ./pages/residencial/[id]/index.jsx
+
 
 
 
@@ -1180,6 +1314,11 @@ const ResidencialPage = ({ homeContent , showAlphaMenu , slugDomPedro , location
                 isMobile: isMobile
             }),
             /*#__PURE__*/ jsx_runtime_.jsx(residencial_Seguranca, {
+                homeContent: homeContent,
+                colors: homeContent.displayColors,
+                isMobile: isMobile
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx(residencial_AutoGestao, {
                 homeContent: homeContent,
                 colors: homeContent.displayColors,
                 isMobile: isMobile
@@ -1618,7 +1757,7 @@ module.exports = require("fs");
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [2952,1270,1664,1890,5152,1790,5176,1659,4756,3899,2750,5557], () => (__webpack_exec__(3721)));
+var __webpack_exports__ = __webpack_require__.X(0, [2952,1270,1664,1890,5152,1790,5176,1659,4756,3899,2750,5557], () => (__webpack_exec__(3131)));
 module.exports = __webpack_exports__;
 
 })();
