@@ -680,7 +680,7 @@ const layout = ({ children , outContainer , outBottomContainer , residencialLayo
                 className: "layout " + active + " " + cssClass,
                 children: /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Container, {
                     className: "container-layout",
-                    children: residencialLayout
+                    children: children
                 })
             }),
             /*#__PURE__*/ jsx_runtime_.jsx("div", {
@@ -693,7 +693,7 @@ const layout = ({ children , outContainer , outBottomContainer , residencialLayo
                 className: "layout " + active + " " + cssClass,
                 children: /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Container, {
                     className: "container-layout",
-                    children: children
+                    children: residencialLayout
                 })
             }),
             outBottomContainer,
@@ -1964,15 +1964,37 @@ const ResidencialPage = ({ homeContent , showAlphaMenu , slugDomPedro , location
         }),
         residencialLayout: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
             children: [
-                /*#__PURE__*/ jsx_runtime_.jsx(residencial_ProjetoUrbanistico, {
+                /*#__PURE__*/ jsx_runtime_.jsx(residencial_AutoGestao, {
                     homeContent: homeContent,
                     colors: homeContent.displayColors,
                     isMobile: isMobile
                 }),
-                /*#__PURE__*/ jsx_runtime_.jsx(residencial_PlantaConceitual, {
+                /*#__PURE__*/ jsx_runtime_.jsx(residencial_LocalizacaoEstrategica, {
                     homeContent: homeContent,
                     colors: homeContent.displayColors,
                     isMobile: isMobile
+                }),
+                /*#__PURE__*/ jsx_runtime_.jsx(residencial_ProdutoInteresse, {
+                    homeContent: homeContent,
+                    colors: homeContent.displayColors,
+                    isMobile: isMobile
+                }),
+                homeContent.statusStand == 1 ? /*#__PURE__*/ jsx_runtime_.jsx(TeaserMap, {
+                    isMobile: isMobile,
+                    id: "nosso-stand",
+                    colors: homeContent.displayColors,
+                    standVendas: homeContent.standVendas
+                }) : null,
+                /*#__PURE__*/ jsx_runtime_.jsx(Oferts, {
+                    content: homeContent,
+                    prmContainer: false,
+                    prmNostand: false,
+                    prmMin: "0",
+                    prmItems: otherVentures,
+                    prmTitleMobile: "Outros empreendimentos",
+                    prmSubTitleMobile: "",
+                    title: ofertsTitle,
+                    prmDescription: "Os empreendimentos da Alphaville s\xe3o desenvolvidos para oferecer conforto, seguran\xe7a e comodidade para sua fam\xedlia."
                 })
             ]
         }),
@@ -2001,37 +2023,15 @@ const ResidencialPage = ({ homeContent , showAlphaMenu , slugDomPedro , location
                 statusStand: homeContent.statusStand,
                 linkStatus: homeContent.linkStandAtivo
             }) : "",
-            /*#__PURE__*/ jsx_runtime_.jsx(residencial_AutoGestao, {
+            /*#__PURE__*/ jsx_runtime_.jsx(residencial_ProjetoUrbanistico, {
                 homeContent: homeContent,
                 colors: homeContent.displayColors,
                 isMobile: isMobile
             }),
-            /*#__PURE__*/ jsx_runtime_.jsx(residencial_LocalizacaoEstrategica, {
+            /*#__PURE__*/ jsx_runtime_.jsx(residencial_PlantaConceitual, {
                 homeContent: homeContent,
                 colors: homeContent.displayColors,
                 isMobile: isMobile
-            }),
-            /*#__PURE__*/ jsx_runtime_.jsx(residencial_ProdutoInteresse, {
-                homeContent: homeContent,
-                colors: homeContent.displayColors,
-                isMobile: isMobile
-            }),
-            homeContent.statusStand == 1 ? /*#__PURE__*/ jsx_runtime_.jsx(TeaserMap, {
-                isMobile: isMobile,
-                id: "nosso-stand",
-                colors: homeContent.displayColors,
-                standVendas: homeContent.standVendas
-            }) : null,
-            /*#__PURE__*/ jsx_runtime_.jsx(Oferts, {
-                content: homeContent,
-                prmContainer: false,
-                prmNostand: false,
-                prmMin: "0",
-                prmItems: otherVentures,
-                prmTitleMobile: "Outros empreendimentos",
-                prmSubTitleMobile: "",
-                title: ofertsTitle,
-                prmDescription: "Os empreendimentos da Alphaville s\xe3o desenvolvidos para oferecer conforto, seguran\xe7a e comodidade para sua fam\xedlia."
             })
         ]
     });

@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/JeFJltaNUL0aAH0KlUmvs/_buildManifest.js",
-    "static/JeFJltaNUL0aAH0KlUmvs/_ssgManifest.js"
+    "static/HE5PK_QIIIM7eFbje5d42/_buildManifest.js",
+    "static/HE5PK_QIIIM7eFbje5d42/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
@@ -330,9 +330,9 @@
       "static/chunks/5176-544f85c9f074d149.js",
       "static/chunks/8933-8461d777c4a9ce61.js",
       "static/chunks/7501-6fed1600827b2cec.js",
-      "static/chunks/4276-c1c8504ebebaccf9.js",
+      "static/chunks/4276-f709e68c4500ced5.js",
       "static/css/495275bb8224ffd4.css",
-      "static/chunks/pages/residencia/[empreendimento]/agradecimento-4f1b268e7aaaa702.js"
+      "static/chunks/pages/residencia/[empreendimento]/agradecimento-9b4953f0f5e23853.js"
     ],
     "/residencial/[id]": [
       "static/chunks/webpack-23ef8fb8d60524d7.js",
@@ -352,7 +352,7 @@
       "static/css/2da0e34815e2372b.css",
       "static/chunks/9637-16eef5c3a824796d.js",
       "static/css/12f370489882849b.css",
-      "static/chunks/pages/residencial/[id]-c687690af1c8ef07.js"
+      "static/chunks/pages/residencial/[id]-817dda0c9aecfe5a.js"
     ],
     "/teaser/[empreendimento]": [
       "static/chunks/webpack-23ef8fb8d60524d7.js",
@@ -385,9 +385,9 @@
       "static/chunks/5176-544f85c9f074d149.js",
       "static/chunks/8933-8461d777c4a9ce61.js",
       "static/chunks/7501-6fed1600827b2cec.js",
-      "static/chunks/4276-c1c8504ebebaccf9.js",
+      "static/chunks/4276-f709e68c4500ced5.js",
       "static/css/495275bb8224ffd4.css",
-      "static/chunks/pages/teaser/[empreendimento]/agradecimento-2d6fd8164d71a102.js"
+      "static/chunks/pages/teaser/[empreendimento]/agradecimento-46acfe28b5eafde0.js"
     ],
     "/termos-de-uso": [
       "static/chunks/webpack-23ef8fb8d60524d7.js",
