@@ -62,7 +62,6 @@ module.exports = {
 	"areaProdutoAtmosfera": "residencial-Conceito_areaProdutoAtmosfera__BywAd",
 	"containerFluid": "residencial-Conceito_containerFluid__bwe6J",
 	"imgAtmosfera": "residencial-Conceito_imgAtmosfera__LG_B3",
-	"container": "residencial-Conceito_container__VgucK",
 	"conteudoAtmosfera": "residencial-Conceito_conteudoAtmosfera__Xz7cT",
 	"atmosferaTitle": "residencial-Conceito_atmosferaTitle__RoXlP",
 	"atmosferaConteudo": "residencial-Conceito_atmosferaConteudo__QsXQ8"
@@ -217,7 +216,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 875:
+/***/ 4221:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -604,8 +603,106 @@ class Banner extends external_react_.Component {
 var enterprises = __webpack_require__(2750);
 // EXTERNAL MODULE: ./_share/components/formSaibaMais/index.jsx
 var formSaibaMais = __webpack_require__(3331);
-// EXTERNAL MODULE: ./_share/layouts/layout-main.jsx + 4 modules
-var layout_main = __webpack_require__(4756);
+// EXTERNAL MODULE: ./public/static/images/Favicon.png
+var Favicon = __webpack_require__(5534);
+// EXTERNAL MODULE: ./_share/components/footer/footer.jsx
+var footer = __webpack_require__(3682);
+// EXTERNAL MODULE: ./_share/layouts/meta.component.jsx
+var meta_component = __webpack_require__(2685);
+// EXTERNAL MODULE: ./_share/components/navMenu/navMenu.jsx + 7 modules
+var navMenu = __webpack_require__(6635);
+// EXTERNAL MODULE: ./node_modules/next/script.js
+var script = __webpack_require__(4298);
+// EXTERNAL MODULE: ./Envirioment/Envirioment.js
+var Envirioment = __webpack_require__(1790);
+// EXTERNAL MODULE: ./public/static/images/alphaville.jpg
+var alphaville = __webpack_require__(5175);
+;// CONCATENATED MODULE: ./_share/layouts/residencialLayout-main.jsx
+
+
+
+
+// import CookiesPolicy from '../components/cookiesPolicy/cookiesPolicy.component';
+
+
+
+
+
+// import '../../public/static/main.scss';
+
+const layout = ({ children , outContainer , outBottomContainer , residencialLayout , layoutResidencial , metaProps , homeContent , active , location , cssClass , showNoIndex , success ,  })=>{
+    (0,external_react_.useEffect)(()=>{
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+        gtag("config", "UA-27437785-3", {
+            cookie_expires: 0
+        });
+        const mainUrl = "https://www.alphaville.com.br";
+    // if (window.location.origin != mainUrl) {
+    //   window.location.href = mainUrl + window.location.pathname;
+    // }
+    }, []);
+    const defaultMetaProps = {
+        image: {
+            url: alphaville/* default */.Z,
+            type: "image/jpeg",
+            width: "1200",
+            height: "489",
+            alt: "Alphaville"
+        },
+        title: "Alphaville - Residenciais e lotes comerciais \xe0 venda",
+        description: "Bem vindo \xe0 Alphaville. Conhe\xe7a nossos lotes \xe0 venda",
+        url: Envirioment/* URL_DOMAIN */.V3 + "/"
+    };
+    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
+        children: [
+            /*#__PURE__*/ jsx_runtime_.jsx(meta_component/* default */.Z, {
+                ...metaProps || defaultMetaProps,
+                homeContent: homeContent,
+                success: success,
+                showNoIndex: showNoIndex,
+                children: /*#__PURE__*/ jsx_runtime_.jsx("meta", {
+                    name: "facebook-domain-verification",
+                    content: "ykvnn3gwiu4gqqg55k33ewhd68i3yc"
+                })
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx("header", {
+                children: /*#__PURE__*/ jsx_runtime_.jsx(navMenu/* default */.Z, {
+                    location: location
+                })
+            }),
+            outContainer,
+            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                id: "layout",
+                className: "layout " + active + " " + cssClass,
+                children: /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Container, {
+                    className: "container-layout",
+                    children: residencialLayout
+                })
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                id: "layout",
+                className: "layout",
+                children: layoutResidencial
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                id: "layout",
+                className: "layout " + active + " " + cssClass,
+                children: /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Container, {
+                    className: "container-layout",
+                    children: children
+                })
+            }),
+            outBottomContainer,
+            /*#__PURE__*/ jsx_runtime_.jsx(footer/* default */.Z, {})
+        ]
+    });
+};
+/* harmony default export */ const residencialLayout_main = (layout);
+
 // EXTERNAL MODULE: ./_share/components/teaserCarrosselCadaSorriso/teaser-carrossel-cada-sorriso.jsx
 var teaser_carrossel_cada_sorriso = __webpack_require__(7444);
 // EXTERNAL MODULE: ./_share/components/teaserCarrosselSimples/teaser-carrossel-simples.jsx + 31 modules
@@ -979,15 +1076,12 @@ function residencial_Conceito_ProjetoUrbanistico({ homeContent , colors , isMobi
                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
                         className: "row",
                         children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                            className: "col-xs-12 np",
-                            children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                className: `col-xs-6 ml-auto`,
-                                children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
-                                    className: `${(residencial_Conceito_module_default()).imgAtmosfera}`,
-                                    src: url,
-                                    alt: "Descri\xe7\xe3o da Imagem"
-                                })
-                            })
+                            alt: titulo,
+                            title: titulo,
+                            className: (residencial_Conceito_module_default()).imgAtmosfera,
+                            style: {
+                                backgroundImage: `url(${url})`
+                            }
                         })
                     }),
                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
@@ -1495,8 +1589,6 @@ var Button_default = /*#__PURE__*/__webpack_require__.n(Button_);
 // EXTERNAL MODULE: external "react-bootstrap/Col"
 var Col_ = __webpack_require__(7511);
 var Col_default = /*#__PURE__*/__webpack_require__.n(Col_);
-// EXTERNAL MODULE: ./Envirioment/Envirioment.js
-var Envirioment = __webpack_require__(1790);
 // EXTERNAL MODULE: ./_share/components/LinkCustom/LinkCustom.component.jsx
 var LinkCustom_component = __webpack_require__(7509);
 // EXTERNAL MODULE: external "react-bootstrap/Row"
@@ -1851,29 +1943,50 @@ const ResidencialPage = ({ homeContent , showAlphaMenu , slugDomPedro , location
     const util = new service_util/* default */.Z();
     const otherVentures = other;
     const ofertsTitle = "Outros empreendimentos";
-    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(layout_main/* default */.Z, {
+    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(residencialLayout_main, {
         metaProps: util.changeTitleMetaProps(metaProps, title),
         homeContent: homeContent,
         url: "/",
         active: "residencial",
         location: location,
         cssClass: displayColor + " teaserLayoutPage",
-        outContainer: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
+        outContainer: /*#__PURE__*/ jsx_runtime_.jsx(jsx_runtime_.Fragment, {
+            children: /*#__PURE__*/ jsx_runtime_.jsx(Banner, {
+                bannerList: banner,
+                upBner: true,
+                showButton: false,
+                showTexts: false,
+                isTeaser: true,
+                homeContent: homeContent,
+                title: homeContent.title,
+                colors: homeContent.displayColors
+            })
+        }),
+        residencialLayout: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
             children: [
-                /*#__PURE__*/ jsx_runtime_.jsx(Banner, {
-                    bannerList: banner,
-                    upBner: true,
-                    showButton: false,
-                    showTexts: false,
-                    isTeaser: true,
+                /*#__PURE__*/ jsx_runtime_.jsx(residencial_ProjetoUrbanistico, {
                     homeContent: homeContent,
-                    title: homeContent.title,
-                    colors: homeContent.displayColors
+                    colors: homeContent.displayColors,
+                    isMobile: isMobile
                 }),
-                !isMobile && /*#__PURE__*/ jsx_runtime_.jsx(TeaserFloatModal, {
-                    isTeaser: false,
+                /*#__PURE__*/ jsx_runtime_.jsx(residencial_PlantaConceitual, {
                     homeContent: homeContent,
-                    colors: homeContent.displayColors
+                    colors: homeContent.displayColors,
+                    isMobile: isMobile
+                })
+            ]
+        }),
+        layoutResidencial: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
+            children: [
+                /*#__PURE__*/ jsx_runtime_.jsx(residencial_Conceito, {
+                    homeContent: homeContent,
+                    colors: homeContent.displayColors,
+                    isMobile: isMobile
+                }),
+                /*#__PURE__*/ jsx_runtime_.jsx(residencial_Seguranca, {
+                    homeContent: homeContent,
+                    colors: homeContent.displayColors,
+                    isMobile: isMobile
                 })
             ]
         }),
@@ -1888,26 +2001,6 @@ const ResidencialPage = ({ homeContent , showAlphaMenu , slugDomPedro , location
                 statusStand: homeContent.statusStand,
                 linkStatus: homeContent.linkStandAtivo
             }) : "",
-            /*#__PURE__*/ jsx_runtime_.jsx(residencial_ProjetoUrbanistico, {
-                homeContent: homeContent,
-                colors: homeContent.displayColors,
-                isMobile: isMobile
-            }),
-            /*#__PURE__*/ jsx_runtime_.jsx(residencial_PlantaConceitual, {
-                homeContent: homeContent,
-                colors: homeContent.displayColors,
-                isMobile: isMobile
-            }),
-            /*#__PURE__*/ jsx_runtime_.jsx(residencial_Conceito, {
-                homeContent: homeContent,
-                colors: homeContent.displayColors,
-                isMobile: isMobile
-            }),
-            /*#__PURE__*/ jsx_runtime_.jsx(residencial_Seguranca, {
-                homeContent: homeContent,
-                colors: homeContent.displayColors,
-                isMobile: isMobile
-            }),
             /*#__PURE__*/ jsx_runtime_.jsx(residencial_AutoGestao, {
                 homeContent: homeContent,
                 colors: homeContent.displayColors,
@@ -2404,7 +2497,7 @@ module.exports = require("fs");
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [2952,1270,1664,1890,5152,1790,5176,1659,4756,3899,2750,9232], () => (__webpack_exec__(875)));
+var __webpack_exports__ = __webpack_require__.X(0, [2952,1270,1664,1890,5152,1790,5176,1659,8933,3899,2750,9232], () => (__webpack_exec__(4221)));
 module.exports = __webpack_exports__;
 
 })();

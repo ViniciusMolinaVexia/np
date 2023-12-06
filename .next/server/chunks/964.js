@@ -628,8 +628,8 @@ class ExperienciaAlpha extends external_react_.Component {
 var home = __webpack_require__(9590);
 // EXTERNAL MODULE: ./_share/service/imageSize.js
 var imageSize = __webpack_require__(8224);
-// EXTERNAL MODULE: ./_share/layouts/layout-main.jsx + 4 modules
-var layout_main = __webpack_require__(4756);
+// EXTERNAL MODULE: ./_share/layouts/layout-main.jsx
+var layout_main = __webpack_require__(3001);
 // EXTERNAL MODULE: external "react-bootstrap/Button"
 var Button_ = __webpack_require__(1937);
 var Button_default = /*#__PURE__*/__webpack_require__.n(Button_);

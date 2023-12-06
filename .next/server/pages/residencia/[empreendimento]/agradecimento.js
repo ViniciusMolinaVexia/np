@@ -20,7 +20,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _share_components_backButton__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(4066);
 /* harmony import */ var _share_components_banner_banner_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(5129);
 /* harmony import */ var _share_service_enterprises__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(2750);
-/* harmony import */ var _share_layouts_layout_main__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(4756);
+/* harmony import */ var _share_layouts_layout_main__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(3001);
 /* harmony import */ var _Envirioment_Envirioment__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(1790);
 /* harmony import */ var _share_service_util__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(1659);
 /* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(1853);
@@ -406,7 +406,7 @@ module.exports = require("swiper/react");
 var __webpack_require__ = require("../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [2952,1270,1664,1890,1790,5176,1659,4756,5129,2750,3817], () => (__webpack_exec__(4772)));
+var __webpack_exports__ = __webpack_require__.X(0, [2952,1270,1664,1890,1790,5176,1659,8933,3001,5129,2750,3817], () => (__webpack_exec__(4772)));
 module.exports = __webpack_exports__;
 
 })();
