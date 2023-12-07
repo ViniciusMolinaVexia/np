@@ -651,7 +651,7 @@ var alphaville = __webpack_require__(5175);
 
 // import '../../public/static/main.scss';
 
-const layout = ({ children , outContainer , outBottomContainer , residencialLayout , layoutResidencial , ProdutoInteresse , metaProps , homeContent , active , location , cssClass , showNoIndex , success ,  })=>{
+const layout = ({ children , outContainer , outBottomContainer , residencialLayout , layoutResidencial , ProdutoInteresse , galeriaImagem , seguranca , metaProps , homeContent , active , location , cssClass , showNoIndex , success ,  })=>{
     (0,external_react_.useEffect)(()=>{
         window.dataLayer = window.dataLayer || [];
         function gtag() {
@@ -708,6 +708,16 @@ const layout = ({ children , outContainer , outBottomContainer , residencialLayo
                 id: "layout",
                 className: "layout",
                 children: layoutResidencial
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                style: {
+                    paddingTop: "5%",
+                    paddingBottom: "5%"
+                },
+                children: galeriaImagem
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                children: seguranca
             }),
             /*#__PURE__*/ jsx_runtime_.jsx("div", {
                 children: /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Container, {
@@ -2194,9 +2204,12 @@ var home = __webpack_require__(9590);
 // EXTERNAL MODULE: ./node_modules/next/dynamic.js
 var dynamic = __webpack_require__(5152);
 var dynamic_default = /*#__PURE__*/__webpack_require__.n(dynamic);
+// EXTERNAL MODULE: ./_share/components/teaserMap/teaser-map.jsx
+var teaser_map = __webpack_require__(8244);
 // EXTERNAL MODULE: external "next/router"
 var router_ = __webpack_require__(1853);
 ;// CONCATENATED MODULE: ./pages/residencial/[id]/index.jsx
+
 
 
 
@@ -2269,6 +2282,12 @@ const ResidencialPage = ({ homeContent , showAlphaMenu , slugDomPedro , location
                 colors: homeContent.displayColors
             })
         }),
+        galeriaImagem: /*#__PURE__*/ jsx_runtime_.jsx(teaser_carrossel_cada_sorriso/* default */.Z, {
+            isTeaser: true,
+            homeContent: homeContent,
+            isMobile: isMobile,
+            colors: homeContent.displayColors
+        }),
         residencialLayout: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
             children: [
                 /*#__PURE__*/ jsx_runtime_.jsx(residencial_AutoGestao, {
@@ -2283,19 +2302,17 @@ const ResidencialPage = ({ homeContent , showAlphaMenu , slugDomPedro , location
                 })
             ]
         }),
-        layoutResidencial: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
-            children: [
-                /*#__PURE__*/ jsx_runtime_.jsx(residencial_Conceito, {
-                    homeContent: homeContent,
-                    colors: homeContent.displayColors,
-                    isMobile: isMobile
-                }),
-                /*#__PURE__*/ jsx_runtime_.jsx(residencial_Seguranca, {
-                    homeContent: homeContent,
-                    colors: homeContent.displayColors,
-                    isMobile: isMobile
-                })
-            ]
+        seguranca: /*#__PURE__*/ jsx_runtime_.jsx(residencial_Seguranca, {
+            homeContent: homeContent,
+            colors: homeContent.displayColors,
+            isMobile: isMobile
+        }),
+        layoutResidencial: /*#__PURE__*/ jsx_runtime_.jsx(jsx_runtime_.Fragment, {
+            children: /*#__PURE__*/ jsx_runtime_.jsx(residencial_Conceito, {
+                homeContent: homeContent,
+                colors: homeContent.displayColors,
+                isMobile: isMobile
+            })
         }),
         ProdutoInteresse: /*#__PURE__*/ jsx_runtime_.jsx(residencial_ProdutoInteresse, {
             homeContent: homeContent,
@@ -2815,7 +2832,7 @@ module.exports = require("fs");
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [2952,1270,1664,1890,5152,1790,5176,1659,8933,3899,2750,9232], () => (__webpack_exec__(4221)));
+var __webpack_exports__ = __webpack_require__.X(0, [2952,1270,1664,1890,5152,1790,5176,1659,8933,3899,2750,263], () => (__webpack_exec__(4221)));
 module.exports = __webpack_exports__;
 
 })();

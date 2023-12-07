@@ -1728,7 +1728,7 @@ class DesktopAlphaMenu extends external_react_.Component {
                                     children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_bootstrap_.Row, {
                                         as: "ul",
                                         children: [
-                                            /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Col, {
+                                            this.state.fixedClass !== "fixed" && /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Col, {
                                                 as: "li",
                                                 md: 12,
                                                 className: "share__item share__item--description",
