@@ -128,12 +128,33 @@ module.exports = {
 // Exports
 module.exports = {
 	"areaProdutoInteresse": "residencial-residencial-ProdutoInteresse_areaProdutoInteresse__WE_Ji",
+	"areaConteudo": "residencial-residencial-ProdutoInteresse_areaConteudo__LnYNr",
+	"areaTitle": "residencial-residencial-ProdutoInteresse_areaTitle__tLCLw",
+	"saibaMaisTitle": "residencial-residencial-ProdutoInteresse_saibaMaisTitle__VgjfE",
+	"areaForm": "residencial-residencial-ProdutoInteresse_areaForm__vBIy1",
+	"areaFields": "residencial-residencial-ProdutoInteresse_areaFields__5ZTn6",
+	"formFieldJardim": "residencial-residencial-ProdutoInteresse_formFieldJardim__ZcXzp",
+	"formFieldTerra": "residencial-residencial-ProdutoInteresse_formFieldTerra__DQ2Um",
+	"formFieldAlphaville": "residencial-residencial-ProdutoInteresse_formFieldAlphaville__FlxOs",
+	"btnSubmitJardim": "residencial-residencial-ProdutoInteresse_btnSubmitJardim__9V6RZ",
+	"btnSubmitTerra": "residencial-residencial-ProdutoInteresse_btnSubmitTerra__tI1mQ",
+	"btnSubmitAlphaville": "residencial-residencial-ProdutoInteresse_btnSubmitAlphaville__c9SLK",
+	"btnSubmitSending": "residencial-residencial-ProdutoInteresse_btnSubmitSending__tNXPA",
+	"required": "residencial-residencial-ProdutoInteresse_required__OFRD_",
+	"invalid": "residencial-residencial-ProdutoInteresse_invalid__6j1fb",
+	"hasErrorInfo": "residencial-residencial-ProdutoInteresse_hasErrorInfo__Q_9pq",
+	"areaCheckbox": "residencial-residencial-ProdutoInteresse_areaCheckbox__iotbN",
+	"underlinedLink": "residencial-residencial-ProdutoInteresse_underlinedLink__LPnTb",
+	"inputCheckbox": "residencial-residencial-ProdutoInteresse_inputCheckbox__oCUHz",
+	"checkboxBase": "residencial-residencial-ProdutoInteresse_checkboxBase__RX_7w",
+	"checkboxDescricao": "residencial-residencial-ProdutoInteresse_checkboxDescricao__Yrubf",
+	"invalidCheckbox": "residencial-residencial-ProdutoInteresse_invalidCheckbox__8bSzJ",
+	"validCheckbox": "residencial-residencial-ProdutoInteresse_validCheckbox___cXI4",
 	"interesse": "residencial-residencial-ProdutoInteresse_interesse__Co30W",
 	"produtoTitleInteresse": "residencial-residencial-ProdutoInteresse_produtoTitleInteresse__DBelB",
 	"b": "residencial-residencial-ProdutoInteresse_b__UGFjz",
 	"produtoSubInteresse": "residencial-residencial-ProdutoInteresse_produtoSubInteresse__JWra_",
 	"produtoSubInfo": "residencial-residencial-ProdutoInteresse_produtoSubInfo__NDQtD",
-	"hasErrorInfo": "residencial-residencial-ProdutoInteresse_hasErrorInfo__Q_9pq",
 	"small-font": "residencial-residencial-ProdutoInteresse_small-font__zMQir",
 	"formNegocio": "residencial-residencial-ProdutoInteresse_formNegocio__DXy3b",
 	"inputProdutoInteresse": "residencial-residencial-ProdutoInteresse_inputProdutoInteresse___mtMa",
@@ -630,7 +651,7 @@ var alphaville = __webpack_require__(5175);
 
 // import '../../public/static/main.scss';
 
-const layout = ({ children , outContainer , outBottomContainer , residencialLayout , layoutResidencial , metaProps , homeContent , active , location , cssClass , showNoIndex , success ,  })=>{
+const layout = ({ children , outContainer , outBottomContainer , residencialLayout , layoutResidencial , ProdutoInteresse , metaProps , homeContent , active , location , cssClass , showNoIndex , success ,  })=>{
     (0,external_react_.useEffect)(()=>{
         window.dataLayer = window.dataLayer || [];
         function gtag() {
@@ -689,14 +710,17 @@ const layout = ({ children , outContainer , outBottomContainer , residencialLayo
                 children: layoutResidencial
             }),
             /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                id: "layout",
-                className: "layout " + active + " " + cssClass,
                 children: /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Container, {
                     className: "container-layout",
                     children: residencialLayout
                 })
             }),
-            outBottomContainer,
+            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                children: ProdutoInteresse
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                children: outBottomContainer
+            }),
             /*#__PURE__*/ jsx_runtime_.jsx(footer/* default */.Z, {})
         ]
     });
@@ -1426,6 +1450,18 @@ function residencial_LocalizacaoEstrategica_ProjetoUrbanistico({ homeContent , c
 ;
 /* harmony default export */ const residencial_LocalizacaoEstrategica = (residencial_LocalizacaoEstrategica_ProjetoUrbanistico);
 
+// EXTERNAL MODULE: external "formik"
+var external_formik_ = __webpack_require__(2296);
+// EXTERNAL MODULE: ./_share/service/construtor-vendas.service.js
+var construtor_vendas_service = __webpack_require__(1110);
+// EXTERNAL MODULE: ./_share/service/enterprisesCRM.js
+var service_enterprisesCRM = __webpack_require__(4434);
+// EXTERNAL MODULE: ./_share/service/rdstation.service.js
+var rdstation_service = __webpack_require__(4562);
+// EXTERNAL MODULE: ./_share/components/rdStation/sendRdstation.jsx
+var sendRdstation = __webpack_require__(3112);
+// EXTERNAL MODULE: ./_share/service/storage.js + 3 modules
+var service_storage = __webpack_require__(6008);
 // EXTERNAL MODULE: ./_share/components/residencialProdutoInteresse/residencial-residencial-ProdutoInteresse.module.scss
 var residencial_residencial_ProdutoInteresse_module = __webpack_require__(3047);
 var residencial_residencial_ProdutoInteresse_module_default = /*#__PURE__*/__webpack_require__.n(residencial_residencial_ProdutoInteresse_module);
@@ -1439,63 +1475,336 @@ var residencial_residencial_ProdutoInteresse_module_default = /*#__PURE__*/__web
 
 
 
-function residencial_ProdutoInteresse_ProjetoUrbanistico({ homeContent , colors , isMobile , isTeaser  }) {
+
+
+
+
+const FormSaibaMais = ({ setNameFormulario , colors , homeContent , isTeaser ,  })=>{
+    const { 0: adicionalCellPhoneError , 1: setAdicionalCellPhoneError  } = (0,external_react_.useState)(false);
+    const { 0: enterprises , 1: setEnterprises  } = (0,external_react_.useState)([]);
+    const { 0: sendSuccess , 1: setSendSuccess  } = (0,external_react_.useState)(null);
+    const { 0: sending , 1: setSending  } = (0,external_react_.useState)(false);
+    const { 0: msgErrorAPI , 1: setMsgErrorAPI  } = (0,external_react_.useState)("");
     const typeLote = homeContent.typeLote;
     const secondName = homeContent.secondName;
     const tour360 = homeContent.tour360;
     const lcz_etg_image_alt = homeContent.lcz_etg_image_alt;
     const lczEtgImage = homeContent.lczEtgImage;
-    //const aut_mgnt_item_5 = homeContent.aut_mgnt_item_5;
     const aut_mgnt_item_5 = homeContent.aut_mgnt_item_5;
+    (0,external_react_.useEffect)(()=>{
+        const sendRd = new sendRdstation/* default */.Z();
+        sendRd.fillRdStation(window.location.pathname, {}, "teaser-saibamais.form");
+        const asyncData = async ()=>{
+            const storage = new service_storage/* default */.Z();
+            const enterprises = await storage.getEnterprisesForHouseCRM();
+            setEnterprises(enterprises);
+        };
+        asyncData();
+    }, []);
+    const colorTitle = {
+        color: colors.colorFlat
+    };
+    function setColorForm(styles, displayColor) {
+        if (displayColor === "logoJardim") {
+            return {
+                submit: styles.btnSubmitJardim,
+                field: styles.formFieldJardim
+            };
+        } else if (displayColor === "logoTerras") {
+            return {
+                submit: styles.btnSubmitTerra,
+                field: styles.formFieldTerra
+            };
+        } else {
+            return {
+                submit: styles.btnSubmitAlphaville,
+                field: styles.formFieldAlphaville
+            };
+        }
+    }
     return /*#__PURE__*/ jsx_runtime_.jsx("section", {
         className: (residencial_residencial_ProdutoInteresse_module_default()).areaProdutoInteresse,
-        children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
-            className: (residencial_residencial_ProdutoInteresse_module_default()).interesse,
-            id: "stand",
-            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                className: "container idRemoveInteresse",
-                children: [
-                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                        className: "row",
-                        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                            className: "col-xs-12",
+        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_bootstrap_.Container, {
+            children: [
+                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                    className: (residencial_residencial_ProdutoInteresse_module_default()).interesse,
+                    id: "stand",
+                    children: [
+                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("h2", {
+                            className: (residencial_residencial_ProdutoInteresse_module_default()).produtoTitleInteresse,
                             children: [
-                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("h2", {
-                                    className: (residencial_residencial_ProdutoInteresse_module_default()).produtoTitleInteresse,
+                                "Tem interesse no ",
+                                /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
+                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("b", {
+                                    className: secondName.length > 13 ? "small-font" : "",
                                     children: [
-                                        "Tem interesse no ",
-                                        /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
-                                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("b", {
-                                            className: secondName.length > 13 ? "small-font" : "",
-                                            children: [
-                                                typeLote.title,
-                                                " ",
-                                                secondName
-                                            ]
-                                        }),
-                                        "?"
+                                        typeLote.title,
+                                        " ",
+                                        secondName
                                     ]
                                 }),
-                                /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                    className: `${(residencial_residencial_ProdutoInteresse_module_default()).produtoSubInteresse} ${(residencial_residencial_ProdutoInteresse_module_default()).produtoSubInfo}`,
-                                    children: "Preenchendo o formul\xe1rio abaixo, voc\xea est\xe1 de acordo que n\xf3s, do Grupo Alphaville, podemos entrar em contato com voc\xea via WhatsApp no n\xfamero informado."
-                                })
+                                "?"
                             ]
+                        }),
+                        /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                            className: `${(residencial_residencial_ProdutoInteresse_module_default()).produtoSubInteresse} ${(residencial_residencial_ProdutoInteresse_module_default()).produtoSubInfo}`,
+                            children: "Preenchendo o formul\xe1rio abaixo, voc\xea est\xe1 de acordo que n\xf3s, do Grupo Alphaville, podemos entrar em contato com voc\xea via WhatsApp no n\xfamero informado."
                         })
-                    }),
-                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                        className: (residencial_residencial_ProdutoInteresse_module_default()).formNegocio,
-                        children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                            className: "row"
-                        })
+                    ]
+                }),
+                /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Row, {
+                    className: (residencial_residencial_ProdutoInteresse_module_default()).areaConteudo,
+                    children: /*#__PURE__*/ jsx_runtime_.jsx(external_formik_.Formik, {
+                        initialValues: {
+                            name: "",
+                            email: "",
+                            celular: "",
+                            celularAdicional: "",
+                            checked: [],
+                            idCv: undefined,
+                            descricaoCv: undefined
+                        },
+                        validate: (values)=>{
+                            const errors = {};
+                            const util = new service_util/* default */.Z();
+                            if (util.validateName(values.name)) errors.name = util.validateName(values.name);
+                            if (util.validateEmail(values.email)) errors.email = util.validateEmail(values.email);
+                            if (util.validateTel(values.celular, true)) errors.celular = util.validateTel(values.celular, true);
+                            if (util.validateTel(values.celularAdicional, false) && values.celularAdicional != "") errors.celularAdicional = util.validateTel(values.celularAdicional, false);
+                            if (util.validateCheckbox(values.checked)) errors.checked = util.validateCheckbox(values.checked);
+                            let errorCelularAdicional = !values.celular || !values.celularAdicional ? false : true;
+                            if (errorCelularAdicional) {
+                                errorCelularAdicional = values.celular == values.celularAdicional;
+                                setAdicionalCellPhoneError(errorCelularAdicional);
+                                if (errorCelularAdicional) errors.celularAdicional = "invalid";
+                            }
+                            return errors;
+                        },
+                        onSubmit: async (values, { setSubmitting  })=>{
+                            setTimeout(async ()=>{
+                                try {
+                                    setSubmitting(true);
+                                    setSending(true);
+                                    const enterprisesCRM = new service_enterprisesCRM/* default */.Z();
+                                    const empHouseCRM = enterprisesCRM.getEnterprise(enterprises, homeContent.uf.title, homeContent.cidade);
+                                    values.CodEmpreendimento = homeContent.idCv;
+                                    values.NomeEmpreendimento = homeContent.descricaoCv;
+                                    const phone = new service_util/* default */.Z().splitPhoneDdd(values.celular);
+                                    const phoneAdctional = new service_util/* default */.Z().splitPhoneDdd(values.celularAdicional);
+                                    const msgForm = "Empreendimento: " + homeContent.title + " id: " + homeContent.id;
+                                    const empTitle = `Empreendimento: ${empHouseCRM ? empHouseCRM.emprendimento : homeContent.title}.`;
+                                    const stateAndCity = `Estado: ${homeContent.uf.uf} - Cidade: ${homeContent.cidade}`;
+                                    values.state = homeContent.uf.uf;
+                                    values.city = homeContent.cidade;
+                                    const concordo = values.checked.length > 0 ? "Li e concordo com a Pol\xedtica de Privacidade, Pol\xedtica de Cookies e Termo de Uso da Alphaville." : "";
+                                    //     const msg = `Form: ${msgForm}. ${empTitle}
+                                    //  Preferência de Contato: WhatsApp.
+                                    //  Mensagem: ${values.msg}.
+                                    //  ${stateAndCity}.`;
+                                    const idCV = homeContent.idCv;
+                                    const idEmpCv = homeContent.id;
+                                    const emp = homeContent.title;
+                                    const tipo = homeContent.tipoCv;
+                                    const praca = homeContent.pracaCv;
+                                    let success = null;
+                                    if (praca) {
+                                        const construtorVendasService = new construtor_vendas_service/* default */.Z();
+                                        const cvPost = await construtorVendasService.sendApiCv(values.name, values.email, phone.ddd.replace(/\D/g, ""), phone.phone.replace(/\D/g, ""), phoneAdctional.ddd.replace(/\D/g, ""), phoneAdctional.phone.replace(/\D/g, ""), idCV, homeContent.descricaoCv, tipo, praca, idEmpCv);
+                                        success = cvPost.success;
+                                        setMsgErrorAPI(cvPost.statusText);
+                                        setTimeout(()=>{
+                                            setMsgErrorAPI("");
+                                        }, 25000);
+                                    } else {
+                                        let codemp = 0;
+                                        if (empHouseCRM && empHouseCRM.codEmpreend) {
+                                            codemp = parseInt(empHouseCRM.codEmpreend);
+                                        }
+                                        const sendRd = new rdstation_service/* default */.Z();
+                                        const rdStationRes = await sendRd.sendApiRdStation(values.name, values.email, phone.ddd.replace(/\D/g, ""), phone.phone.replace(/\D/g, ""), values.CodEmpreendimento, values.NomeEmpreendimento, codemp, empTitle, values.state, values.city, values.msg, "home_whats.form", concordo);
+                                        success = rdStationRes.success;
+                                    }
+                                    if (success) {
+                                        sessionStorage.setItem(Envirioment/* FORM_LP_CONTENT */.zg, JSON.stringify({
+                                            Name: values.name,
+                                            Email: values.email,
+                                            Success: success,
+                                            PhoneOne: phone.ddd.replace(/\D/g, ""),
+                                            PhoneTwo: phone.phone.replace(/\D/g, ""),
+                                            PhoneAdctionalOne: phoneAdctional.ddd.replace(/\D/g, ""),
+                                            PhoneAdctionalTwo: phoneAdctional.phone.replace(/\D/g, ""),
+                                            MessageAgradecimento: homeContent.messageAgradecimento,
+                                            Slug: homeContent.slug
+                                        }));
+                                        window.dataLayer.push({
+                                            event: "ga_event",
+                                            event_name: "conversao_formulario_empreendimento",
+                                            ec: "whatsapp",
+                                            ea: "envio",
+                                            el: "sucesso"
+                                        });
+                                        setSendSuccess(true);
+                                        window.location.href = `/${isTeaser ? "teaser" : "residencia"}/${homeContent.slug}/agradecimento?success=${success ? "true" : "false"}`;
+                                    } else {
+                                        setSendSuccess(false);
+                                        setTimeout(()=>{
+                                            setSendSuccess(null);
+                                        }, 25000);
+                                        window.dataLayer.push({
+                                            event: "ga_event",
+                                            event_name: "conversao_formulario_empreendimento",
+                                            ec: "whatsapp",
+                                            ea: "envio",
+                                            el: "erro"
+                                        });
+                                    }
+                                    setSubmitting(false);
+                                    setSending(false);
+                                } catch (e) {
+                                    setSubmitting(false);
+                                    setSending(false);
+                                    console.error("erro ao enviar api", e);
+                                    values.sendSuccess = false;
+                                }
+                            }, 500);
+                        },
+                        children: ({ values , errors , touched , handleChange , handleBlur , handleSubmit , isSubmitting ,  })=>/*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_formik_.Form, {
+                                name: "produto_interesse.form",
+                                action: `/${isTeaser ? "teaser" : "residencia"}/${homeContent.slug}/agradecimento?success=${values.sendSuccess ? "true" : "false"}`,
+                                className: (residencial_residencial_ProdutoInteresse_module_default()).areaForm,
+                                children: [
+                                    /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Row, {
+                                        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_bootstrap_.Col, {
+                                            xs: 12,
+                                            className: (residencial_residencial_ProdutoInteresse_module_default()).areaFields,
+                                            children: [
+                                                /*#__PURE__*/ jsx_runtime_.jsx(external_formik_.Field, {
+                                                    id: "name",
+                                                    name: "name",
+                                                    placeholder: "NOME",
+                                                    className: external_classnames_default()(setColorForm((residencial_residencial_ProdutoInteresse_module_default()), colors.displayColor).field, errors.name && touched.name ? (residencial_residencial_ProdutoInteresse_module_default()).required : "")
+                                                }),
+                                                /*#__PURE__*/ jsx_runtime_.jsx(external_formik_.Field, {
+                                                    id: "email",
+                                                    name: "email",
+                                                    placeholder: "E-MAIL",
+                                                    type: "email",
+                                                    className: external_classnames_default()(setColorForm((residencial_residencial_ProdutoInteresse_module_default()), colors.displayColor).field, errors.email && touched.email ? (residencial_residencial_ProdutoInteresse_module_default()).required : "")
+                                                }),
+                                                /*#__PURE__*/ jsx_runtime_.jsx(external_formik_.Field, {
+                                                    id: "celular",
+                                                    name: "celular",
+                                                    value: new service_util/* default */.Z().foneMask(values.celular),
+                                                    placeholder: "(xx) 9XXXX-XXXX",
+                                                    className: external_classnames_default()(setColorForm((residencial_residencial_ProdutoInteresse_module_default()), colors.displayColor).field, errors.celular && touched.celular ? (residencial_residencial_ProdutoInteresse_module_default()).required : "")
+                                                }),
+                                                /*#__PURE__*/ jsx_runtime_.jsx(external_formik_.Field, {
+                                                    id: "celularAdicional",
+                                                    name: "celularAdicional",
+                                                    value: new service_util/* default */.Z().foneMask(values.celularAdicional),
+                                                    placeholder: "(xx) XXXXX-XXXX",
+                                                    className: external_classnames_default()(setColorForm((residencial_residencial_ProdutoInteresse_module_default()), colors.displayColor).field, errors.celularAdicional && touched.celularAdicional ? (residencial_residencial_ProdutoInteresse_module_default()).required : "")
+                                                }),
+                                                /*#__PURE__*/ jsx_runtime_.jsx(external_formik_.Field, {
+                                                    id: "idCv",
+                                                    name: "idCv",
+                                                    type: "hidden",
+                                                    value: homeContent ? homeContent.idCv : 0
+                                                }),
+                                                /*#__PURE__*/ jsx_runtime_.jsx(external_formik_.Field, {
+                                                    id: "descricaoCv",
+                                                    name: "descricaoCv",
+                                                    type: "hidden",
+                                                    value: homeContent ? homeContent.descricaoCv : ""
+                                                }),
+                                                /*#__PURE__*/ jsx_runtime_.jsx("button", {
+                                                    type: "submit",
+                                                    disabled: sending,
+                                                    className: external_classnames_default()(setColorForm((residencial_residencial_ProdutoInteresse_module_default()), colors.displayColor).field, setColorForm((residencial_residencial_ProdutoInteresse_module_default()), colors.displayColor).submit, sending ? (residencial_residencial_ProdutoInteresse_module_default()).btnSubmitSending : ""),
+                                                    children: sending ? "ENVIANDO" : "ENVIAR"
+                                                })
+                                            ]
+                                        })
+                                    }),
+                                    adicionalCellPhoneError && /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Row, {
+                                        children: /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Col, {
+                                            xs: 12,
+                                            className: (residencial_residencial_ProdutoInteresse_module_default()).areaFields,
+                                            children: /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                className: (residencial_residencial_ProdutoInteresse_module_default()).hasErrorInfo,
+                                                children: 'O n\xfamero informado em "Celular Adicional" e "Celular" n\xe3o podem ser iguais.'
+                                            })
+                                        })
+                                    }),
+                                    sendSuccess == false && /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Row, {
+                                        children: /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Col, {
+                                            xs: 12,
+                                            className: (residencial_residencial_ProdutoInteresse_module_default()).areaFields,
+                                            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
+                                                className: (residencial_residencial_ProdutoInteresse_module_default()).hasErrorInfo,
+                                                children: [
+                                                    "Erro ao enviar contato. ",
+                                                    msgErrorAPI
+                                                ]
+                                            })
+                                        })
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Row, {
+                                        className: (residencial_residencial_ProdutoInteresse_module_default()).areaCheckbox,
+                                        children: /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Col, {
+                                            xs: 12,
+                                            className: (residencial_residencial_ProdutoInteresse_module_default()).inputCheckbox,
+                                            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_bootstrap_.Form.Label, {
+                                                className: external_classnames_default()((residencial_residencial_ProdutoInteresse_module_default()).labelCheckbox, (residencial_residencial_ProdutoInteresse_module_default()).checkboxBase, errors.checked && touched.checked ? (residencial_residencial_ProdutoInteresse_module_default()).invalidCheckbox : (residencial_residencial_ProdutoInteresse_module_default()).validCheckbox),
+                                                children: [
+                                                    /*#__PURE__*/ jsx_runtime_.jsx(external_formik_.Field, {
+                                                        type: "checkbox",
+                                                        name: "checked",
+                                                        id: "concordo",
+                                                        onChange: handleChange,
+                                                        value: "concordo"
+                                                    }),
+                                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("span", {
+                                                        className: (residencial_residencial_ProdutoInteresse_module_default()).checkboxDescricao,
+                                                        children: [
+                                                            "Li e concordo com a\xa0",
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                                                className: (residencial_residencial_ProdutoInteresse_module_default()).underlinedLink,
+                                                                href: "/politica-de-privacidade",
+                                                                target: "_blank",
+                                                                children: "Pol\xedtica de Privacidade"
+                                                            }),
+                                                            ", a\xa0",
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                                                className: (residencial_residencial_ProdutoInteresse_module_default()).underlinedLink,
+                                                                href: "/politica-de-cookies",
+                                                                target: "_blank",
+                                                                children: "Pol\xedtica de Cookies"
+                                                            }),
+                                                            " ",
+                                                            "e o\xa0",
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                                                className: (residencial_residencial_ProdutoInteresse_module_default()).underlinedLink,
+                                                                href: "/termos-de-uso",
+                                                                target: "_blank",
+                                                                children: "Termo de Uso da Alphaville"
+                                                            }),
+                                                            "."
+                                                        ]
+                                                    })
+                                                ]
+                                            })
+                                        })
+                                    })
+                                ]
+                            })
                     })
-                ]
-            })
+                })
+            ]
         })
     });
-}
-;
-/* harmony default export */ const residencial_ProdutoInteresse = (residencial_ProdutoInteresse_ProjetoUrbanistico);
+};
+/* harmony default export */ const residencial_ProdutoInteresse = (FormSaibaMais);
 
 // EXTERNAL MODULE: ./_share/components/google-maps/google-map.jsx
 var google_map = __webpack_require__(2070);
@@ -1594,8 +1903,6 @@ var LinkCustom_component = __webpack_require__(7509);
 // EXTERNAL MODULE: external "react-bootstrap/Row"
 var Row_ = __webpack_require__(8907);
 var Row_default = /*#__PURE__*/__webpack_require__.n(Row_);
-// EXTERNAL MODULE: ./_share/service/storage.js + 3 modules
-var storage = __webpack_require__(6008);
 // EXTERNAL MODULE: external "react-id-swiper"
 var external_react_id_swiper_ = __webpack_require__(4967);
 var external_react_id_swiper_default = /*#__PURE__*/__webpack_require__.n(external_react_id_swiper_);
@@ -1640,7 +1947,7 @@ class Oferts extends external_react_.Component {
         if (this.state.swiper) this.state.swiper.slideTo(slide);
     }
     getBusca = async (e)=>{
-        const uf = await new storage/* default */.Z().getLocationUf();
+        const uf = await new service_storage/* default */.Z().getLocationUf();
         const hrefArray = [
             "busca",
             uf
@@ -1973,28 +2280,6 @@ const ResidencialPage = ({ homeContent , showAlphaMenu , slugDomPedro , location
                     homeContent: homeContent,
                     colors: homeContent.displayColors,
                     isMobile: isMobile
-                }),
-                /*#__PURE__*/ jsx_runtime_.jsx(residencial_ProdutoInteresse, {
-                    homeContent: homeContent,
-                    colors: homeContent.displayColors,
-                    isMobile: isMobile
-                }),
-                homeContent.statusStand == 1 ? /*#__PURE__*/ jsx_runtime_.jsx(TeaserMap, {
-                    isMobile: isMobile,
-                    id: "nosso-stand",
-                    colors: homeContent.displayColors,
-                    standVendas: homeContent.standVendas
-                }) : null,
-                /*#__PURE__*/ jsx_runtime_.jsx(Oferts, {
-                    content: homeContent,
-                    prmContainer: false,
-                    prmNostand: false,
-                    prmMin: "0",
-                    prmItems: otherVentures,
-                    prmTitleMobile: "Outros empreendimentos",
-                    prmSubTitleMobile: "",
-                    title: ofertsTitle,
-                    prmDescription: "Os empreendimentos da Alphaville s\xe3o desenvolvidos para oferecer conforto, seguran\xe7a e comodidade para sua fam\xedlia."
                 })
             ]
         }),
@@ -2011,6 +2296,39 @@ const ResidencialPage = ({ homeContent , showAlphaMenu , slugDomPedro , location
                     isMobile: isMobile
                 })
             ]
+        }),
+        ProdutoInteresse: /*#__PURE__*/ jsx_runtime_.jsx(residencial_ProdutoInteresse, {
+            homeContent: homeContent,
+            colors: homeContent.displayColors,
+            isMobile: isMobile
+        }),
+        outBottomContainer: /*#__PURE__*/ jsx_runtime_.jsx("div", {
+            className: "teaserLayoutPage",
+            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                style: {
+                    backgroundColor: "#F7F5F5",
+                    position: "relative"
+                },
+                children: [
+                    homeContent.statusStand == 1 ? /*#__PURE__*/ jsx_runtime_.jsx(TeaserMap, {
+                        isMobile: isMobile,
+                        id: "nosso-stand",
+                        colors: homeContent.displayColors,
+                        standVendas: homeContent.standVendas
+                    }) : null,
+                    /*#__PURE__*/ jsx_runtime_.jsx(Oferts, {
+                        content: homeContent,
+                        prmContainer: false,
+                        prmNostand: false,
+                        prmMin: "0",
+                        prmItems: otherVentures,
+                        prmTitleMobile: "Outros empreendimentos",
+                        prmSubTitleMobile: "",
+                        title: ofertsTitle,
+                        prmDescription: "Os empreendimentos da Alphaville s\xe3o desenvolvidos para oferecer conforto, seguran\xe7a e comodidade para sua fam\xedlia."
+                    })
+                ]
+            })
         }),
         children: [
             showAlphaMenu ? /*#__PURE__*/ jsx_runtime_.jsx(alphaMenu/* default */.Z, {
