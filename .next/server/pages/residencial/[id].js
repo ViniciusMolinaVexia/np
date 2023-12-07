@@ -202,6 +202,7 @@ module.exports = {
 // Exports
 module.exports = {
 	"areaProdutoSeguranca": "residencial-Seguranca_areaProdutoSeguranca__hNve9",
+	"row": "residencial-Seguranca_row__G9jyl",
 	"imgCriancas": "residencial-Seguranca_imgCriancas__PJtfp",
 	"areaSombra": "residencial-Seguranca_areaSombra__ILY0Z",
 	"titleSeguranca": "residencial-Seguranca_titleSeguranca__5BACr",
@@ -1180,7 +1181,7 @@ function residencial_Seguranca_ProjetoUrbanistico({ homeContent , colors , isMob
             children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
                 className: "container-fluid",
                 children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                    className: "row",
+                    className: (residencial_Seguranca_module_default()).row,
                     children: [
                         /*#__PURE__*/ jsx_runtime_.jsx("div", {
                             className: "col-xs-5 np",
