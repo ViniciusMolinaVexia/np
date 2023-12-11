@@ -220,7 +220,7 @@ TeaserPage.getInitialProps = async (ctx)=>{
         if (empreendimento.statusObra.id != "4") {
             throw new Exception();
         }
-    } catch (error1) {
+    } catch (error) {
         try {
             let objRedirect = null;
             var i = 0;
@@ -243,7 +243,7 @@ TeaserPage.getInitialProps = async (ctx)=>{
             return {
                 props: {}
             };
-        } catch (error) {
+        } catch (error1) {
             res.writeHead(301, {
                 Location: "/404"
             });
@@ -406,13 +406,6 @@ module.exports = require("next/dist/shared/lib/router/utils/get-asset-path-from-
 /***/ ((module) => {
 
 module.exports = require("next/dist/shared/lib/router/utils/get-next-pathname-info.js");
-
-/***/ }),
-
-/***/ 1897:
-/***/ ((module) => {
-
-module.exports = require("next/dist/shared/lib/router/utils/is-bot.js");
 
 /***/ }),
 

@@ -31,12 +31,6 @@ __webpack_unused_export__ = ({
         return _utils.NextWebVitalsMetric;
     }
 });
-__webpack_unused_export__ = ({
-    enumerable: true,
-    get: function() {
-        return _utils.AppType;
-    }
-});
 exports["default"] = void 0;
 var _async_to_generator = (__webpack_require__(932)/* ["default"] */ .Z);
 var _interop_require_default = (__webpack_require__(2648)/* ["default"] */ .Z);

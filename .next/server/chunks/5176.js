@@ -625,7 +625,7 @@ class Storage {
         }
         return enterprises;
     };
-}
+};
 
 
 /***/ })

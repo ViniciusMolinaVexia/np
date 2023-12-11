@@ -42,8 +42,8 @@ __webpack_unused_export__ = ({
     value: true
 });
 exports.Z = _interopRequireWildcard;
-function _interopRequireWildcard(obj, nodeInterop) {
-    if (!nodeInterop && obj && obj.__esModule) {
+function _interopRequireWildcard(obj) {
+    if (obj && obj.__esModule) {
         return obj;
     }
     if (obj === null || typeof obj !== "object" && typeof obj !== "function") {
@@ -51,14 +51,14 @@ function _interopRequireWildcard(obj, nodeInterop) {
             default: obj
         };
     }
-    var cache = _getRequireWildcardCache(nodeInterop);
+    var cache = _getRequireWildcardCache();
     if (cache && cache.has(obj)) {
         return cache.get(obj);
     }
     var newObj = {};
     var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor;
     for(var key in obj){
-        if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) {
+        if (Object.prototype.hasOwnProperty.call(obj, key)) {
             var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null;
             if (desc && (desc.get || desc.set)) {
                 Object.defineProperty(newObj, key, desc);
@@ -73,13 +73,13 @@ function _interopRequireWildcard(obj, nodeInterop) {
     }
     return newObj;
 }
-function _getRequireWildcardCache(nodeInterop1) {
+function _getRequireWildcardCache() {
     if (typeof WeakMap !== "function") return null;
-    var cacheBabelInterop = new WeakMap();
-    var cacheNodeInterop = new WeakMap();
-    return (_getRequireWildcardCache = function(nodeInterop) {
-        return nodeInterop ? cacheNodeInterop : cacheBabelInterop;
-    })(nodeInterop1);
+    var cache = new WeakMap();
+    _getRequireWildcardCache = function() {
+        return cache;
+    };
+    return cache;
 }
 
 
@@ -281,7 +281,6 @@ if ((typeof exports.default === "function" || typeof exports.default === "object
 /***/ ((module, exports, __webpack_require__) => {
 
 
-"client";
 Object.defineProperty(exports, "__esModule", ({
     value: true
 }));
@@ -295,7 +294,6 @@ var _react = _interop_require_wildcard(__webpack_require__(6689));
 var _headManagerContext = __webpack_require__(2796);
 var _headManager = __webpack_require__(6007);
 var _requestIdleCallback = __webpack_require__(9311);
-"client";
 const ScriptCache = new Map();
 const LoadCache = new Set();
 const ignoreProps = [
@@ -316,19 +314,10 @@ const loadScript = (props)=>{
     // Contents of this script are already loading/loaded
     if (ScriptCache.has(src)) {
         LoadCache.add(cacheKey);
-        // It is possible that multiple `next/script` components all have same "src", but has different "onLoad"
-        // This is to make sure the same remote script will only load once, but "onLoad" are executed in order
+        // Execute onLoad since the script loading has begun
         ScriptCache.get(src).then(onLoad, onError);
         return;
     }
-    /** Execute after the script first loaded */ const afterLoad = ()=>{
-        // Run onReady for the first time after load event
-        if (onReady) {
-            onReady();
-        }
-        // add cacheKey to LoadCache when load successfully
-        LoadCache.add(cacheKey);
-    };
     const el = document.createElement("script");
     const loadPromise = new Promise((resolve, reject)=>{
         el.addEventListener("load", function(e) {
@@ -336,7 +325,10 @@ const loadScript = (props)=>{
             if (onLoad) {
                 onLoad.call(this, e);
             }
-            afterLoad();
+            // Run onReady for the first time after load event
+            if (onReady) {
+                onReady();
+            }
         });
         el.addEventListener("error", function(e) {
             reject(e);
@@ -346,17 +338,16 @@ const loadScript = (props)=>{
             onError(e);
         }
     });
+    if (src) {
+        ScriptCache.set(src, loadPromise);
+    }
+    LoadCache.add(cacheKey);
     if (dangerouslySetInnerHTML) {
         el.innerHTML = dangerouslySetInnerHTML.__html || "";
-        afterLoad();
     } else if (children) {
         el.textContent = typeof children === "string" ? children : Array.isArray(children) ? children.join("") : "";
-        afterLoad();
     } else if (src) {
         el.src = src;
-        // do not add cacheKey into LoadCache for remote script here
-        // cacheKey will be added to LoadCache when it is actually loaded (see loadPromise above)
-        ScriptCache.set(src, loadPromise);
     }
     for (const [k, value] of Object.entries(props)){
         if (value === undefined || ignoreProps.includes(k)) {
@@ -415,55 +406,22 @@ function Script(props) {
     ]);
     // Context is available only during SSR
     const { updateScripts , scripts , getIsSsr  } = (0, _react).useContext(_headManagerContext.HeadManagerContext);
-    /**
-   * - First mount:
-   *   1. The useEffect for onReady executes
-   *   2. hasOnReadyEffectCalled.current is false, but the script hasn't loaded yet (not in LoadCache)
-   *      onReady is skipped, set hasOnReadyEffectCalled.current to true
-   *   3. The useEffect for loadScript executes
-   *   4. hasLoadScriptEffectCalled.current is false, loadScript executes
-   *      Once the script is loaded, the onLoad and onReady will be called by then
-   *   [If strict mode is enabled / is wrapped in <OffScreen /> component]
-   *   5. The useEffect for onReady executes again
-   *   6. hasOnReadyEffectCalled.current is true, so entire effect is skipped
-   *   7. The useEffect for loadScript executes again
-   *   8. hasLoadScriptEffectCalled.current is true, so entire effect is skipped
-   *
-   * - Second mount:
-   *   1. The useEffect for onReady executes
-   *   2. hasOnReadyEffectCalled.current is false, but the script has already loaded (found in LoadCache)
-   *      onReady is called, set hasOnReadyEffectCalled.current to true
-   *   3. The useEffect for loadScript executes
-   *   4. The script is already loaded, loadScript bails out
-   *   [If strict mode is enabled / is wrapped in <OffScreen /> component]
-   *   5. The useEffect for onReady executes again
-   *   6. hasOnReadyEffectCalled.current is true, so entire effect is skipped
-   *   7. The useEffect for loadScript executes again
-   *   8. hasLoadScriptEffectCalled.current is true, so entire effect is skipped
-   */ const hasOnReadyEffectCalled = (0, _react).useRef(false);
     (0, _react).useEffect(()=>{
         const cacheKey = id || src;
-        if (!hasOnReadyEffectCalled.current) {
-            // Run onReady if script has loaded before but component is re-mounted
-            if (onReady && cacheKey && LoadCache.has(cacheKey)) {
-                onReady();
-            }
-            hasOnReadyEffectCalled.current = true;
+        // Run onReady if script has loaded before but component is re-mounted
+        if (onReady && cacheKey && LoadCache.has(cacheKey)) {
+            onReady();
         }
     }, [
         onReady,
         id,
         src
     ]);
-    const hasLoadScriptEffectCalled = (0, _react).useRef(false);
     (0, _react).useEffect(()=>{
-        if (!hasLoadScriptEffectCalled.current) {
-            if (strategy === "afterInteractive") {
-                loadScript(props);
-            } else if (strategy === "lazyOnload") {
-                loadLazyScript(props);
-            }
-            hasLoadScriptEffectCalled.current = true;
+        if (strategy === "afterInteractive") {
+            loadScript(props);
+        } else if (strategy === "lazyOnload") {
+            loadLazyScript(props);
         }
     }, [
         props,
@@ -490,9 +448,6 @@ function Script(props) {
     }
     return null;
 }
-Object.defineProperty(Script, "__nextScript", {
-    value: true
-});
 var _default = Script;
 exports["default"] = _default;
 if ((typeof exports.default === "function" || typeof exports.default === "object" && exports.default !== null) && typeof exports.default.__esModule === "undefined") {

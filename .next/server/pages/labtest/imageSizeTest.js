@@ -65,7 +65,7 @@ class ImageSizePage extends react__WEBPACK_IMPORTED_MODULE_1__.Component {
             ]
         });
     }
-}
+};
 
 
 /***/ }),
@@ -172,13 +172,6 @@ module.exports = require("next/dist/shared/lib/router/utils/get-asset-path-from-
 /***/ ((module) => {
 
 module.exports = require("next/dist/shared/lib/router/utils/get-next-pathname-info.js");
-
-/***/ }),
-
-/***/ 1897:
-/***/ ((module) => {
-
-module.exports = require("next/dist/shared/lib/router/utils/is-bot.js");
 
 /***/ }),
 

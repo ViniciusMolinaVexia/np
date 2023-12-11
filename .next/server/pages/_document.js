@@ -110,7 +110,7 @@ class MyDocument extends next_document["default"] {
             ]
         });
     }
-}
+};
 
 
 /***/ }),

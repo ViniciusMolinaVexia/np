@@ -89,6 +89,33 @@ module.exports = {
 
 /***/ }),
 
+/***/ 6278:
+/***/ ((module) => {
+
+// Exports
+module.exports = {
+	"BodyplantaLightboxClose": "residencial-ModalPlanta_BodyplantaLightboxClose__9Lhc2",
+	"miniTitle": "residencial-ModalPlanta_miniTitle__Lomob",
+	"ModalContest": "residencial-ModalPlanta_ModalContest__a9gH4",
+	"modal-content": "residencial-ModalPlanta_modal-content__JSx0b",
+	"modal-header": "residencial-ModalPlanta_modal-header__rZI7o",
+	"contentCloseButton": "residencial-ModalPlanta_contentCloseButton__8xuNb",
+	"iconCloseButton": "residencial-ModalPlanta_iconCloseButton__peKPM",
+	"titleDt": "residencial-ModalPlanta_titleDt__aToFL",
+	"areaDescriptionContent": "residencial-ModalPlanta_areaDescriptionContent__VKRgY",
+	"areaDescriptionSubtitleDt": "residencial-ModalPlanta_areaDescriptionSubtitleDt__527Zi",
+	"subtitle": "residencial-ModalPlanta_subtitle__nOzKb",
+	"row": "residencial-ModalPlanta_row__hGcUv",
+	"areaContentDescription": "residencial-ModalPlanta_areaContentDescription__H__ie",
+	"title": "residencial-ModalPlanta_title__I2N5f",
+	"contentBlockRight": "residencial-ModalPlanta_contentBlockRight__5pdPC",
+	"rowli": "residencial-ModalPlanta_rowli__sVce9",
+	"contentBlockLeft": "residencial-ModalPlanta_contentBlockLeft__rVkLc"
+};
+
+
+/***/ }),
+
 /***/ 1954:
 /***/ ((module) => {
 
@@ -98,6 +125,10 @@ module.exports = {
 	"areaPlantaConceitual": "residencial-PlantaConceitual_areaPlantaConceitual__8wTBE",
 	"container": "residencial-PlantaConceitual_container__icrfQ",
 	"escolhaConteudo": "residencial-PlantaConceitual_escolhaConteudo__s3kTE",
+	"ZoomImage": "residencial-PlantaConceitual_ZoomImage__KWazB",
+	"modalCustom": "residencial-PlantaConceitual_modalCustom__45_DI",
+	"plantaLightboxClose": "residencial-PlantaConceitual_plantaLightboxClose__Uyv6S",
+	"modalContent": "residencial-PlantaConceitual_modalContent__1Kk4F",
 	"Conteudo": "residencial-PlantaConceitual_Conteudo__XIMrW",
 	"botaoContainer": "residencial-PlantaConceitual_botaoContainer__G_bWm",
 	"escolhaDescricao": "residencial-PlantaConceitual_escolhaDescricao__HunAf",
@@ -238,7 +269,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 4221:
+/***/ 2041:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -619,7 +650,7 @@ class Banner extends external_react_.Component {
             });
         }
     }
-}
+};
 
 // EXTERNAL MODULE: ./_share/service/enterprises.js + 1 modules
 var enterprises = __webpack_require__(2750);
@@ -913,7 +944,227 @@ function ProjetoUrbanistico({ homeContent , colors , isMobile , isTeaser  }) {
 // EXTERNAL MODULE: ./_share/components/residencialPlantaConceitual/residencial-PlantaConceitual.module.scss
 var residencial_PlantaConceitual_module = __webpack_require__(1954);
 var residencial_PlantaConceitual_module_default = /*#__PURE__*/__webpack_require__.n(residencial_PlantaConceitual_module);
+;// CONCATENATED MODULE: external "react-zoom-pan-pinch"
+const external_react_zoom_pan_pinch_namespaceObject = require("react-zoom-pan-pinch");
+;// CONCATENATED MODULE: ./_share/components/residencialZoom/residencial-Zoom.jsx
+// ZoomableImage.jsx
+
+
+
+const ZoomableImage = ({ imageUrl  })=>{
+    const { 0: scale , 1: setScale  } = (0,external_react_.useState)(1);
+    return /*#__PURE__*/ jsx_runtime_.jsx(external_react_zoom_pan_pinch_namespaceObject.TransformWrapper, {
+        defaultScale: scale,
+        onZoomChange: (newScale)=>setScale(newScale),
+        children: /*#__PURE__*/ jsx_runtime_.jsx(external_react_zoom_pan_pinch_namespaceObject.TransformComponent, {
+            children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
+                src: imageUrl,
+                alt: "Zoomable"
+            })
+        })
+    });
+};
+/* harmony default export */ const residencial_Zoom = (ZoomableImage);
+
+// EXTERNAL MODULE: ./_share/components/residencialModalPlantaConceitual/residencial-ModalPlanta.module.scss
+var residencial_ModalPlanta_module = __webpack_require__(6278);
+var residencial_ModalPlanta_module_default = /*#__PURE__*/__webpack_require__.n(residencial_ModalPlanta_module);
+;// CONCATENATED MODULE: ./_share/components/residencialModalPlantaConceitual/residencial-ModalPlanta.jsx
+
+
+
+
+const OutraModal = ({ showModal , closeModal , conteudoHTML , homeContent  })=>{
+    const name = homeContent.title;
+    const plantaDetalhes = homeContent.plantaDetalhes;
+    const handleCloseModal = ()=>{
+        closeModal(false);
+    };
+    return /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Modal, {
+        show: showModal,
+        onHide: closeModal,
+        children: /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Modal.Body, {
+            className: (residencial_ModalPlanta_module_default()).ModalContest,
+            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                className: (residencial_ModalPlanta_module_default()).areaContentDescription,
+                children: [
+                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                        className: (residencial_ModalPlanta_module_default()).contentBlockLeft,
+                        children: [
+                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                className: "col-md-12",
+                                children: /*#__PURE__*/ jsx_runtime_.jsx("h3", {
+                                    className: (residencial_ModalPlanta_module_default()).miniTitle,
+                                    children: name
+                                })
+                            }),
+                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                className: (residencial_ModalPlanta_module_default()).contentCloseButton,
+                                onClick: handleCloseModal,
+                                children: /*#__PURE__*/ jsx_runtime_.jsx("i", {
+                                    className: (residencial_ModalPlanta_module_default()).iconCloseButton
+                                })
+                            }),
+                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                className: "col-md-12",
+                                children: /*#__PURE__*/ jsx_runtime_.jsx("h4", {
+                                    className: (residencial_ModalPlanta_module_default()).titleDt,
+                                    children: "Dados T\xe9cnicos"
+                                })
+                            }),
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                className: (residencial_ModalPlanta_module_default()).row,
+                                children: [
+                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                        className: (residencial_ModalPlanta_module_default()).areaDescriptionSubtitleDt,
+                                        children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                            className: "col-xs-12",
+                                            children: /*#__PURE__*/ jsx_runtime_.jsx("h3", {
+                                                className: (residencial_ModalPlanta_module_default()).subtitle,
+                                                children: "ESTAT\xcdSTICA DE \xc1REAS"
+                                            })
+                                        })
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                        className: (residencial_ModalPlanta_module_default()).areaDescriptionContent,
+                                        children: /*#__PURE__*/ jsx_runtime_.jsx("ul", {
+                                            children: plantaDetalhes.map((first_content, index)=>/*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                    children: first_content.type == 1 && /*#__PURE__*/ jsx_runtime_.jsx(jsx_runtime_.Fragment, {
+                                                        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                                            className: (residencial_ModalPlanta_module_default()).rowli,
+                                                            children: [
+                                                                /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                                    className: "col-xs-8",
+                                                                    children: /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                                                                        children: first_content.title.length ? first_content.title : "------"
+                                                                    })
+                                                                }),
+                                                                /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                                    className: "col-xs-4",
+                                                                    children: /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                                                                        children: first_content.description.length ? /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                                                                            dangerouslySetInnerHTML: {
+                                                                                __html: first_content.description
+                                                                            }
+                                                                        }) : "------"
+                                                                    })
+                                                                })
+                                                            ]
+                                                        })
+                                                    })
+                                                }, index))
+                                        })
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                        className: (residencial_ModalPlanta_module_default()).areaDescriptionSubtitleDt,
+                                        children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                            className: "col-xs-12",
+                                            children: /*#__PURE__*/ jsx_runtime_.jsx("h3", {
+                                                className: (residencial_ModalPlanta_module_default()).subtitle,
+                                                children: "\xc1REAS VERDES"
+                                            })
+                                        })
+                                    }),
+                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                        className: (residencial_ModalPlanta_module_default()).areaDescriptionContent,
+                                        children: [
+                                            /*#__PURE__*/ jsx_runtime_.jsx("ul", {
+                                                children: plantaDetalhes.map((first_content, index)=>/*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                        children: first_content.type == 2 && /*#__PURE__*/ jsx_runtime_.jsx(jsx_runtime_.Fragment, {
+                                                            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                                                className: (residencial_ModalPlanta_module_default()).rowli,
+                                                                children: [
+                                                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                                        className: "col-xs-8",
+                                                                        children: /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                                                                            children: first_content.title.length ? first_content.title : "------"
+                                                                        })
+                                                                    }),
+                                                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                                        className: "col-xs-4",
+                                                                        children: /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                                                                            children: first_content.description.length ? /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                                                                                dangerouslySetInnerHTML: {
+                                                                                    __html: first_content.description
+                                                                                }
+                                                                            }) : "------"
+                                                                        })
+                                                                    })
+                                                                ]
+                                                            })
+                                                        })
+                                                    }, index))
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                className: "col-xs-12",
+                                                children: /*#__PURE__*/ jsx_runtime_.jsx("small", {
+                                                    children: "* Esse total contempla \xe1reas verdes + APP + Sistemas de lazer + Clube"
+                                                })
+                                            })
+                                        ]
+                                    })
+                                ]
+                            })
+                        ]
+                    }),
+                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                        className: (residencial_ModalPlanta_module_default()).contentBlockRight,
+                        children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                            className: (residencial_ModalPlanta_module_default()).row,
+                            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                className: (residencial_ModalPlanta_module_default()).areaDescriptionSubtitleDt,
+                                children: [
+                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                        className: "col-md-12",
+                                        children: /*#__PURE__*/ jsx_runtime_.jsx("h5", {
+                                            className: "title last",
+                                            children: "Servi\xe7os de infraestrutura"
+                                        })
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                        className: (residencial_ModalPlanta_module_default()).areaDescriptionContent,
+                                        children: /*#__PURE__*/ jsx_runtime_.jsx("ul", {
+                                            children: plantaDetalhes.map((first_content, index)=>/*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                    children: first_content.type == 3 && /*#__PURE__*/ jsx_runtime_.jsx(jsx_runtime_.Fragment, {
+                                                        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                                            className: (residencial_ModalPlanta_module_default()).rowli,
+                                                            children: [
+                                                                /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                                    className: "col-xs-8",
+                                                                    children: /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                                                                        children: first_content.title.length ? first_content.title : "------"
+                                                                    })
+                                                                }),
+                                                                /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                                    className: "col-xs-4",
+                                                                    children: /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                                                                        children: first_content.description.length ? /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                                                                            dangerouslySetInnerHTML: {
+                                                                                __html: first_content.description
+                                                                            }
+                                                                        }) : "------"
+                                                                    })
+                                                                })
+                                                            ]
+                                                        })
+                                                    })
+                                                }, index))
+                                        })
+                                    })
+                                ]
+                            })
+                        })
+                    })
+                ]
+            })
+        })
+    });
+};
+/* harmony default export */ const residencial_ModalPlanta = (OutraModal);
+
 ;// CONCATENATED MODULE: ./_share/components/residencialPlantaConceitual/residencial-PlantaConceitual.jsx
+
+
 
 
 
@@ -934,6 +1185,21 @@ function residencial_PlantaConceitual_ProjetoUrbanistico({ homeContent , colors 
     };
     const lista = homeContent.areaDeLazer;
     const { 0: conteudo , 1: setConteudo  } = (0,external_react_.useState)("urbanistico");
+    const { 0: showModal , 1: setShowModal  } = (0,external_react_.useState)(false);
+    const { 0: showModalConteudo , 1: setShowModalConteudo  } = (0,external_react_.useState)(false);
+    const handleConteudoClick = ()=>{
+        setShowModalConteudo(true);
+    };
+    const closeModalConteudo = ()=>{
+        setShowModalConteudo(false);
+    };
+    const handleImageClick = (imageUrl)=>{
+        //setSelectedImageUrl(imageUrl);
+        setShowModal(true);
+    };
+    const closeModal = ()=>{
+        setShowModal(false);
+    };
     const listaRenderizada = /*#__PURE__*/ jsx_runtime_.jsx("ol", {
         className: (residencial_PlantaConceitual_module_default()).colunaLista,
         children: lista.map((item, index)=>/*#__PURE__*/ jsx_runtime_.jsx("li", {
@@ -943,6 +1209,7 @@ function residencial_PlantaConceitual_ProjetoUrbanistico({ homeContent , colors 
     const mostrarConteudo = (opcao)=>{
         setConteudo(opcao);
     };
+    const conteudoHTML = "<p>Conte\xfado HTML da segunda modal...</p>";
     return /*#__PURE__*/ jsx_runtime_.jsx("section", {
         className: `${(residencial_PlantaConceitual_module_default()).areaTeaserVideoJardimAlpha}`,
         children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
@@ -986,11 +1253,25 @@ function residencial_PlantaConceitual_ProjetoUrbanistico({ homeContent , colors 
                                                 /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                                                     className: (residencial_PlantaConceitual_module_default()).divTecnico,
                                                     children: [
-                                                        /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                                                             className: (residencial_PlantaConceitual_module_default()).DadosTecnicos,
-                                                            children: /*#__PURE__*/ jsx_runtime_.jsx("h6", {
-                                                                children: "Ver dados t\xe9cnicos"
-                                                            })
+                                                            children: [
+                                                                /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                                                    className: (residencial_PlantaConceitual_module_default()).LinkTecnico,
+                                                                    href: "#",
+                                                                    onClick: (e)=>{
+                                                                        e.preventDefault();
+                                                                        handleConteudoClick();
+                                                                    },
+                                                                    children: "Ver dados t\xe9cnicos"
+                                                                }),
+                                                                /*#__PURE__*/ jsx_runtime_.jsx(residencial_ModalPlanta, {
+                                                                    showModal: showModalConteudo,
+                                                                    closeModal: closeModalConteudo,
+                                                                    conteudoHTML: conteudoHTML,
+                                                                    homeContent: homeContent
+                                                                })
+                                                            ]
                                                         }),
                                                         /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                                                             className: (residencial_PlantaConceitual_module_default()).DadosTecnicos,
@@ -1026,11 +1307,25 @@ function residencial_PlantaConceitual_ProjetoUrbanistico({ homeContent , colors 
                                                 /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                                                     className: (residencial_PlantaConceitual_module_default()).divTecnico,
                                                     children: [
-                                                        /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                                                             className: (residencial_PlantaConceitual_module_default()).DadosTecnicos,
-                                                            children: /*#__PURE__*/ jsx_runtime_.jsx("h6", {
-                                                                children: "Ver dados t\xe9cnicos"
-                                                            })
+                                                            children: [
+                                                                /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                                                    className: (residencial_PlantaConceitual_module_default()).LinkTecnico,
+                                                                    href: "#",
+                                                                    onClick: (e)=>{
+                                                                        e.preventDefault();
+                                                                        handleConteudoClick();
+                                                                    },
+                                                                    children: "Ver dados t\xe9cnicos"
+                                                                }),
+                                                                /*#__PURE__*/ jsx_runtime_.jsx(residencial_ModalPlanta, {
+                                                                    showModal: showModalConteudo,
+                                                                    closeModal: closeModalConteudo,
+                                                                    conteudoHTML: conteudoHTML,
+                                                                    homeContent: homeContent
+                                                                })
+                                                            ]
                                                         }),
                                                         /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                                                             className: (residencial_PlantaConceitual_module_default()).DadosTecnicos,
@@ -1059,17 +1354,79 @@ function residencial_PlantaConceitual_ProjetoUrbanistico({ homeContent , colors 
                     /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                         className: (residencial_PlantaConceitual_module_default()).escolhaConteudo,
                         children: [
-                            conteudo === "urbanistico" && /*#__PURE__*/ jsx_runtime_.jsx(jsx_runtime_.Fragment, {
-                                children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
-                                    src: urlUrbanistico,
-                                    alt: "Projeto Urban\xedstico"
-                                })
+                            conteudo === "urbanistico" && /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
+                                children: [
+                                    /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                        href: "#",
+                                        className: "planta-lightbox",
+                                        onClick: ()=>handleImageClick(urlUrbanistico),
+                                        children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
+                                            className: "img-planta-zoom img-responsive",
+                                            src: urlUrbanistico,
+                                            alt: "Projeto Urban\xedstico"
+                                        })
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Modal, {
+                                        show: showModal,
+                                        onHide: closeModal,
+                                        dialogClassName: (residencial_PlantaConceitual_module_default()).modalCustom,
+                                        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_bootstrap_.Modal.Body, {
+                                            className: (residencial_PlantaConceitual_module_default()).modalContent,
+                                            children: [
+                                                /*#__PURE__*/ jsx_runtime_.jsx(residencial_Zoom, {
+                                                    imageUrl: urlUrbanistico
+                                                }),
+                                                /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                                    className: (residencial_PlantaConceitual_module_default()).BodyplantaLightboxClose,
+                                                    href: "#",
+                                                    onClick: closeModal
+                                                })
+                                            ]
+                                        })
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                        className: (residencial_PlantaConceitual_module_default()).ZoomImage,
+                                        href: "#",
+                                        onClick: ()=>handleImageClick(urlUrbanistico)
+                                    })
+                                ]
                             }),
-                            conteudo === "lazer" && /*#__PURE__*/ jsx_runtime_.jsx(jsx_runtime_.Fragment, {
-                                children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
-                                    src: urlLazer,
-                                    alt: "\xc1rea de Lazer"
-                                })
+                            conteudo === "lazer" && /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
+                                children: [
+                                    /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                        href: "#",
+                                        className: "planta-lightbox",
+                                        onClick: ()=>handleImageClick(urlUrbanistico),
+                                        children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
+                                            className: "img-planta-zoom img-responsive",
+                                            src: urlLazer,
+                                            alt: "\xc1rea de Lazer"
+                                        })
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Modal, {
+                                        show: showModal,
+                                        onHide: closeModal,
+                                        dialogClassName: (residencial_PlantaConceitual_module_default()).modalCustom,
+                                        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_bootstrap_.Modal.Body, {
+                                            className: (residencial_PlantaConceitual_module_default()).modalContent,
+                                            children: [
+                                                /*#__PURE__*/ jsx_runtime_.jsx(residencial_Zoom, {
+                                                    imageUrl: urlLazer
+                                                }),
+                                                /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                                    className: (residencial_PlantaConceitual_module_default()).BodyplantaLightboxClose,
+                                                    href: "#",
+                                                    onClick: closeModal
+                                                })
+                                            ]
+                                        })
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                        className: (residencial_PlantaConceitual_module_default()).ZoomImage,
+                                        href: "#",
+                                        onClick: ()=>handleImageClick(urlLazer)
+                                    })
+                                ]
                             })
                         ]
                     })
@@ -1901,7 +2258,7 @@ function TeaserMap({ colors , standVendas , isMobile , id  }) {
             })
         })
     });
-}
+};
 
 // EXTERNAL MODULE: external "react-bootstrap/Button"
 var Button_ = __webpack_require__(1937);
@@ -2196,7 +2553,7 @@ class Oferts extends external_react_.Component {
             });
         }
     }
-}
+};
 
 // EXTERNAL MODULE: ./_share/service/search.js
 var service_search = __webpack_require__(398);
@@ -2594,14 +2951,6 @@ module.exports = require("next/dist/shared/lib/router/utils/get-next-pathname-in
 
 /***/ }),
 
-/***/ 1897:
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("next/dist/shared/lib/router/utils/is-bot.js");
-
-/***/ }),
-
 /***/ 1428:
 /***/ ((module) => {
 
@@ -2833,7 +3182,7 @@ module.exports = require("fs");
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [2952,1270,1664,1890,5152,1790,5176,1659,8933,3899,2750,263], () => (__webpack_exec__(4221)));
+var __webpack_exports__ = __webpack_require__.X(0, [2952,1270,1664,1890,5152,1790,5176,1659,8933,3899,2750,263], () => (__webpack_exec__(2041)));
 module.exports = __webpack_exports__;
 
 })();

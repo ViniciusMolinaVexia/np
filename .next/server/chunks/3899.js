@@ -513,7 +513,7 @@ class ModalEmail extends external_react_.Component {
             ]
         });
     }
-}
+};
 
 // EXTERNAL MODULE: ./_share/service/empreendimentoHouseCRM.js + 1 modules
 var empreendimentoHouseCRM = __webpack_require__(8372);
@@ -861,7 +861,7 @@ class modalChat_component_ModalEmail extends external_react_.Component {
             ]
         });
     }
-}
+};
 
 // EXTERNAL MODULE: ./Envirioment/Envirioment.js
 var Envirioment = __webpack_require__(1790);
@@ -1350,7 +1350,7 @@ class ModalWhatsapp extends external_react_.Component {
             ]
         });
     }
-}
+};
 
 ;// CONCATENATED MODULE: ./_share/components/modalForm/modalForm.component.jsx
 

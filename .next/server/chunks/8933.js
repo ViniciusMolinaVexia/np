@@ -6,7 +6,7 @@ exports.modules = {
 /***/ 5534:
 /***/ (() => {
 
-/* unused harmony default export */ var __WEBPACK_DEFAULT_EXPORT__ = ({"src":"/_next/static/media/Favicon.dd8a1275.png","height":16,"width":16,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAMAAADz0U65AAAAHlBMVEXn5+f09PTg4ODT09PNzc3Z2dn+/v7BwcGtra2jo6O0rRZtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAANUlEQVQImR3Gxw3AQBADsZG06fpv2ID5Iom7mMFuUz0UUgjIu//06lZteKqVzdy9xiGDtNQHHYkA2oikL+AAAAAASUVORK5CYII=","blurWidth":8,"blurHeight":8});
+/* unused harmony default export */ var __WEBPACK_DEFAULT_EXPORT__ = ({"src":"/_next/static/media/Favicon.dd8a1275.png","height":16,"width":16,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAMAAADz0U65AAAAHlBMVEXn5+f09PTg4ODT09PNzc3Z2dn+/v7BwcGtra2jo6O0rRZtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAANUlEQVQImR3Gxw3AQBADsZG06fpv2ID5Iom7mMFuUz0UUgjIu//06lZteKqVzdy9xiGDtNQHHYkA2oikL+AAAAAASUVORK5CYII="});
 
 /***/ }),
 
@@ -16,7 +16,7 @@ exports.modules = {
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"src":"/_next/static/media/alphaville.7b4151fe.jpg","height":489,"width":1200,"blurDataURL":"data:image/jpeg;base64,/9j/2wBDAAoHBwgHBgoICAgLCgoLDhgQDg0NDh0VFhEYIx8lJCIfIiEmKzcvJik0KSEiMEExNDk7Pj4+JS5ESUM8SDc9Pjv/2wBDAQoLCw4NDhwQEBw7KCIoOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozv/wAARCAADAAgDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAP/xAAdEAACAgEFAAAAAAAAAAAAAAAAAwIEEgETITFh/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAL/xAAWEQEBAQAAAAAAAAAAAAAAAAAAARH/2gAMAwEAAhEDEQA/ALza97GpbZsSXjpLHfn3z6ACzI//2Q==","blurWidth":8,"blurHeight":3});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"src":"/_next/static/media/alphaville.7b4151fe.jpg","height":489,"width":1200,"blurDataURL":"data:image/jpeg;base64,/9j/2wBDAAoHBwgHBgoICAgLCgoLDhgQDg0NDh0VFhEYIx8lJCIfIiEmKzcvJik0KSEiMEExNDk7Pj4+JS5ESUM8SDc9Pjv/2wBDAQoLCw4NDhwQEBw7KCIoOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozv/wAARCAADAAgDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAP/xAAdEAACAgEFAAAAAAAAAAAAAAAAAwIEEgETITFh/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAL/xAAWEQEBAQAAAAAAAAAAAAAAAAAAARH/2gAMAwEAAhEDEQA/ALza97GpbZsSXjpLHfn3z6ACzI//2Q=="});
 
 /***/ }),
 
@@ -103,7 +103,7 @@ class LinkCustom extends react__WEBPACK_IMPORTED_MODULE_1__.Component {
             });
         }
     }
-}
+};
 
 
 /***/ }),
@@ -673,7 +673,7 @@ class Footer extends react__WEBPACK_IMPORTED_MODULE_1__.Component {
             ]
         });
     }
-}
+};
 
 
 /***/ }),
@@ -769,7 +769,7 @@ class AutoComplete extends external_react_.Component {
             })
         });
     }
-}
+};
 
 // EXTERNAL MODULE: ./_share/service/storage.js + 3 modules
 var service_storage = __webpack_require__(6008);

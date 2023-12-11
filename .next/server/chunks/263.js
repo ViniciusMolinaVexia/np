@@ -710,7 +710,7 @@ function TeaserCarrosselBase({ colors , isMobile , imagesCadaSorriso , myLoader 
             }) : ""
         })
     });
-}
+};
 
 
 /***/ }),
@@ -797,7 +797,7 @@ function TeaserCarrosselCadaSorriso({ homeContent , colors , isMobile , isTeaser
             ]
         })
     });
-}
+};
 
 
 /***/ }),
@@ -1470,7 +1470,7 @@ function TeaserCarrosselSimples({ colors , isMobile , imagesCadaSorriso , homeCo
             }) : ""
         })
     });
-}
+};
 
 
 /***/ }),
@@ -1577,7 +1577,7 @@ function TeaserMap({ colors , standVendas , isMobile , id  }) {
             ]
         })
     });
-}
+};
 
 
 /***/ }),
@@ -1740,7 +1740,7 @@ function TeaserSuaSeguranca({ colors , isMobile , homeContent  }) {
             })
         })
     });
-}
+};
 
 
 /***/ }),
@@ -1775,7 +1775,7 @@ function TeaserVideoPlayer({ url , className , isMobile  }) {
     function _onPlayerPause(event) {
         event.target.pauseVideo();
     }
-}
+};
 
 
 /***/ }),

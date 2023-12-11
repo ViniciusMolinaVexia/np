@@ -369,7 +369,7 @@ class Banner extends react__WEBPACK_IMPORTED_MODULE_2__.Component {
             });
         }
     }
-}
+};
 
 
 /***/ })

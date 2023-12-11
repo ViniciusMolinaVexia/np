@@ -25,7 +25,7 @@ var banner_component = __webpack_require__(5129);
 ;// CONCATENATED MODULE: ./_share/components/banner/banner-pre-load.component.jsx
 
 class BannerPreLoad extends banner_component/* default */.Z {
-}
+};
 
 // EXTERNAL MODULE: ./_share/components/LinkCustom/LinkCustom.component.jsx
 var LinkCustom_component = __webpack_require__(7509);
@@ -150,7 +150,7 @@ class Blog extends external_react_.Component {
             ]
         });
     }
-}
+};
 
 // EXTERNAL MODULE: ./Envirioment/Envirioment.js
 var Envirioment = __webpack_require__(1790);
@@ -289,7 +289,7 @@ class CitiesAlpha extends external_react_.Component {
             });
         }
     }
-}
+};
 
 // EXTERNAL MODULE: ./_share/service/empreendimentoHouseCRM.js + 1 modules
 var empreendimentoHouseCRM = __webpack_require__(8372);
@@ -622,7 +622,7 @@ class ExperienciaAlpha extends external_react_.Component {
             });
         }
     }
-}
+};
 
 // EXTERNAL MODULE: ./_share/service/home.js
 var home = __webpack_require__(9590);
@@ -920,7 +920,7 @@ class Oferts extends external_react_.Component {
             });
         }
     }
-}
+};
 
 // EXTERNAL MODULE: ./_share/service/provider.js
 var service_provider = __webpack_require__(4911);
@@ -1011,7 +1011,7 @@ class CookiePolicy extends external_react_.Component {
             });
         }
     }
-}
+};
 
 // EXTERNAL MODULE: external "react-bootstrap/Modal"
 var Modal_ = __webpack_require__(9306);
@@ -1194,7 +1194,7 @@ class Busca extends external_react_.Component {
             ]
         });
     }
-}
+};
 
 // EXTERNAL MODULE: ./_share/service/search.js
 var service_search = __webpack_require__(398);
@@ -1386,7 +1386,7 @@ class Testimonials extends external_react_.Component {
             ]
         });
     }
-}
+};
 
 ;// CONCATENATED MODULE: ./pages/index.jsx
 

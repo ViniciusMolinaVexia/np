@@ -137,7 +137,7 @@ class PanelHorizontal extends react__WEBPACK_IMPORTED_MODULE_1__.Component {
             ]
         });
     }
-}
+};
 
 
 /***/ }),
