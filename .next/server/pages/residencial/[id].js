@@ -1178,7 +1178,7 @@ function residencial_PlantaConceitual_ProjetoUrbanistico({ homeContent , colors 
     const urlUrbanistico = homeContent.imgProjUrbanistico;
     const urlLazer = homeContent.areaLazer;
     const titulo = homeContent.tituloProjetoUrbanistico;
-    const descricao = homeContent.descricaoProjetoUrbanistico;
+    const descricao = homeContent.descricaoPlantaConceitual;
     const descricaoPlanta = homeContent.descricaoAreaDeLazer;
     const colorTitle = {
         color: colors.colorFlat
@@ -2012,7 +2012,7 @@ const FormSaibaMais = ({ setNameFormulario , colors , homeContent , isTeaser ,  
                                             el: "sucesso"
                                         });
                                         setSendSuccess(true);
-                                        window.location.href = `/${isTeaser ? "teaser" : "residencia"}/${homeContent.slug}/agradecimento?success=${success ? "true" : "false"}`;
+                                        window.location.href = `/${isTeaser ? "teaser" : "residencial"}/${homeContent.slug}/agradecimento?success=${success ? "true" : "false"}`;
                                     } else {
                                         setSendSuccess(false);
                                         setTimeout(()=>{
@@ -2063,14 +2063,14 @@ const FormSaibaMais = ({ setNameFormulario , colors , homeContent , isTeaser ,  
                                                     id: "celular",
                                                     name: "celular",
                                                     value: new service_util/* default */.Z().foneMask(values.celular),
-                                                    placeholder: "(xx) 9XXXX-XXXX",
+                                                    placeholder: "CELULAR",
                                                     className: external_classnames_default()(setColorForm((residencial_residencial_ProdutoInteresse_module_default()), colors.displayColor).field, errors.celular && touched.celular ? (residencial_residencial_ProdutoInteresse_module_default()).required : "")
                                                 }),
                                                 /*#__PURE__*/ jsx_runtime_.jsx(external_formik_.Field, {
                                                     id: "celularAdicional",
                                                     name: "celularAdicional",
                                                     value: new service_util/* default */.Z().foneMask(values.celularAdicional),
-                                                    placeholder: "(xx) XXXXX-XXXX",
+                                                    placeholder: "CELULAR ADICIONAL",
                                                     className: external_classnames_default()(setColorForm((residencial_residencial_ProdutoInteresse_module_default()), colors.displayColor).field, errors.celularAdicional && touched.celularAdicional ? (residencial_residencial_ProdutoInteresse_module_default()).required : "")
                                                 }),
                                                 /*#__PURE__*/ jsx_runtime_.jsx(external_formik_.Field, {
@@ -2136,26 +2136,32 @@ const FormSaibaMais = ({ setNameFormulario , colors , homeContent , isTeaser ,  
                                                         className: (residencial_residencial_ProdutoInteresse_module_default()).checkboxDescricao,
                                                         children: [
                                                             "Li e concordo com a\xa0",
-                                                            /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                                                className: (residencial_residencial_ProdutoInteresse_module_default()).underlinedLink,
-                                                                href: "/politica-de-privacidade",
-                                                                target: "_blank",
-                                                                children: "Pol\xedtica de Privacidade"
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("u", {
+                                                                children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                                                    className: (residencial_residencial_ProdutoInteresse_module_default()).underlinedLink,
+                                                                    href: "/politica-de-privacidade",
+                                                                    target: "_blank",
+                                                                    children: "Pol\xedtica de Privacidade"
+                                                                })
                                                             }),
                                                             ", a\xa0",
-                                                            /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                                                className: (residencial_residencial_ProdutoInteresse_module_default()).underlinedLink,
-                                                                href: "/politica-de-cookies",
-                                                                target: "_blank",
-                                                                children: "Pol\xedtica de Cookies"
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("u", {
+                                                                children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                                                    className: (residencial_residencial_ProdutoInteresse_module_default()).underlinedLink,
+                                                                    href: "/politica-de-cookies",
+                                                                    target: "_blank",
+                                                                    children: "Pol\xedtica de Cookies"
+                                                                })
                                                             }),
                                                             " ",
                                                             "e o\xa0",
-                                                            /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                                                className: (residencial_residencial_ProdutoInteresse_module_default()).underlinedLink,
-                                                                href: "/termos-de-uso",
-                                                                target: "_blank",
-                                                                children: "Termo de Uso da Alphaville"
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("u", {
+                                                                children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                                                    className: (residencial_residencial_ProdutoInteresse_module_default()).underlinedLink,
+                                                                    href: "/termos-de-uso",
+                                                                    target: "_blank",
+                                                                    children: "Termo de Uso da Alphaville"
+                                                                })
                                                             }),
                                                             "."
                                                         ]
@@ -3182,7 +3188,7 @@ module.exports = require("fs");
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [2952,1270,1664,1890,5152,1790,5176,1659,8933,3899,2750,263], () => (__webpack_exec__(2041)));
+var __webpack_exports__ = __webpack_require__.X(0, [2952,1270,1664,1890,5152,1790,5176,1659,8933,2750,3899,263], () => (__webpack_exec__(2041)));
 module.exports = __webpack_exports__;
 
 })();

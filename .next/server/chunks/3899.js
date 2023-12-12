@@ -2253,7 +2253,7 @@ class ConstrutorVendasService {
         let traffic_source = Utm_source;
         const c_utmz = utils.getCookie("__utmz");
         const rdtrk = utils.getCookie("_rdtrk");
-        traffic_source = traffic_source || "CH";
+        traffic_source = traffic_source || "ChatOnline";
         //Utm_medium = Utm_medium || 'referral';
         let traffic_medium = Utm_medium || "(none)"; //'CPC' = busca paga
         let traffic_campaign = Utm_campaign;
