@@ -953,6 +953,11 @@ class ModalWhatsapp extends external_react_.Component {
             children: [
                 /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Modal.Header, {
                     closeButton: true,
+                    style: {
+                        backgroundColor: "white",
+                        width: "70%",
+                        placeSelf: "center"
+                    },
                     className: "modal-form__header",
                     children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                         className: "modal-form__header-content",
@@ -1073,10 +1078,18 @@ class ModalWhatsapp extends external_react_.Component {
                     children: ({ values , errors , touched , handleChange , handleBlur , handleSubmit , isSubmitting  })=>/*#__PURE__*/ (0,jsx_runtime_.jsxs)("form", {
                             id: "form-modal",
                             name: "modalWhats.form",
+                            style: {
+                                backgroundColor: "white",
+                                width: "70%",
+                                placeSelf: "center"
+                            },
                             onSubmit: handleSubmit,
                             children: [
                                 /*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_bootstrap_.Modal.Body, {
                                     className: "modal-form__body",
+                                    style: {
+                                        backgroundColor: "white"
+                                    },
                                     children: [
                                         /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Row, {
                                             className: values.sendSuccess == null ? "" : " hide",
