@@ -70,6 +70,41 @@ module.exports = {
 
 /***/ }),
 
+/***/ 5756:
+/***/ ((module) => {
+
+// Exports
+module.exports = {
+	"areaTeaserCarrosselCadaSorriso": "residencial-GaleriaImagem_areaTeaserCarrosselCadaSorriso__bXpcx",
+	"container": "residencial-GaleriaImagem_container__admDP",
+	"verticalSliderContainer": "residencial-GaleriaImagem_verticalSliderContainer___NlSp",
+	"slick-initialized": "residencial-GaleriaImagem_slick-initialized__onKQN",
+	"slick-slider": "residencial-GaleriaImagem_slick-slider__1_K8o",
+	"slick-arrow": "residencial-GaleriaImagem_slick-arrow__OKIJE",
+	"slick-prev": "residencial-GaleriaImagem_slick-prev__t_hG4",
+	"slick-next": "residencial-GaleriaImagem_slick-next__0V_AX",
+	"ButtonVerticalUp": "residencial-GaleriaImagem_ButtonVerticalUp__deCte",
+	"prev": "residencial-GaleriaImagem_prev__6zUY2",
+	"ButtonVerticalDown": "residencial-GaleriaImagem_ButtonVerticalDown__12DeU",
+	"next": "residencial-GaleriaImagem_next__kyMk2",
+	"wrapper": "residencial-GaleriaImagem_wrapper__5_m2e",
+	"slideVertical": "residencial-GaleriaImagem_slideVertical__GJlS0",
+	"slide": "residencial-GaleriaImagem_slide___ZuEi",
+	"carouselContainer": "residencial-GaleriaImagem_carouselContainer__aKsfQ",
+	"arrowButton": "residencial-GaleriaImagem_arrowButton__h4uS3",
+	"textContent": "residencial-GaleriaImagem_textContent__8W6RL",
+	"textItem": "residencial-GaleriaImagem_textItem__E5Y7i",
+	"current-item-displayed": "residencial-GaleriaImagem_current-item-displayed__Uy6f5",
+	"pagination": "residencial-GaleriaImagem_pagination__dX2Vo",
+	"contentPg": "residencial-GaleriaImagem_contentPg__9v_8R",
+	"areaTitleTeaserCarrosselCadaSorriso": "residencial-GaleriaImagem_areaTitleTeaserCarrosselCadaSorriso__blW_X",
+	"title": "residencial-GaleriaImagem_title__xBNWi",
+	"description": "residencial-GaleriaImagem_description____J6P"
+};
+
+
+/***/ }),
+
 /***/ 9525:
 /***/ ((module) => {
 
@@ -269,7 +304,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 2041:
+/***/ 8021:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -744,7 +779,8 @@ const layout = ({ children , outContainer , outBottomContainer , residencialLayo
             /*#__PURE__*/ jsx_runtime_.jsx("div", {
                 style: {
                     paddingTop: "5%",
-                    paddingBottom: "5%"
+                    paddingBottom: "5%",
+                    backgroundColor: "#f3f3f3"
                 },
                 children: galeriaImagem
             }),
@@ -769,16 +805,181 @@ const layout = ({ children , outContainer , outBottomContainer , residencialLayo
 };
 /* harmony default export */ const residencialLayout_main = (layout);
 
-// EXTERNAL MODULE: ./_share/components/teaserCarrosselCadaSorriso/teaser-carrossel-cada-sorriso.jsx
-var teaser_carrossel_cada_sorriso = __webpack_require__(7444);
+;// CONCATENATED MODULE: external "react-slick"
+const external_react_slick_namespaceObject = require("react-slick");
+var external_react_slick_default = /*#__PURE__*/__webpack_require__.n(external_react_slick_namespaceObject);
+// EXTERNAL MODULE: ./_share/components/teaserCarrosselBase/index.jsx
+var teaserCarrosselBase = __webpack_require__(6696);
+// EXTERNAL MODULE: ./_share/components/residencialGaleriaImagem/residencial-GaleriaImagem.module.scss
+var residencial_GaleriaImagem_module = __webpack_require__(5756);
+var residencial_GaleriaImagem_module_default = /*#__PURE__*/__webpack_require__.n(residencial_GaleriaImagem_module);
+;// CONCATENATED MODULE: ./_share/components/residencialGaleriaImagem/residencial-GaleriaImagem.jsx
+
+
+
+
+
+
+
+
+
+function TeaserCarrosselCadaSorriso({ homeContent , colors , isMobile , isTeaser ,  }) {
+    const colorTitle = {
+        color: colors.colorFlat
+    };
+    function mappingItemImagesOfArray(homeContent) {
+        const filterItens = homeContent.imagesCarrossel?.filter((item)=>{
+            if (!isTeaser) {
+                if (item.tipo == "secundario") {
+                    return item;
+                }
+                if (item.tipo == "principal") {
+                    return item;
+                }
+            } else {
+                if (item.tipo == "principal") {
+                    return item;
+                }
+            }
+        });
+        const mapArrayImages = filterItens.map((item)=>Envirioment/* ENDPOINT_BASE */.GU + "/" + item.image);
+        return mapArrayImages;
+    }
+    const slides = homeContent.imagesCarrossel;
+    const sliderRef = (0,external_react_.useRef)(null);
+    const settings = {
+        dots: false,
+        infinite: true,
+        vertical: true,
+        verticalSwiping: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        centerMode: true,
+        centerPadding: "0"
+    };
+    const { 0: currentIndex , 1: setCurrentIndex  } = (0,external_react_.useState)(0);
+    const nextSlide = ()=>{
+        setCurrentIndex((prevIndex)=>(prevIndex + 1) % slides.length);
+    };
+    const prevSlide = ()=>{
+        setCurrentIndex((prevIndex)=>(prevIndex - 1 + slides.length) % slides.length);
+    };
+    const handleImageClick = (index)=>{
+        setCurrentIndex(index);
+    };
+    const scrollUp = ()=>{
+        if (sliderRef.current) {
+            sliderRef.current.slickPrev();
+        }
+    };
+    const scrollDown = ()=>{
+        if (sliderRef.current) {
+            sliderRef.current.slickNext();
+        }
+    };
+    const url = Envirioment/* ENDPOINT_BASE */.GU + "/" + slides[currentIndex].image;
+    return /*#__PURE__*/ jsx_runtime_.jsx("section", {
+        className: (residencial_GaleriaImagem_module_default()).areaTeaserCarrosselCadaSorriso,
+        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_bootstrap_.Container, {
+            className: (residencial_GaleriaImagem_module_default()).container,
+            children: [
+                /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Row, {
+                    children: /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Col, {
+                        xs: 12,
+                        children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                            className: (residencial_GaleriaImagem_module_default()).areaTitleTeaserCarrosselCadaSorriso,
+                            children: /*#__PURE__*/ jsx_runtime_.jsx("h2", {
+                                style: colorTitle,
+                                className: (residencial_GaleriaImagem_module_default()).title,
+                                children: homeContent.titleCadaSorriso.toUpperCase()
+                            })
+                        })
+                    })
+                }),
+                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                    className: (residencial_GaleriaImagem_module_default()).wrapper,
+                    children: [
+                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                            className: (residencial_GaleriaImagem_module_default()).carouselContainer,
+                            children: [
+                                /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                    className: `${(residencial_GaleriaImagem_module_default()).arrowButton} ${(residencial_GaleriaImagem_module_default()).prev}`,
+                                    onClick: prevSlide
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                    className: (residencial_GaleriaImagem_module_default()).slide,
+                                    children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
+                                        src: url,
+                                        alt: slides[currentIndex].title
+                                    })
+                                }),
+                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                    className: (residencial_GaleriaImagem_module_default()).textContent,
+                                    children: [
+                                        /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                            className: (residencial_GaleriaImagem_module_default()).textItem,
+                                            children: slides[currentIndex].title
+                                        }),
+                                        /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                            className: (residencial_GaleriaImagem_module_default()).pagination,
+                                            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                                className: (residencial_GaleriaImagem_module_default()).contentPg,
+                                                children: [
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                                                        children: currentIndex + 1
+                                                    }),
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                                                        children: slides.length < 10 ? "0" + slides.length : slides.length
+                                                    })
+                                                ]
+                                            })
+                                        })
+                                    ]
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                    className: `${(residencial_GaleriaImagem_module_default()).arrowButton} ${(residencial_GaleriaImagem_module_default()).next}`,
+                                    onClick: nextSlide
+                                })
+                            ]
+                        }),
+                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                            className: (residencial_GaleriaImagem_module_default()).verticalSliderContainer,
+                            children: [
+                                /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                    className: `${(residencial_GaleriaImagem_module_default()).ButtonVerticalUp} ${(residencial_GaleriaImagem_module_default()).prev}`,
+                                    onClick: scrollUp
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx((external_react_slick_default()), {
+                                    ref: sliderRef,
+                                    ...settings,
+                                    children: slides.map((slide, index)=>/*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                            className: (residencial_GaleriaImagem_module_default()).slideVertical,
+                                            onClick: ()=>handleImageClick(index),
+                                            children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
+                                                src: Envirioment/* ENDPOINT_BASE */.GU + "/" + slide.image,
+                                                alt: slide.title
+                                            })
+                                        }, index))
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                    className: `${(residencial_GaleriaImagem_module_default()).ButtonVerticalDown} ${(residencial_GaleriaImagem_module_default()).next}`,
+                                    onClick: scrollDown
+                                })
+                            ]
+                        })
+                    ]
+                })
+            ]
+        })
+    });
+};
+
 // EXTERNAL MODULE: ./_share/components/teaserCarrosselSimples/teaser-carrossel-simples.jsx + 31 modules
 var teaser_carrossel_simples = __webpack_require__(5298);
 // EXTERNAL MODULE: ./_share/components/teaserSuaSeguranca/teaser-sua-seguranca.jsx
 var teaser_sua_seguranca = __webpack_require__(9123);
 // EXTERNAL MODULE: ./_share/components/teaserVideo/teaser-video.jsx
 var teaser_video = __webpack_require__(7382);
-// EXTERNAL MODULE: ./_share/components/teaserCarrosselBase/index.jsx
-var teaserCarrosselBase = __webpack_require__(6696);
 // EXTERNAL MODULE: ./_share/components/teaserVideoPlayer/teaser-video-player.jsx
 var teaser_video_player = __webpack_require__(4590);
 // EXTERNAL MODULE: ./_share/components/residencialProjetoUrbanistico/residencial-ProjetoUrbanistico.module.scss
@@ -2600,6 +2801,7 @@ var router_ = __webpack_require__(1853);
 
 
 
+
 const TeaserFloatModal = dynamic_default()(null, {
     loadableGenerated: {
         modules: [
@@ -2646,11 +2848,13 @@ const ResidencialPage = ({ homeContent , showAlphaMenu , slugDomPedro , location
                 colors: homeContent.displayColors
             })
         }),
-        galeriaImagem: /*#__PURE__*/ jsx_runtime_.jsx(teaser_carrossel_cada_sorriso/* default */.Z, {
-            isTeaser: true,
-            homeContent: homeContent,
-            isMobile: isMobile,
-            colors: homeContent.displayColors
+        galeriaImagem: /*#__PURE__*/ jsx_runtime_.jsx(jsx_runtime_.Fragment, {
+            children: /*#__PURE__*/ jsx_runtime_.jsx(TeaserCarrosselCadaSorriso, {
+                isTeaser: true,
+                homeContent: homeContent,
+                isMobile: isMobile,
+                colors: homeContent.displayColors
+            })
         }),
         residencialLayout: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
             children: [
@@ -3188,7 +3392,7 @@ module.exports = require("fs");
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [2952,1270,1664,1890,5152,1790,5176,1659,8933,2750,3899,263], () => (__webpack_exec__(2041)));
+var __webpack_exports__ = __webpack_require__.X(0, [2952,1270,1664,1890,5152,1790,5176,1659,8933,2750,3899,3124], () => (__webpack_exec__(8021)));
 module.exports = __webpack_exports__;
 
 })();
