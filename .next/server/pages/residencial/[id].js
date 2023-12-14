@@ -4,6 +4,46 @@ exports.id = 1138;
 exports.ids = [1138];
 exports.modules = {
 
+/***/ 3344:
+/***/ ((module) => {
+
+// Exports
+module.exports = {
+	"areaTeaserCarrosselCadaSorriso": "residencial-AreasVerdes_areaTeaserCarrosselCadaSorriso__TilOW",
+	"container": "residencial-AreasVerdes_container__CO_Ct",
+	"verticalSliderContainer": "residencial-AreasVerdes_verticalSliderContainer__8rac_",
+	"slick-initialized": "residencial-AreasVerdes_slick-initialized__gjYZZ",
+	"slick-slider": "residencial-AreasVerdes_slick-slider__Irx6Q",
+	"slick-arrow": "residencial-AreasVerdes_slick-arrow__EfIOf",
+	"slick-prev": "residencial-AreasVerdes_slick-prev__B2Prk",
+	"slick-next": "residencial-AreasVerdes_slick-next__bzv4S",
+	"ButtonVerticalUp": "residencial-AreasVerdes_ButtonVerticalUp__WhZTZ",
+	"prev": "residencial-AreasVerdes_prev__aERz_",
+	"ButtonVerticalDown": "residencial-AreasVerdes_ButtonVerticalDown__8HYsO",
+	"next": "residencial-AreasVerdes_next__YnilF",
+	"wrapper": "residencial-AreasVerdes_wrapper__x3ebv",
+	"Cabecalho": "residencial-AreasVerdes_Cabecalho__T0WCz",
+	"row": "residencial-AreasVerdes_row__LOS1A",
+	"areaTextEspaco": "residencial-AreasVerdes_areaTextEspaco__a9RJ7",
+	"slideVertical": "residencial-AreasVerdes_slideVertical__9aX5k",
+	"slide": "residencial-AreasVerdes_slide__D3R0C",
+	"carouselContainer": "residencial-AreasVerdes_carouselContainer__ph0z7",
+	"arrowButton": "residencial-AreasVerdes_arrowButton__UFTLE",
+	"zoomExclusivo": "residencial-AreasVerdes_zoomExclusivo__f5X4D",
+	"zoom": "residencial-AreasVerdes_zoom__ZVWrC",
+	"textContent": "residencial-AreasVerdes_textContent__Jp2AI",
+	"textItem": "residencial-AreasVerdes_textItem__YynEG",
+	"current-item-displayed": "residencial-AreasVerdes_current-item-displayed__ioEX1",
+	"pagination": "residencial-AreasVerdes_pagination__ZEYlW",
+	"contentPg": "residencial-AreasVerdes_contentPg__lrb2P",
+	"areaTitleTeaserCarrosselCadaSorriso": "residencial-AreasVerdes_areaTitleTeaserCarrosselCadaSorriso__ZGcBG",
+	"title": "residencial-AreasVerdes_title__VjAhU",
+	"description": "residencial-AreasVerdes_description__AtU3X"
+};
+
+
+/***/ }),
+
 /***/ 2917:
 /***/ ((module) => {
 
@@ -90,6 +130,8 @@ module.exports = {
 	"wrapper": "residencial-GaleriaImagem_wrapper__5_m2e",
 	"slideVertical": "residencial-GaleriaImagem_slideVertical__GJlS0",
 	"slide": "residencial-GaleriaImagem_slide___ZuEi",
+	"zoomExclusivo": "residencial-GaleriaImagem_zoomExclusivo__YleIk",
+	"zoom": "residencial-GaleriaImagem_zoom___ebWC",
 	"carouselContainer": "residencial-GaleriaImagem_carouselContainer__aKsfQ",
 	"arrowButton": "residencial-GaleriaImagem_arrowButton__h4uS3",
 	"textContent": "residencial-GaleriaImagem_textContent__8W6RL",
@@ -304,7 +346,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 8021:
+/***/ 7260:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -877,6 +919,14 @@ function TeaserCarrosselCadaSorriso({ homeContent , colors , isMobile , isTeaser
             sliderRef.current.slickNext();
         }
     };
+    const { 0: showModal , 1: setShowModal  } = (0,external_react_.useState)(false);
+    const handleImageClickZoom = (imageUrl)=>{
+        //setSelectedImageUrl(imageUrl);
+        setShowModal(true);
+    };
+    const closeModal = ()=>{
+        setShowModal(false);
+    };
     const url = Envirioment/* ENDPOINT_BASE */.GU + "/" + slides[currentIndex].image;
     return /*#__PURE__*/ jsx_runtime_.jsx("section", {
         className: (residencial_GaleriaImagem_module_default()).areaTeaserCarrosselCadaSorriso,
@@ -906,12 +956,39 @@ function TeaserCarrosselCadaSorriso({ homeContent , colors , isMobile , isTeaser
                                     className: `${(residencial_GaleriaImagem_module_default()).arrowButton} ${(residencial_GaleriaImagem_module_default()).prev}`,
                                     onClick: prevSlide
                                 }),
-                                /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                                     className: (residencial_GaleriaImagem_module_default()).slide,
-                                    children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
-                                        src: url,
-                                        alt: slides[currentIndex].title
-                                    })
+                                    children: [
+                                        /*#__PURE__*/ jsx_runtime_.jsx("img", {
+                                            src: url,
+                                            alt: slides[currentIndex].title
+                                        }),
+                                        /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                            className: (residencial_GaleriaImagem_module_default()).zoomExclusivo,
+                                            href: "#zoom",
+                                            onClick: ()=>handleImageClickZoom(url)
+                                        }),
+                                        /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Modal, {
+                                            show: showModal,
+                                            onHide: closeModal,
+                                            dialogClassName: (residencial_GaleriaImagem_module_default()).modalCustom,
+                                            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_bootstrap_.Modal.Body, {
+                                                className: (residencial_GaleriaImagem_module_default()).modalContent,
+                                                children: [
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("img", {
+                                                        src: url,
+                                                        alt: "Urban\xedstico",
+                                                        className: (residencial_GaleriaImagem_module_default()).modalImage
+                                                    }),
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                                        className: (residencial_GaleriaImagem_module_default()).BodyplantaLightboxClose,
+                                                        href: "#",
+                                                        onClick: closeModal
+                                                    })
+                                                ]
+                                            })
+                                        })
+                                    ]
                                 }),
                                 /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                                     className: (residencial_GaleriaImagem_module_default()).textContent,
@@ -1432,11 +1509,11 @@ function residencial_PlantaConceitual_ProjetoUrbanistico({ homeContent , colors 
                                     children: [
                                         /*#__PURE__*/ jsx_runtime_.jsx("button", {
                                             onClick: ()=>mostrarConteudo("urbanistico"),
-                                            children: "Projeto Urban\xedstico"
+                                            children: "PROJETO URBAN\xcdSTICO"
                                         }),
                                         /*#__PURE__*/ jsx_runtime_.jsx("button", {
                                             onClick: ()=>mostrarConteudo("lazer"),
-                                            children: "\xc1rea de Lazer"
+                                            children: "\xc1REA DE LAZER"
                                         })
                                     ]
                                 }),
@@ -2762,6 +2839,144 @@ class Oferts extends external_react_.Component {
     }
 };
 
+// EXTERNAL MODULE: ./_share/components/residencialAreasVerdes/residencial-AreasVerdes.module.scss
+var residencial_AreasVerdes_module = __webpack_require__(3344);
+var residencial_AreasVerdes_module_default = /*#__PURE__*/__webpack_require__.n(residencial_AreasVerdes_module);
+;// CONCATENATED MODULE: ./_share/components/residencialAreasVerdes/residencial-AreasVerdes.jsx
+
+
+
+
+
+
+
+
+
+function residencial_AreasVerdes_TeaserCarrosselCadaSorriso({ homeContent , colors , isMobile , isTeaser ,  }) {
+    const colorTitle = {
+        color: colors.colorFlat
+    };
+    const title = homeContent.greenArsTitle;
+    const greenArsDescription = homeContent.greenArsDescription;
+    const areasVerdes = homeContent.areasVerdes;
+    const { 0: currentIndex , 1: setCurrentIndex  } = (0,external_react_.useState)(0);
+    const nextSlide = ()=>{
+        setCurrentIndex((prevIndex)=>(prevIndex + 1) % areasVerdes.length);
+    };
+    const prevSlide = ()=>{
+        setCurrentIndex((prevIndex)=>(prevIndex - 1 + areasVerdes.length) % areasVerdes.length);
+    };
+    const { 0: showModal , 1: setShowModal  } = (0,external_react_.useState)(false);
+    const url = Envirioment/* ENDPOINT_BASE */.GU + "/" + areasVerdes[currentIndex].image;
+    const handleImageClick = (imageUrl)=>{
+        //setSelectedImageUrl(imageUrl);
+        setShowModal(true);
+    };
+    const closeModal = ()=>{
+        setShowModal(false);
+    };
+    return /*#__PURE__*/ jsx_runtime_.jsx("section", {
+        className: (residencial_AreasVerdes_module_default()).areaTeaserCarrosselCadaSorriso,
+        children: /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Container, {
+            className: (residencial_AreasVerdes_module_default()).container,
+            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                className: (residencial_AreasVerdes_module_default()).wrapper,
+                children: [
+                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                        className: (residencial_AreasVerdes_module_default()).Cabecalho,
+                        children: /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Row, {
+                            className: (residencial_AreasVerdes_module_default()).row,
+                            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                className: (residencial_AreasVerdes_module_default()).areaTextEspaco,
+                                children: [
+                                    /*#__PURE__*/ jsx_runtime_.jsx("h3", {
+                                        children: title
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                        dangerouslySetInnerHTML: {
+                                            __html: greenArsDescription
+                                        }
+                                    })
+                                ]
+                            })
+                        })
+                    }),
+                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                        className: (residencial_AreasVerdes_module_default()).carouselContainer,
+                        children: [
+                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                className: `${(residencial_AreasVerdes_module_default()).arrowButton} ${(residencial_AreasVerdes_module_default()).prev}`,
+                                onClick: prevSlide
+                            }),
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                className: (residencial_AreasVerdes_module_default()).slide,
+                                children: [
+                                    /*#__PURE__*/ jsx_runtime_.jsx("img", {
+                                        src: url,
+                                        alt: areasVerdes[currentIndex].title_area_verde
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                        className: (residencial_AreasVerdes_module_default()).zoomExclusivo,
+                                        href: "#zoom",
+                                        onClick: ()=>handleImageClick(url)
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Modal, {
+                                        show: showModal,
+                                        onHide: closeModal,
+                                        dialogClassName: (residencial_AreasVerdes_module_default()).modalCustom,
+                                        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_bootstrap_.Modal.Body, {
+                                            className: (residencial_AreasVerdes_module_default()).modalContent,
+                                            children: [
+                                                /*#__PURE__*/ jsx_runtime_.jsx("img", {
+                                                    src: url,
+                                                    alt: "Urban\xedstico",
+                                                    className: (residencial_AreasVerdes_module_default()).modalImage
+                                                }),
+                                                /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                                    className: (residencial_AreasVerdes_module_default()).BodyplantaLightboxClose,
+                                                    href: "#",
+                                                    onClick: closeModal
+                                                })
+                                            ]
+                                        })
+                                    })
+                                ]
+                            }),
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                className: (residencial_AreasVerdes_module_default()).textContent,
+                                children: [
+                                    /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                        className: (residencial_AreasVerdes_module_default()).textItem,
+                                        children: areasVerdes[currentIndex].title_area_verde
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                        className: (residencial_AreasVerdes_module_default()).pagination,
+                                        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                            className: (residencial_AreasVerdes_module_default()).contentPg,
+                                            children: [
+                                                /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                                                    children: currentIndex + 1 < 10 ? "0" + (currentIndex + 1) : currentIndex + 1
+                                                }),
+                                                /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                                                    children: areasVerdes.length < 10 ? "0" + areasVerdes.length : areasVerdes.length
+                                                })
+                                            ]
+                                        })
+                                    })
+                                ]
+                            }),
+                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                className: `${(residencial_AreasVerdes_module_default()).arrowButton} ${(residencial_AreasVerdes_module_default()).next}`,
+                                onClick: nextSlide
+                            })
+                        ]
+                    })
+                ]
+            })
+        })
+    });
+};
+
 // EXTERNAL MODULE: ./_share/service/search.js
 var service_search = __webpack_require__(398);
 // EXTERNAL MODULE: ./_share/service/home.js
@@ -2774,6 +2989,7 @@ var teaser_map = __webpack_require__(8244);
 // EXTERNAL MODULE: external "next/router"
 var router_ = __webpack_require__(1853);
 ;// CONCATENATED MODULE: ./pages/residencial/[id]/index.jsx
+
 
 
 
@@ -2862,6 +3078,12 @@ const ResidencialPage = ({ homeContent , showAlphaMenu , slugDomPedro , location
                     homeContent: homeContent,
                     colors: homeContent.displayColors,
                     isMobile: isMobile
+                }),
+                /*#__PURE__*/ jsx_runtime_.jsx(residencial_AreasVerdes_TeaserCarrosselCadaSorriso, {
+                    isTeaser: true,
+                    homeContent: homeContent,
+                    isMobile: isMobile,
+                    colors: homeContent.displayColors
                 }),
                 /*#__PURE__*/ jsx_runtime_.jsx(residencial_LocalizacaoEstrategica, {
                     homeContent: homeContent,
@@ -3392,7 +3614,7 @@ module.exports = require("fs");
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [2952,1270,1664,1890,5152,1790,5176,1659,8933,2750,3899,3124], () => (__webpack_exec__(8021)));
+var __webpack_exports__ = __webpack_require__.X(0, [2952,1270,1664,1890,5152,1790,5176,1659,8933,2750,3899,3124], () => (__webpack_exec__(7260)));
 module.exports = __webpack_exports__;
 
 })();

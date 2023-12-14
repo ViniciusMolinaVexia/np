@@ -119,6 +119,9 @@ class EnterpriseModel {
         this.tour360 = data.empreendimento.tour_360;
         this.out_emp_description = data.empreendimento.out_emp_description;
         this.plantaDetalhes = data.planta_detalhes;
+        this.greenArsTitle = data.empreendimento.green_ars_title;
+        this.greenArsDescription = data.empreendimento.green_ars_description;
+        this.areasVerdes = data.areas_verdes;
         this.typeId = {
             id: data.empreendimento.type_id,
             title: this.getTypeIdTitle(data.empreendimento.type_id)
