@@ -97,6 +97,7 @@ class EnterpriseModel {
         this.areaDeLazer = data.area_lazer;
         this.titleConceito = data.empreendimento.atm_title;
         this.descricaoConceito = data.empreendimento.atm_description;
+        this.Area = data.empreendimento.prj_ubnt_itens_area_first;
         this.Metros = data.empreendimento.prj_ubnt_itens_area_second;
         this.Verdes = data.empreendimento.prj_ubnt_itens_area_third;
         this.Terreno = data.empreendimento.prj_ubnt_itens_area_fourth;

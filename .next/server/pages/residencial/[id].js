@@ -285,9 +285,10 @@ module.exports = {
 	"areaTeaserVideo": "residencial-ProjetoUrbanistico_areaTeaserVideo__dDW4N",
 	"containerIcon": "residencial-ProjetoUrbanistico_containerIcon__Z7wqN",
 	"produtoEspecificacao": "residencial-ProjetoUrbanistico_produtoEspecificacao__9xSvz",
+	"Row": "residencial-ProjetoUrbanistico_Row__1lnjp",
 	"especificacaoMetros": "residencial-ProjetoUrbanistico_especificacaoMetros__oM6aw",
-	"especificacaoSubtxt": "residencial-ProjetoUrbanistico_especificacaoSubtxt__gc09_",
 	"line": "residencial-ProjetoUrbanistico_line__9608D",
+	"especificacaoSubtxt": "residencial-ProjetoUrbanistico_especificacaoSubtxt__gc09_",
 	"iconPin": "residencial-ProjetoUrbanistico_iconPin__cY0iR",
 	"iconHome": "residencial-ProjetoUrbanistico_iconHome__mzfPd",
 	"iconTree": "residencial-ProjetoUrbanistico_iconTree__NykSa",
@@ -297,8 +298,7 @@ module.exports = {
 	"ConteudoTitle": "residencial-ProjetoUrbanistico_ConteudoTitle__Ky_6I",
 	"produtoTitle": "residencial-ProjetoUrbanistico_produtoTitle__ZxYrZ",
 	"produtoSubProjeto": "residencial-ProjetoUrbanistico_produtoSubProjeto__hHW0k",
-	"imgProdutoProjeto": "residencial-ProjetoUrbanistico_imgProdutoProjeto__auhhN",
-	"iconSwim": "residencial-ProjetoUrbanistico_iconSwim__pb6Bu"
+	"imgProdutoProjeto": "residencial-ProjetoUrbanistico_imgProdutoProjeto__auhhN"
 };
 
 
@@ -1083,6 +1083,9 @@ function ProjetoUrbanistico({ homeContent , colors , isMobile , isTeaser  }) {
     const Metros = homeContent.Metros;
     const Terreno = homeContent.Terreno;
     const unidatesTerreno = homeContent.unidatesTerreno;
+    const Id = homeContent.typeId.id;
+    const Area = homeContent.Area;
+    const IdEmp = homeContent.id;
     return /*#__PURE__*/ jsx_runtime_.jsx("section", {
         className: `${(residencial_ProjetoUrbanistico_module_default()).areaTeaserVideoJardimAlpha}`,
         children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
@@ -1122,95 +1125,110 @@ function ProjetoUrbanistico({ homeContent , colors , isMobile , isTeaser  }) {
                         ]
                     })
                 }),
-                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                /*#__PURE__*/ jsx_runtime_.jsx("div", {
                     className: (residencial_ProjetoUrbanistico_module_default()).containerIcon,
-                    children: [
-                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                            className: `${(residencial_ProjetoUrbanistico_module_default()).produtoEspecificacao}` + " col-xs-12",
-                            children: [
-                                /*#__PURE__*/ jsx_runtime_.jsx("i", {
-                                    className: `${(residencial_ProjetoUrbanistico_module_default()).iconHome}` + " col-xs-4"
-                                }),
-                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                    className: "col-xs-8",
-                                    children: [
-                                        /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                            className: (residencial_ProjetoUrbanistico_module_default()).especificacaoMetros,
-                                            children: Metros
-                                        }),
-                                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
-                                            "ng-show": "prmConteudo.type.id == 1 && prmConteudo.empreendimento.id != 1179",
-                                            className: (residencial_ProjetoUrbanistico_module_default()).especificacaoSubtxt,
+                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_bootstrap_.Row, {
+                        className: (residencial_ProjetoUrbanistico_module_default()).Row,
+                        children: [
+                            Area !== null && Area.length > 0 && /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                className: `${(residencial_ProjetoUrbanistico_module_default()).produtoEspecificacao}` + " col-xs-12",
+                                children: [
+                                    /*#__PURE__*/ jsx_runtime_.jsx("i", {
+                                        className: `${(residencial_ProjetoUrbanistico_module_default()).iconPin}` + " col-xs-4"
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                        className: "col-xs-8",
+                                        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
                                             children: [
-                                                "de \xe1rea media nos lotes das ",
-                                                /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                                                    dangerouslySetInnerHTML: {
-                                                        __html: unidatesTerreno
-                                                    }
+                                                /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                    className: (residencial_ProjetoUrbanistico_module_default()).especificacaoMetros,
+                                                    children: Area
                                                 }),
-                                                " unidades"
+                                                /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                    className: (residencial_ProjetoUrbanistico_module_default()).especificacaoSubtxt,
+                                                    children: Id == 1 ? "\xe1rea do empreendimento" : Id == 2 ? "\xe1rea total da Cidade Alpha" : ""
+                                                }),
+                                                /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                                                    className: (residencial_ProjetoUrbanistico_module_default()).line
+                                                })
                                             ]
-                                        }),
-                                        /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                                            className: (residencial_ProjetoUrbanistico_module_default()).line
                                         })
-                                    ]
-                                })
-                            ]
-                        }),
-                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                            className: `${(residencial_ProjetoUrbanistico_module_default()).produtoEspecificacao}` + " col-xs-12",
-                            "ng-if": "!prmRegua",
-                            children: [
-                                /*#__PURE__*/ jsx_runtime_.jsx("i", {
-                                    className: `${(residencial_ProjetoUrbanistico_module_default()).iconTree}` + " col-xs-4"
-                                }),
-                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                    className: "col-xs-8",
-                                    children: [
-                                        /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                            className: (residencial_ProjetoUrbanistico_module_default()).especificacaoMetros,
-                                            children: Verdes
-                                        }),
-                                        /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                            "ng-show": "prmConteudo.type.id == 1",
-                                            className: (residencial_ProjetoUrbanistico_module_default()).especificacaoSubtxt,
-                                            children: "de \xe1reas verdes"
-                                        }),
-                                        /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                                            className: (residencial_ProjetoUrbanistico_module_default()).line
-                                        })
-                                    ]
-                                })
-                            ]
-                        }),
-                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                            className: `${(residencial_ProjetoUrbanistico_module_default()).produtoEspecificacao}` + " col-xs-12",
-                            "ng-if": "!prmRegua",
-                            children: [
-                                /*#__PURE__*/ jsx_runtime_.jsx("i", {
-                                    className: `${(residencial_ProjetoUrbanistico_module_default()).iconSwin}` + " col-xs-4"
-                                }),
-                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                    className: "col-xs-8",
-                                    children: [
-                                        /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                            className: (residencial_ProjetoUrbanistico_module_default()).especificacaoMetros,
-                                            children: Terreno
-                                        }),
-                                        /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                            "ng-show": "prmConteudo.type.id == 1",
-                                            className: (residencial_ProjetoUrbanistico_module_default()).especificacaoSubtxt,
-                                            children: "\xe1rea do terreno do clube"
-                                        }),
-                                        /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                                            className: (residencial_ProjetoUrbanistico_module_default()).line
-                                        })
-                                    ]
-                                })
-                            ]
-                        })
-                    ]
+                                    })
+                                ]
+                            }),
+                            Metros !== null && Metros.length > 0 && /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                className: `${(residencial_ProjetoUrbanistico_module_default()).produtoEspecificacao}` + " col-xs-12",
+                                children: [
+                                    /*#__PURE__*/ jsx_runtime_.jsx("i", {
+                                        className: `${(residencial_ProjetoUrbanistico_module_default()).iconHome}` + " col-xs-4"
+                                    }),
+                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                        className: "col-xs-8",
+                                        children: [
+                                            /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                className: (residencial_ProjetoUrbanistico_module_default()).especificacaoMetros,
+                                                children: Metros
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                className: (residencial_ProjetoUrbanistico_module_default()).especificacaoSubtxt,
+                                                children: Id == 1 && IdEmp != 1179 ? `de área média nos lotes das ${unidatesTerreno} unidades` : Id == 1 && IdEmp == 1179 ? `de área mínima dos lotes das ${unidatesTerreno} unidades` : Id == 2 ? "habitantes previstos" : ""
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                                                className: (residencial_ProjetoUrbanistico_module_default()).line
+                                            })
+                                        ]
+                                    })
+                                ]
+                            }),
+                            Verdes !== null && Verdes.length > 0 && /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                className: `${(residencial_ProjetoUrbanistico_module_default()).produtoEspecificacao}` + " col-xs-12",
+                                "ng-if": "!prmRegua",
+                                children: [
+                                    /*#__PURE__*/ jsx_runtime_.jsx("i", {
+                                        className: `${(residencial_ProjetoUrbanistico_module_default()).iconTree}` + " col-xs-4"
+                                    }),
+                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                        className: "col-xs-8",
+                                        children: [
+                                            /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                className: (residencial_ProjetoUrbanistico_module_default()).especificacaoMetros,
+                                                children: Verdes
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                className: (residencial_ProjetoUrbanistico_module_default()).especificacaoSubtxt,
+                                                children: Id == 1 ? "de \xe1reas verdes" : Id == 2 ? "totais de \xe1reas verdes" : ""
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                                                className: (residencial_ProjetoUrbanistico_module_default()).line
+                                            })
+                                        ]
+                                    })
+                                ]
+                            }),
+                            Terreno !== null && Terreno.length > 0 && /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                className: `${(residencial_ProjetoUrbanistico_module_default()).produtoEspecificacao}` + " col-xs-12",
+                                "ng-if": "!prmRegua",
+                                children: [
+                                    /*#__PURE__*/ jsx_runtime_.jsx("i", {
+                                        className: `${(residencial_ProjetoUrbanistico_module_default()).iconSwin}` + " col-xs-4"
+                                    }),
+                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                        className: "col-xs-8",
+                                        children: [
+                                            /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                className: (residencial_ProjetoUrbanistico_module_default()).especificacaoMetros,
+                                                children: Terreno
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                className: (residencial_ProjetoUrbanistico_module_default()).especificacaoSubtxt,
+                                                children: Id == 1 ? "\xe1rea do terreno do clube" : Id == 2 ? "lojas, com\xe9rcios e servi\xe7os" : ""
+                                            })
+                                        ]
+                                    })
+                                ]
+                            })
+                        ]
+                    })
                 })
             ]
         })
