@@ -285,10 +285,9 @@ module.exports = {
 	"areaTeaserVideo": "residencial-ProjetoUrbanistico_areaTeaserVideo__dDW4N",
 	"containerIcon": "residencial-ProjetoUrbanistico_containerIcon__Z7wqN",
 	"produtoEspecificacao": "residencial-ProjetoUrbanistico_produtoEspecificacao__9xSvz",
-	"Row": "residencial-ProjetoUrbanistico_Row__1lnjp",
 	"especificacaoMetros": "residencial-ProjetoUrbanistico_especificacaoMetros__oM6aw",
-	"line": "residencial-ProjetoUrbanistico_line__9608D",
 	"especificacaoSubtxt": "residencial-ProjetoUrbanistico_especificacaoSubtxt__gc09_",
+	"line": "residencial-ProjetoUrbanistico_line__9608D",
 	"iconPin": "residencial-ProjetoUrbanistico_iconPin__cY0iR",
 	"iconHome": "residencial-ProjetoUrbanistico_iconHome__mzfPd",
 	"iconTree": "residencial-ProjetoUrbanistico_iconTree__NykSa",
@@ -298,6 +297,7 @@ module.exports = {
 	"ConteudoTitle": "residencial-ProjetoUrbanistico_ConteudoTitle__Ky_6I",
 	"produtoTitle": "residencial-ProjetoUrbanistico_produtoTitle__ZxYrZ",
 	"produtoSubProjeto": "residencial-ProjetoUrbanistico_produtoSubProjeto__hHW0k",
+	"iconSwim": "residencial-ProjetoUrbanistico_iconSwim__pb6Bu",
 	"imgProdutoProjeto": "residencial-ProjetoUrbanistico_imgProdutoProjeto__auhhN"
 };
 
@@ -1115,7 +1115,7 @@ function ProjetoUrbanistico({ homeContent , colors , isMobile , isTeaser  }) {
                                 ]
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                className: `col-xs-6`,
+                                className: `${(residencial_ProjetoUrbanistico_module_default()).imgProdutoProjeto}`,
                                 children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
                                     className: `${(residencial_ProjetoUrbanistico_module_default()).imgProdutoProjeto}`,
                                     src: url,
@@ -1807,7 +1807,10 @@ function residencial_Conceito_ProjetoUrbanistico({ homeContent , colors , isMobi
 // EXTERNAL MODULE: ./_share/components/residencialSeguranca/residencial-Seguranca.module.scss
 var residencial_Seguranca_module = __webpack_require__(7872);
 var residencial_Seguranca_module_default = /*#__PURE__*/__webpack_require__.n(residencial_Seguranca_module);
+// EXTERNAL MODULE: external "react-bootstrap/Accordion"
+var Accordion_ = __webpack_require__(2423);
 ;// CONCATENATED MODULE: ./_share/components/residencialSeguranca/residencial-Seguranca.jsx
+
 
 
 
@@ -2577,6 +2580,7 @@ var Row_default = /*#__PURE__*/__webpack_require__.n(Row_);
 var external_react_id_swiper_ = __webpack_require__(4967);
 var external_react_id_swiper_default = /*#__PURE__*/__webpack_require__.n(external_react_id_swiper_);
 ;// CONCATENATED MODULE: ./_share/components/residencialOutrosEmpreendimentos/residencial-OutrosEmpreendimentos.jsx
+
 
 
 
