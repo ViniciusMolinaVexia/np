@@ -29,6 +29,7 @@ module.exports = {
 	"slide": "residencial-AreasVerdes_slide__D3R0C",
 	"carouselContainer": "residencial-AreasVerdes_carouselContainer__ph0z7",
 	"arrowButton": "residencial-AreasVerdes_arrowButton__UFTLE",
+	"plantaLightboxClose": "residencial-AreasVerdes_plantaLightboxClose__wJFmR",
 	"zoomExclusivo": "residencial-AreasVerdes_zoomExclusivo__f5X4D",
 	"zoom": "residencial-AreasVerdes_zoom__ZVWrC",
 	"textContent": "residencial-AreasVerdes_textContent__Jp2AI",
@@ -285,9 +286,10 @@ module.exports = {
 	"areaTeaserVideo": "residencial-ProjetoUrbanistico_areaTeaserVideo__dDW4N",
 	"containerIcon": "residencial-ProjetoUrbanistico_containerIcon__Z7wqN",
 	"produtoEspecificacao": "residencial-ProjetoUrbanistico_produtoEspecificacao__9xSvz",
+	"Row": "residencial-ProjetoUrbanistico_Row__1lnjp",
 	"especificacaoMetros": "residencial-ProjetoUrbanistico_especificacaoMetros__oM6aw",
-	"especificacaoSubtxt": "residencial-ProjetoUrbanistico_especificacaoSubtxt__gc09_",
 	"line": "residencial-ProjetoUrbanistico_line__9608D",
+	"especificacaoSubtxt": "residencial-ProjetoUrbanistico_especificacaoSubtxt__gc09_",
 	"iconPin": "residencial-ProjetoUrbanistico_iconPin__cY0iR",
 	"iconHome": "residencial-ProjetoUrbanistico_iconHome__mzfPd",
 	"iconTree": "residencial-ProjetoUrbanistico_iconTree__NykSa",
@@ -297,7 +299,6 @@ module.exports = {
 	"ConteudoTitle": "residencial-ProjetoUrbanistico_ConteudoTitle__Ky_6I",
 	"produtoTitle": "residencial-ProjetoUrbanistico_produtoTitle__ZxYrZ",
 	"produtoSubProjeto": "residencial-ProjetoUrbanistico_produtoSubProjeto__hHW0k",
-	"iconSwim": "residencial-ProjetoUrbanistico_iconSwim__pb6Bu",
 	"imgProdutoProjeto": "residencial-ProjetoUrbanistico_imgProdutoProjeto__auhhN"
 };
 
@@ -974,11 +975,20 @@ function TeaserCarrosselCadaSorriso({ homeContent , colors , isMobile , isTeaser
                                             dialogClassName: (residencial_GaleriaImagem_module_default()).modalCustom,
                                             children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_bootstrap_.Modal.Body, {
                                                 className: (residencial_GaleriaImagem_module_default()).modalContent,
+                                                style: {
+                                                    position: "fixed",
+                                                    top: "50%",
+                                                    left: "50%",
+                                                    transform: "translate(-50%, -50%)"
+                                                },
                                                 children: [
                                                     /*#__PURE__*/ jsx_runtime_.jsx("img", {
                                                         src: url,
                                                         alt: "Urban\xedstico",
-                                                        className: (residencial_GaleriaImagem_module_default()).modalImage
+                                                        className: (residencial_GaleriaImagem_module_default()).modalImage,
+                                                        style: {
+                                                            border: "3px solid white"
+                                                        }
                                                     }),
                                                     /*#__PURE__*/ jsx_runtime_.jsx("a", {
                                                         className: (residencial_GaleriaImagem_module_default()).BodyplantaLightboxClose,
@@ -1115,7 +1125,7 @@ function ProjetoUrbanistico({ homeContent , colors , isMobile , isTeaser  }) {
                                 ]
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                className: `${(residencial_ProjetoUrbanistico_module_default()).imgProdutoProjeto}`,
+                                className: `col-xs-6`,
                                 children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
                                     className: `${(residencial_ProjetoUrbanistico_module_default()).imgProdutoProjeto}`,
                                     src: url,
@@ -1255,7 +1265,10 @@ const ZoomableImage = ({ imageUrl  })=>{
         children: /*#__PURE__*/ jsx_runtime_.jsx(external_react_zoom_pan_pinch_namespaceObject.TransformComponent, {
             children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
                 src: imageUrl,
-                alt: "Zoomable"
+                alt: "Zoomable",
+                style: {
+                    border: "3px solid white"
+                }
             })
         })
     });
@@ -1668,6 +1681,12 @@ function residencial_PlantaConceitual_ProjetoUrbanistico({ homeContent , colors 
                                         dialogClassName: (residencial_PlantaConceitual_module_default()).modalCustom,
                                         children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_bootstrap_.Modal.Body, {
                                             className: (residencial_PlantaConceitual_module_default()).modalContent,
+                                            style: {
+                                                position: "fixed",
+                                                top: "50%",
+                                                left: "50%",
+                                                transform: "translate(-50%, -50%)"
+                                            },
                                             children: [
                                                 /*#__PURE__*/ jsx_runtime_.jsx(residencial_Zoom, {
                                                     imageUrl: urlUrbanistico
@@ -1705,6 +1724,12 @@ function residencial_PlantaConceitual_ProjetoUrbanistico({ homeContent , colors 
                                         dialogClassName: (residencial_PlantaConceitual_module_default()).modalCustom,
                                         children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_bootstrap_.Modal.Body, {
                                             className: (residencial_PlantaConceitual_module_default()).modalContent,
+                                            style: {
+                                                position: "fixed",
+                                                top: "50%",
+                                                left: "50%",
+                                                transform: "translate(-50%, -50%)"
+                                            },
                                             children: [
                                                 /*#__PURE__*/ jsx_runtime_.jsx(residencial_Zoom, {
                                                     imageUrl: urlLazer
@@ -1807,10 +1832,7 @@ function residencial_Conceito_ProjetoUrbanistico({ homeContent , colors , isMobi
 // EXTERNAL MODULE: ./_share/components/residencialSeguranca/residencial-Seguranca.module.scss
 var residencial_Seguranca_module = __webpack_require__(7872);
 var residencial_Seguranca_module_default = /*#__PURE__*/__webpack_require__.n(residencial_Seguranca_module);
-// EXTERNAL MODULE: external "react-bootstrap/Accordion"
-var Accordion_ = __webpack_require__(2423);
 ;// CONCATENATED MODULE: ./_share/components/residencialSeguranca/residencial-Seguranca.jsx
-
 
 
 
@@ -2591,7 +2613,6 @@ var external_react_id_swiper_default = /*#__PURE__*/__webpack_require__.n(extern
 
 
 
-
 // import './oferts.scss';
 class Oferts extends external_react_.Component {
     constructor(props){
@@ -2948,11 +2969,24 @@ function residencial_AreasVerdes_TeaserCarrosselCadaSorriso({ homeContent , colo
                                         dialogClassName: (residencial_AreasVerdes_module_default()).modalCustom,
                                         children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_bootstrap_.Modal.Body, {
                                             className: (residencial_AreasVerdes_module_default()).modalContent,
+                                            style: {
+                                                position: "fixed",
+                                                top: "50%",
+                                                left: "50%",
+                                                transform: "translate(-50%, -50%)"
+                                            },
                                             children: [
                                                 /*#__PURE__*/ jsx_runtime_.jsx("img", {
                                                     src: url,
                                                     alt: "Urban\xedstico",
-                                                    className: (residencial_AreasVerdes_module_default()).modalImage
+                                                    className: (residencial_AreasVerdes_module_default()).modalImage,
+                                                    style: {
+                                                        border: "3px solid white"
+                                                    }
+                                                }),
+                                                /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                                    className: (residencial_AreasVerdes_module_default()).plantaLightboxClose,
+                                                    href: "#planta"
                                                 }),
                                                 /*#__PURE__*/ jsx_runtime_.jsx("a", {
                                                     className: (residencial_AreasVerdes_module_default()).BodyplantaLightboxClose,
