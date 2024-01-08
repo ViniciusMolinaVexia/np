@@ -208,6 +208,7 @@ module.exports = {
 	"container": "residencial-PlantaConceitual_container__icrfQ",
 	"escolhaConteudo": "residencial-PlantaConceitual_escolhaConteudo__s3kTE",
 	"ZoomImage": "residencial-PlantaConceitual_ZoomImage__KWazB",
+	"ZoomImageLazer": "residencial-PlantaConceitual_ZoomImageLazer__AePgB",
 	"modalCustom": "residencial-PlantaConceitual_modalCustom__45_DI",
 	"plantaLightboxClose": "residencial-PlantaConceitual_plantaLightboxClose__Uyv6S",
 	"modalContent": "residencial-PlantaConceitual_modalContent__1Kk4F",
@@ -1747,7 +1748,7 @@ function residencial_PlantaConceitual_ProjetoUrbanistico({ homeContent , colors 
                                         })
                                     }),
                                     /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                        className: (residencial_PlantaConceitual_module_default()).ZoomImage,
+                                        className: (residencial_PlantaConceitual_module_default()).ZoomImageLazer,
                                         href: "#",
                                         onClick: ()=>handleImageClick(urlLazer)
                                     })
