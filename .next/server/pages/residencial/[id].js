@@ -2701,6 +2701,11 @@ class Oferts extends external_react_.Component {
                     })
                 }),
                 /*#__PURE__*/ jsx_runtime_.jsx((Row_default()), {
+                    style: {
+                        display: "flex",
+                        flexWrap: "wrap",
+                        marginLeft: "0px"
+                    },
                     children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
                         style: {
                             width: this.state.width + "px"
@@ -2866,12 +2871,9 @@ class Oferts extends external_react_.Component {
         if (this.props.prmContainer) sectionClasses.push("container");
         if (this.props.prmNostand) sectionClasses.push("no-stand");
         if (this.props.prmItems && this.props.prmItems.length > this.props.prmMin) {
-            return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("section", {
+            return /*#__PURE__*/ jsx_runtime_.jsx("section", {
                 className: sectionClasses.join(" "),
-                children: [
-                    htmMobile,
-                    htmlDesktop
-                ]
+                children: this.state.isMobile ? htmMobile : htmlDesktop
             });
         } else {
             return /*#__PURE__*/ jsx_runtime_.jsx("section", {
