@@ -81,6 +81,7 @@ module.exports = {
 	"logoAlphaCasas0": "residencialBanner_logoAlphaCasas0__tc3yw",
 	"bannerBaseContent": "residencialBanner_bannerBaseContent__3wZje",
 	"bannerTitleContainer": "residencialBanner_bannerTitleContainer___tGp6",
+	"p": "residencialBanner_p__R3eCj",
 	"bannerTitle": "residencialBanner_bannerTitle__WE980",
 	"EmpreendimentosTitle": "residencialBanner_EmpreendimentosTitle__dG0y0",
 	"bannerSubtitle": "residencialBanner_bannerSubtitle__H5z8w",
@@ -124,6 +125,9 @@ module.exports = {
 	"slick-arrow": "residencial-GaleriaImagem_slick-arrow__OKIJE",
 	"slick-prev": "residencial-GaleriaImagem_slick-prev__t_hG4",
 	"slick-next": "residencial-GaleriaImagem_slick-next__0V_AX",
+	"button": "residencial-GaleriaImagem_button__bhIVE",
+	"slick": "residencial-GaleriaImagem_slick___XMna",
+	"arrow": "residencial-GaleriaImagem_arrow__psBr7",
 	"ButtonVerticalUp": "residencial-GaleriaImagem_ButtonVerticalUp__deCte",
 	"prev": "residencial-GaleriaImagem_prev__6zUY2",
 	"ButtonVerticalDown": "residencial-GaleriaImagem_ButtonVerticalDown__12DeU",
@@ -2168,7 +2172,7 @@ var residencial_residencial_ProdutoInteresse_module_default = /*#__PURE__*/__web
 
 
 
-const FormSaibaMais = ({ setNameFormulario , colors , homeContent , isTeaser ,  })=>{
+const FormSaibaMais = ({ setNameFormulario , colors , homeContent , isTeaser , isMobile ,  })=>{
     const { 0: adicionalCellPhoneError , 1: setAdicionalCellPhoneError  } = (0,external_react_.useState)(false);
     const { 0: enterprises , 1: setEnterprises  } = (0,external_react_.useState)([]);
     const { 0: sendSuccess , 1: setSendSuccess  } = (0,external_react_.useState)(null);
@@ -2243,7 +2247,7 @@ const FormSaibaMais = ({ setNameFormulario , colors , homeContent , isTeaser ,  
                 }),
                 /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Row, {
                     className: (residencial_residencial_ProdutoInteresse_module_default()).areaConteudo,
-                    children: /*#__PURE__*/ jsx_runtime_.jsx(external_formik_.Formik, {
+                    children: !isMobile && /*#__PURE__*/ jsx_runtime_.jsx(external_formik_.Formik, {
                         initialValues: {
                             name: "",
                             email: "",
@@ -3130,40 +3134,42 @@ const ResidencialPage = ({ homeContent , showAlphaMenu , slugDomPedro , location
         }),
         residencialLayout: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
             children: [
-                /*#__PURE__*/ jsx_runtime_.jsx(residencial_AutoGestao, {
+                isMobile == false ? /*#__PURE__*/ jsx_runtime_.jsx(residencial_AutoGestao, {
                     homeContent: homeContent,
                     colors: homeContent.displayColors,
                     isMobile: isMobile
-                }),
-                /*#__PURE__*/ jsx_runtime_.jsx(residencial_AreasVerdes_TeaserCarrosselCadaSorriso, {
+                }) : null,
+                isMobile == false ? /*#__PURE__*/ jsx_runtime_.jsx(residencial_AreasVerdes_TeaserCarrosselCadaSorriso, {
                     isTeaser: true,
                     homeContent: homeContent,
                     isMobile: isMobile,
                     colors: homeContent.displayColors
-                }),
-                /*#__PURE__*/ jsx_runtime_.jsx(residencial_LocalizacaoEstrategica, {
+                }) : null,
+                isMobile == false ? /*#__PURE__*/ jsx_runtime_.jsx(residencial_LocalizacaoEstrategica, {
                     homeContent: homeContent,
                     colors: homeContent.displayColors,
                     isMobile: isMobile
-                })
+                }) : null
             ]
         }),
-        seguranca: /*#__PURE__*/ jsx_runtime_.jsx(residencial_Seguranca, {
-            homeContent: homeContent,
-            colors: homeContent.displayColors,
-            isMobile: isMobile
-        }),
-        layoutResidencial: /*#__PURE__*/ jsx_runtime_.jsx(jsx_runtime_.Fragment, {
-            children: /*#__PURE__*/ jsx_runtime_.jsx(residencial_Conceito, {
+        seguranca: /*#__PURE__*/ jsx_runtime_.jsx(jsx_runtime_.Fragment, {
+            children: isMobile == false ? /*#__PURE__*/ jsx_runtime_.jsx(residencial_Seguranca, {
                 homeContent: homeContent,
                 colors: homeContent.displayColors,
                 isMobile: isMobile
-            })
+            }) : null
+        }),
+        layoutResidencial: /*#__PURE__*/ jsx_runtime_.jsx(jsx_runtime_.Fragment, {
+            children: isMobile == false ? /*#__PURE__*/ jsx_runtime_.jsx(residencial_Conceito, {
+                homeContent: homeContent,
+                colors: homeContent.displayColors,
+                isMobile: isMobile
+            }) : null
         }),
         ProdutoInteresse: /*#__PURE__*/ jsx_runtime_.jsx(residencial_ProdutoInteresse, {
             homeContent: homeContent,
-            colors: homeContent.displayColors,
-            isMobile: isMobile
+            isMobile: isMobile,
+            colors: homeContent.displayColors
         }),
         outBottomContainer: /*#__PURE__*/ jsx_runtime_.jsx("div", {
             className: "teaserLayoutPage",
@@ -3173,11 +3179,13 @@ const ResidencialPage = ({ homeContent , showAlphaMenu , slugDomPedro , location
                     position: "relative"
                 },
                 children: [
-                    homeContent.statusStand == 1 ? /*#__PURE__*/ jsx_runtime_.jsx(TeaserMap, {
-                        isMobile: isMobile,
-                        id: "nosso-stand",
-                        colors: homeContent.displayColors,
-                        standVendas: homeContent.standVendas
+                    homeContent.statusStand == 1 ? /*#__PURE__*/ jsx_runtime_.jsx(jsx_runtime_.Fragment, {
+                        children: isMobile == false ? /*#__PURE__*/ jsx_runtime_.jsx(TeaserMap, {
+                            isMobile: isMobile,
+                            id: "nosso-stand",
+                            colors: homeContent.displayColors,
+                            standVendas: homeContent.standVendas
+                        }) : null
                     }) : null,
                     /*#__PURE__*/ jsx_runtime_.jsx(Oferts, {
                         content: homeContent,
@@ -3209,11 +3217,11 @@ const ResidencialPage = ({ homeContent , showAlphaMenu , slugDomPedro , location
                 colors: homeContent.displayColors,
                 isMobile: isMobile
             }),
-            /*#__PURE__*/ jsx_runtime_.jsx(residencial_PlantaConceitual, {
+            isMobile == false ? /*#__PURE__*/ jsx_runtime_.jsx(residencial_PlantaConceitual, {
                 homeContent: homeContent,
                 colors: homeContent.displayColors,
                 isMobile: isMobile
-            })
+            }) : null
         ]
     });
 };
