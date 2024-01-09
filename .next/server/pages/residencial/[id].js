@@ -207,6 +207,7 @@ module.exports = {
 	"areaPlantaConceitual": "residencial-PlantaConceitual_areaPlantaConceitual__8wTBE",
 	"container": "residencial-PlantaConceitual_container__icrfQ",
 	"escolhaConteudo": "residencial-PlantaConceitual_escolhaConteudo__s3kTE",
+	"img-responsivo": "residencial-PlantaConceitual_img-responsivo__P8Dqq",
 	"ZoomImage": "residencial-PlantaConceitual_ZoomImage__KWazB",
 	"ZoomImageLazer": "residencial-PlantaConceitual_ZoomImageLazer__AePgB",
 	"modalCustom": "residencial-PlantaConceitual_modalCustom__45_DI",
@@ -291,6 +292,7 @@ module.exports = {
 	"areaTeaserVideo": "residencial-ProjetoUrbanistico_areaTeaserVideo__dDW4N",
 	"containerIcon": "residencial-ProjetoUrbanistico_containerIcon__Z7wqN",
 	"produtoEspecificacao": "residencial-ProjetoUrbanistico_produtoEspecificacao__9xSvz",
+	"divTitle": "residencial-ProjetoUrbanistico_divTitle__8bLcg",
 	"Row": "residencial-ProjetoUrbanistico_Row__1lnjp",
 	"especificacaoMetros": "residencial-ProjetoUrbanistico_especificacaoMetros__oM6aw",
 	"line": "residencial-ProjetoUrbanistico_line__9608D",
@@ -1152,7 +1154,7 @@ function ProjetoUrbanistico({ homeContent , colors , isMobile , isTeaser  }) {
                                         className: `${(residencial_ProjetoUrbanistico_module_default()).iconPin}` + " col-xs-4"
                                     }),
                                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                        className: "col-xs-8",
+                                        className: (residencial_ProjetoUrbanistico_module_default()).divTitle,
                                         children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
                                             children: [
                                                 /*#__PURE__*/ jsx_runtime_.jsx("p", {
@@ -1704,7 +1706,7 @@ function residencial_PlantaConceitual_ProjetoUrbanistico({ homeContent , colors 
                                             ]
                                         })
                                     }),
-                                    /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                    /*#__PURE__*/ jsx_runtime_.jsx("img", {
                                         className: (residencial_PlantaConceitual_module_default()).ZoomImage,
                                         href: "#",
                                         onClick: ()=>handleImageClick(urlUrbanistico)
@@ -1747,7 +1749,7 @@ function residencial_PlantaConceitual_ProjetoUrbanistico({ homeContent , colors 
                                             ]
                                         })
                                     }),
-                                    /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                    /*#__PURE__*/ jsx_runtime_.jsx("img", {
                                         className: (residencial_PlantaConceitual_module_default()).ZoomImageLazer,
                                         href: "#",
                                         onClick: ()=>handleImageClick(urlLazer)
