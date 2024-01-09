@@ -1150,8 +1150,14 @@ function ProjetoUrbanistico({ homeContent , colors , isMobile , isTeaser  }) {
                             Area !== null && Area.length > 0 && /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                                 className: `${(residencial_ProjetoUrbanistico_module_default()).produtoEspecificacao}` + " col-xs-12",
                                 children: [
-                                    /*#__PURE__*/ jsx_runtime_.jsx("i", {
-                                        className: `${(residencial_ProjetoUrbanistico_module_default()).iconPin}` + " col-xs-4"
+                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                        style: {
+                                            display: "flex",
+                                            justifyContent: "center"
+                                        },
+                                        children: /*#__PURE__*/ jsx_runtime_.jsx("i", {
+                                            className: `${(residencial_ProjetoUrbanistico_module_default()).iconPin}` + " col-xs-4"
+                                        })
                                     }),
                                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                         className: "col-xs-8",
@@ -1176,8 +1182,14 @@ function ProjetoUrbanistico({ homeContent , colors , isMobile , isTeaser  }) {
                             Metros !== null && Metros.length > 0 && /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                                 className: `${(residencial_ProjetoUrbanistico_module_default()).produtoEspecificacao}` + " col-xs-12",
                                 children: [
-                                    /*#__PURE__*/ jsx_runtime_.jsx("i", {
-                                        className: `${(residencial_ProjetoUrbanistico_module_default()).iconHome}` + " col-xs-4"
+                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                        style: {
+                                            display: "flex",
+                                            justifyContent: "center"
+                                        },
+                                        children: /*#__PURE__*/ jsx_runtime_.jsx("i", {
+                                            className: `${(residencial_ProjetoUrbanistico_module_default()).iconHome}` + " col-xs-4"
+                                        })
                                     }),
                                     /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                                         className: "col-xs-8",
@@ -1201,8 +1213,14 @@ function ProjetoUrbanistico({ homeContent , colors , isMobile , isTeaser  }) {
                                 className: `${(residencial_ProjetoUrbanistico_module_default()).produtoEspecificacao}` + " col-xs-12",
                                 "ng-if": "!prmRegua",
                                 children: [
-                                    /*#__PURE__*/ jsx_runtime_.jsx("i", {
-                                        className: `${(residencial_ProjetoUrbanistico_module_default()).iconTree}` + " col-xs-4"
+                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                        style: {
+                                            display: "flex",
+                                            justifyContent: "center"
+                                        },
+                                        children: /*#__PURE__*/ jsx_runtime_.jsx("i", {
+                                            className: `${(residencial_ProjetoUrbanistico_module_default()).iconTree}` + " col-xs-4"
+                                        })
                                     }),
                                     /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                                         className: "col-xs-8",
@@ -1226,8 +1244,14 @@ function ProjetoUrbanistico({ homeContent , colors , isMobile , isTeaser  }) {
                                 className: `${(residencial_ProjetoUrbanistico_module_default()).produtoEspecificacao}` + " col-xs-12",
                                 "ng-if": "!prmRegua",
                                 children: [
-                                    /*#__PURE__*/ jsx_runtime_.jsx("i", {
-                                        className: `${(residencial_ProjetoUrbanistico_module_default()).iconSwin}` + " col-xs-4"
+                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                        style: {
+                                            display: "flex",
+                                            justifyContent: "center"
+                                        },
+                                        children: /*#__PURE__*/ jsx_runtime_.jsx("i", {
+                                            className: `${(residencial_ProjetoUrbanistico_module_default()).iconSwin}` + " col-xs-4"
+                                        })
                                     }),
                                     /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                                         className: (residencial_ProjetoUrbanistico_module_default()).divTitle,
