@@ -3652,6 +3652,14 @@ module.exports = require("react/jsx-runtime");
 
 /***/ }),
 
+/***/ 1991:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("sharp/lib/is");
+
+/***/ }),
+
 /***/ 2770:
 /***/ ((module) => {
 

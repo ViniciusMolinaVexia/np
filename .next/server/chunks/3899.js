@@ -1472,7 +1472,10 @@ class ModalForm extends external_react_.Component {
 }
 /* harmony default export */ const modalForm_component = (ModalForm);
 
+// EXTERNAL MODULE: external "sharp/lib/is"
+var is_ = __webpack_require__(1991);
 ;// CONCATENATED MODULE: ./_share/components/alphaMenu/alphaMenu.jsx
+
 
 
 
@@ -1726,8 +1729,9 @@ class DesktopAlphaMenu extends external_react_.Component {
         const bgTeaserPhone = isTeaser ? `bg-teaser${this.setColorDisplaySaibaMais(this.props.colors.displayColor, isTeaser)}--phone` : "";
         const bgTeaserWhatsapp = isTeaser ? `bg-teaser${this.setColorDisplaySaibaMais(this.props.colors.displayColor, isTeaser)}--whatsapp` : "";
         const bgTeaserSales = isTeaser ? `bg-teaser${this.setColorDisplaySaibaMais(this.props.colors.displayColor, isTeaser)}--sales` : "";
+        const valor = isTeaser;
         return /*#__PURE__*/ jsx_runtime_.jsx("nav", {
-            className: isInternal ? `alpha-menu alpha-menu--internal ${this.state.fixedClass}` : `alpha-menu ${this.state.fixedClass}`,
+            className: isInternal ? `alpha-menu alpha-menu--internal  ${this.state.fixedClass}` : `alpha-menu ${this.state.fixedClass}`,
             children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_bootstrap_.Row, {
                 children: [
                     /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Col, {

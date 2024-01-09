@@ -313,6 +313,13 @@ module.exports = require("react/jsx-runtime");
 
 /***/ }),
 
+/***/ 1991:
+/***/ ((module) => {
+
+module.exports = require("sharp/lib/is");
+
+/***/ }),
+
 /***/ 2770:
 /***/ ((module) => {
 
