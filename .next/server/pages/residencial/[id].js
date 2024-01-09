@@ -1154,7 +1154,7 @@ function ProjetoUrbanistico({ homeContent , colors , isMobile , isTeaser  }) {
                                         className: `${(residencial_ProjetoUrbanistico_module_default()).iconPin}` + " col-xs-4"
                                     }),
                                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                        className: (residencial_ProjetoUrbanistico_module_default()).divTitle,
+                                        className: "col-xs-8",
                                         children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
                                             children: [
                                                 /*#__PURE__*/ jsx_runtime_.jsx("p", {
@@ -1230,7 +1230,7 @@ function ProjetoUrbanistico({ homeContent , colors , isMobile , isTeaser  }) {
                                         className: `${(residencial_ProjetoUrbanistico_module_default()).iconSwin}` + " col-xs-4"
                                     }),
                                     /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                        className: "col-xs-8",
+                                        className: (residencial_ProjetoUrbanistico_module_default()).divTitle,
                                         children: [
                                             /*#__PURE__*/ jsx_runtime_.jsx("p", {
                                                 className: (residencial_ProjetoUrbanistico_module_default()).especificacaoMetros,
