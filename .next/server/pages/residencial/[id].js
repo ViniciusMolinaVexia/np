@@ -308,7 +308,9 @@ module.exports = {
 	"ConteudoTitle": "residencial-ProjetoUrbanistico_ConteudoTitle__Ky_6I",
 	"produtoTitle": "residencial-ProjetoUrbanistico_produtoTitle__ZxYrZ",
 	"produtoSubProjeto": "residencial-ProjetoUrbanistico_produtoSubProjeto__hHW0k",
-	"imgProdutoProjeto": "residencial-ProjetoUrbanistico_imgProdutoProjeto__auhhN"
+	"imgProdutoProjeto": "residencial-ProjetoUrbanistico_imgProdutoProjeto__auhhN",
+	"divTitleTree": "residencial-ProjetoUrbanistico_divTitleTree__v6K_h",
+	"iconSwinMobile": "residencial-ProjetoUrbanistico_iconSwinMobile__Q8PtI"
 };
 
 
@@ -1216,7 +1218,7 @@ function ProjetoUrbanistico({ homeContent , colors , isMobile , isTeaser  }) {
                                         })
                                     }),
                                     /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                        className: "col-xs-8",
+                                        className: (residencial_ProjetoUrbanistico_module_default()).divTitleTree,
                                         children: [
                                             /*#__PURE__*/ jsx_runtime_.jsx("p", {
                                                 className: (residencial_ProjetoUrbanistico_module_default()).especificacaoMetros,
@@ -1240,7 +1242,7 @@ function ProjetoUrbanistico({ homeContent , colors , isMobile , isTeaser  }) {
                                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                         className: (residencial_ProjetoUrbanistico_module_default()).alinhamentoItens,
                                         children: /*#__PURE__*/ jsx_runtime_.jsx("i", {
-                                            className: `${(residencial_ProjetoUrbanistico_module_default()).iconSwin}` + " col-xs-4"
+                                            className: `${(residencial_ProjetoUrbanistico_module_default()).iconSwin}` + ` ${(residencial_ProjetoUrbanistico_module_default()).iconSwinMobile}`
                                         })
                                     }),
                                     /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
