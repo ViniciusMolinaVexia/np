@@ -290,6 +290,9 @@ module.exports = {
 module.exports = {
 	"areaTeaserVideoJardimAlpha": "residencial-ProjetoUrbanistico_areaTeaserVideoJardimAlpha__kvyqD",
 	"areaTeaserVideo": "residencial-ProjetoUrbanistico_areaTeaserVideo__dDW4N",
+	"container": "residencial-ProjetoUrbanistico_container__Man9j",
+	"Conteudo": "residencial-ProjetoUrbanistico_Conteudo__RNHec",
+	"imgProduto": "residencial-ProjetoUrbanistico_imgProduto__NDX1t",
 	"containerIcon": "residencial-ProjetoUrbanistico_containerIcon__Z7wqN",
 	"produtoEspecificacao": "residencial-ProjetoUrbanistico_produtoEspecificacao__9xSvz",
 	"divTitle": "residencial-ProjetoUrbanistico_divTitle__8bLcg",
@@ -302,8 +305,6 @@ module.exports = {
 	"iconHome": "residencial-ProjetoUrbanistico_iconHome__mzfPd",
 	"iconTree": "residencial-ProjetoUrbanistico_iconTree__NykSa",
 	"iconSwin": "residencial-ProjetoUrbanistico_iconSwin__T3UHI",
-	"container": "residencial-ProjetoUrbanistico_container__Man9j",
-	"Conteudo": "residencial-ProjetoUrbanistico_Conteudo__RNHec",
 	"ConteudoTitle": "residencial-ProjetoUrbanistico_ConteudoTitle__Ky_6I",
 	"produtoTitle": "residencial-ProjetoUrbanistico_produtoTitle__ZxYrZ",
 	"produtoSubProjeto": "residencial-ProjetoUrbanistico_produtoSubProjeto__hHW0k",
@@ -1133,7 +1134,7 @@ function ProjetoUrbanistico({ homeContent , colors , isMobile , isTeaser  }) {
                                 ]
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                className: `col-xs-6`,
+                                className: (residencial_ProjetoUrbanistico_module_default()).imgProduto,
                                 children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
                                     className: `${(residencial_ProjetoUrbanistico_module_default()).imgProdutoProjeto}`,
                                     src: url,
