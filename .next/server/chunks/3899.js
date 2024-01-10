@@ -1980,7 +1980,7 @@ class MobileAlphaMenu extends external_react_.Component {
                             /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Col, {
                                 as: "li",
                                 xs: 2,
-                                className: "share__item share__item--facebook",
+                                className: "share__item share__item--facebook share__item--description",
                                 children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
                                     href: "#",
                                     className: "share__link",
@@ -1990,7 +1990,7 @@ class MobileAlphaMenu extends external_react_.Component {
                             /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Col, {
                                 as: "li",
                                 xs: 2,
-                                className: "share__item share__item--twitter",
+                                className: "share__item share__item--twitter share__item--description",
                                 children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
                                     href: "#",
                                     className: "share__link",
@@ -2000,7 +2000,7 @@ class MobileAlphaMenu extends external_react_.Component {
                             /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Col, {
                                 as: "li",
                                 xs: 2,
-                                className: "share__item share__item--email",
+                                className: "share__item share__item--email share__item--description",
                                 children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
                                     href: "#",
                                     className: "share__link",
