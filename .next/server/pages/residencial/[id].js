@@ -293,6 +293,7 @@ module.exports = {
 	"containerIcon": "residencial-ProjetoUrbanistico_containerIcon__Z7wqN",
 	"produtoEspecificacao": "residencial-ProjetoUrbanistico_produtoEspecificacao__9xSvz",
 	"divTitle": "residencial-ProjetoUrbanistico_divTitle__8bLcg",
+	"alinhamentoItens": "residencial-ProjetoUrbanistico_alinhamentoItens__Pquqj",
 	"Row": "residencial-ProjetoUrbanistico_Row__1lnjp",
 	"especificacaoMetros": "residencial-ProjetoUrbanistico_especificacaoMetros__oM6aw",
 	"line": "residencial-ProjetoUrbanistico_line__9608D",
@@ -1151,10 +1152,7 @@ function ProjetoUrbanistico({ homeContent , colors , isMobile , isTeaser  }) {
                                 className: `${(residencial_ProjetoUrbanistico_module_default()).produtoEspecificacao}` + " col-xs-12",
                                 children: [
                                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                        style: {
-                                            display: "flex",
-                                            justifyContent: "center"
-                                        },
+                                        className: (residencial_ProjetoUrbanistico_module_default()).alinhamentoItens,
                                         children: /*#__PURE__*/ jsx_runtime_.jsx("i", {
                                             className: `${(residencial_ProjetoUrbanistico_module_default()).iconPin}` + " col-xs-4"
                                         })
@@ -1183,10 +1181,7 @@ function ProjetoUrbanistico({ homeContent , colors , isMobile , isTeaser  }) {
                                 className: `${(residencial_ProjetoUrbanistico_module_default()).produtoEspecificacao}` + " col-xs-12",
                                 children: [
                                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                        style: {
-                                            display: "flex",
-                                            justifyContent: "center"
-                                        },
+                                        className: (residencial_ProjetoUrbanistico_module_default()).alinhamentoItens,
                                         children: /*#__PURE__*/ jsx_runtime_.jsx("i", {
                                             className: `${(residencial_ProjetoUrbanistico_module_default()).iconHome}` + " col-xs-4"
                                         })
@@ -1214,10 +1209,7 @@ function ProjetoUrbanistico({ homeContent , colors , isMobile , isTeaser  }) {
                                 "ng-if": "!prmRegua",
                                 children: [
                                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                        style: {
-                                            display: "flex",
-                                            justifyContent: "center"
-                                        },
+                                        className: (residencial_ProjetoUrbanistico_module_default()).alinhamentoItens,
                                         children: /*#__PURE__*/ jsx_runtime_.jsx("i", {
                                             className: `${(residencial_ProjetoUrbanistico_module_default()).iconTree}` + " col-xs-4"
                                         })
@@ -1245,10 +1237,7 @@ function ProjetoUrbanistico({ homeContent , colors , isMobile , isTeaser  }) {
                                 "ng-if": "!prmRegua",
                                 children: [
                                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                        style: {
-                                            display: "flex",
-                                            justifyContent: "center"
-                                        },
+                                        className: (residencial_ProjetoUrbanistico_module_default()).alinhamentoItens,
                                         children: /*#__PURE__*/ jsx_runtime_.jsx("i", {
                                             className: `${(residencial_ProjetoUrbanistico_module_default()).iconSwin}` + " col-xs-4"
                                         })
@@ -2274,7 +2263,7 @@ const FormSaibaMais = ({ setNameFormulario , colors , homeContent , isTeaser , i
                 }),
                 /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Row, {
                     className: (residencial_residencial_ProdutoInteresse_module_default()).areaConteudo,
-                    children: !isMobile && /*#__PURE__*/ jsx_runtime_.jsx(external_formik_.Formik, {
+                    children: /*#__PURE__*/ jsx_runtime_.jsx(external_formik_.Formik, {
                         initialValues: {
                             name: "",
                             email: "",
