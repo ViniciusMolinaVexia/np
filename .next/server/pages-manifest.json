@@ -13,7 +13,6 @@
   "/faq": "pages/faq.js",
   "/home": "pages/home.js",
   "/": "pages/index.js",
-  "/labtest/geolocation": "pages/labtest/geolocation.js",
   "/labtest/horizontalCollapse": "pages/labtest/horizontalCollapse.js",
   "/labtest/imageSizeTest": "pages/labtest/imageSizeTest.js",
   "/labtest": "pages/labtest.js",
@@ -31,8 +30,9 @@
   "/residencia/[empreendimento]/agradecimento": "pages/residencia/[empreendimento]/agradecimento.js",
   "/residencia/[empreendimento]": "pages/residencia/[empreendimento].js",
   "/residencial/[id]/agradecimento": "pages/residencial/[id]/agradecimento.js",
+  "/residencial/[id]": "pages/residencial/[id].js",
   "/teaser/[empreendimento]/agradecimento": "pages/teaser/[empreendimento]/agradecimento.js",
   "/teaser/[empreendimento]": "pages/teaser/[empreendimento].js",
-  "/residencial/[id]": "pages/residencial/[id].js",
-  "/termos-de-uso": "pages/termos-de-uso.js"
+  "/termos-de-uso": "pages/termos-de-uso.js",
+  "/labtest/geolocation": "pages/labtest/geolocation.js"
 }
