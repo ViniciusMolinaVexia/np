@@ -310,6 +310,8 @@ module.exports = {
 	"produtoTitle": "residencial-ProjetoUrbanistico_produtoTitle__ZxYrZ",
 	"produtoSubProjeto": "residencial-ProjetoUrbanistico_produtoSubProjeto__hHW0k",
 	"imgProdutoProjeto": "residencial-ProjetoUrbanistico_imgProdutoProjeto__auhhN",
+	"produtoEspecificacaoPin": "residencial-ProjetoUrbanistico_produtoEspecificacaoPin__IwgaZ",
+	"produtoEspecificacaoHome": "residencial-ProjetoUrbanistico_produtoEspecificacaoHome__t02dj",
 	"divTitleTree": "residencial-ProjetoUrbanistico_divTitleTree__v6K_h",
 	"iconSwinMobile": "residencial-ProjetoUrbanistico_iconSwinMobile__Q8PtI"
 };
@@ -1178,7 +1180,7 @@ function ProjetoUrbanistico({ homeContent , colors , isMobile , isTeaser  }) {
                         className: (residencial_ProjetoUrbanistico_module_default()).Row,
                         children: [
                             Area !== null && Area.length > 0 && /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                className: `${(residencial_ProjetoUrbanistico_module_default()).produtoEspecificacao}` + " col-xs-12",
+                                className: `${(residencial_ProjetoUrbanistico_module_default()).produtoEspecificacao}` + ` ${(residencial_ProjetoUrbanistico_module_default()).produtoEspecificacaoPin}`,
                                 children: [
                                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                         className: (residencial_ProjetoUrbanistico_module_default()).alinhamentoItens,
@@ -1207,7 +1209,7 @@ function ProjetoUrbanistico({ homeContent , colors , isMobile , isTeaser  }) {
                                 ]
                             }),
                             Metros !== null && Metros.length > 0 && /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                className: `${(residencial_ProjetoUrbanistico_module_default()).produtoEspecificacao}` + " col-xs-12",
+                                className: `${(residencial_ProjetoUrbanistico_module_default()).produtoEspecificacao}` + ` ${(residencial_ProjetoUrbanistico_module_default()).produtoEspecificacaoHome}`,
                                 children: [
                                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                         className: (residencial_ProjetoUrbanistico_module_default()).alinhamentoItens,
