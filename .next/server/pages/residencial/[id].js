@@ -146,7 +146,8 @@ module.exports = {
 	"contentPg": "residencial-GaleriaImagem_contentPg__9v_8R",
 	"areaTitleTeaserCarrosselCadaSorriso": "residencial-GaleriaImagem_areaTitleTeaserCarrosselCadaSorriso__blW_X",
 	"title": "residencial-GaleriaImagem_title__xBNWi",
-	"description": "residencial-GaleriaImagem_description____J6P"
+	"description": "residencial-GaleriaImagem_description____J6P",
+	"listaItens": "residencial-GaleriaImagem_listaItens__gK99W"
 };
 
 
@@ -1066,6 +1067,31 @@ function TeaserCarrosselCadaSorriso({ homeContent , colors , isMobile , isTeaser
                             ]
                         })
                     ]
+                }),
+                /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                    className: (residencial_GaleriaImagem_module_default()).listaItens,
+                    children: /*#__PURE__*/ jsx_runtime_.jsx("ul", {
+                        children: slides.map((slide, index)=>/*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("button", {
+                                    onClick: ()=>handleImageClick(index),
+                                    style: {
+                                        border: "none",
+                                        fontWeight: index === currentIndex ? "bold" : "normal"
+                                    },
+                                    children: [
+                                        /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                                            children: index + 1
+                                        }),
+                                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("span", {
+                                            children: [
+                                                "\xa0\xa0",
+                                                slide.title
+                                            ]
+                                        })
+                                    ]
+                                })
+                            }, index))
+                    })
                 })
             ]
         })
