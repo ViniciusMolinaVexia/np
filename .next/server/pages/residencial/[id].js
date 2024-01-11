@@ -1563,10 +1563,20 @@ function residencial_PlantaConceitual_ProjetoUrbanistico({ homeContent , colors 
                                     children: [
                                         /*#__PURE__*/ jsx_runtime_.jsx("button", {
                                             onClick: ()=>mostrarConteudo("urbanistico"),
+                                            style: {
+                                                background: conteudo === "urbanistico" ? "white" : "#fff",
+                                                color: conteudo === "urbanistico" ? "#39bb9c" : "#bdbdbd",
+                                                boxShadow: conteudo === "urbanistico" ? "0 2px 15px 0 rgba(0,0,0,0.15)" : "none"
+                                            },
                                             children: "PROJETO URBAN\xcdSTICO"
                                         }),
                                         /*#__PURE__*/ jsx_runtime_.jsx("button", {
                                             onClick: ()=>mostrarConteudo("lazer"),
+                                            style: {
+                                                background: conteudo === "lazer" ? "white" : "#fff",
+                                                color: conteudo === "lazer" ? "#39bb9c" : "#bdbdbd",
+                                                boxShadow: conteudo === "lazer" ? "0 2px 15px 0 rgba(0,0,0,0.15)" : "none"
+                                            },
                                             children: "\xc1REA DE LAZER"
                                         })
                                     ]
