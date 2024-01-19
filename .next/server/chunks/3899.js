@@ -1559,7 +1559,7 @@ class DesktopAlphaMenu extends external_react_.Component {
         }
         return textColor;
     }
-    setShowTeaserAlphaMenu(isTeaser, bgTeaserPhone, bgTeaserWhatsapp, bgTeaserSales, isInternal) {
+    setShowTeaserAlphaMenu(isTeaser, bgTeaserPhone, bgTeaserWhatsapp, bgTeaserSales, isInternal, isResidencialAlpha) {
         if (isTeaser) {
             return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
                 children: [
@@ -1725,13 +1725,14 @@ class DesktopAlphaMenu extends external_react_.Component {
         }
         const isInternal = this.props.isInternal;
         const isTeaser = this.props.isTeaser;
-        const bgTeaserSaibaMais = isTeaser ? `bg-teaser${this.setColorDisplaySaibaMais(this.props.colors.displayColor, isTeaser)}--saiba-mais` : "";
+        const bgTeaserSaibaMais = isTeaser;
+        const isResidencialAlpha = this.props.isResidencialAlpha ? `bg-teaser${this.setColorDisplaySaibaMais(this.props.colors.displayColor, isTeaser)}--saiba-mais` : "";
         const bgTeaserPhone = isTeaser ? `bg-teaser${this.setColorDisplaySaibaMais(this.props.colors.displayColor, isTeaser)}--phone` : "";
         const bgTeaserWhatsapp = isTeaser ? `bg-teaser${this.setColorDisplaySaibaMais(this.props.colors.displayColor, isTeaser)}--whatsapp` : "";
         const bgTeaserSales = isTeaser ? `bg-teaser${this.setColorDisplaySaibaMais(this.props.colors.displayColor, isTeaser)}--sales` : "";
         const valor = isTeaser;
         return /*#__PURE__*/ jsx_runtime_.jsx("nav", {
-            className: isInternal ? `alpha-menu alpha-menu--internal  ${this.state.fixedClass}` : `alpha-menu ${this.state.fixedClass}`,
+            className: `alpha-menu ${isInternal ? "alpha-menu--internal" : ""} ${this.state.fixedClass} ${isResidencialAlpha ? "Residencial" : ""}`,
             children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_bootstrap_.Row, {
                 children: [
                     /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Col, {
@@ -1796,7 +1797,12 @@ class DesktopAlphaMenu extends external_react_.Component {
                                         children: isTeaser ? /*#__PURE__*/ jsx_runtime_.jsx("a", {
                                             href: "#saiba-mais",
                                             children: "SAIBA MAIS"
-                                        }) : "COMPRE SEU ALPHA"
+                                        }) : /*#__PURE__*/ jsx_runtime_.jsx(jsx_runtime_.Fragment, {
+                                            children: isResidencialAlpha ? /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                                href: "#saiba-mais",
+                                                children: "COMPRE SEU ALPHA"
+                                            }) : "COMPRE SEU ALPHA"
+                                        })
                                     })
                                 })
                             ]

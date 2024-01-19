@@ -93,6 +93,7 @@ class EnterpriseModel {
         this.tituloProjetoUrbanistico = data.empreendimento.prj_ubnt_title;
         this.descricaoProjetoUrbanistico = data.empreendimento.prj_ubnt_description;
         this.descricaoPlantaConceitual = data.empreendimento.plt_prj_description;
+        this.plt_prj_description_mob = data.empreendimento.plt_prj_description_mob;
         this.descricaoAreaDeLazer = data.empreendimento.plt_area_description;
         this.areaDeLazer = data.area_lazer;
         this.titleConceito = data.empreendimento.atm_title;
@@ -172,6 +173,7 @@ class EnterpriseModel {
         this.imgConceito = Envirioment/* ENDPOINT_BASE */.GU + "/" + data.empreendimento.atm_image;
         this.imgProjUrbanistico = Envirioment/* ENDPOINT_BASE */.GU + "/" + data.empreendimento.plt_prj_image;
         this.areaLazer = Envirioment/* ENDPOINT_BASE */.GU + "/" + data.empreendimento.plt_area_image;
+        this.plt_area_image_mob = Envirioment/* ENDPOINT_BASE */.GU + "/" + data.empreendimento.plt_area_image_mob;
         this.videoTitle = data.empreendimento.video_titulo;
         this.videoDescription = data.empreendimento.video_descricao;
         this.logoType = data.empreendimento.logo_novo == 1 ? "logoNova" : "logoAntiga";

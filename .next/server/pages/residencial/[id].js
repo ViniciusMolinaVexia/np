@@ -199,6 +199,41 @@ module.exports = {
 
 /***/ }),
 
+/***/ 4317:
+/***/ ((module) => {
+
+// Exports
+module.exports = {
+	"moduleContainer": "residencial-Fusao_moduleContainer__lyHUt",
+	"itemComponent": "residencial-Fusao_itemComponent__LEyDq",
+	"moduleItem": "residencial-Fusao_moduleItem__aDfHo",
+	"itemHeader": "residencial-Fusao_itemHeader__Uj7SQ",
+	"buttonHeader": "residencial-Fusao_buttonHeader__ZvQbn",
+	"iconClass": "residencial-Fusao_iconClass__pVfvS",
+	"descriptionSeguranca": "residencial-Fusao_descriptionSeguranca__GfMxe",
+	"areaContent": "residencial-Fusao_areaContent__WX6gf",
+	"areaContentLocalizacao": "residencial-Fusao_areaContentLocalizacao__qULZ_",
+	"Container": "residencial-Fusao_Container___3J6M",
+	"row": "residencial-Fusao_row__45luA",
+	"itensLocalizacao": "residencial-Fusao_itensLocalizacao__UuItv",
+	"itemTitle": "residencial-Fusao_itemTitle__F6PqD",
+	"itemArea": "residencial-Fusao_itemArea__1fIKz",
+	"areaStandVendas": "residencial-Fusao_areaStandVendas__ggkAg",
+	"textoStandVendas": "residencial-Fusao_textoStandVendas__jHK3m",
+	"rowStandVendas": "residencial-Fusao_rowStandVendas__BFFs_",
+	"zoomableImage": "residencial-Fusao_zoomableImage__uIRNU",
+	"buttonsContainer": "residencial-Fusao_buttonsContainer__x2rj6",
+	"textProjetoUrbanistico": "residencial-Fusao_textProjetoUrbanistico__vGoJr",
+	"descricaoConceitual": "residencial-Fusao_descricaoConceitual__EXHZb",
+	"selected": "residencial-Fusao_selected__zfT_H",
+	"infoContainer": "residencial-Fusao_infoContainer__Or3CC",
+	"itemContent": "residencial-Fusao_itemContent__ewg6I",
+	"expanded": "residencial-Fusao_expanded__uLbF1"
+};
+
+
+/***/ }),
+
 /***/ 1954:
 /***/ ((module) => {
 
@@ -361,47 +396,369 @@ module.exports = {
 
 /***/ }),
 
-/***/ 7260:
+/***/ 5339:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-// ESM COMPAT FLAG
-__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Z": () => (/* binding */ TeaserCarrosselCadaSorriso)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(358);
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _Envirioment_Envirioment__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(1790);
+/* harmony import */ var react_slick__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(8096);
+/* harmony import */ var react_slick__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_slick__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(6689);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _teaserCarrosselBase__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(6696);
+/* harmony import */ var _residencial_AreasVerdes_module_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(3344);
+/* harmony import */ var _residencial_AreasVerdes_module_scss__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_residencial_AreasVerdes_module_scss__WEBPACK_IMPORTED_MODULE_6__);
 
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  "default": () => (/* binding */ _id_)
-});
 
-// EXTERNAL MODULE: external "react/jsx-runtime"
-var jsx_runtime_ = __webpack_require__(997);
-// EXTERNAL MODULE: external "react"
-var external_react_ = __webpack_require__(6689);
-// EXTERNAL MODULE: ./_share/components/alphaMenu/alphaMenu.jsx + 4 modules
-var alphaMenu = __webpack_require__(3899);
-// EXTERNAL MODULE: external "react-bootstrap"
-var external_react_bootstrap_ = __webpack_require__(358);
-// EXTERNAL MODULE: external "swiper/react"
-var react_ = __webpack_require__(3630);
-// EXTERNAL MODULE: external "swiper"
-var external_swiper_ = __webpack_require__(2770);
-var external_swiper_default = /*#__PURE__*/__webpack_require__.n(external_swiper_);
-// EXTERNAL MODULE: ./node_modules/next/image.js
-var next_image = __webpack_require__(5675);
-// EXTERNAL MODULE: external "react-responsive-picture"
-var external_react_responsive_picture_ = __webpack_require__(8290);
-// EXTERNAL MODULE: external "react-bootstrap/Spinner"
-var Spinner_ = __webpack_require__(3742);
-var Spinner_default = /*#__PURE__*/__webpack_require__.n(Spinner_);
-// EXTERNAL MODULE: ./_share/service/util.js
-var service_util = __webpack_require__(1659);
-// EXTERNAL MODULE: external "classnames"
-var external_classnames_ = __webpack_require__(9003);
-var external_classnames_default = /*#__PURE__*/__webpack_require__.n(external_classnames_);
-// EXTERNAL MODULE: ./_share/components/residencialBanner/residencialBanner.module.scss
-var residencialBanner_module = __webpack_require__(250);
-var residencialBanner_module_default = /*#__PURE__*/__webpack_require__.n(residencialBanner_module);
-;// CONCATENATED MODULE: ./_share/components/residencialBanner/banner.component.jsx
+
+
+
+
+
+
+
+function TeaserCarrosselCadaSorriso({ homeContent , colors , isMobile , isTeaser ,  }) {
+    const colorTitle = {
+        color: colors.colorFlat
+    };
+    const title = homeContent.greenArsTitle;
+    const greenArsDescription = homeContent.greenArsDescription;
+    const areasVerdes = homeContent.areasVerdes;
+    const { 0: currentIndex , 1: setCurrentIndex  } = (0,react__WEBPACK_IMPORTED_MODULE_3__.useState)(0);
+    const nextSlide = ()=>{
+        setCurrentIndex((prevIndex)=>(prevIndex + 1) % areasVerdes.length);
+    };
+    const prevSlide = ()=>{
+        setCurrentIndex((prevIndex)=>(prevIndex - 1 + areasVerdes.length) % areasVerdes.length);
+    };
+    const { 0: showModal , 1: setShowModal  } = (0,react__WEBPACK_IMPORTED_MODULE_3__.useState)(false);
+    const url = _Envirioment_Envirioment__WEBPACK_IMPORTED_MODULE_5__/* .ENDPOINT_BASE */ .GU + "/" + areasVerdes[currentIndex].image;
+    const handleImageClick = (imageUrl)=>{
+        //setSelectedImageUrl(imageUrl);
+        setShowModal(true);
+    };
+    const closeModal = ()=>{
+        setShowModal(false);
+    };
+    const closeButtonStyles = {
+        position: "absolute",
+        top: "0px",
+        right: "0px",
+        width: "50px",
+        height: "50px",
+        borderRadius: "0%",
+        backgroundColor: "white",
+        color: "black",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        cursor: "pointer",
+        fontSize: "35px",
+        fontWeight: "300"
+    };
+    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("section", {
+        className: (_residencial_AreasVerdes_module_scss__WEBPACK_IMPORTED_MODULE_6___default().areaTeaserCarrosselCadaSorriso),
+        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Container, {
+            className: (_residencial_AreasVerdes_module_scss__WEBPACK_IMPORTED_MODULE_6___default().container),
+            children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                className: (_residencial_AreasVerdes_module_scss__WEBPACK_IMPORTED_MODULE_6___default().wrapper),
+                children: [
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                        className: (_residencial_AreasVerdes_module_scss__WEBPACK_IMPORTED_MODULE_6___default().Cabecalho),
+                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Row, {
+                            className: (_residencial_AreasVerdes_module_scss__WEBPACK_IMPORTED_MODULE_6___default().row),
+                            children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                className: (_residencial_AreasVerdes_module_scss__WEBPACK_IMPORTED_MODULE_6___default().areaTextEspaco),
+                                children: [
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h3", {
+                                        children: title
+                                    }),
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                        dangerouslySetInnerHTML: {
+                                            __html: greenArsDescription
+                                        }
+                                    })
+                                ]
+                            })
+                        })
+                    }),
+                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                        className: (_residencial_AreasVerdes_module_scss__WEBPACK_IMPORTED_MODULE_6___default().carouselContainer),
+                        children: [
+                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                className: `${(_residencial_AreasVerdes_module_scss__WEBPACK_IMPORTED_MODULE_6___default().arrowButton)} ${(_residencial_AreasVerdes_module_scss__WEBPACK_IMPORTED_MODULE_6___default().prev)}`,
+                                onClick: prevSlide
+                            }),
+                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                className: (_residencial_AreasVerdes_module_scss__WEBPACK_IMPORTED_MODULE_6___default().slide),
+                                children: [
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
+                                        src: url,
+                                        alt: areasVerdes[currentIndex].title_area_verde
+                                    }),
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                        className: (_residencial_AreasVerdes_module_scss__WEBPACK_IMPORTED_MODULE_6___default().zoomExclusivo),
+                                        href: "#zoom",
+                                        onClick: ()=>handleImageClick(url)
+                                    }),
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Modal, {
+                                        show: showModal,
+                                        onHide: closeModal,
+                                        dialogClassName: (_residencial_AreasVerdes_module_scss__WEBPACK_IMPORTED_MODULE_6___default().modalCustom),
+                                        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Modal.Body, {
+                                            className: (_residencial_AreasVerdes_module_scss__WEBPACK_IMPORTED_MODULE_6___default().modalContent),
+                                            style: {
+                                                position: "fixed",
+                                                top: "50%",
+                                                left: "50%",
+                                                transform: "translate(-50%, -50%)"
+                                            },
+                                            children: [
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
+                                                    src: url,
+                                                    alt: "Urban\xedstico",
+                                                    className: (_residencial_AreasVerdes_module_scss__WEBPACK_IMPORTED_MODULE_6___default().modalImage),
+                                                    style: {
+                                                        border: "3px solid white"
+                                                    }
+                                                }),
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                                    className: (_residencial_AreasVerdes_module_scss__WEBPACK_IMPORTED_MODULE_6___default().plantaLightboxClose),
+                                                    style: {
+                                                        display: "block",
+                                                        width: "50px",
+                                                        height: "50px",
+                                                        boxSizing: "border-box",
+                                                        background: "white",
+                                                        color: "black",
+                                                        textDecoration: "none",
+                                                        position: "absolute",
+                                                        top: "17px",
+                                                        right: "17px",
+                                                        WebkitTransition: "0.5s ease-in-out",
+                                                        MozTransition: "0.5s ease-in-out",
+                                                        OTransition: "0.5s ease-in-out",
+                                                        transition: "0.5s ease-in-out"
+                                                    },
+                                                    href: "#planta",
+                                                    onClick: closeModal,
+                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                                        style: closeButtonStyles,
+                                                        children: "X"
+                                                    })
+                                                })
+                                            ]
+                                        })
+                                    })
+                                ]
+                            }),
+                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                className: (_residencial_AreasVerdes_module_scss__WEBPACK_IMPORTED_MODULE_6___default().textContent),
+                                children: [
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                        className: (_residencial_AreasVerdes_module_scss__WEBPACK_IMPORTED_MODULE_6___default().textItem),
+                                        children: areasVerdes[currentIndex].title_area_verde
+                                    }),
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                        className: (_residencial_AreasVerdes_module_scss__WEBPACK_IMPORTED_MODULE_6___default().pagination),
+                                        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                            className: (_residencial_AreasVerdes_module_scss__WEBPACK_IMPORTED_MODULE_6___default().contentPg),
+                                            children: [
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                                    children: currentIndex + 1 < 10 ? "0" + (currentIndex + 1) : currentIndex + 1
+                                                }),
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                                    children: areasVerdes.length < 10 ? "0" + areasVerdes.length : areasVerdes.length
+                                                })
+                                            ]
+                                        })
+                                    })
+                                ]
+                            }),
+                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                className: `${(_residencial_AreasVerdes_module_scss__WEBPACK_IMPORTED_MODULE_6___default().arrowButton)} ${(_residencial_AreasVerdes_module_scss__WEBPACK_IMPORTED_MODULE_6___default().next)}`,
+                                onClick: nextSlide
+                            })
+                        ]
+                    })
+                ]
+            })
+        })
+    });
+};
+
+
+/***/ }),
+
+/***/ 4046:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(358);
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5675);
+/* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_image__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_responsive_picture__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(8290);
+/* harmony import */ var react_responsive_picture__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_responsive_picture__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(6689);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _teaserCarrosselBase__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(6696);
+/* harmony import */ var _teaserVideoPlayer_teaser_video_player__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(4590);
+/* harmony import */ var _residencialAutoGestao_residencial_AutoGestao_module_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(2917);
+/* harmony import */ var _residencialAutoGestao_residencial_AutoGestao_module_scss__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_residencialAutoGestao_residencial_AutoGestao_module_scss__WEBPACK_IMPORTED_MODULE_7__);
+
+
+
+
+
+
+
+
+
+function ProjetoUrbanistico({ homeContent , colors , isMobile , isTeaser  }) {
+    const aut_mgnt_sub_title = homeContent.aut_mgnt_sub_title;
+    const aut_mgnt_item_1 = homeContent.aut_mgnt_item_1;
+    const aut_mgnt_item_2 = homeContent.aut_mgnt_item_2;
+    const aut_mgnt_item_3 = homeContent.aut_mgnt_item_3;
+    const aut_mgnt_item_4 = homeContent.aut_mgnt_item_4;
+    //const aut_mgnt_item_5 = homeContent.aut_mgnt_item_5;
+    const aut_mgnt_item_5 = homeContent.aut_mgnt_item_5;
+    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("section", {
+        className: (_residencialAutoGestao_residencial_AutoGestao_module_scss__WEBPACK_IMPORTED_MODULE_7___default().areaProdutoAutogestao),
+        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+            className: "hidden-xs",
+            children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                className: "container np",
+                children: [
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                        className: "row",
+                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                            className: "col-xs-offset-2 col-lg-10 col-xs-9 autogestao-fundo",
+                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                className: (_residencialAutoGestao_residencial_AutoGestao_module_scss__WEBPACK_IMPORTED_MODULE_7___default().fundo)
+                            })
+                        })
+                    }),
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                        className: "row",
+                        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                            className: (_residencialAutoGestao_residencial_AutoGestao_module_scss__WEBPACK_IMPORTED_MODULE_7___default().divUniao),
+                            children: [
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                    className: (_residencialAutoGestao_residencial_AutoGestao_module_scss__WEBPACK_IMPORTED_MODULE_7___default().divVideo),
+                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("iframe", {
+                                        width: "100%",
+                                        height: "540",
+                                        src: "https://www.youtube.com/embed/GI0VGwaVnG4",
+                                        frameBorder: "0",
+                                        allowFullScreen: true
+                                    })
+                                }),
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                    className: (_residencialAutoGestao_residencial_AutoGestao_module_scss__WEBPACK_IMPORTED_MODULE_7___default().divGestao),
+                                    children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                        className: (_residencialAutoGestao_residencial_AutoGestao_module_scss__WEBPACK_IMPORTED_MODULE_7___default().conteudoAutogestao),
+                                        children: [
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h1", {
+                                                className: (_residencialAutoGestao_residencial_AutoGestao_module_scss__WEBPACK_IMPORTED_MODULE_7___default().autogestaoTitle),
+                                                children: "AUTOGEST\xc3O"
+                                            }),
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                                className: (_residencialAutoGestao_residencial_AutoGestao_module_scss__WEBPACK_IMPORTED_MODULE_7___default().autogestaoSubtxt),
+                                                children: aut_mgnt_sub_title
+                                            }),
+                                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
+                                                className: (_residencialAutoGestao_residencial_AutoGestao_module_scss__WEBPACK_IMPORTED_MODULE_7___default().autogestaoConteudo),
+                                                children: [
+                                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("span", {
+                                                        children: [
+                                                            aut_mgnt_item_1 !== null ? `- ${aut_mgnt_item_1}` : null,
+                                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("br", {})
+                                                        ]
+                                                    }),
+                                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("span", {
+                                                        children: [
+                                                            aut_mgnt_item_2 !== null ? `- ${aut_mgnt_item_2}` : null,
+                                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("br", {})
+                                                        ]
+                                                    }),
+                                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("span", {
+                                                        children: [
+                                                            aut_mgnt_item_3 !== null ? `- ${aut_mgnt_item_3}` : null,
+                                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("br", {})
+                                                        ]
+                                                    }),
+                                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("span", {
+                                                        children: [
+                                                            aut_mgnt_item_4 !== null ? `- ${aut_mgnt_item_4}` : null,
+                                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("br", {})
+                                                        ]
+                                                    }),
+                                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("span", {
+                                                        children: [
+                                                            aut_mgnt_item_5 !== null ? `- ${aut_mgnt_item_5}` : null,
+                                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("br", {})
+                                                        ]
+                                                    })
+                                                ]
+                                            })
+                                        ]
+                                    })
+                                })
+                            ]
+                        })
+                    })
+                ]
+            })
+        })
+    });
+}
+;
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ProjetoUrbanistico);
+
+
+/***/ }),
+
+/***/ 6402:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Z": () => (/* binding */ Banner)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(358);
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(6689);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var swiper_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3630);
+/* harmony import */ var swiper_react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(swiper_react__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(2770);
+/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(swiper__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(5675);
+/* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(next_image__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var react_responsive_picture__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(8290);
+/* harmony import */ var react_responsive_picture__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_responsive_picture__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var react_bootstrap_Spinner__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(3742);
+/* harmony import */ var react_bootstrap_Spinner__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react_bootstrap_Spinner__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _service_util__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(1659);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(9003);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _residencialBanner_module_scss__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(250);
+/* harmony import */ var _residencialBanner_module_scss__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_residencialBanner_module_scss__WEBPACK_IMPORTED_MODULE_10__);
 
 
 
@@ -416,12 +773,12 @@ var residencialBanner_module_default = /*#__PURE__*/__webpack_require__.n(reside
 // import './banner.scss';
 // import 'swiper/css/swiper.min.css';
 
-external_swiper_default().use([
-    external_swiper_.Navigation,
-    external_swiper_.Pagination,
-    external_swiper_.Autoplay
+swiper__WEBPACK_IMPORTED_MODULE_4___default().use([
+    swiper__WEBPACK_IMPORTED_MODULE_4__.Navigation,
+    swiper__WEBPACK_IMPORTED_MODULE_4__.Pagination,
+    swiper__WEBPACK_IMPORTED_MODULE_4__.Autoplay
 ]);
-class Banner extends external_react_.Component {
+class Banner extends react__WEBPACK_IMPORTED_MODULE_2__.Component {
     constructor(props){
         super(props);
         this.state = {
@@ -431,8 +788,8 @@ class Banner extends external_react_.Component {
             showTexts: props.showTexts != undefined ? props.showTexts : true,
             titleTeaser: props.colors && props.colors.displayColor ? this.props.homeContent.banner[0].BannerTitle : "",
             subTitleTeaser: props.colors && props.colors.displayColor ? this.props.homeContent.banner[0].BannerLots : "",
-            logoTeaser: props.colors && props.colors.displayColor ? (residencialBanner_module_default())[this.handleSlugAlpha0Logo(this.props.homeContent.logoType || props.colors.displayColor, this.props.homeContent)] : "",
-            contentTeaser: props.colors && props.colors.displayColor ? (residencialBanner_module_default())[this.handleContentTeaser(props.colors.displayColor)] : "",
+            logoTeaser: props.colors && props.colors.displayColor ? (_residencialBanner_module_scss__WEBPACK_IMPORTED_MODULE_10___default())[this.handleSlugAlpha0Logo(this.props.homeContent.logoType || props.colors.displayColor, this.props.homeContent)] : "",
+            contentTeaser: props.colors && props.colors.displayColor ? (_residencialBanner_module_scss__WEBPACK_IMPORTED_MODULE_10___default())[this.handleContentTeaser(props.colors.displayColor)] : "",
             empreendimentos: this.getTypeEmpreendimento(props.homeContent.typeId.id)
         };
         this.swiperRef = this.swiperRef.bind(this);
@@ -578,14 +935,14 @@ class Banner extends external_react_.Component {
         const pagina = "";
         const id = this.props.homeContent.typeId.id;
         if (this.props.bannerList.length > 0 && this.props.upBner) {
-            return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("section", {
-                className: external_classnames_default()(classSpacialPage, "main-slider", "has-button", (residencialBanner_module_default()).bannerArea),
+            return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("section", {
+                className: classnames__WEBPACK_IMPORTED_MODULE_9___default()(classSpacialPage, "main-slider", "has-button", (_residencialBanner_module_scss__WEBPACK_IMPORTED_MODULE_10___default().bannerArea)),
                 children: [
-                    /*#__PURE__*/ jsx_runtime_.jsx(react_.Swiper, {
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(swiper_react__WEBPACK_IMPORTED_MODULE_3__.Swiper, {
                         modules: [
-                            external_swiper_.Autoplay,
-                            external_swiper_.Pagination,
-                            external_swiper_.Navigation
+                            swiper__WEBPACK_IMPORTED_MODULE_4__.Autoplay,
+                            swiper__WEBPACK_IMPORTED_MODULE_4__.Pagination,
+                            swiper__WEBPACK_IMPORTED_MODULE_4__.Navigation
                         ],
                         loop: this.props.bannerList.length > 1,
                         allowTouchMove: this.props.bannerList.length > 1,
@@ -601,11 +958,11 @@ class Banner extends external_react_.Component {
                             }
                         },
                         children: this.props.bannerList.map((val, idx)=>{
-                            return /*#__PURE__*/ jsx_runtime_.jsx(react_.SwiperSlide, {
-                                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                    className: external_classnames_default()("item banner-imagesR", this.setColorDisplaySaibaMais(this.props.colors?.displayColor, this.props.isTeaser)),
+                            return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(swiper_react__WEBPACK_IMPORTED_MODULE_3__.SwiperSlide, {
+                                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                    className: classnames__WEBPACK_IMPORTED_MODULE_9___default()("item banner-imagesR", this.setColorDisplaySaibaMais(this.props.colors?.displayColor, this.props.isTeaser)),
                                     children: [
-                                        /*#__PURE__*/ jsx_runtime_.jsx(external_react_responsive_picture_.Picture, {
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_responsive_picture__WEBPACK_IMPORTED_MODULE_6__.Picture, {
                                             sources: [
                                                 {
                                                     srcSet: val.ImageMobile,
@@ -616,46 +973,46 @@ class Banner extends external_react_.Component {
                                                 }, 
                                             ]
                                         }),
-                                        this.props.isTeaser && /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                            className: external_classnames_default()((residencialBanner_module_default()).bannerBaseContent, this.state.contentTeaser),
+                                        this.props.isTeaser && /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                            className: classnames__WEBPACK_IMPORTED_MODULE_9___default()((_residencialBanner_module_scss__WEBPACK_IMPORTED_MODULE_10___default().bannerBaseContent), this.state.contentTeaser),
                                             children: [
-                                                /*#__PURE__*/ jsx_runtime_.jsx("h1", {
-                                                    className: external_classnames_default()((residencialBanner_module_default()).logo, // styles.baseLogo,
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h1", {
+                                                    className: classnames__WEBPACK_IMPORTED_MODULE_9___default()((_residencialBanner_module_scss__WEBPACK_IMPORTED_MODULE_10___default().logo), // styles.baseLogo,
                                                     this.state.logoTeaser),
                                                     children: this.props.title
                                                 }),
-                                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                                    className: (residencialBanner_module_default()).bannerTitleContainer,
+                                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                                    className: (_residencialBanner_module_scss__WEBPACK_IMPORTED_MODULE_10___default().bannerTitleContainer),
                                                     children: [
-                                                        this.state.titleTeaser && /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                                                            className: (residencialBanner_module_default()).bannerTitle,
+                                                        this.state.titleTeaser && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                                            className: (_residencialBanner_module_scss__WEBPACK_IMPORTED_MODULE_10___default().bannerTitle),
                                                             dangerouslySetInnerHTML: {
                                                                 __html: this.state.titleTeaser
                                                             }
                                                         }),
-                                                        this.state.empreendimentos && /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                                                            className: (residencialBanner_module_default()).EmpreendimentosTitle,
+                                                        this.state.empreendimentos && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                                            className: (_residencialBanner_module_scss__WEBPACK_IMPORTED_MODULE_10___default().EmpreendimentosTitle),
                                                             dangerouslySetInnerHTML: {
                                                                 __html: this.state.empreendimentos
                                                             }
                                                         }),
-                                                        this.state.subTitleTeaser && /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                                                            className: (residencialBanner_module_default()).bannerSubtitle,
+                                                        this.state.subTitleTeaser && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                                            className: (_residencialBanner_module_scss__WEBPACK_IMPORTED_MODULE_10___default().bannerSubtitle),
                                                             dangerouslySetInnerHTML: {
                                                                 __html: this.state.subTitleTeaser
                                                             }
                                                         }),
-                                                        /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                                            className: (residencialBanner_module_default()).voceMereceContainer,
-                                                            children: this.props.homeContent.slug == "lancamento-teresina-2" && /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                            className: (_residencialBanner_module_scss__WEBPACK_IMPORTED_MODULE_10___default().voceMereceContainer),
+                                                            children: this.props.homeContent.slug == "lancamento-teresina-2" && /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                                                                 children: [
-                                                                    /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                                                                        className: (residencialBanner_module_default()).voceText,
+                                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                                                        className: (_residencialBanner_module_scss__WEBPACK_IMPORTED_MODULE_10___default().voceText),
                                                                         children: "VOC\xca"
                                                                     }),
                                                                     " ",
-                                                                    /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                                                                        className: (residencialBanner_module_default()).mereceText,
+                                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                                                        className: (_residencialBanner_module_scss__WEBPACK_IMPORTED_MODULE_10___default().mereceText),
                                                                         children: "MERECE"
                                                                     })
                                                                 ]
@@ -670,39 +1027,39 @@ class Banner extends external_react_.Component {
                             }, idx);
                         })
                     }),
-                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                         className: "hidden-xs container-fluid",
-                        children: /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Row, {
-                            children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Row, {
+                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                 className: "content-info " + this.state.displayColor,
-                                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_bootstrap_.Col, {
+                                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Col, {
                                     xs: 12,
                                     children: [
-                                        /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Row, {
-                                            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Row, {
+                                            children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                                                 className: "info",
                                                 children: [
-                                                    this.state.showTexts ? /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
+                                                    this.state.showTexts ? /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
                                                         children: [
-                                                            /*#__PURE__*/ jsx_runtime_.jsx("h3", {
+                                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h3", {
                                                                 children: this.state.displayREDevelopment
                                                             }),
-                                                            /*#__PURE__*/ jsx_runtime_.jsx("h4", {
+                                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h4", {
                                                                 children: this.state.displayTitle
                                                             }),
-                                                            /*#__PURE__*/ jsx_runtime_.jsx("h5", {
+                                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h5", {
                                                                 children: this.state.displaySubTitle
                                                             })
                                                         ]
                                                     }) : false,
-                                                    this.state.showButton ? /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                    this.state.showButton ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                                         className: "btn-banner",
-                                                        children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
                                                             onClick: (e)=>{
                                                                 if (this.state.displayLink[0].indexOf("http") > -1) {
-                                                                    new service_util/* default */.Z().goToUrl(this.state.displayLink, "_self", true, e);
+                                                                    new _service_util__WEBPACK_IMPORTED_MODULE_8__/* ["default"] */ .Z().goToUrl(this.state.displayLink, "_self", true, e);
                                                                 } else {
-                                                                    new service_util/* default */.Z().goToUrl(this.state.displayLink, "_self", false, e);
+                                                                    new _service_util__WEBPACK_IMPORTED_MODULE_8__/* ["default"] */ .Z().goToUrl(this.state.displayLink, "_self", false, e);
                                                                 }
                                                             },
                                                             children: this.state.btnText
@@ -711,13 +1068,13 @@ class Banner extends external_react_.Component {
                                                 ]
                                             })
                                         }),
-                                        this.props.bannerList.length > 1 ? /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                        this.props.bannerList.length > 1 ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                             className: "owl-dots",
                                             children: this.props.bannerList.map((val, idx)=>{
-                                                return /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                                     className: this.state.id != val.Id ? "owl-dot active" : "owl-dot",
                                                     onClick: ()=>this.slideTo(idx + 1),
-                                                    children: /*#__PURE__*/ jsx_runtime_.jsx("span", {})
+                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {})
                                                 }, idx);
                                             })
                                         }) : false
@@ -729,12 +1086,12 @@ class Banner extends external_react_.Component {
                 ]
             });
         } else {
-            return /*#__PURE__*/ jsx_runtime_.jsx("div", {
+            return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                 className: "text-center load-banner",
-                children: /*#__PURE__*/ jsx_runtime_.jsx((Spinner_default()), {
+                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((react_bootstrap_Spinner__WEBPACK_IMPORTED_MODULE_7___default()), {
                     animation: "border",
                     role: "status",
-                    children: /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
                         className: "sr-only",
                         children: "Loading..."
                     })
@@ -744,133 +1101,118 @@ class Banner extends external_react_.Component {
     }
 };
 
-// EXTERNAL MODULE: ./_share/service/enterprises.js + 1 modules
-var enterprises = __webpack_require__(2750);
-// EXTERNAL MODULE: ./_share/components/formSaibaMais/index.jsx
-var formSaibaMais = __webpack_require__(3331);
-// EXTERNAL MODULE: ./public/static/images/Favicon.png
-var Favicon = __webpack_require__(5534);
-// EXTERNAL MODULE: ./_share/components/footer/footer.jsx
-var footer = __webpack_require__(3682);
-// EXTERNAL MODULE: ./_share/layouts/meta.component.jsx
-var meta_component = __webpack_require__(2685);
-// EXTERNAL MODULE: ./_share/components/navMenu/navMenu.jsx + 7 modules
-var navMenu = __webpack_require__(6635);
-// EXTERNAL MODULE: ./node_modules/next/script.js
-var script = __webpack_require__(4298);
-// EXTERNAL MODULE: ./Envirioment/Envirioment.js
-var Envirioment = __webpack_require__(1790);
-// EXTERNAL MODULE: ./public/static/images/alphaville.jpg
-var alphaville = __webpack_require__(5175);
-;// CONCATENATED MODULE: ./_share/layouts/residencialLayout-main.jsx
+
+/***/ }),
+
+/***/ 7678:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(358);
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5675);
+/* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_image__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_responsive_picture__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(8290);
+/* harmony import */ var react_responsive_picture__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_responsive_picture__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(6689);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _teaserCarrosselBase__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(6696);
+/* harmony import */ var _teaserVideoPlayer_teaser_video_player__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(4590);
+/* harmony import */ var _residencialConceito_residencial_Conceito_module_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(9845);
+/* harmony import */ var _residencialConceito_residencial_Conceito_module_scss__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_residencialConceito_residencial_Conceito_module_scss__WEBPACK_IMPORTED_MODULE_7__);
 
 
 
 
-// import CookiesPolicy from '../components/cookiesPolicy/cookiesPolicy.component';
 
 
 
 
 
-// import '../../public/static/main.scss';
-
-const layout = ({ children , outContainer , outBottomContainer , residencialLayout , layoutResidencial , ProdutoInteresse , galeriaImagem , seguranca , metaProps , homeContent , active , location , cssClass , showNoIndex , success ,  })=>{
-    (0,external_react_.useEffect)(()=>{
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag("js", new Date());
-        gtag("config", "UA-27437785-3", {
-            cookie_expires: 0
-        });
-        const mainUrl = "https://www.alphaville.com.br";
-    // if (window.location.origin != mainUrl) {
-    //   window.location.href = mainUrl + window.location.pathname;
-    // }
-    }, []);
-    const defaultMetaProps = {
-        image: {
-            url: alphaville/* default */.Z,
-            type: "image/jpeg",
-            width: "1200",
-            height: "489",
-            alt: "Alphaville"
-        },
-        title: "Alphaville - Residenciais e lotes comerciais \xe0 venda",
-        description: "Bem vindo \xe0 Alphaville. Conhe\xe7a nossos lotes \xe0 venda",
-        url: Envirioment/* URL_DOMAIN */.V3 + "/"
+function ProjetoUrbanistico({ homeContent , colors , isMobile , isTeaser  }) {
+    const url = homeContent.imgConceito;
+    const titulo = homeContent.titleConceito;
+    const descricao = homeContent.descricaoConceito;
+    const colorTitle = {
+        color: colors.colorFlat
     };
-    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
-        children: [
-            /*#__PURE__*/ jsx_runtime_.jsx(meta_component/* default */.Z, {
-                ...metaProps || defaultMetaProps,
-                homeContent: homeContent,
-                success: success,
-                showNoIndex: showNoIndex,
-                children: /*#__PURE__*/ jsx_runtime_.jsx("meta", {
-                    name: "facebook-domain-verification",
-                    content: "ykvnn3gwiu4gqqg55k33ewhd68i3yc"
-                })
-            }),
-            /*#__PURE__*/ jsx_runtime_.jsx("header", {
-                children: /*#__PURE__*/ jsx_runtime_.jsx(navMenu/* default */.Z, {
-                    location: location
-                })
-            }),
-            outContainer,
-            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                id: "layout",
-                className: "layout " + active + " " + cssClass,
-                children: /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Container, {
-                    className: "container-layout",
-                    children: children
-                })
-            }),
-            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                id: "layout",
-                className: "layout",
-                children: layoutResidencial
-            }),
-            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                style: {
-                    paddingTop: "5%",
-                    paddingBottom: "5%",
-                    backgroundColor: "#f3f3f3"
-                },
-                children: galeriaImagem
-            }),
-            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                children: seguranca
-            }),
-            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                children: /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Container, {
-                    className: "container-layout",
-                    children: residencialLayout
-                })
-            }),
-            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                children: ProdutoInteresse
-            }),
-            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                children: outBottomContainer
-            }),
-            /*#__PURE__*/ jsx_runtime_.jsx(footer/* default */.Z, {})
-        ]
+    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("section", {
+        className: (_residencialConceito_residencial_Conceito_module_scss__WEBPACK_IMPORTED_MODULE_7___default().areaProdutoAtmosfera),
+        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+            className: "hidden-xs",
+            children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                className: (_residencialConceito_residencial_Conceito_module_scss__WEBPACK_IMPORTED_MODULE_7___default().containerFluid),
+                children: [
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                        className: "row",
+                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                            alt: titulo,
+                            title: titulo,
+                            className: (_residencialConceito_residencial_Conceito_module_scss__WEBPACK_IMPORTED_MODULE_7___default().imgAtmosfera),
+                            style: {
+                                backgroundImage: `url(${url})`
+                            }
+                        })
+                    }),
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                        className: "row",
+                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                            className: (_residencialConceito_residencial_Conceito_module_scss__WEBPACK_IMPORTED_MODULE_7___default().container),
+                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                className: "col-xs-6 col-xs-offset-5",
+                                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                    className: (_residencialConceito_residencial_Conceito_module_scss__WEBPACK_IMPORTED_MODULE_7___default().conteudoAtmosfera),
+                                    children: [
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h1", {
+                                            className: (_residencialConceito_residencial_Conceito_module_scss__WEBPACK_IMPORTED_MODULE_7___default().atmosferaTitle),
+                                            children: titulo
+                                        }),
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                            className: (_residencialConceito_residencial_Conceito_module_scss__WEBPACK_IMPORTED_MODULE_7___default().atmosferaConteudo),
+                                            dangerouslySetInnerHTML: {
+                                                __html: descricao
+                                            }
+                                        })
+                                    ]
+                                })
+                            })
+                        })
+                    })
+                ]
+            })
+        })
     });
-};
-/* harmony default export */ const residencialLayout_main = (layout);
+}
+;
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ProjetoUrbanistico);
 
-;// CONCATENATED MODULE: external "react-slick"
-const external_react_slick_namespaceObject = require("react-slick");
-var external_react_slick_default = /*#__PURE__*/__webpack_require__.n(external_react_slick_namespaceObject);
-// EXTERNAL MODULE: ./_share/components/teaserCarrosselBase/index.jsx
-var teaserCarrosselBase = __webpack_require__(6696);
-// EXTERNAL MODULE: ./_share/components/residencialGaleriaImagem/residencial-GaleriaImagem.module.scss
-var residencial_GaleriaImagem_module = __webpack_require__(5756);
-var residencial_GaleriaImagem_module_default = /*#__PURE__*/__webpack_require__.n(residencial_GaleriaImagem_module);
-;// CONCATENATED MODULE: ./_share/components/residencialGaleriaImagem/residencial-GaleriaImagem.jsx
+
+/***/ }),
+
+/***/ 9957:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Z": () => (/* binding */ TeaserCarrosselCadaSorriso)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(358);
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _Envirioment_Envirioment__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(1790);
+/* harmony import */ var react_slick__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(8096);
+/* harmony import */ var react_slick__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_slick__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(6689);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _teaserCarrosselBase__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(6696);
+/* harmony import */ var _residencial_GaleriaImagem_module_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(5756);
+/* harmony import */ var _residencial_GaleriaImagem_module_scss__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_residencial_GaleriaImagem_module_scss__WEBPACK_IMPORTED_MODULE_6__);
 
 
 
@@ -899,11 +1241,11 @@ function TeaserCarrosselCadaSorriso({ homeContent , colors , isMobile , isTeaser
                 }
             }
         });
-        const mapArrayImages = filterItens.map((item)=>Envirioment/* ENDPOINT_BASE */.GU + "/" + item.image);
+        const mapArrayImages = filterItens.map((item)=>_Envirioment_Envirioment__WEBPACK_IMPORTED_MODULE_5__/* .ENDPOINT_BASE */ .GU + "/" + item.image);
         return mapArrayImages;
     }
     const slides = homeContent.imagesCarrossel;
-    const sliderRef = (0,external_react_.useRef)(null);
+    const sliderRef = (0,react__WEBPACK_IMPORTED_MODULE_3__.useRef)(null);
     const settings = {
         dots: false,
         infinite: true,
@@ -914,7 +1256,7 @@ function TeaserCarrosselCadaSorriso({ homeContent , colors , isMobile , isTeaser
         centerMode: true,
         centerPadding: "0"
     };
-    const { 0: currentIndex , 1: setCurrentIndex  } = (0,external_react_.useState)(0);
+    const { 0: currentIndex , 1: setCurrentIndex  } = (0,react__WEBPACK_IMPORTED_MODULE_3__.useState)(0);
     const nextSlide = ()=>{
         setCurrentIndex((prevIndex)=>(prevIndex + 1) % slides.length);
     };
@@ -934,7 +1276,7 @@ function TeaserCarrosselCadaSorriso({ homeContent , colors , isMobile , isTeaser
             sliderRef.current.slickNext();
         }
     };
-    const { 0: showModal , 1: setShowModal  } = (0,external_react_.useState)(false);
+    const { 0: showModal , 1: setShowModal  } = (0,react__WEBPACK_IMPORTED_MODULE_3__.useState)(false);
     const handleImageClickZoom = (imageUrl)=>{
         //setSelectedImageUrl(imageUrl);
         setShowModal(true);
@@ -942,53 +1284,69 @@ function TeaserCarrosselCadaSorriso({ homeContent , colors , isMobile , isTeaser
     const closeModal = ()=>{
         setShowModal(false);
     };
-    const url = Envirioment/* ENDPOINT_BASE */.GU + "/" + slides[currentIndex].image;
-    return /*#__PURE__*/ jsx_runtime_.jsx("section", {
-        className: (residencial_GaleriaImagem_module_default()).areaTeaserCarrosselCadaSorriso,
-        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_bootstrap_.Container, {
-            className: (residencial_GaleriaImagem_module_default()).container,
+    const url = _Envirioment_Envirioment__WEBPACK_IMPORTED_MODULE_5__/* .ENDPOINT_BASE */ .GU + "/" + slides[currentIndex].image;
+    const closeButtonStyles = {
+        position: "absolute",
+        top: "0px",
+        right: "0px",
+        width: "50px",
+        height: "50px",
+        borderRadius: "0%",
+        backgroundColor: "white",
+        color: "black",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        cursor: "pointer",
+        fontSize: "35px",
+        fontWeight: "300"
+    };
+    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("section", {
+        className: (_residencial_GaleriaImagem_module_scss__WEBPACK_IMPORTED_MODULE_6___default().areaTeaserCarrosselCadaSorriso),
+        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Container, {
+            className: (_residencial_GaleriaImagem_module_scss__WEBPACK_IMPORTED_MODULE_6___default().container),
             children: [
-                /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Row, {
-                    children: /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Col, {
+                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Row, {
+                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Col, {
                         xs: 12,
-                        children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                            className: (residencial_GaleriaImagem_module_default()).areaTitleTeaserCarrosselCadaSorriso,
-                            children: /*#__PURE__*/ jsx_runtime_.jsx("h2", {
+                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                            className: (_residencial_GaleriaImagem_module_scss__WEBPACK_IMPORTED_MODULE_6___default().areaTitleTeaserCarrosselCadaSorriso),
+                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
                                 style: colorTitle,
-                                className: (residencial_GaleriaImagem_module_default()).title,
+                                className: (_residencial_GaleriaImagem_module_scss__WEBPACK_IMPORTED_MODULE_6___default().title),
                                 children: homeContent.titleCadaSorriso.toUpperCase()
                             })
                         })
                     })
                 }),
-                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                    className: (residencial_GaleriaImagem_module_default()).wrapper,
+                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                    className: (_residencial_GaleriaImagem_module_scss__WEBPACK_IMPORTED_MODULE_6___default().wrapper),
                     children: [
-                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                            className: (residencial_GaleriaImagem_module_default()).carouselContainer,
+                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                            className: (_residencial_GaleriaImagem_module_scss__WEBPACK_IMPORTED_MODULE_6___default().carouselContainer),
                             children: [
-                                /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                    className: `${(residencial_GaleriaImagem_module_default()).arrowButton} ${(residencial_GaleriaImagem_module_default()).prev}`,
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                    className: `${(_residencial_GaleriaImagem_module_scss__WEBPACK_IMPORTED_MODULE_6___default().arrowButton)} ${(_residencial_GaleriaImagem_module_scss__WEBPACK_IMPORTED_MODULE_6___default().prev)}`,
                                     onClick: prevSlide
                                 }),
-                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                    className: (residencial_GaleriaImagem_module_default()).slide,
+                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                    className: (_residencial_GaleriaImagem_module_scss__WEBPACK_IMPORTED_MODULE_6___default().slide),
                                     children: [
-                                        /*#__PURE__*/ jsx_runtime_.jsx("img", {
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                                             src: url,
                                             alt: slides[currentIndex].title
                                         }),
-                                        /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                            className: (residencial_GaleriaImagem_module_default()).zoomExclusivo,
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                            className: (_residencial_GaleriaImagem_module_scss__WEBPACK_IMPORTED_MODULE_6___default().zoomExclusivo),
                                             href: "#zoom",
                                             onClick: ()=>handleImageClickZoom(url)
                                         }),
-                                        /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Modal, {
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Modal, {
                                             show: showModal,
                                             onHide: closeModal,
-                                            dialogClassName: (residencial_GaleriaImagem_module_default()).modalCustom,
-                                            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_bootstrap_.Modal.Body, {
-                                                className: (residencial_GaleriaImagem_module_default()).modalContent,
+                                            dialogClassName: (_residencial_GaleriaImagem_module_scss__WEBPACK_IMPORTED_MODULE_6___default().modalCustom),
+                                            children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Modal.Body, {
+                                                className: (_residencial_GaleriaImagem_module_scss__WEBPACK_IMPORTED_MODULE_6___default().modalContent),
                                                 style: {
                                                     position: "fixed",
                                                     top: "50%",
@@ -996,40 +1354,60 @@ function TeaserCarrosselCadaSorriso({ homeContent , colors , isMobile , isTeaser
                                                     transform: "translate(-50%, -50%)"
                                                 },
                                                 children: [
-                                                    /*#__PURE__*/ jsx_runtime_.jsx("img", {
+                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                                                         src: url,
                                                         alt: "Urban\xedstico",
-                                                        className: (residencial_GaleriaImagem_module_default()).modalImage,
+                                                        className: (_residencial_GaleriaImagem_module_scss__WEBPACK_IMPORTED_MODULE_6___default().modalImage),
                                                         style: {
                                                             border: "3px solid white"
                                                         }
                                                     }),
-                                                    /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                                        className: (residencial_GaleriaImagem_module_default()).BodyplantaLightboxClose,
-                                                        href: "#",
-                                                        onClick: closeModal
+                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                                        className: (_residencial_GaleriaImagem_module_scss__WEBPACK_IMPORTED_MODULE_6___default().plantaLightboxClose),
+                                                        style: {
+                                                            display: "block",
+                                                            width: "50px",
+                                                            height: "50px",
+                                                            boxSizing: "border-box",
+                                                            background: "white",
+                                                            color: "black",
+                                                            textDecoration: "none",
+                                                            position: "absolute",
+                                                            top: "17px",
+                                                            right: "17px",
+                                                            WebkitTransition: "0.5s ease-in-out",
+                                                            MozTransition: "0.5s ease-in-out",
+                                                            OTransition: "0.5s ease-in-out",
+                                                            transition: "0.5s ease-in-out"
+                                                        },
+                                                        href: "#planta",
+                                                        onClick: closeModal,
+                                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                                            style: closeButtonStyles,
+                                                            children: "X"
+                                                        })
                                                     })
                                                 ]
                                             })
                                         })
                                     ]
                                 }),
-                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                    className: (residencial_GaleriaImagem_module_default()).textContent,
+                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                    className: (_residencial_GaleriaImagem_module_scss__WEBPACK_IMPORTED_MODULE_6___default().textContent),
                                     children: [
-                                        /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                            className: (residencial_GaleriaImagem_module_default()).textItem,
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                            className: (_residencial_GaleriaImagem_module_scss__WEBPACK_IMPORTED_MODULE_6___default().textItem),
                                             children: slides[currentIndex].title
                                         }),
-                                        /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                            className: (residencial_GaleriaImagem_module_default()).pagination,
-                                            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                                className: (residencial_GaleriaImagem_module_default()).contentPg,
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                            className: (_residencial_GaleriaImagem_module_scss__WEBPACK_IMPORTED_MODULE_6___default().pagination),
+                                            children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                                className: (_residencial_GaleriaImagem_module_scss__WEBPACK_IMPORTED_MODULE_6___default().contentPg),
                                                 children: [
-                                                    /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
                                                         children: currentIndex + 1
                                                     }),
-                                                    /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
                                                         children: slides.length < 10 ? "0" + slides.length : slides.length
                                                     })
                                                 ]
@@ -1037,54 +1415,54 @@ function TeaserCarrosselCadaSorriso({ homeContent , colors , isMobile , isTeaser
                                         })
                                     ]
                                 }),
-                                /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                    className: `${(residencial_GaleriaImagem_module_default()).arrowButton} ${(residencial_GaleriaImagem_module_default()).next}`,
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                    className: `${(_residencial_GaleriaImagem_module_scss__WEBPACK_IMPORTED_MODULE_6___default().arrowButton)} ${(_residencial_GaleriaImagem_module_scss__WEBPACK_IMPORTED_MODULE_6___default().next)}`,
                                     onClick: nextSlide
                                 })
                             ]
                         }),
-                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                            className: (residencial_GaleriaImagem_module_default()).verticalSliderContainer,
+                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                            className: (_residencial_GaleriaImagem_module_scss__WEBPACK_IMPORTED_MODULE_6___default().verticalSliderContainer),
                             children: [
-                                /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                    className: `${(residencial_GaleriaImagem_module_default()).ButtonVerticalUp} ${(residencial_GaleriaImagem_module_default()).prev}`,
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                    className: `${(_residencial_GaleriaImagem_module_scss__WEBPACK_IMPORTED_MODULE_6___default().ButtonVerticalUp)} ${(_residencial_GaleriaImagem_module_scss__WEBPACK_IMPORTED_MODULE_6___default().prev)}`,
                                     onClick: scrollUp
                                 }),
-                                /*#__PURE__*/ jsx_runtime_.jsx((external_react_slick_default()), {
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((react_slick__WEBPACK_IMPORTED_MODULE_2___default()), {
                                     ref: sliderRef,
                                     ...settings,
-                                    children: slides.map((slide, index)=>/*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                            className: (residencial_GaleriaImagem_module_default()).slideVertical,
+                                    children: slides.map((slide, index)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                            className: (_residencial_GaleriaImagem_module_scss__WEBPACK_IMPORTED_MODULE_6___default().slideVertical),
                                             onClick: ()=>handleImageClick(index),
-                                            children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
-                                                src: Envirioment/* ENDPOINT_BASE */.GU + "/" + slide.image,
+                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
+                                                src: _Envirioment_Envirioment__WEBPACK_IMPORTED_MODULE_5__/* .ENDPOINT_BASE */ .GU + "/" + slide.image,
                                                 alt: slide.title
                                             })
                                         }, index))
                                 }),
-                                /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                    className: `${(residencial_GaleriaImagem_module_default()).ButtonVerticalDown} ${(residencial_GaleriaImagem_module_default()).next}`,
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                    className: `${(_residencial_GaleriaImagem_module_scss__WEBPACK_IMPORTED_MODULE_6___default().ButtonVerticalDown)} ${(_residencial_GaleriaImagem_module_scss__WEBPACK_IMPORTED_MODULE_6___default().next)}`,
                                     onClick: scrollDown
                                 })
                             ]
                         })
                     ]
                 }),
-                /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                    className: (residencial_GaleriaImagem_module_default()).listaItens,
-                    children: /*#__PURE__*/ jsx_runtime_.jsx("ul", {
-                        children: slides.map((slide, index)=>/*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("button", {
+                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                    className: (_residencial_GaleriaImagem_module_scss__WEBPACK_IMPORTED_MODULE_6___default().listaItens),
+                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("ul", {
+                        children: slides.map((slide, index)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+                                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("button", {
                                     onClick: ()=>handleImageClick(index),
                                     style: {
                                         border: "none",
                                         fontWeight: index === currentIndex ? "bold" : "normal"
                                     },
                                     children: [
-                                        /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
                                             children: index + 1
                                         }),
-                                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("span", {
+                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("span", {
                                             children: [
                                                 "\xa0\xa0",
                                                 slide.title
@@ -1100,18 +1478,30 @@ function TeaserCarrosselCadaSorriso({ homeContent , colors , isMobile , isTeaser
     });
 };
 
-// EXTERNAL MODULE: ./_share/components/teaserCarrosselSimples/teaser-carrossel-simples.jsx + 31 modules
-var teaser_carrossel_simples = __webpack_require__(5298);
-// EXTERNAL MODULE: ./_share/components/teaserSuaSeguranca/teaser-sua-seguranca.jsx
-var teaser_sua_seguranca = __webpack_require__(9123);
-// EXTERNAL MODULE: ./_share/components/teaserVideo/teaser-video.jsx
-var teaser_video = __webpack_require__(7382);
-// EXTERNAL MODULE: ./_share/components/teaserVideoPlayer/teaser-video-player.jsx
-var teaser_video_player = __webpack_require__(4590);
-// EXTERNAL MODULE: ./_share/components/residencialProjetoUrbanistico/residencial-ProjetoUrbanistico.module.scss
-var residencial_ProjetoUrbanistico_module = __webpack_require__(2693);
-var residencial_ProjetoUrbanistico_module_default = /*#__PURE__*/__webpack_require__.n(residencial_ProjetoUrbanistico_module);
-;// CONCATENATED MODULE: ./_share/components/residencialProjetoUrbanistico/residencial-ProjetoUrbanistico.jsx
+
+/***/ }),
+
+/***/ 8867:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(358);
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5675);
+/* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_image__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_responsive_picture__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(8290);
+/* harmony import */ var react_responsive_picture__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_responsive_picture__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(6689);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _teaserCarrosselBase__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(6696);
+/* harmony import */ var _teaserVideoPlayer_teaser_video_player__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(4590);
+/* harmony import */ var _residencialLocalizacaoEstrategica_residencial_LocalizacaoEstrategica_module_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(9525);
+/* harmony import */ var _residencialLocalizacaoEstrategica_residencial_LocalizacaoEstrategica_module_scss__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_residencialLocalizacaoEstrategica_residencial_LocalizacaoEstrategica_module_scss__WEBPACK_IMPORTED_MODULE_7__);
 
 
 
@@ -1122,182 +1512,750 @@ var residencial_ProjetoUrbanistico_module_default = /*#__PURE__*/__webpack_requi
 
 
 function ProjetoUrbanistico({ homeContent , colors , isMobile , isTeaser  }) {
-    const url = homeContent.imagemProjetoUrbanistico;
-    const titulo = homeContent.tituloProjetoUrbanistico;
-    const descricao = homeContent.descricaoProjetoUrbanistico;
-    const colorTitle = {
-        color: colors.colorFlat
-    };
-    const Verdes = homeContent.Verdes;
-    const Metros = homeContent.Metros;
-    const Terreno = homeContent.Terreno;
-    const unidatesTerreno = homeContent.unidatesTerreno;
-    const Id = homeContent.typeId.id;
-    const Area = homeContent.Area;
-    const IdEmp = homeContent.id;
-    return /*#__PURE__*/ jsx_runtime_.jsx("section", {
-        className: `${(residencial_ProjetoUrbanistico_module_default()).areaTeaserVideoJardimAlpha}`,
-        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-            className: (residencial_ProjetoUrbanistico_module_default()).areaTeaserVideo,
-            children: [
-                /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Container, {
-                    className: `${(residencial_ProjetoUrbanistico_module_default()).container}`,
-                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                        className: `${(residencial_ProjetoUrbanistico_module_default()).Conteudo}`,
+    const lcz_etg_sub_title = homeContent.lcz_etg_sub_title;
+    const lcz_etg_description = homeContent.lcz_etg_description;
+    const localizacaoEstrategicas = homeContent.localizacaoEstrategicas;
+    const lcz_etg_image_alt = homeContent.lcz_etg_image_alt;
+    const lczEtgImage = homeContent.lczEtgImage;
+    //const aut_mgnt_item_5 = homeContent.aut_mgnt_item_5;
+    const aut_mgnt_item_5 = homeContent.aut_mgnt_item_5;
+    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("section", {
+        className: (_residencialLocalizacaoEstrategica_residencial_LocalizacaoEstrategica_module_scss__WEBPACK_IMPORTED_MODULE_7___default().areaProdutoLocalizacao),
+        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+            className: "hidden-xs",
+            children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                className: "container",
+                children: [
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                        className: "row",
+                        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                            className: "col-xs-8",
+                            children: [
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
+                                    className: (_residencialLocalizacaoEstrategica_residencial_LocalizacaoEstrategica_module_scss__WEBPACK_IMPORTED_MODULE_7___default().titleLocalizacao),
+                                    children: "LOCALIZA\xc7\xc3O ESTRAT\xc9GICA"
+                                }),
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                    className: (_residencialLocalizacaoEstrategica_residencial_LocalizacaoEstrategica_module_scss__WEBPACK_IMPORTED_MODULE_7___default().subtitleLocalizacao),
+                                    children: lcz_etg_sub_title
+                                })
+                            ]
+                        })
+                    }),
+                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                        className: "row",
                         children: [
-                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                className: `${(residencial_ProjetoUrbanistico_module_default()).ConteudoTitle}`,
+                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                className: "col-xs-5",
                                 children: [
-                                    /*#__PURE__*/ jsx_runtime_.jsx("h1", {
-                                        className: `${(residencial_ProjetoUrbanistico_module_default()).produtoTitle}`,
-                                        children: titulo
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                        className: (_residencialLocalizacaoEstrategica_residencial_LocalizacaoEstrategica_module_scss__WEBPACK_IMPORTED_MODULE_7___default().descricaoLocalizacao),
+                                        dangerouslySetInnerHTML: {
+                                            __html: lcz_etg_description
+                                        }
                                     }),
-                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                        className: `${(residencial_ProjetoUrbanistico_module_default()).produtoSubProjeto}`,
-                                        children: /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                            className: "produto-sub-projeto",
-                                            dangerouslySetInnerHTML: {
-                                                __html: descricao
-                                            }
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("table", {
+                                        className: "table",
+                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("tbody", {
+                                            children: localizacaoEstrategicas.map((local, index)=>/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("tr", {
+                                                    children: [
+                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
+                                                            children: local.title
+                                                        }),
+                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
+                                                            children: local.area
+                                                        })
+                                                    ]
+                                                }, index))
                                         })
                                     })
                                 ]
                             }),
-                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                className: (residencial_ProjetoUrbanistico_module_default()).imgProduto,
-                                children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
-                                    className: `${(residencial_ProjetoUrbanistico_module_default()).imgProdutoProjeto}`,
-                                    src: url,
-                                    alt: "Descri\xe7\xe3o da Imagem"
+                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                className: `col-xs-7 np ${(_residencialLocalizacaoEstrategica_residencial_LocalizacaoEstrategica_module_scss__WEBPACK_IMPORTED_MODULE_7___default().prmSpace) ? "img-space-localizacao" : ""}`,
+                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
+                                    src: `${lczEtgImage}`,
+                                    alt: lcz_etg_image_alt,
+                                    title: lcz_etg_image_alt,
+                                    className: (_residencialLocalizacaoEstrategica_residencial_LocalizacaoEstrategica_module_scss__WEBPACK_IMPORTED_MODULE_7___default().imgResponsive)
                                 })
                             })
                         ]
                     })
-                }),
-                /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                    className: (residencial_ProjetoUrbanistico_module_default()).containerIcon,
-                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_bootstrap_.Row, {
-                        className: (residencial_ProjetoUrbanistico_module_default()).Row,
-                        children: [
-                            Area !== null && Area.length > 0 && /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                className: `${(residencial_ProjetoUrbanistico_module_default()).produtoEspecificacao}` + ` ${(residencial_ProjetoUrbanistico_module_default()).produtoEspecificacaoPin}`,
-                                children: [
-                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                        className: (residencial_ProjetoUrbanistico_module_default()).alinhamentoItens,
-                                        children: /*#__PURE__*/ jsx_runtime_.jsx("i", {
-                                            className: `${(residencial_ProjetoUrbanistico_module_default()).iconPin}` + " col-xs-4"
-                                        })
-                                    }),
-                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                        className: "col-xs-8",
-                                        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
-                                            children: [
-                                                /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                                    className: (residencial_ProjetoUrbanistico_module_default()).especificacaoMetros,
-                                                    children: Area
-                                                }),
-                                                /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                                    className: (residencial_ProjetoUrbanistico_module_default()).especificacaoSubtxt,
-                                                    children: Id == 1 ? "\xe1rea do empreendimento" : Id == 2 ? "\xe1rea total da Cidade Alpha" : ""
-                                                }),
-                                                /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                                                    className: (residencial_ProjetoUrbanistico_module_default()).line
-                                                })
-                                            ]
-                                        })
-                                    })
-                                ]
-                            }),
-                            Metros !== null && Metros.length > 0 && /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                className: `${(residencial_ProjetoUrbanistico_module_default()).produtoEspecificacao}` + ` ${(residencial_ProjetoUrbanistico_module_default()).produtoEspecificacaoHome}`,
-                                children: [
-                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                        className: (residencial_ProjetoUrbanistico_module_default()).alinhamentoItens,
-                                        children: /*#__PURE__*/ jsx_runtime_.jsx("i", {
-                                            className: `${(residencial_ProjetoUrbanistico_module_default()).iconHome}` + " col-xs-4"
-                                        })
-                                    }),
-                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                        className: "col-xs-8",
-                                        children: [
-                                            /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                                className: (residencial_ProjetoUrbanistico_module_default()).especificacaoMetros,
-                                                children: Metros
-                                            }),
-                                            /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                                className: (residencial_ProjetoUrbanistico_module_default()).especificacaoSubtxt,
-                                                children: Id == 1 && IdEmp != 1179 ? `de área média nos lotes das ${unidatesTerreno} unidades` : Id == 1 && IdEmp == 1179 ? `de área mínima dos lotes das ${unidatesTerreno} unidades` : Id == 2 ? "habitantes previstos" : ""
-                                            }),
-                                            /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                                                className: (residencial_ProjetoUrbanistico_module_default()).line
-                                            })
-                                        ]
-                                    })
-                                ]
-                            }),
-                            Verdes !== null && Verdes.length > 0 && /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                className: `${(residencial_ProjetoUrbanistico_module_default()).produtoEspecificacao}` + " col-xs-12",
-                                "ng-if": "!prmRegua",
-                                children: [
-                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                        className: (residencial_ProjetoUrbanistico_module_default()).alinhamentoItens,
-                                        children: /*#__PURE__*/ jsx_runtime_.jsx("i", {
-                                            className: `${(residencial_ProjetoUrbanistico_module_default()).iconTree}` + " col-xs-4"
-                                        })
-                                    }),
-                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                        className: (residencial_ProjetoUrbanistico_module_default()).divTitleTree,
-                                        children: [
-                                            /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                                className: (residencial_ProjetoUrbanistico_module_default()).especificacaoMetros,
-                                                children: Verdes
-                                            }),
-                                            /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                                className: (residencial_ProjetoUrbanistico_module_default()).especificacaoSubtxt,
-                                                children: Id == 1 ? "de \xe1reas verdes" : Id == 2 ? "totais de \xe1reas verdes" : ""
-                                            }),
-                                            /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                                                className: (residencial_ProjetoUrbanistico_module_default()).line
-                                            })
-                                        ]
-                                    })
-                                ]
-                            }),
-                            Terreno !== null && Terreno.length > 0 && /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                className: `${(residencial_ProjetoUrbanistico_module_default()).produtoEspecificacao}` + " col-xs-12",
-                                "ng-if": "!prmRegua",
-                                children: [
-                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                        className: (residencial_ProjetoUrbanistico_module_default()).alinhamentoItens,
-                                        children: /*#__PURE__*/ jsx_runtime_.jsx("i", {
-                                            className: `${(residencial_ProjetoUrbanistico_module_default()).iconSwin}` + ` ${(residencial_ProjetoUrbanistico_module_default()).iconSwinMobile}`
-                                        })
-                                    }),
-                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                        className: (residencial_ProjetoUrbanistico_module_default()).divTitle,
-                                        children: [
-                                            /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                                className: (residencial_ProjetoUrbanistico_module_default()).especificacaoMetros,
-                                                children: Terreno
-                                            }),
-                                            /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                                className: (residencial_ProjetoUrbanistico_module_default()).especificacaoSubtxt,
-                                                children: Id == 1 ? "\xe1rea do terreno do clube" : Id == 2 ? "lojas, com\xe9rcios e servi\xe7os" : ""
-                                            })
-                                        ]
-                                    })
-                                ]
-                            })
-                        ]
-                    })
-                })
-            ]
+                ]
+            })
         })
     });
 }
 ;
-/* harmony default export */ const residencial_ProjetoUrbanistico = (ProjetoUrbanistico);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ProjetoUrbanistico);
 
+
+/***/ }),
+
+/***/ 4332:
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6689);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_icons_fa__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1301);
+/* harmony import */ var _residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(4317);
+/* harmony import */ var _residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(358);
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_bootstrap__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _google_maps_google_map__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(2070);
+/* harmony import */ var react_image_zoom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(6158);
+/* harmony import */ var react_image_zoom__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_image_zoom__WEBPACK_IMPORTED_MODULE_5__);
+var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([react_icons_fa__WEBPACK_IMPORTED_MODULE_2__]);
+react_icons_fa__WEBPACK_IMPORTED_MODULE_2__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
+// Module.js
+
+
+
+
+
+
+
+const Module = ({ homeContent  })=>{
+    const { 0: expandedItem , 1: setExpandedItem  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(null);
+    const items = [
+        {
+            Menu: 1,
+            title: "A seguran\xe7a que \xe9 concreta e n\xe3o abstrata",
+            content: "Conte\xfado da Seguran\xe7a..."
+        },
+        {
+            Menu: 2,
+            title: "PLANTA CONCEITUAL",
+            content: "Conte\xfado da Planta Conceitual..."
+        },
+        {
+            Menu: 3,
+            title: "Localiza\xe7\xe3o",
+            content: "Conte\xfado da Localiza\xe7\xe3o..."
+        }, 
+    ];
+    const handleExpand = (index)=>{
+        setExpandedItem(expandedItem === index ? null : index);
+    };
+    const sct_item_first = homeContent.servicoSeguranca;
+    const descriptionSuaSeguranca = homeContent.descriptionSuaSeguranca;
+    const imagemSuaSegurancaMob = homeContent.imagemSuaSegurancaMob;
+    const servicoSegurancaSecond = homeContent.servicoSegurancaSecond;
+    const servicoSegurancaThird = homeContent.servicoSegurancaThird;
+    const lcz_etg_description = homeContent.lcz_etg_description;
+    const localizacaoEstrategicas = homeContent.localizacaoEstrategicas;
+    const standVendas = homeContent.standVendas;
+    const plt_prj_description_mob = homeContent.plt_prj_description_mob;
+    const lista = homeContent.areaDeLazer;
+    const defaultProps = {
+        center: {
+            lat: standVendas.stdLatitude,
+            lng: standVendas.stdLongitude
+        }
+    };
+    const listaRenderizada = /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("ol", {
+        className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().colunaLista),
+        children: lista.map((item, index)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+                children: item.description
+            }, index))
+    });
+    const urlLazer = homeContent.plt_area_image_mob;
+    const urlUrbanistico = homeContent.imgProjUrbanistico;
+    const url = `https://www.google.com/maps/dir/Current+Location/${standVendas.stdLatitude},${standVendas.stdLongitude}`;
+    const { 0: zoomed , 1: setZoomed  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false);
+    const { 0: cursorPosition , 1: setCursorPosition  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)({
+        x: 0,
+        y: 0
+    });
+    const { 0: selectedButton , 1: setSelectedButton  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(null);
+    const handleMouseMove = (e)=>{
+        setCursorPosition({
+            x: e.nativeEvent.offsetX,
+            y: e.nativeEvent.offsetY
+        });
+    };
+    const handleMouseEnter = ()=>{
+        setZoomed(true);
+    };
+    const handleMouseLeave = ()=>{
+        setZoomed(false);
+    };
+    const handleButtonClick = (button)=>{
+        setSelectedButton(button);
+    };
+    const zoomStyle = {
+        transform: `scale(${zoomed ? 2 : 1})`,
+        transformOrigin: `${cursorPosition.x}px ${cursorPosition.y}px`
+    };
+    const projectInfo = {
+        Menu: 1,
+        title: "Projeto Urban\xedstico",
+        description: "Descri\xe7\xe3o do projeto urban\xedstico...",
+        imageUrl: urlUrbanistico
+    };
+    const leisureAreaInfo = {
+        Menu: 2,
+        title: "\xc1rea de Lazer",
+        description: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h5", {
+            dangerouslySetInnerHTML: {
+                __html: plt_prj_description_mob
+            }
+        }),
+        imageUrl: urlLazer
+    };
+    const selectedInfo = selectedButton === "urbanistico" ? projectInfo : leisureAreaInfo;
+    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+        className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().moduleContainer),
+        children: items.map((item, index)=>/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                className: `${(_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().moduleItem)} ${expandedItem === index ? "expanded" : ""}`,
+                children: [
+                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                        className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().itemComponent),
+                        children: [
+                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().itemHeader),
+                                onClick: ()=>handleExpand(index),
+                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h4", {
+                                    children: item.title
+                                })
+                            }),
+                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().buttonHeader),
+                                onClick: ()=>handleExpand(index),
+                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
+                                    className: `${(_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().iconClass)} ${expandedItem === index ? "expanded" : ""}`,
+                                    children: expandedItem === index
+                                })
+                            })
+                        ]
+                    }),
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                        className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().itemComponentShow),
+                        children: expandedItem === index && /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
+                            className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().itemContent),
+                            children: [
+                                item.Menu === 1 && /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_3__.Container, {
+                                    children: [
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                            className: "row",
+                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().descriptionSeguranca),
+                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h5", {
+                                                    dangerouslySetInnerHTML: {
+                                                        __html: descriptionSuaSeguranca
+                                                    }
+                                                })
+                                            })
+                                        }),
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                            className: "row",
+                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                className: "col-xs-12"
+                                            })
+                                        }),
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                            className: "row",
+                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().areaContent),
+                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("ul", {
+                                                    children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                                        className: "col-xs-12",
+                                                        children: [
+                                                            sct_item_first.length && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+                                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                                                    children: sct_item_first
+                                                                })
+                                                            }),
+                                                            servicoSegurancaSecond.length && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+                                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                                                    children: servicoSegurancaSecond
+                                                                })
+                                                            }),
+                                                            servicoSegurancaThird.length && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+                                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                                                    children: servicoSegurancaThird
+                                                                })
+                                                            })
+                                                        ]
+                                                    })
+                                                })
+                                            })
+                                        })
+                                    ]
+                                }),
+                                item.Menu === 2 && /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                    children: [
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                            className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().zoomableImage),
+                                            onMouseMove: handleMouseMove,
+                                            onMouseEnter: handleMouseEnter,
+                                            onMouseLeave: handleMouseLeave,
+                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
+                                                src: selectedInfo.imageUrl,
+                                                alt: selectedInfo.title,
+                                                style: zoomStyle
+                                            })
+                                        }),
+                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                            className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().buttonsContainer),
+                                            children: [
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
+                                                    onClick: ()=>handleButtonClick("urbanistico"),
+                                                    className: selectedButton === "urbanistico" ? (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().selected) : "",
+                                                    children: "Projeto Urban\xedstico"
+                                                }),
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
+                                                    onClick: ()=>handleButtonClick("lazer"),
+                                                    className: selectedButton === "lazer" ? (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().selected) : "",
+                                                    children: "\xc1rea de Lazer"
+                                                })
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                            className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().infoContainer),
+                                            children: [
+                                                selectedInfo.Menu === 1 && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                    className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().textProjetoUrbanistico),
+                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h5", {
+                                                        dangerouslySetInnerHTML: {
+                                                            __html: plt_prj_description_mob
+                                                        }
+                                                    })
+                                                }),
+                                                selectedInfo.Menu === 2 && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                    className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().descricaoConceitual),
+                                                    children: listaRenderizada
+                                                })
+                                            ]
+                                        })
+                                    ]
+                                }),
+                                item.Menu === 3 && /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                    className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().Container),
+                                    children: [
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                            className: "row",
+                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                className: "col-xs-12",
+                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                    className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().areaContentLocalizacao),
+                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                                        dangerouslySetInnerHTML: {
+                                                            __html: lcz_etg_description
+                                                        }
+                                                    })
+                                                })
+                                            })
+                                        }),
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                            className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().row),
+                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().itensLocalizacao),
+                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("ul", {
+                                                    children: localizacaoEstrategicas.map((local, index)=>/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("li", {
+                                                            children: [
+                                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                                    className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().itemTitle),
+                                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("strong", {
+                                                                        children: local.title
+                                                                    })
+                                                                }),
+                                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                                    className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().itemArea),
+                                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                                                        children: local.area
+                                                                    })
+                                                                })
+                                                            ]
+                                                        }, index))
+                                                })
+                                            })
+                                        }),
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                            className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().rowStandVendas),
+                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().areaStandVendas),
+                                                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                                    className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().textoStandVendas),
+                                                    children: [
+                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h4", {
+                                                            children: "Visite o stand de vendas"
+                                                        }),
+                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                                            children: standVendas.subTitle
+                                                        })
+                                                    ]
+                                                })
+                                            })
+                                        }),
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                            className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().map),
+                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_google_maps_google_map__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Z, {
+                                                isMobile: false,
+                                                objLatLng: defaultProps.center
+                                            })
+                                        })
+                                    ]
+                                })
+                            ]
+                        })
+                    })
+                ]
+            }, index))
+    });
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Module);
+
+__webpack_async_result__();
+} catch(e) { __webpack_async_result__(e); } });
+
+/***/ }),
+
+/***/ 5983:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Z": () => (/* binding */ Oferts)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6689);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1937);
+/* harmony import */ var react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(7511);
+/* harmony import */ var react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _Envirioment_Envirioment__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(1790);
+/* harmony import */ var _components_LinkCustom_LinkCustom_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(7509);
+/* harmony import */ var react_responsive_picture__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(8290);
+/* harmony import */ var react_responsive_picture__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_responsive_picture__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var react_bootstrap_Row__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(8907);
+/* harmony import */ var react_bootstrap_Row__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_bootstrap_Row__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _service_storage__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(6008);
+/* harmony import */ var react_id_swiper__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(4967);
+/* harmony import */ var react_id_swiper__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react_id_swiper__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _service_util__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(1659);
+
+
+
+
+
+
+
+
+
+
+
+// import './oferts.scss';
+class Oferts extends react__WEBPACK_IMPORTED_MODULE_1__.Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            swiper: null,
+            isMobile: false
+        };
+        this.swiperRef = this.swiperRef.bind(this);
+        this.slideTo = this.slideTo.bind(this);
+    }
+    async componentDidMount() {
+        window.outerWidth <= 768 ? this.setState({
+            isMobile: true,
+            width: window.outerWidth
+        }) : this.setState({
+            isMobile: false,
+            width: window.outerWidth
+        });
+    }
+    swiperRef(ref) {
+        this.setState({
+            swiper: ref
+        });
+    }
+    slideTo(slide) {
+        if (this.state.swiper) this.state.swiper.slideTo(slide);
+    }
+    getBusca = async (e)=>{
+        const uf = await new _service_storage__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .Z().getLocationUf();
+        const hrefArray = [
+            "busca",
+            uf
+        ];
+        new _service_util__WEBPACK_IMPORTED_MODULE_9__/* ["default"] */ .Z().goToUrl(hrefArray, "_self", false, e);
+    };
+    setClassOfBtn = (typeLote)=>{
+        let classBtnColor = "btn-color-0";
+        switch(typeLote){
+            case 1:
+            case 4:
+                classBtnColor = "btn-color-0";
+                break;
+            case 2:
+            case 5:
+                classBtnColor = "btn-color-1";
+                break;
+            case 3:
+                classBtnColor = "btn-color-2";
+                break;
+            default:
+                classBtnColor = "btn-color-0";
+                break;
+        }
+        return classBtnColor;
+    };
+    render() {
+        const params = {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            }
+        };
+        const htmMobile = /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+            className: "hidden-lg-up",
+            children: [
+                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((react_bootstrap_Row__WEBPACK_IMPORTED_MODULE_6___default()), {
+                    children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)((react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_3___default()), {
+                        xs: 12,
+                        children: [
+                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
+                                children: this.props.prmTitleMobile
+                            }),
+                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                children: this.props.prmDescription
+                            })
+                        ]
+                    })
+                }),
+                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((react_bootstrap_Row__WEBPACK_IMPORTED_MODULE_6___default()), {
+                    style: {
+                        display: "flex",
+                        flexWrap: "wrap",
+                        marginLeft: "0px"
+                    },
+                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                        style: {
+                            width: this.state.width + "px"
+                        },
+                        children: this.props.prmItems ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_3___default()), {
+                            xs: 12,
+                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((react_id_swiper__WEBPACK_IMPORTED_MODULE_8___default()), {
+                                ...params,
+                                getSwiper: this.swiperRef,
+                                children: this.props.prmItems.map((ofert, ofertId)=>{
+                                    const imgBannerMobile = _Envirioment_Envirioment__WEBPACK_IMPORTED_MODULE_10__/* .ENDPOINT_BASE */ .GU + "/" + ofert.images_default[0].image_mobile || _Envirioment_Envirioment__WEBPACK_IMPORTED_MODULE_10__/* .ENDPOINT_BASE */ .GU + "/" + ofert.images_default[0].image;
+                                    const classBtnColor = this.setClassOfBtn(ofert.empreendimento.type_lote);
+                                    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                        className: "banner-images",
+                                        children: [
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_responsive_picture__WEBPACK_IMPORTED_MODULE_5__.Picture, {
+                                                sources: [
+                                                    {
+                                                        srcSet: imgBannerMobile
+                                                    }, 
+                                                ]
+                                            }),
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
+                                                className: "title-ofetrs",
+                                                children: ofert.empreendimento.name
+                                            }),
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                                children: ofert.empreendimento.description
+                                            }),
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                className: "btn-oferts",
+                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_LinkCustom_LinkCustom_component__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Z, {
+                                                    className: classBtnColor,
+                                                    arrayLink: [
+                                                        ofert.type.title.toLowerCase(),
+                                                        ofert.empreendimento.slug
+                                                    ],
+                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                                        children: "CONHE\xc7A"
+                                                    })
+                                                })
+                                            })
+                                        ]
+                                    }, ofertId);
+                                })
+                            })
+                        }) : ""
+                    })
+                }),
+                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((react_bootstrap_Row__WEBPACK_IMPORTED_MODULE_6___default()), {
+                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_3___default()), {
+                        xs: 12,
+                        className: "btn-oferts all",
+                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                            onClick: (e)=>this.getBusca(e),
+                            className: "no-color",
+                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                children: "VER TODOS"
+                            })
+                        })
+                    })
+                })
+            ]
+        });
+        const htmlDesktop = /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+            className: "hidden-md-down",
+            children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                className: "container np",
+                children: [
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                        className: "area-outros-emp-desc",
+                        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)((react_bootstrap_Row__WEBPACK_IMPORTED_MODULE_6___default()), {
+                            children: [
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_3___default()), {
+                                    md: 9,
+                                    children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                        children: [
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
+                                                className: "title",
+                                                children: this.props.title
+                                            }),
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                                className: "sub-title",
+                                                children: this.props.content.out_emp_description
+                                            })
+                                        ]
+                                    })
+                                }),
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_3___default()), {
+                                    md: 3,
+                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_2___default()), {
+                                        onClick: ()=>this.getBusca(),
+                                        className: "btn-ver-todos",
+                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                            children: "VER TODOS"
+                                        })
+                                    })
+                                })
+                            ]
+                        })
+                    }),
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                        className: "area-outros-emp-carousel",
+                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((react_bootstrap_Row__WEBPACK_IMPORTED_MODULE_6___default()), {
+                            children: this.props.prmItems ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+                                children: this.props.prmItems.map((ofert, ofertId)=>{
+                                    const classBtnColor = "btn-oferts " + this.setClassOfBtn(ofert.empreendimento.type_lote);
+                                    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)((react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_3___default()), {
+                                        md: 6,
+                                        className: "item-carousel",
+                                        children: [
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((react_id_swiper__WEBPACK_IMPORTED_MODULE_8___default()), {
+                                                ...params,
+                                                getSwiper: this.swiperRef,
+                                                children: ofert.images_default.map((val, idx)=>{
+                                                    const imgBanner = val.image_desktop || val.image;
+                                                    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                        style: {
+                                                            width: 580 + "px",
+                                                            height: 430 + "px",
+                                                            backgroundImage: "url(" + _Envirioment_Envirioment__WEBPACK_IMPORTED_MODULE_10__/* .ENDPOINT_BASE */ .GU + "/" + imgBanner + ")",
+                                                            backgroundSize: "cover"
+                                                        }
+                                                    }, idx);
+                                                })
+                                            }),
+                                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                                className: "info-oferts",
+                                                children: [
+                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                        className: "title-oferts",
+                                                        children: ofert.empreendimento.name
+                                                    }),
+                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                                        className: "sub-conteudo text-center",
+                                                        children: ofert.empreendimento.description
+                                                    }),
+                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_LinkCustom_LinkCustom_component__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Z, {
+                                                        className: classBtnColor,
+                                                        arrayLink: [
+                                                            ofert.type.title.toLowerCase(),
+                                                            ofert.empreendimento.slug
+                                                        ],
+                                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                                            children: "CONHE\xc7A"
+                                                        })
+                                                    })
+                                                ]
+                                            })
+                                        ]
+                                    }, ofertId);
+                                })
+                            }) : ""
+                        })
+                    })
+                ]
+            })
+        });
+        let sectionClasses = [
+            "info-oferts",
+            "np"
+        ];
+        if (this.props.prmContainer) sectionClasses.push("container");
+        if (this.props.prmNostand) sectionClasses.push("no-stand");
+        if (this.props.prmItems && this.props.prmItems.length > this.props.prmMin) {
+            return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("section", {
+                style: {
+                    zIndex: "0"
+                },
+                className: sectionClasses.join(" "),
+                children: this.state.isMobile ? htmMobile : htmlDesktop
+            });
+        } else {
+            return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("section", {
+                className: "info-oferts-null np",
+                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((react_bootstrap_Row__WEBPACK_IMPORTED_MODULE_6___default()), {
+                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_3___default()), {
+                        md: 12
+                    })
+                })
+            });
+        }
+    }
+};
+
+
+/***/ }),
+
+/***/ 468:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "Z": () => (/* binding */ residencial_PlantaConceitual)
+});
+
+// EXTERNAL MODULE: external "react/jsx-runtime"
+var jsx_runtime_ = __webpack_require__(997);
+// EXTERNAL MODULE: external "react-bootstrap"
+var external_react_bootstrap_ = __webpack_require__(358);
+// EXTERNAL MODULE: ./node_modules/next/image.js
+var next_image = __webpack_require__(5675);
+// EXTERNAL MODULE: external "react-responsive-picture"
+var external_react_responsive_picture_ = __webpack_require__(8290);
+// EXTERNAL MODULE: external "react"
+var external_react_ = __webpack_require__(6689);
+// EXTERNAL MODULE: ./_share/components/teaserCarrosselBase/index.jsx
+var teaserCarrosselBase = __webpack_require__(6696);
+// EXTERNAL MODULE: ./_share/components/teaserVideoPlayer/teaser-video-player.jsx
+var teaser_video_player = __webpack_require__(4590);
 // EXTERNAL MODULE: ./_share/components/residencialPlantaConceitual/residencial-PlantaConceitual.module.scss
 var residencial_PlantaConceitual_module = __webpack_require__(1954);
 var residencial_PlantaConceitual_module_default = /*#__PURE__*/__webpack_require__.n(residencial_PlantaConceitual_module);
@@ -1534,7 +2492,7 @@ const OutraModal = ({ showModal , closeModal , conteudoHTML , homeContent  })=>{
 
 
 
-function residencial_PlantaConceitual_ProjetoUrbanistico({ homeContent , colors , isMobile , isTeaser  }) {
+function ProjetoUrbanistico({ homeContent , colors , isMobile , isTeaser  }) {
     const urlUrbanistico = homeContent.imgProjUrbanistico;
     const urlLazer = homeContent.areaLazer;
     const titulo = homeContent.tituloProjetoUrbanistico;
@@ -1570,6 +2528,22 @@ function residencial_PlantaConceitual_ProjetoUrbanistico({ homeContent , colors 
         setConteudo(opcao);
     };
     const conteudoHTML = "<p>Conte\xfado HTML da segunda modal...</p>";
+    const closeButtonStyles = {
+        position: "absolute",
+        top: "0px",
+        right: "0px",
+        width: "50px",
+        height: "50px",
+        borderRadius: "0%",
+        backgroundColor: "white",
+        color: "black",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        cursor: "pointer",
+        fontSize: "35px",
+        fontWeight: "300"
+    };
     return /*#__PURE__*/ jsx_runtime_.jsx("section", {
         className: `${(residencial_PlantaConceitual_module_default()).areaTeaserVideoJardimAlpha}`,
         children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
@@ -1753,9 +2727,29 @@ function residencial_PlantaConceitual_ProjetoUrbanistico({ homeContent , colors 
                                                     imageUrl: urlUrbanistico
                                                 }),
                                                 /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                                    className: (residencial_PlantaConceitual_module_default()).BodyplantaLightboxClose,
-                                                    href: "#",
-                                                    onClick: closeModal
+                                                    className: (residencial_PlantaConceitual_module_default()).plantaLightboxClose,
+                                                    style: {
+                                                        display: "block",
+                                                        width: "50px",
+                                                        height: "50px",
+                                                        boxSizing: "border-box",
+                                                        background: "white",
+                                                        color: "black",
+                                                        textDecoration: "none",
+                                                        position: "absolute",
+                                                        top: "17px",
+                                                        right: "17px",
+                                                        WebkitTransition: "0.5s ease-in-out",
+                                                        MozTransition: "0.5s ease-in-out",
+                                                        OTransition: "0.5s ease-in-out",
+                                                        transition: "0.5s ease-in-out"
+                                                    },
+                                                    href: "#planta",
+                                                    onClick: closeModal,
+                                                    children: /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                                                        style: closeButtonStyles,
+                                                        children: "X"
+                                                    })
                                                 })
                                             ]
                                         })
@@ -1796,9 +2790,29 @@ function residencial_PlantaConceitual_ProjetoUrbanistico({ homeContent , colors 
                                                     imageUrl: urlLazer
                                                 }),
                                                 /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                                    className: (residencial_PlantaConceitual_module_default()).BodyplantaLightboxClose,
-                                                    href: "#",
-                                                    onClick: closeModal
+                                                    className: (residencial_PlantaConceitual_module_default()).plantaLightboxClose,
+                                                    style: {
+                                                        display: "block",
+                                                        width: "50px",
+                                                        height: "50px",
+                                                        boxSizing: "border-box",
+                                                        background: "white",
+                                                        color: "black",
+                                                        textDecoration: "none",
+                                                        position: "absolute",
+                                                        top: "17px",
+                                                        right: "17px",
+                                                        WebkitTransition: "0.5s ease-in-out",
+                                                        MozTransition: "0.5s ease-in-out",
+                                                        OTransition: "0.5s ease-in-out",
+                                                        transition: "0.5s ease-in-out"
+                                                    },
+                                                    href: "#planta",
+                                                    onClick: closeModal,
+                                                    children: /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                                                        style: closeButtonStyles,
+                                                        children: "X"
+                                                    })
                                                 })
                                             ]
                                         })
@@ -1818,404 +2832,37 @@ function residencial_PlantaConceitual_ProjetoUrbanistico({ homeContent , colors 
     });
 }
 ;
-/* harmony default export */ const residencial_PlantaConceitual = (residencial_PlantaConceitual_ProjetoUrbanistico);
-
-// EXTERNAL MODULE: ./_share/components/residencialConceito/residencial-Conceito.module.scss
-var residencial_Conceito_module = __webpack_require__(9845);
-var residencial_Conceito_module_default = /*#__PURE__*/__webpack_require__.n(residencial_Conceito_module);
-;// CONCATENATED MODULE: ./_share/components/residencialConceito/residencial-Conceito.jsx
+/* harmony default export */ const residencial_PlantaConceitual = (ProjetoUrbanistico);
 
 
+/***/ }),
 
+/***/ 2337:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-
-
-
-
-
-function residencial_Conceito_ProjetoUrbanistico({ homeContent , colors , isMobile , isTeaser  }) {
-    const url = homeContent.imgConceito;
-    const titulo = homeContent.titleConceito;
-    const descricao = homeContent.descricaoConceito;
-    const colorTitle = {
-        color: colors.colorFlat
-    };
-    return /*#__PURE__*/ jsx_runtime_.jsx("section", {
-        className: (residencial_Conceito_module_default()).areaProdutoAtmosfera,
-        children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
-            className: "hidden-xs",
-            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                className: (residencial_Conceito_module_default()).containerFluid,
-                children: [
-                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                        className: "row",
-                        children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                            alt: titulo,
-                            title: titulo,
-                            className: (residencial_Conceito_module_default()).imgAtmosfera,
-                            style: {
-                                backgroundImage: `url(${url})`
-                            }
-                        })
-                    }),
-                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                        className: "row",
-                        children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                            className: (residencial_Conceito_module_default()).container,
-                            children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                className: "col-xs-6 col-xs-offset-5",
-                                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                    className: (residencial_Conceito_module_default()).conteudoAtmosfera,
-                                    children: [
-                                        /*#__PURE__*/ jsx_runtime_.jsx("h1", {
-                                            className: (residencial_Conceito_module_default()).atmosferaTitle,
-                                            children: titulo
-                                        }),
-                                        /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                            className: (residencial_Conceito_module_default()).atmosferaConteudo,
-                                            dangerouslySetInnerHTML: {
-                                                __html: descricao
-                                            }
-                                        })
-                                    ]
-                                })
-                            })
-                        })
-                    })
-                ]
-            })
-        })
-    });
-}
-;
-/* harmony default export */ const residencial_Conceito = (residencial_Conceito_ProjetoUrbanistico);
-
-// EXTERNAL MODULE: ./_share/components/residencialSeguranca/residencial-Seguranca.module.scss
-var residencial_Seguranca_module = __webpack_require__(7872);
-var residencial_Seguranca_module_default = /*#__PURE__*/__webpack_require__.n(residencial_Seguranca_module);
-;// CONCATENATED MODULE: ./_share/components/residencialSeguranca/residencial-Seguranca.jsx
-
-
-
-
-
-
-
-
-
-function residencial_Seguranca_ProjetoUrbanistico({ homeContent , colors , isMobile , isTeaser  }) {
-    const tituloSeguranca = homeContent.tituloSeguranca;
-    const imagemSuaSeguranca = homeContent.imagemSuaSeguranca;
-    const titleSuaSeguranca = homeContent.titleSuaSeguranca;
-    const descriptionSuaSeguranca = homeContent.descriptionSuaSeguranca;
-    const servicoSeguranca = homeContent.servicoSeguranca;
-    const servicoSegurancaSecond = homeContent.servicoSegurancaSecond;
-    const servicoSegurancaThird = homeContent.servicoSegurancaThird;
-    const secondImageSeguranca = homeContent.secondImageSeguranca;
-    const secondImageAltSeguranca = homeContent.secondImageAltSeguranca;
-    return /*#__PURE__*/ jsx_runtime_.jsx("section", {
-        className: (residencial_Seguranca_module_default()).areaProdutoSeguranca,
-        children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
-            className: "hidden-xs",
-            children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                className: "container-fluid",
-                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                    className: (residencial_Seguranca_module_default()).row,
-                    children: [
-                        /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                            className: "col-xs-5 np",
-                            children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                className: (residencial_Seguranca_module_default()).imgCriancas,
-                                title: tituloSeguranca,
-                                alt: tituloSeguranca,
-                                style: {
-                                    backgroundImage: `url(${imagemSuaSeguranca})`
-                                },
-                                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                    className: (residencial_Seguranca_module_default()).areaSombra,
-                                    children: [
-                                        /*#__PURE__*/ jsx_runtime_.jsx("h2", {
-                                            className: (residencial_Seguranca_module_default()).titleSeguranca,
-                                            children: titleSuaSeguranca
-                                        }),
-                                        /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                            className: `${(residencial_Seguranca_module_default()).descricaoSeguranca}` + " col-xs-offset-2",
-                                            dangerouslySetInnerHTML: {
-                                                __html: descriptionSuaSeguranca
-                                            }
-                                        }),
-                                        servicoSeguranca.length > 0 && /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
-                                            children: [
-                                                /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                                    className: (residencial_Seguranca_module_default()).servicosSeguranca,
-                                                    children: servicoSeguranca
-                                                }),
-                                                /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                                                    className: (residencial_Seguranca_module_default()).line
-                                                })
-                                            ]
-                                        }),
-                                        servicoSegurancaSecond.length > 0 && /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
-                                            children: [
-                                                /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                                    className: (residencial_Seguranca_module_default()).servicosSeguranca,
-                                                    children: servicoSegurancaSecond
-                                                }),
-                                                /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                                                    className: (residencial_Seguranca_module_default()).line
-                                                })
-                                            ]
-                                        }),
-                                        servicoSegurancaThird.length > 0 && /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                            className: `${(residencial_Seguranca_module_default()).servicosSeguranca}` + " col-xs-offset-2",
-                                            children: servicoSegurancaThird
-                                        })
-                                    ]
-                                })
-                            })
-                        }),
-                        /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                            className: "col-xs-7 np",
-                            children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                title: secondImageAltSeguranca,
-                                alt: secondImageAltSeguranca,
-                                className: (residencial_Seguranca_module_default()).imgSegurancaPortaria,
-                                style: {
-                                    backgroundImage: `url(${secondImageAltSeguranca})`
-                                }
-                            })
-                        })
-                    ]
-                })
-            })
-        })
-    });
-}
-;
-/* harmony default export */ const residencial_Seguranca = (residencial_Seguranca_ProjetoUrbanistico);
-
-// EXTERNAL MODULE: ./_share/components/residencialAutoGestao/residencial-AutoGestao.module.scss
-var residencial_AutoGestao_module = __webpack_require__(2917);
-var residencial_AutoGestao_module_default = /*#__PURE__*/__webpack_require__.n(residencial_AutoGestao_module);
-;// CONCATENATED MODULE: ./_share/components/residencialAutoGestao/residencial-AutoGestao.jsx
-
-
-
-
-
-
-
-
-
-function residencial_AutoGestao_ProjetoUrbanistico({ homeContent , colors , isMobile , isTeaser  }) {
-    const aut_mgnt_sub_title = homeContent.aut_mgnt_sub_title;
-    const aut_mgnt_item_1 = homeContent.aut_mgnt_item_1;
-    const aut_mgnt_item_2 = homeContent.aut_mgnt_item_2;
-    const aut_mgnt_item_3 = homeContent.aut_mgnt_item_3;
-    const aut_mgnt_item_4 = homeContent.aut_mgnt_item_4;
-    //const aut_mgnt_item_5 = homeContent.aut_mgnt_item_5;
-    const aut_mgnt_item_5 = homeContent.aut_mgnt_item_5;
-    return /*#__PURE__*/ jsx_runtime_.jsx("section", {
-        className: (residencial_AutoGestao_module_default()).areaProdutoAutogestao,
-        children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
-            className: "hidden-xs",
-            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                className: "container np",
-                children: [
-                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                        className: "row",
-                        children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                            className: "col-xs-offset-2 col-lg-10 col-xs-9 autogestao-fundo",
-                            children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                className: (residencial_AutoGestao_module_default()).fundo
-                            })
-                        })
-                    }),
-                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                        className: "row",
-                        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                            className: (residencial_AutoGestao_module_default()).divUniao,
-                            children: [
-                                /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                    className: (residencial_AutoGestao_module_default()).divVideo,
-                                    children: /*#__PURE__*/ jsx_runtime_.jsx("iframe", {
-                                        width: "100%",
-                                        height: "540",
-                                        src: "https://www.youtube.com/embed/GI0VGwaVnG4",
-                                        frameBorder: "0",
-                                        allowFullScreen: true
-                                    })
-                                }),
-                                /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                    className: (residencial_AutoGestao_module_default()).divGestao,
-                                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                        className: (residencial_AutoGestao_module_default()).conteudoAutogestao,
-                                        children: [
-                                            /*#__PURE__*/ jsx_runtime_.jsx("h1", {
-                                                className: (residencial_AutoGestao_module_default()).autogestaoTitle,
-                                                children: "AUTOGEST\xc3O"
-                                            }),
-                                            /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                                className: (residencial_AutoGestao_module_default()).autogestaoSubtxt,
-                                                children: aut_mgnt_sub_title
-                                            }),
-                                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
-                                                className: (residencial_AutoGestao_module_default()).autogestaoConteudo,
-                                                children: [
-                                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("span", {
-                                                        children: [
-                                                            aut_mgnt_item_1 !== null ? `- ${aut_mgnt_item_1}` : null,
-                                                            /*#__PURE__*/ jsx_runtime_.jsx("br", {})
-                                                        ]
-                                                    }),
-                                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("span", {
-                                                        children: [
-                                                            aut_mgnt_item_2 !== null ? `- ${aut_mgnt_item_2}` : null,
-                                                            /*#__PURE__*/ jsx_runtime_.jsx("br", {})
-                                                        ]
-                                                    }),
-                                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("span", {
-                                                        children: [
-                                                            aut_mgnt_item_3 !== null ? `- ${aut_mgnt_item_3}` : null,
-                                                            /*#__PURE__*/ jsx_runtime_.jsx("br", {})
-                                                        ]
-                                                    }),
-                                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("span", {
-                                                        children: [
-                                                            aut_mgnt_item_4 !== null ? `- ${aut_mgnt_item_4}` : null,
-                                                            /*#__PURE__*/ jsx_runtime_.jsx("br", {})
-                                                        ]
-                                                    }),
-                                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("span", {
-                                                        children: [
-                                                            aut_mgnt_item_5 !== null ? `- ${aut_mgnt_item_5}` : null,
-                                                            /*#__PURE__*/ jsx_runtime_.jsx("br", {})
-                                                        ]
-                                                    })
-                                                ]
-                                            })
-                                        ]
-                                    })
-                                })
-                            ]
-                        })
-                    })
-                ]
-            })
-        })
-    });
-}
-;
-/* harmony default export */ const residencial_AutoGestao = (residencial_AutoGestao_ProjetoUrbanistico);
-
-// EXTERNAL MODULE: ./_share/components/residencialLocalizacaoEstrategica/residencial-LocalizacaoEstrategica.module.scss
-var residencial_LocalizacaoEstrategica_module = __webpack_require__(9525);
-var residencial_LocalizacaoEstrategica_module_default = /*#__PURE__*/__webpack_require__.n(residencial_LocalizacaoEstrategica_module);
-;// CONCATENATED MODULE: ./_share/components/residencialLocalizacaoEstrategica/residencial-LocalizacaoEstrategica.jsx
-
-
-
-
-
-
-
-
-
-function residencial_LocalizacaoEstrategica_ProjetoUrbanistico({ homeContent , colors , isMobile , isTeaser  }) {
-    const lcz_etg_sub_title = homeContent.lcz_etg_sub_title;
-    const lcz_etg_description = homeContent.lcz_etg_description;
-    const localizacaoEstrategicas = homeContent.localizacaoEstrategicas;
-    const lcz_etg_image_alt = homeContent.lcz_etg_image_alt;
-    const lczEtgImage = homeContent.lczEtgImage;
-    //const aut_mgnt_item_5 = homeContent.aut_mgnt_item_5;
-    const aut_mgnt_item_5 = homeContent.aut_mgnt_item_5;
-    return /*#__PURE__*/ jsx_runtime_.jsx("section", {
-        className: (residencial_LocalizacaoEstrategica_module_default()).areaProdutoLocalizacao,
-        children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
-            className: "hidden-xs",
-            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                className: "container",
-                children: [
-                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                        className: "row",
-                        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                            className: "col-xs-8",
-                            children: [
-                                /*#__PURE__*/ jsx_runtime_.jsx("h2", {
-                                    className: (residencial_LocalizacaoEstrategica_module_default()).titleLocalizacao,
-                                    children: "LOCALIZA\xc7\xc3O ESTRAT\xc9GICA"
-                                }),
-                                /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                    className: (residencial_LocalizacaoEstrategica_module_default()).subtitleLocalizacao,
-                                    children: lcz_etg_sub_title
-                                })
-                            ]
-                        })
-                    }),
-                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                        className: "row",
-                        children: [
-                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                className: "col-xs-5",
-                                children: [
-                                    /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                        className: (residencial_LocalizacaoEstrategica_module_default()).descricaoLocalizacao,
-                                        dangerouslySetInnerHTML: {
-                                            __html: lcz_etg_description
-                                        }
-                                    }),
-                                    /*#__PURE__*/ jsx_runtime_.jsx("table", {
-                                        className: "table",
-                                        children: /*#__PURE__*/ jsx_runtime_.jsx("tbody", {
-                                            children: localizacaoEstrategicas.map((local, index)=>/*#__PURE__*/ (0,jsx_runtime_.jsxs)("tr", {
-                                                    children: [
-                                                        /*#__PURE__*/ jsx_runtime_.jsx("td", {
-                                                            children: local.title
-                                                        }),
-                                                        /*#__PURE__*/ jsx_runtime_.jsx("td", {
-                                                            children: local.area
-                                                        })
-                                                    ]
-                                                }, index))
-                                        })
-                                    })
-                                ]
-                            }),
-                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                className: `col-xs-7 np ${(residencial_LocalizacaoEstrategica_module_default()).prmSpace ? "img-space-localizacao" : ""}`,
-                                children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
-                                    src: `${lczEtgImage}`,
-                                    alt: lcz_etg_image_alt,
-                                    title: lcz_etg_image_alt,
-                                    className: (residencial_LocalizacaoEstrategica_module_default()).imgResponsive
-                                })
-                            })
-                        ]
-                    })
-                ]
-            })
-        })
-    });
-}
-;
-/* harmony default export */ const residencial_LocalizacaoEstrategica = (residencial_LocalizacaoEstrategica_ProjetoUrbanistico);
-
-// EXTERNAL MODULE: external "formik"
-var external_formik_ = __webpack_require__(2296);
-// EXTERNAL MODULE: ./_share/service/construtor-vendas.service.js
-var construtor_vendas_service = __webpack_require__(1110);
-// EXTERNAL MODULE: ./_share/service/enterprisesCRM.js
-var service_enterprisesCRM = __webpack_require__(4434);
-// EXTERNAL MODULE: ./_share/service/rdstation.service.js
-var rdstation_service = __webpack_require__(4562);
-// EXTERNAL MODULE: ./_share/components/rdStation/sendRdstation.jsx
-var sendRdstation = __webpack_require__(3112);
-// EXTERNAL MODULE: ./_share/service/storage.js + 3 modules
-var service_storage = __webpack_require__(6008);
-// EXTERNAL MODULE: ./_share/components/residencialProdutoInteresse/residencial-residencial-ProdutoInteresse.module.scss
-var residencial_residencial_ProdutoInteresse_module = __webpack_require__(3047);
-var residencial_residencial_ProdutoInteresse_module_default = /*#__PURE__*/__webpack_require__.n(residencial_residencial_ProdutoInteresse_module);
-;// CONCATENATED MODULE: ./_share/components/residencialProdutoInteresse/residencial-ProdutoInteresse.jsx
+"use strict";
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(358);
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var formik__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2296);
+/* harmony import */ var formik__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(formik__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(6689);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _service_construtor_vendas_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(1110);
+/* harmony import */ var _service_enterprisesCRM__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(4434);
+/* harmony import */ var _Envirioment_Envirioment__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(1790);
+/* harmony import */ var _service_rdstation_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(4562);
+/* harmony import */ var _rdStation_sendRdstation__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(3112);
+/* harmony import */ var _service_storage__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(6008);
+/* harmony import */ var _service_util__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(1659);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(9003);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _residencial_residencial_ProdutoInteresse_module_scss__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(3047);
+/* harmony import */ var _residencial_residencial_ProdutoInteresse_module_scss__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_residencial_residencial_ProdutoInteresse_module_scss__WEBPACK_IMPORTED_MODULE_10__);
 
 
 
@@ -2230,22 +2877,22 @@ var residencial_residencial_ProdutoInteresse_module_default = /*#__PURE__*/__web
 
 
 const FormSaibaMais = ({ setNameFormulario , colors , homeContent , isTeaser , isMobile ,  })=>{
-    const { 0: adicionalCellPhoneError , 1: setAdicionalCellPhoneError  } = (0,external_react_.useState)(false);
-    const { 0: enterprises , 1: setEnterprises  } = (0,external_react_.useState)([]);
-    const { 0: sendSuccess , 1: setSendSuccess  } = (0,external_react_.useState)(null);
-    const { 0: sending , 1: setSending  } = (0,external_react_.useState)(false);
-    const { 0: msgErrorAPI , 1: setMsgErrorAPI  } = (0,external_react_.useState)("");
+    const { 0: adicionalCellPhoneError , 1: setAdicionalCellPhoneError  } = (0,react__WEBPACK_IMPORTED_MODULE_3__.useState)(false);
+    const { 0: enterprises , 1: setEnterprises  } = (0,react__WEBPACK_IMPORTED_MODULE_3__.useState)([]);
+    const { 0: sendSuccess , 1: setSendSuccess  } = (0,react__WEBPACK_IMPORTED_MODULE_3__.useState)(null);
+    const { 0: sending , 1: setSending  } = (0,react__WEBPACK_IMPORTED_MODULE_3__.useState)(false);
+    const { 0: msgErrorAPI , 1: setMsgErrorAPI  } = (0,react__WEBPACK_IMPORTED_MODULE_3__.useState)("");
     const typeLote = homeContent.typeLote;
     const secondName = homeContent.secondName;
     const tour360 = homeContent.tour360;
     const lcz_etg_image_alt = homeContent.lcz_etg_image_alt;
     const lczEtgImage = homeContent.lczEtgImage;
     const aut_mgnt_item_5 = homeContent.aut_mgnt_item_5;
-    (0,external_react_.useEffect)(()=>{
-        const sendRd = new sendRdstation/* default */.Z();
+    (0,react__WEBPACK_IMPORTED_MODULE_3__.useEffect)(()=>{
+        const sendRd = new _rdStation_sendRdstation__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Z();
         sendRd.fillRdStation(window.location.pathname, {}, "teaser-saibamais.form");
         const asyncData = async ()=>{
-            const storage = new service_storage/* default */.Z();
+            const storage = new _service_storage__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .Z();
             const enterprises = await storage.getEnterprisesForHouseCRM();
             setEnterprises(enterprises);
         };
@@ -2272,20 +2919,20 @@ const FormSaibaMais = ({ setNameFormulario , colors , homeContent , isTeaser , i
             };
         }
     }
-    return /*#__PURE__*/ jsx_runtime_.jsx("section", {
-        className: (residencial_residencial_ProdutoInteresse_module_default()).areaProdutoInteresse,
-        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_bootstrap_.Container, {
+    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("section", {
+        className: (_residencial_residencial_ProdutoInteresse_module_scss__WEBPACK_IMPORTED_MODULE_10___default().areaProdutoInteresse),
+        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Container, {
             children: [
-                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                    className: (residencial_residencial_ProdutoInteresse_module_default()).interesse,
+                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                    className: (_residencial_residencial_ProdutoInteresse_module_scss__WEBPACK_IMPORTED_MODULE_10___default().interesse),
                     id: "stand",
                     children: [
-                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("h2", {
-                            className: (residencial_residencial_ProdutoInteresse_module_default()).produtoTitleInteresse,
+                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("h2", {
+                            className: (_residencial_residencial_ProdutoInteresse_module_scss__WEBPACK_IMPORTED_MODULE_10___default().produtoTitleInteresse),
                             children: [
                                 "Tem interesse no ",
-                                /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
-                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("b", {
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("br", {}),
+                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("b", {
                                     className: secondName.length > 13 ? "small-font" : "",
                                     children: [
                                         typeLote.title,
@@ -2296,15 +2943,15 @@ const FormSaibaMais = ({ setNameFormulario , colors , homeContent , isTeaser , i
                                 "?"
                             ]
                         }),
-                        /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                            className: `${(residencial_residencial_ProdutoInteresse_module_default()).produtoSubInteresse} ${(residencial_residencial_ProdutoInteresse_module_default()).produtoSubInfo}`,
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                            className: `${(_residencial_residencial_ProdutoInteresse_module_scss__WEBPACK_IMPORTED_MODULE_10___default().produtoSubInteresse)} ${(_residencial_residencial_ProdutoInteresse_module_scss__WEBPACK_IMPORTED_MODULE_10___default().produtoSubInfo)}`,
                             children: "Preenchendo o formul\xe1rio abaixo, voc\xea est\xe1 de acordo que n\xf3s, do Grupo Alphaville, podemos entrar em contato com voc\xea via WhatsApp no n\xfamero informado."
                         })
                     ]
                 }),
-                /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Row, {
-                    className: (residencial_residencial_ProdutoInteresse_module_default()).areaConteudo,
-                    children: /*#__PURE__*/ jsx_runtime_.jsx(external_formik_.Formik, {
+                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Row, {
+                    className: (_residencial_residencial_ProdutoInteresse_module_scss__WEBPACK_IMPORTED_MODULE_10___default().areaConteudo),
+                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(formik__WEBPACK_IMPORTED_MODULE_2__.Formik, {
                         initialValues: {
                             name: "",
                             email: "",
@@ -2316,7 +2963,7 @@ const FormSaibaMais = ({ setNameFormulario , colors , homeContent , isTeaser , i
                         },
                         validate: (values)=>{
                             const errors = {};
-                            const util = new service_util/* default */.Z();
+                            const util = new _service_util__WEBPACK_IMPORTED_MODULE_8__/* ["default"] */ .Z();
                             if (util.validateName(values.name)) errors.name = util.validateName(values.name);
                             if (util.validateEmail(values.email)) errors.email = util.validateEmail(values.email);
                             if (util.validateTel(values.celular, true)) errors.celular = util.validateTel(values.celular, true);
@@ -2335,12 +2982,12 @@ const FormSaibaMais = ({ setNameFormulario , colors , homeContent , isTeaser , i
                                 try {
                                     setSubmitting(true);
                                     setSending(true);
-                                    const enterprisesCRM = new service_enterprisesCRM/* default */.Z();
+                                    const enterprisesCRM = new _service_enterprisesCRM__WEBPACK_IMPORTED_MODULE_11__/* ["default"] */ .Z();
                                     const empHouseCRM = enterprisesCRM.getEnterprise(enterprises, homeContent.uf.title, homeContent.cidade);
                                     values.CodEmpreendimento = homeContent.idCv;
                                     values.NomeEmpreendimento = homeContent.descricaoCv;
-                                    const phone = new service_util/* default */.Z().splitPhoneDdd(values.celular);
-                                    const phoneAdctional = new service_util/* default */.Z().splitPhoneDdd(values.celularAdicional);
+                                    const phone = new _service_util__WEBPACK_IMPORTED_MODULE_8__/* ["default"] */ .Z().splitPhoneDdd(values.celular);
+                                    const phoneAdctional = new _service_util__WEBPACK_IMPORTED_MODULE_8__/* ["default"] */ .Z().splitPhoneDdd(values.celularAdicional);
                                     const msgForm = "Empreendimento: " + homeContent.title + " id: " + homeContent.id;
                                     const empTitle = `Empreendimento: ${empHouseCRM ? empHouseCRM.emprendimento : homeContent.title}.`;
                                     const stateAndCity = `Estado: ${homeContent.uf.uf} - Cidade: ${homeContent.cidade}`;
@@ -2358,7 +3005,7 @@ const FormSaibaMais = ({ setNameFormulario , colors , homeContent , isTeaser , i
                                     const praca = homeContent.pracaCv;
                                     let success = null;
                                     if (praca) {
-                                        const construtorVendasService = new construtor_vendas_service/* default */.Z();
+                                        const construtorVendasService = new _service_construtor_vendas_service__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Z();
                                         const cvPost = await construtorVendasService.sendApiCv(values.name, values.email, phone.ddd.replace(/\D/g, ""), phone.phone.replace(/\D/g, ""), phoneAdctional.ddd.replace(/\D/g, ""), phoneAdctional.phone.replace(/\D/g, ""), idCV, homeContent.descricaoCv, tipo, praca, idEmpCv);
                                         success = cvPost.success;
                                         setMsgErrorAPI(cvPost.statusText);
@@ -2370,12 +3017,12 @@ const FormSaibaMais = ({ setNameFormulario , colors , homeContent , isTeaser , i
                                         if (empHouseCRM && empHouseCRM.codEmpreend) {
                                             codemp = parseInt(empHouseCRM.codEmpreend);
                                         }
-                                        const sendRd = new rdstation_service/* default */.Z();
+                                        const sendRd = new _service_rdstation_service__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Z();
                                         const rdStationRes = await sendRd.sendApiRdStation(values.name, values.email, phone.ddd.replace(/\D/g, ""), phone.phone.replace(/\D/g, ""), values.CodEmpreendimento, values.NomeEmpreendimento, codemp, empTitle, values.state, values.city, values.msg, "home_whats.form", concordo);
                                         success = rdStationRes.success;
                                     }
                                     if (success) {
-                                        sessionStorage.setItem(Envirioment/* FORM_LP_CONTENT */.zg, JSON.stringify({
+                                        sessionStorage.setItem(_Envirioment_Envirioment__WEBPACK_IMPORTED_MODULE_12__/* .FORM_LP_CONTENT */ .zg, JSON.stringify({
                                             Name: values.name,
                                             Email: values.email,
                                             Success: success,
@@ -2418,80 +3065,80 @@ const FormSaibaMais = ({ setNameFormulario , colors , homeContent , isTeaser , i
                                 }
                             }, 500);
                         },
-                        children: ({ values , errors , touched , handleChange , handleBlur , handleSubmit , isSubmitting ,  })=>/*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_formik_.Form, {
+                        children: ({ values , errors , touched , handleChange , handleBlur , handleSubmit , isSubmitting ,  })=>/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(formik__WEBPACK_IMPORTED_MODULE_2__.Form, {
                                 name: "produto_interesse.form",
                                 action: `/${isTeaser ? "teaser" : "residencia"}/${homeContent.slug}/agradecimento?success=${values.sendSuccess ? "true" : "false"}`,
-                                className: (residencial_residencial_ProdutoInteresse_module_default()).areaForm,
+                                className: (_residencial_residencial_ProdutoInteresse_module_scss__WEBPACK_IMPORTED_MODULE_10___default().areaForm),
                                 children: [
-                                    /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Row, {
-                                        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_bootstrap_.Col, {
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Row, {
+                                        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Col, {
                                             xs: 12,
-                                            className: (residencial_residencial_ProdutoInteresse_module_default()).areaFields,
+                                            className: (_residencial_residencial_ProdutoInteresse_module_scss__WEBPACK_IMPORTED_MODULE_10___default().areaFields),
                                             children: [
-                                                /*#__PURE__*/ jsx_runtime_.jsx(external_formik_.Field, {
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(formik__WEBPACK_IMPORTED_MODULE_2__.Field, {
                                                     id: "name",
                                                     name: "name",
                                                     placeholder: "NOME",
-                                                    className: external_classnames_default()(setColorForm((residencial_residencial_ProdutoInteresse_module_default()), colors.displayColor).field, errors.name && touched.name ? (residencial_residencial_ProdutoInteresse_module_default()).required : "")
+                                                    className: classnames__WEBPACK_IMPORTED_MODULE_9___default()(setColorForm((_residencial_residencial_ProdutoInteresse_module_scss__WEBPACK_IMPORTED_MODULE_10___default()), colors.displayColor).field, errors.name && touched.name ? (_residencial_residencial_ProdutoInteresse_module_scss__WEBPACK_IMPORTED_MODULE_10___default().required) : "")
                                                 }),
-                                                /*#__PURE__*/ jsx_runtime_.jsx(external_formik_.Field, {
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(formik__WEBPACK_IMPORTED_MODULE_2__.Field, {
                                                     id: "email",
                                                     name: "email",
                                                     placeholder: "E-MAIL",
                                                     type: "email",
-                                                    className: external_classnames_default()(setColorForm((residencial_residencial_ProdutoInteresse_module_default()), colors.displayColor).field, errors.email && touched.email ? (residencial_residencial_ProdutoInteresse_module_default()).required : "")
+                                                    className: classnames__WEBPACK_IMPORTED_MODULE_9___default()(setColorForm((_residencial_residencial_ProdutoInteresse_module_scss__WEBPACK_IMPORTED_MODULE_10___default()), colors.displayColor).field, errors.email && touched.email ? (_residencial_residencial_ProdutoInteresse_module_scss__WEBPACK_IMPORTED_MODULE_10___default().required) : "")
                                                 }),
-                                                /*#__PURE__*/ jsx_runtime_.jsx(external_formik_.Field, {
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(formik__WEBPACK_IMPORTED_MODULE_2__.Field, {
                                                     id: "celular",
                                                     name: "celular",
-                                                    value: new service_util/* default */.Z().foneMask(values.celular),
+                                                    value: new _service_util__WEBPACK_IMPORTED_MODULE_8__/* ["default"] */ .Z().foneMask(values.celular),
                                                     placeholder: "CELULAR",
-                                                    className: external_classnames_default()(setColorForm((residencial_residencial_ProdutoInteresse_module_default()), colors.displayColor).field, errors.celular && touched.celular ? (residencial_residencial_ProdutoInteresse_module_default()).required : "")
+                                                    className: classnames__WEBPACK_IMPORTED_MODULE_9___default()(setColorForm((_residencial_residencial_ProdutoInteresse_module_scss__WEBPACK_IMPORTED_MODULE_10___default()), colors.displayColor).field, errors.celular && touched.celular ? (_residencial_residencial_ProdutoInteresse_module_scss__WEBPACK_IMPORTED_MODULE_10___default().required) : "")
                                                 }),
-                                                /*#__PURE__*/ jsx_runtime_.jsx(external_formik_.Field, {
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(formik__WEBPACK_IMPORTED_MODULE_2__.Field, {
                                                     id: "celularAdicional",
                                                     name: "celularAdicional",
-                                                    value: new service_util/* default */.Z().foneMask(values.celularAdicional),
+                                                    value: new _service_util__WEBPACK_IMPORTED_MODULE_8__/* ["default"] */ .Z().foneMask(values.celularAdicional),
                                                     placeholder: "CELULAR ADICIONAL",
-                                                    className: external_classnames_default()(setColorForm((residencial_residencial_ProdutoInteresse_module_default()), colors.displayColor).field, errors.celularAdicional && touched.celularAdicional ? (residencial_residencial_ProdutoInteresse_module_default()).required : "")
+                                                    className: classnames__WEBPACK_IMPORTED_MODULE_9___default()(setColorForm((_residencial_residencial_ProdutoInteresse_module_scss__WEBPACK_IMPORTED_MODULE_10___default()), colors.displayColor).field, errors.celularAdicional && touched.celularAdicional ? (_residencial_residencial_ProdutoInteresse_module_scss__WEBPACK_IMPORTED_MODULE_10___default().required) : "")
                                                 }),
-                                                /*#__PURE__*/ jsx_runtime_.jsx(external_formik_.Field, {
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(formik__WEBPACK_IMPORTED_MODULE_2__.Field, {
                                                     id: "idCv",
                                                     name: "idCv",
                                                     type: "hidden",
                                                     value: homeContent ? homeContent.idCv : 0
                                                 }),
-                                                /*#__PURE__*/ jsx_runtime_.jsx(external_formik_.Field, {
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(formik__WEBPACK_IMPORTED_MODULE_2__.Field, {
                                                     id: "descricaoCv",
                                                     name: "descricaoCv",
                                                     type: "hidden",
                                                     value: homeContent ? homeContent.descricaoCv : ""
                                                 }),
-                                                /*#__PURE__*/ jsx_runtime_.jsx("button", {
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
                                                     type: "submit",
                                                     disabled: sending,
-                                                    className: external_classnames_default()(setColorForm((residencial_residencial_ProdutoInteresse_module_default()), colors.displayColor).field, setColorForm((residencial_residencial_ProdutoInteresse_module_default()), colors.displayColor).submit, sending ? (residencial_residencial_ProdutoInteresse_module_default()).btnSubmitSending : ""),
+                                                    className: classnames__WEBPACK_IMPORTED_MODULE_9___default()(setColorForm((_residencial_residencial_ProdutoInteresse_module_scss__WEBPACK_IMPORTED_MODULE_10___default()), colors.displayColor).field, setColorForm((_residencial_residencial_ProdutoInteresse_module_scss__WEBPACK_IMPORTED_MODULE_10___default()), colors.displayColor).submit, sending ? (_residencial_residencial_ProdutoInteresse_module_scss__WEBPACK_IMPORTED_MODULE_10___default().btnSubmitSending) : ""),
                                                     children: sending ? "ENVIANDO" : "ENVIAR"
                                                 })
                                             ]
                                         })
                                     }),
-                                    adicionalCellPhoneError && /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Row, {
-                                        children: /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Col, {
+                                    adicionalCellPhoneError && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Row, {
+                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Col, {
                                             xs: 12,
-                                            className: (residencial_residencial_ProdutoInteresse_module_default()).areaFields,
-                                            children: /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                                className: (residencial_residencial_ProdutoInteresse_module_default()).hasErrorInfo,
+                                            className: (_residencial_residencial_ProdutoInteresse_module_scss__WEBPACK_IMPORTED_MODULE_10___default().areaFields),
+                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                                className: (_residencial_residencial_ProdutoInteresse_module_scss__WEBPACK_IMPORTED_MODULE_10___default().hasErrorInfo),
                                                 children: 'O n\xfamero informado em "Celular Adicional" e "Celular" n\xe3o podem ser iguais.'
                                             })
                                         })
                                     }),
-                                    sendSuccess == false && /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Row, {
-                                        children: /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Col, {
+                                    sendSuccess == false && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Row, {
+                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Col, {
                                             xs: 12,
-                                            className: (residencial_residencial_ProdutoInteresse_module_default()).areaFields,
-                                            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
-                                                className: (residencial_residencial_ProdutoInteresse_module_default()).hasErrorInfo,
+                                            className: (_residencial_residencial_ProdutoInteresse_module_scss__WEBPACK_IMPORTED_MODULE_10___default().areaFields),
+                                            children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
+                                                className: (_residencial_residencial_ProdutoInteresse_module_scss__WEBPACK_IMPORTED_MODULE_10___default().hasErrorInfo),
                                                 children: [
                                                     "Erro ao enviar contato. ",
                                                     msgErrorAPI
@@ -2499,37 +3146,37 @@ const FormSaibaMais = ({ setNameFormulario , colors , homeContent , isTeaser , i
                                             })
                                         })
                                     }),
-                                    /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Row, {
-                                        className: (residencial_residencial_ProdutoInteresse_module_default()).areaCheckbox,
-                                        children: /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Col, {
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Row, {
+                                        className: (_residencial_residencial_ProdutoInteresse_module_scss__WEBPACK_IMPORTED_MODULE_10___default().areaCheckbox),
+                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Col, {
                                             xs: 12,
-                                            className: (residencial_residencial_ProdutoInteresse_module_default()).inputCheckbox,
-                                            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_bootstrap_.Form.Label, {
-                                                className: external_classnames_default()((residencial_residencial_ProdutoInteresse_module_default()).labelCheckbox, (residencial_residencial_ProdutoInteresse_module_default()).checkboxBase, errors.checked && touched.checked ? (residencial_residencial_ProdutoInteresse_module_default()).invalidCheckbox : (residencial_residencial_ProdutoInteresse_module_default()).validCheckbox),
+                                            className: (_residencial_residencial_ProdutoInteresse_module_scss__WEBPACK_IMPORTED_MODULE_10___default().inputCheckbox),
+                                            children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Form.Label, {
+                                                className: classnames__WEBPACK_IMPORTED_MODULE_9___default()((_residencial_residencial_ProdutoInteresse_module_scss__WEBPACK_IMPORTED_MODULE_10___default().labelCheckbox), (_residencial_residencial_ProdutoInteresse_module_scss__WEBPACK_IMPORTED_MODULE_10___default().checkboxBase), errors.checked && touched.checked ? (_residencial_residencial_ProdutoInteresse_module_scss__WEBPACK_IMPORTED_MODULE_10___default().invalidCheckbox) : (_residencial_residencial_ProdutoInteresse_module_scss__WEBPACK_IMPORTED_MODULE_10___default().validCheckbox)),
                                                 children: [
-                                                    /*#__PURE__*/ jsx_runtime_.jsx(external_formik_.Field, {
+                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(formik__WEBPACK_IMPORTED_MODULE_2__.Field, {
                                                         type: "checkbox",
                                                         name: "checked",
                                                         id: "concordo",
                                                         onChange: handleChange,
                                                         value: "concordo"
                                                     }),
-                                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("span", {
-                                                        className: (residencial_residencial_ProdutoInteresse_module_default()).checkboxDescricao,
+                                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("span", {
+                                                        className: (_residencial_residencial_ProdutoInteresse_module_scss__WEBPACK_IMPORTED_MODULE_10___default().checkboxDescricao),
                                                         children: [
                                                             "Li e concordo com a\xa0",
-                                                            /*#__PURE__*/ jsx_runtime_.jsx("u", {
-                                                                children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                                                    className: (residencial_residencial_ProdutoInteresse_module_default()).underlinedLink,
+                                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("u", {
+                                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                                                    className: (_residencial_residencial_ProdutoInteresse_module_scss__WEBPACK_IMPORTED_MODULE_10___default().underlinedLink),
                                                                     href: "/politica-de-privacidade",
                                                                     target: "_blank",
                                                                     children: "Pol\xedtica de Privacidade"
                                                                 })
                                                             }),
                                                             ", a\xa0",
-                                                            /*#__PURE__*/ jsx_runtime_.jsx("u", {
-                                                                children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                                                    className: (residencial_residencial_ProdutoInteresse_module_default()).underlinedLink,
+                                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("u", {
+                                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                                                    className: (_residencial_residencial_ProdutoInteresse_module_scss__WEBPACK_IMPORTED_MODULE_10___default().underlinedLink),
                                                                     href: "/politica-de-cookies",
                                                                     target: "_blank",
                                                                     children: "Pol\xedtica de Cookies"
@@ -2537,9 +3184,9 @@ const FormSaibaMais = ({ setNameFormulario , colors , homeContent , isTeaser , i
                                                             }),
                                                             " ",
                                                             "e o\xa0",
-                                                            /*#__PURE__*/ jsx_runtime_.jsx("u", {
-                                                                children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                                                    className: (residencial_residencial_ProdutoInteresse_module_default()).underlinedLink,
+                                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("u", {
+                                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                                                    className: (_residencial_residencial_ProdutoInteresse_module_scss__WEBPACK_IMPORTED_MODULE_10___default().underlinedLink),
                                                                     href: "/termos-de-uso",
                                                                     target: "_blank",
                                                                     children: "Termo de Uso da Alphaville"
@@ -2560,14 +3207,361 @@ const FormSaibaMais = ({ setNameFormulario , colors , homeContent , isTeaser , i
         })
     });
 };
-/* harmony default export */ const residencial_ProdutoInteresse = (FormSaibaMais);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (FormSaibaMais);
 
-// EXTERNAL MODULE: ./_share/components/google-maps/google-map.jsx
-var google_map = __webpack_require__(2070);
-// EXTERNAL MODULE: ./_share/components/residencialStandVendas/residencial-StandVendas.module.scss
-var residencial_StandVendas_module = __webpack_require__(8239);
-var residencial_StandVendas_module_default = /*#__PURE__*/__webpack_require__.n(residencial_StandVendas_module);
-;// CONCATENATED MODULE: ./_share/components/residencialStandVendas/residencial-StandVendas.jsx
+
+/***/ }),
+
+/***/ 9479:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(358);
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5675);
+/* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_image__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_responsive_picture__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(8290);
+/* harmony import */ var react_responsive_picture__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_responsive_picture__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(6689);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _teaserCarrosselBase__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(6696);
+/* harmony import */ var _teaserVideoPlayer_teaser_video_player__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(4590);
+/* harmony import */ var _residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(2693);
+/* harmony import */ var _residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7__);
+
+
+
+
+
+
+
+
+
+function ProjetoUrbanistico({ homeContent , colors , isMobile , isTeaser  }) {
+    const url = homeContent.imagemProjetoUrbanistico;
+    const titulo = homeContent.tituloProjetoUrbanistico;
+    const descricao = homeContent.descricaoProjetoUrbanistico;
+    const colorTitle = {
+        color: colors.colorFlat
+    };
+    const Verdes = homeContent.Verdes;
+    const Metros = homeContent.Metros;
+    const Terreno = homeContent.Terreno;
+    const unidatesTerreno = homeContent.unidatesTerreno;
+    const Id = homeContent.typeId.id;
+    const Area = homeContent.Area;
+    const IdEmp = homeContent.id;
+    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("section", {
+        className: `${(_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().areaTeaserVideoJardimAlpha)}`,
+        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+            className: (_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().areaTeaserVideo),
+            children: [
+                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Container, {
+                    className: `${(_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().container)}`,
+                    children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                        className: `${(_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().Conteudo)}`,
+                        children: [
+                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                className: `${(_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().ConteudoTitle)}`,
+                                children: [
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h1", {
+                                        className: `${(_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().produtoTitle)}`,
+                                        children: titulo
+                                    }),
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                        className: `${(_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().produtoSubProjeto)}`,
+                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                            className: "produto-sub-projeto",
+                                            dangerouslySetInnerHTML: {
+                                                __html: descricao
+                                            }
+                                        })
+                                    })
+                                ]
+                            }),
+                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                className: (_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().imgProduto),
+                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
+                                    className: `${(_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().imgProdutoProjeto)}`,
+                                    src: url,
+                                    alt: "Descri\xe7\xe3o da Imagem"
+                                })
+                            })
+                        ]
+                    })
+                }),
+                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                    className: (_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().containerIcon),
+                    children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Row, {
+                        className: (_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().Row),
+                        children: [
+                            Area !== null && Area.length > 0 && /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                className: `${(_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().produtoEspecificacao)}` + ` ${(_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().produtoEspecificacaoPin)}`,
+                                children: [
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                        className: (_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().alinhamentoItens),
+                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
+                                            className: `${(_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().iconPin)}` + " col-xs-4"
+                                        })
+                                    }),
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                        className: "col-xs-8",
+                                        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+                                            children: [
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                                    className: (_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().especificacaoMetros),
+                                                    children: Area
+                                                }),
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                                    className: (_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().especificacaoSubtxt),
+                                                    children: Id == 1 ? "\xe1rea do empreendimento" : Id == 2 ? "\xe1rea total da Cidade Alpha" : ""
+                                                }),
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                                    className: (_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().line)
+                                                })
+                                            ]
+                                        })
+                                    })
+                                ]
+                            }),
+                            Metros !== null && Metros.length > 0 && /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                className: `${(_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().produtoEspecificacao)}` + ` ${(_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().produtoEspecificacaoHome)}`,
+                                children: [
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                        className: (_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().alinhamentoItens),
+                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
+                                            className: `${(_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().iconHome)}` + " col-xs-4"
+                                        })
+                                    }),
+                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                        className: "col-xs-8",
+                                        children: [
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                                className: (_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().especificacaoMetros),
+                                                children: Metros
+                                            }),
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                                className: (_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().especificacaoSubtxt),
+                                                children: Id == 1 && IdEmp != 1179 ? `de área média nos lotes das ${unidatesTerreno} unidades` : Id == 1 && IdEmp == 1179 ? `de área mínima dos lotes das ${unidatesTerreno} unidades` : Id == 2 ? "habitantes previstos" : ""
+                                            }),
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                                className: (_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().line)
+                                            })
+                                        ]
+                                    })
+                                ]
+                            }),
+                            Verdes !== null && Verdes.length > 0 && /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                className: `${(_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().produtoEspecificacao)}` + " col-xs-12",
+                                "ng-if": "!prmRegua",
+                                children: [
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                        className: (_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().alinhamentoItens),
+                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
+                                            className: `${(_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().iconTree)}` + " col-xs-4"
+                                        })
+                                    }),
+                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                        className: (_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().divTitleTree),
+                                        children: [
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                                className: (_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().especificacaoMetros),
+                                                children: Verdes
+                                            }),
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                                className: (_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().especificacaoSubtxt),
+                                                children: Id == 1 ? "de \xe1reas verdes" : Id == 2 ? "totais de \xe1reas verdes" : ""
+                                            }),
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                                className: (_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().line)
+                                            })
+                                        ]
+                                    })
+                                ]
+                            }),
+                            Terreno !== null && Terreno.length > 0 && /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                className: `${(_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().produtoEspecificacao)}` + " col-xs-12",
+                                "ng-if": "!prmRegua",
+                                children: [
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                        className: (_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().alinhamentoItens),
+                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
+                                            className: `${(_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().iconSwin)}` + ` ${(_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().iconSwinMobile)}`
+                                        })
+                                    }),
+                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                        className: (_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().divTitle),
+                                        children: [
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                                className: (_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().especificacaoMetros),
+                                                children: Terreno
+                                            }),
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                                className: (_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().especificacaoSubtxt),
+                                                children: Id == 1 ? "\xe1rea do terreno do clube" : Id == 2 ? "lojas, com\xe9rcios e servi\xe7os" : ""
+                                            })
+                                        ]
+                                    })
+                                ]
+                            })
+                        ]
+                    })
+                })
+            ]
+        })
+    });
+}
+;
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ProjetoUrbanistico);
+
+
+/***/ }),
+
+/***/ 8065:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(358);
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5675);
+/* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_image__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_responsive_picture__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(8290);
+/* harmony import */ var react_responsive_picture__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_responsive_picture__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(6689);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _teaserCarrosselBase__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(6696);
+/* harmony import */ var _teaserVideoPlayer_teaser_video_player__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(4590);
+/* harmony import */ var _residencialSeguranca_residencial_Seguranca_module_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(7872);
+/* harmony import */ var _residencialSeguranca_residencial_Seguranca_module_scss__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_residencialSeguranca_residencial_Seguranca_module_scss__WEBPACK_IMPORTED_MODULE_7__);
+
+
+
+
+
+
+
+
+
+function ProjetoUrbanistico({ homeContent , colors , isMobile , isTeaser  }) {
+    const tituloSeguranca = homeContent.tituloSeguranca;
+    const imagemSuaSeguranca = homeContent.imagemSuaSeguranca;
+    const titleSuaSeguranca = homeContent.titleSuaSeguranca;
+    const descriptionSuaSeguranca = homeContent.descriptionSuaSeguranca;
+    const servicoSeguranca = homeContent.servicoSeguranca;
+    const servicoSegurancaSecond = homeContent.servicoSegurancaSecond;
+    const servicoSegurancaThird = homeContent.servicoSegurancaThird;
+    const secondImageSeguranca = homeContent.secondImageSeguranca;
+    const secondImageAltSeguranca = homeContent.secondImageAltSeguranca;
+    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("section", {
+        className: (_residencialSeguranca_residencial_Seguranca_module_scss__WEBPACK_IMPORTED_MODULE_7___default().areaProdutoSeguranca),
+        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+            className: "hidden-xs",
+            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                className: "container-fluid",
+                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                    className: (_residencialSeguranca_residencial_Seguranca_module_scss__WEBPACK_IMPORTED_MODULE_7___default().row),
+                    children: [
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                            className: "col-xs-5 np",
+                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                className: (_residencialSeguranca_residencial_Seguranca_module_scss__WEBPACK_IMPORTED_MODULE_7___default().imgCriancas),
+                                title: tituloSeguranca,
+                                alt: tituloSeguranca,
+                                style: {
+                                    backgroundImage: `url(${imagemSuaSeguranca})`
+                                },
+                                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                    className: (_residencialSeguranca_residencial_Seguranca_module_scss__WEBPACK_IMPORTED_MODULE_7___default().areaSombra),
+                                    children: [
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
+                                            className: (_residencialSeguranca_residencial_Seguranca_module_scss__WEBPACK_IMPORTED_MODULE_7___default().titleSeguranca),
+                                            children: titleSuaSeguranca
+                                        }),
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                            className: `${(_residencialSeguranca_residencial_Seguranca_module_scss__WEBPACK_IMPORTED_MODULE_7___default().descricaoSeguranca)}` + " col-xs-offset-2",
+                                            dangerouslySetInnerHTML: {
+                                                __html: descriptionSuaSeguranca
+                                            }
+                                        }),
+                                        servicoSeguranca.length > 0 && /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+                                            children: [
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                                    className: (_residencialSeguranca_residencial_Seguranca_module_scss__WEBPACK_IMPORTED_MODULE_7___default().servicosSeguranca),
+                                                    children: servicoSeguranca
+                                                }),
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                                    className: (_residencialSeguranca_residencial_Seguranca_module_scss__WEBPACK_IMPORTED_MODULE_7___default().line)
+                                                })
+                                            ]
+                                        }),
+                                        servicoSegurancaSecond.length > 0 && /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+                                            children: [
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                                    className: (_residencialSeguranca_residencial_Seguranca_module_scss__WEBPACK_IMPORTED_MODULE_7___default().servicosSeguranca),
+                                                    children: servicoSegurancaSecond
+                                                }),
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                                    className: (_residencialSeguranca_residencial_Seguranca_module_scss__WEBPACK_IMPORTED_MODULE_7___default().line)
+                                                })
+                                            ]
+                                        }),
+                                        servicoSegurancaThird.length > 0 && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                            className: `${(_residencialSeguranca_residencial_Seguranca_module_scss__WEBPACK_IMPORTED_MODULE_7___default().servicosSeguranca)}` + " col-xs-offset-2",
+                                            children: servicoSegurancaThird
+                                        })
+                                    ]
+                                })
+                            })
+                        }),
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                            className: "col-xs-7 np",
+                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                title: secondImageAltSeguranca,
+                                alt: secondImageAltSeguranca,
+                                className: (_residencialSeguranca_residencial_Seguranca_module_scss__WEBPACK_IMPORTED_MODULE_7___default().imgSegurancaPortaria),
+                                style: {
+                                    backgroundImage: `url(${secondImageAltSeguranca})`
+                                }
+                            })
+                        })
+                    ]
+                })
+            })
+        })
+    });
+}
+;
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ProjetoUrbanistico);
+
+
+/***/ }),
+
+/***/ 5936:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Z": () => (/* binding */ TeaserMap)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(358);
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _google_maps_google_map__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2070);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(6689);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _residencial_StandVendas_module_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(8239);
+/* harmony import */ var _residencial_StandVendas_module_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_residencial_StandVendas_module_scss__WEBPACK_IMPORTED_MODULE_4__);
 
 
 
@@ -2584,55 +3578,55 @@ function TeaserMap({ colors , standVendas , isMobile , id  }) {
         }
     };
     const url = `https://www.google.com/maps/dir/Current+Location/${standVendas.stdLatitude},${standVendas.stdLongitude}`;
-    return /*#__PURE__*/ jsx_runtime_.jsx("section", {
-        className: (residencial_StandVendas_module_default()).areaTeaserMap,
+    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("section", {
+        className: (_residencial_StandVendas_module_scss__WEBPACK_IMPORTED_MODULE_4___default().areaTeaserMap),
         id: id,
-        children: /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Container, {
-            children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                className: (residencial_StandVendas_module_default()).containerConteudoMap,
-                children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                    className: (residencial_StandVendas_module_default()).boxConteudoMap,
-                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                        className: (residencial_StandVendas_module_default()).conteudoMap,
+        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Container, {
+            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                className: (_residencial_StandVendas_module_scss__WEBPACK_IMPORTED_MODULE_4___default().containerConteudoMap),
+                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                    className: (_residencial_StandVendas_module_scss__WEBPACK_IMPORTED_MODULE_4___default().boxConteudoMap),
+                    children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                        className: (_residencial_StandVendas_module_scss__WEBPACK_IMPORTED_MODULE_4___default().conteudoMap),
                         children: [
-                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                className: (residencial_StandVendas_module_default()).map,
-                                children: /*#__PURE__*/ jsx_runtime_.jsx(google_map/* default */.Z, {
+                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                className: (_residencial_StandVendas_module_scss__WEBPACK_IMPORTED_MODULE_4___default().map),
+                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_google_maps_google_map__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z, {
                                     isMobile: isMobile,
                                     objLatLng: defaultProps.center
                                 })
                             }),
-                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                className: (residencial_StandVendas_module_default()).dadosEndereco,
+                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                className: (_residencial_StandVendas_module_scss__WEBPACK_IMPORTED_MODULE_4___default().dadosEndereco),
                                 children: [
-                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_bootstrap_.Col, {
-                                        className: (residencial_StandVendas_module_default()).enderecoStand,
+                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Col, {
+                                        className: (_residencial_StandVendas_module_scss__WEBPACK_IMPORTED_MODULE_4___default().enderecoStand),
                                         children: [
-                                            /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Row, {
-                                                className: (residencial_StandVendas_module_default()).areaTitle,
-                                                children: /*#__PURE__*/ jsx_runtime_.jsx("h2", {
-                                                    className: (residencial_StandVendas_module_default()).title,
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Row, {
+                                                className: (_residencial_StandVendas_module_scss__WEBPACK_IMPORTED_MODULE_4___default().areaTitle),
+                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
+                                                    className: (_residencial_StandVendas_module_scss__WEBPACK_IMPORTED_MODULE_4___default().title),
                                                     dangerouslySetInnerHTML: {
                                                         __html: standVendas.title
                                                     }
                                                 })
                                             }),
-                                            /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
                                                 dangerouslySetInnerHTML: {
                                                     __html: standVendas.subTitle
                                                 }
                                             })
                                         ]
                                     }),
-                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                        className: (residencial_StandVendas_module_default()).divBtn,
-                                        children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                        className: (_residencial_StandVendas_module_scss__WEBPACK_IMPORTED_MODULE_4___default().divBtn),
+                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
                                             href: url,
                                             rel: "noreferrer",
                                             target: "_blank",
-                                            children: /*#__PURE__*/ jsx_runtime_.jsx("button", {
-                                                className: (residencial_StandVendas_module_default()).btnComoChegar,
-                                                children: /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
+                                                className: (_residencial_StandVendas_module_scss__WEBPACK_IMPORTED_MODULE_4___default().btnComoChegar),
+                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
                                                     children: "COMO CHEGAR"
                                                 })
                                             })
@@ -2648,468 +3642,174 @@ function TeaserMap({ colors , standVendas , isMobile , id  }) {
     });
 };
 
-// EXTERNAL MODULE: external "react-bootstrap/Button"
-var Button_ = __webpack_require__(1937);
-var Button_default = /*#__PURE__*/__webpack_require__.n(Button_);
-// EXTERNAL MODULE: external "react-bootstrap/Col"
-var Col_ = __webpack_require__(7511);
-var Col_default = /*#__PURE__*/__webpack_require__.n(Col_);
-// EXTERNAL MODULE: ./_share/components/LinkCustom/LinkCustom.component.jsx
-var LinkCustom_component = __webpack_require__(7509);
-// EXTERNAL MODULE: external "react-bootstrap/Row"
-var Row_ = __webpack_require__(8907);
-var Row_default = /*#__PURE__*/__webpack_require__.n(Row_);
-// EXTERNAL MODULE: external "react-id-swiper"
-var external_react_id_swiper_ = __webpack_require__(4967);
-var external_react_id_swiper_default = /*#__PURE__*/__webpack_require__.n(external_react_id_swiper_);
-;// CONCATENATED MODULE: ./_share/components/residencialOutrosEmpreendimentos/residencial-OutrosEmpreendimentos.jsx
+
+/***/ }),
+
+/***/ 7258:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _public_static_images_Favicon_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5534);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(6689);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(358);
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_bootstrap__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _components_footer_footer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(3682);
+/* harmony import */ var _meta_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(2685);
+/* harmony import */ var _components_navMenu_navMenu__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(6635);
+/* harmony import */ var next_script__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(4298);
+/* harmony import */ var next_script__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(next_script__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _Envirioment_Envirioment__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(1790);
+/* harmony import */ var _public_static_images_alphaville_jpg__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(5175);
+
+
+
+
+// import CookiesPolicy from '../components/cookiesPolicy/cookiesPolicy.component';
 
 
 
 
 
+// import '../../public/static/main.scss';
 
-
-
-
-
-
-// import './oferts.scss';
-class Oferts extends external_react_.Component {
-    constructor(props){
-        super(props);
-        this.state = {
-            swiper: null,
-            isMobile: false
-        };
-        this.swiperRef = this.swiperRef.bind(this);
-        this.slideTo = this.slideTo.bind(this);
-    }
-    async componentDidMount() {
-        window.outerWidth <= 768 ? this.setState({
-            isMobile: true,
-            width: window.outerWidth
-        }) : this.setState({
-            isMobile: false,
-            width: window.outerWidth
-        });
-    }
-    swiperRef(ref) {
-        this.setState({
-            swiper: ref
-        });
-    }
-    slideTo(slide) {
-        if (this.state.swiper) this.state.swiper.slideTo(slide);
-    }
-    getBusca = async (e)=>{
-        const uf = await new service_storage/* default */.Z().getLocationUf();
-        const hrefArray = [
-            "busca",
-            uf
-        ];
-        new service_util/* default */.Z().goToUrl(hrefArray, "_self", false, e);
-    };
-    setClassOfBtn = (typeLote)=>{
-        let classBtnColor = "btn-color-0";
-        switch(typeLote){
-            case 1:
-            case 4:
-                classBtnColor = "btn-color-0";
-                break;
-            case 2:
-            case 5:
-                classBtnColor = "btn-color-1";
-                break;
-            case 3:
-                classBtnColor = "btn-color-2";
-                break;
-            default:
-                classBtnColor = "btn-color-0";
-                break;
+const layout = ({ children , outContainer , outBottomContainer , residencialLayout , layoutResidencial , ProdutoInteresse , galeriaImagem , seguranca , metaProps , homeContent , active , location , cssClass , showNoIndex , success ,  })=>{
+    (0,react__WEBPACK_IMPORTED_MODULE_2__.useEffect)(()=>{
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
         }
-        return classBtnColor;
-    };
-    render() {
-        const params = {
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev"
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true
-            }
-        };
-        const htmMobile = /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-            className: "hidden-lg-up",
-            children: [
-                /*#__PURE__*/ jsx_runtime_.jsx((Row_default()), {
-                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)((Col_default()), {
-                        xs: 12,
-                        children: [
-                            /*#__PURE__*/ jsx_runtime_.jsx("h2", {
-                                children: this.props.prmTitleMobile
-                            }),
-                            /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                children: this.props.prmDescription
-                            })
-                        ]
-                    })
-                }),
-                /*#__PURE__*/ jsx_runtime_.jsx((Row_default()), {
-                    style: {
-                        display: "flex",
-                        flexWrap: "wrap",
-                        marginLeft: "0px"
-                    },
-                    children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                        style: {
-                            width: this.state.width + "px"
-                        },
-                        children: this.props.prmItems ? /*#__PURE__*/ jsx_runtime_.jsx((Col_default()), {
-                            xs: 12,
-                            children: /*#__PURE__*/ jsx_runtime_.jsx((external_react_id_swiper_default()), {
-                                ...params,
-                                getSwiper: this.swiperRef,
-                                children: this.props.prmItems.map((ofert, ofertId)=>{
-                                    const imgBannerMobile = Envirioment/* ENDPOINT_BASE */.GU + "/" + ofert.images_default[0].image_mobile || Envirioment/* ENDPOINT_BASE */.GU + "/" + ofert.images_default[0].image;
-                                    const classBtnColor = this.setClassOfBtn(ofert.empreendimento.type_lote);
-                                    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                        className: "banner-images",
-                                        children: [
-                                            /*#__PURE__*/ jsx_runtime_.jsx(external_react_responsive_picture_.Picture, {
-                                                sources: [
-                                                    {
-                                                        srcSet: imgBannerMobile
-                                                    }, 
-                                                ]
-                                            }),
-                                            /*#__PURE__*/ jsx_runtime_.jsx("h2", {
-                                                className: "title-ofetrs",
-                                                children: ofert.empreendimento.name
-                                            }),
-                                            /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                                children: ofert.empreendimento.description
-                                            }),
-                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                                className: "btn-oferts",
-                                                children: /*#__PURE__*/ jsx_runtime_.jsx(LinkCustom_component/* default */.Z, {
-                                                    className: classBtnColor,
-                                                    arrayLink: [
-                                                        ofert.type.title.toLowerCase(),
-                                                        ofert.empreendimento.slug
-                                                    ],
-                                                    children: /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                                                        children: "CONHE\xc7A"
-                                                    })
-                                                })
-                                            })
-                                        ]
-                                    }, ofertId);
-                                })
-                            })
-                        }) : ""
-                    })
-                }),
-                /*#__PURE__*/ jsx_runtime_.jsx((Row_default()), {
-                    children: /*#__PURE__*/ jsx_runtime_.jsx((Col_default()), {
-                        xs: 12,
-                        className: "btn-oferts all",
-                        children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                            onClick: (e)=>this.getBusca(e),
-                            className: "no-color",
-                            children: /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                                children: "VER TODOS"
-                            })
-                        })
-                    })
-                })
-            ]
+        gtag("js", new Date());
+        gtag("config", "UA-27437785-3", {
+            cookie_expires: 0
         });
-        const htmlDesktop = /*#__PURE__*/ jsx_runtime_.jsx("div", {
-            className: "hidden-md-down",
-            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                className: "container np",
-                children: [
-                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                        className: "area-outros-emp-desc",
-                        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)((Row_default()), {
-                            children: [
-                                /*#__PURE__*/ jsx_runtime_.jsx((Col_default()), {
-                                    md: 9,
-                                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                        children: [
-                                            /*#__PURE__*/ jsx_runtime_.jsx("h2", {
-                                                className: "title",
-                                                children: this.props.title
-                                            }),
-                                            /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                                className: "sub-title",
-                                                children: this.props.content.out_emp_description
-                                            })
-                                        ]
-                                    })
-                                }),
-                                /*#__PURE__*/ jsx_runtime_.jsx((Col_default()), {
-                                    md: 3,
-                                    children: /*#__PURE__*/ jsx_runtime_.jsx((Button_default()), {
-                                        onClick: ()=>this.getBusca(),
-                                        className: "btn-ver-todos",
-                                        children: /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                                            children: "VER TODOS"
-                                        })
-                                    })
-                                })
-                            ]
-                        })
-                    }),
-                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                        className: "area-outros-emp-carousel",
-                        children: /*#__PURE__*/ jsx_runtime_.jsx((Row_default()), {
-                            children: this.props.prmItems ? /*#__PURE__*/ jsx_runtime_.jsx(jsx_runtime_.Fragment, {
-                                children: this.props.prmItems.map((ofert, ofertId)=>{
-                                    const classBtnColor = "btn-oferts " + this.setClassOfBtn(ofert.empreendimento.type_lote);
-                                    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)((Col_default()), {
-                                        md: 6,
-                                        className: "item-carousel",
-                                        children: [
-                                            /*#__PURE__*/ jsx_runtime_.jsx((external_react_id_swiper_default()), {
-                                                ...params,
-                                                getSwiper: this.swiperRef,
-                                                children: ofert.images_default.map((val, idx)=>{
-                                                    const imgBanner = val.image_desktop || val.image;
-                                                    return /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                                        style: {
-                                                            width: 580 + "px",
-                                                            height: 430 + "px",
-                                                            backgroundImage: "url(" + Envirioment/* ENDPOINT_BASE */.GU + "/" + imgBanner + ")",
-                                                            backgroundSize: "cover"
-                                                        }
-                                                    }, idx);
-                                                })
-                                            }),
-                                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                                className: "info-oferts",
-                                                children: [
-                                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                                        className: "title-oferts",
-                                                        children: ofert.empreendimento.name
-                                                    }),
-                                                    /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                                        className: "sub-conteudo text-center",
-                                                        children: ofert.empreendimento.description
-                                                    }),
-                                                    /*#__PURE__*/ jsx_runtime_.jsx(LinkCustom_component/* default */.Z, {
-                                                        className: classBtnColor,
-                                                        arrayLink: [
-                                                            ofert.type.title.toLowerCase(),
-                                                            ofert.empreendimento.slug
-                                                        ],
-                                                        children: /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                                                            children: "CONHE\xc7A"
-                                                        })
-                                                    })
-                                                ]
-                                            })
-                                        ]
-                                    }, ofertId);
-                                })
-                            }) : ""
-                        })
-                    })
-                ]
-            })
-        });
-        let sectionClasses = [
-            "info-oferts",
-            "np"
-        ];
-        if (this.props.prmContainer) sectionClasses.push("container");
-        if (this.props.prmNostand) sectionClasses.push("no-stand");
-        if (this.props.prmItems && this.props.prmItems.length > this.props.prmMin) {
-            return /*#__PURE__*/ jsx_runtime_.jsx("section", {
-                className: sectionClasses.join(" "),
-                children: this.state.isMobile ? htmMobile : htmlDesktop
-            });
-        } else {
-            return /*#__PURE__*/ jsx_runtime_.jsx("section", {
-                className: "info-oferts-null np",
-                children: /*#__PURE__*/ jsx_runtime_.jsx((Row_default()), {
-                    children: /*#__PURE__*/ jsx_runtime_.jsx((Col_default()), {
-                        md: 12
-                    })
+        const mainUrl = "https://www.alphaville.com.br";
+    // if (window.location.origin != mainUrl) {
+    //   window.location.href = mainUrl + window.location.pathname;
+    // }
+    }, []);
+    const defaultMetaProps = {
+        image: {
+            url: _public_static_images_alphaville_jpg__WEBPACK_IMPORTED_MODULE_8__/* ["default"] */ .Z,
+            type: "image/jpeg",
+            width: "1200",
+            height: "489",
+            alt: "Alphaville"
+        },
+        title: "Alphaville - Residenciais e lotes comerciais \xe0 venda",
+        description: "Bem vindo \xe0 Alphaville. Conhe\xe7a nossos lotes \xe0 venda",
+        url: _Envirioment_Envirioment__WEBPACK_IMPORTED_MODULE_9__/* .URL_DOMAIN */ .V3 + "/"
+    };
+    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+        children: [
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_meta_component__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Z, {
+                ...metaProps || defaultMetaProps,
+                homeContent: homeContent,
+                success: success,
+                showNoIndex: showNoIndex,
+                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
+                    name: "facebook-domain-verification",
+                    content: "ykvnn3gwiu4gqqg55k33ewhd68i3yc"
                 })
-            });
-        }
-    }
-};
-
-// EXTERNAL MODULE: ./_share/components/residencialAreasVerdes/residencial-AreasVerdes.module.scss
-var residencial_AreasVerdes_module = __webpack_require__(3344);
-var residencial_AreasVerdes_module_default = /*#__PURE__*/__webpack_require__.n(residencial_AreasVerdes_module);
-;// CONCATENATED MODULE: ./_share/components/residencialAreasVerdes/residencial-AreasVerdes.jsx
-
-
-
-
-
-
-
-
-
-function residencial_AreasVerdes_TeaserCarrosselCadaSorriso({ homeContent , colors , isMobile , isTeaser ,  }) {
-    const colorTitle = {
-        color: colors.colorFlat
-    };
-    const title = homeContent.greenArsTitle;
-    const greenArsDescription = homeContent.greenArsDescription;
-    const areasVerdes = homeContent.areasVerdes;
-    const { 0: currentIndex , 1: setCurrentIndex  } = (0,external_react_.useState)(0);
-    const nextSlide = ()=>{
-        setCurrentIndex((prevIndex)=>(prevIndex + 1) % areasVerdes.length);
-    };
-    const prevSlide = ()=>{
-        setCurrentIndex((prevIndex)=>(prevIndex - 1 + areasVerdes.length) % areasVerdes.length);
-    };
-    const { 0: showModal , 1: setShowModal  } = (0,external_react_.useState)(false);
-    const url = Envirioment/* ENDPOINT_BASE */.GU + "/" + areasVerdes[currentIndex].image;
-    const handleImageClick = (imageUrl)=>{
-        //setSelectedImageUrl(imageUrl);
-        setShowModal(true);
-    };
-    const closeModal = ()=>{
-        setShowModal(false);
-    };
-    return /*#__PURE__*/ jsx_runtime_.jsx("section", {
-        className: (residencial_AreasVerdes_module_default()).areaTeaserCarrosselCadaSorriso,
-        children: /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Container, {
-            className: (residencial_AreasVerdes_module_default()).container,
-            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                className: (residencial_AreasVerdes_module_default()).wrapper,
-                children: [
-                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                        className: (residencial_AreasVerdes_module_default()).Cabecalho,
-                        children: /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Row, {
-                            className: (residencial_AreasVerdes_module_default()).row,
-                            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                className: (residencial_AreasVerdes_module_default()).areaTextEspaco,
-                                children: [
-                                    /*#__PURE__*/ jsx_runtime_.jsx("h3", {
-                                        children: title
-                                    }),
-                                    /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                        dangerouslySetInnerHTML: {
-                                            __html: greenArsDescription
-                                        }
-                                    })
-                                ]
-                            })
-                        })
-                    }),
-                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                        className: (residencial_AreasVerdes_module_default()).carouselContainer,
-                        children: [
-                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                className: `${(residencial_AreasVerdes_module_default()).arrowButton} ${(residencial_AreasVerdes_module_default()).prev}`,
-                                onClick: prevSlide
-                            }),
-                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                className: (residencial_AreasVerdes_module_default()).slide,
-                                children: [
-                                    /*#__PURE__*/ jsx_runtime_.jsx("img", {
-                                        src: url,
-                                        alt: areasVerdes[currentIndex].title_area_verde
-                                    }),
-                                    /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                        className: (residencial_AreasVerdes_module_default()).zoomExclusivo,
-                                        href: "#zoom",
-                                        onClick: ()=>handleImageClick(url)
-                                    }),
-                                    /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Modal, {
-                                        show: showModal,
-                                        onHide: closeModal,
-                                        dialogClassName: (residencial_AreasVerdes_module_default()).modalCustom,
-                                        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_bootstrap_.Modal.Body, {
-                                            className: (residencial_AreasVerdes_module_default()).modalContent,
-                                            style: {
-                                                position: "fixed",
-                                                top: "50%",
-                                                left: "50%",
-                                                transform: "translate(-50%, -50%)"
-                                            },
-                                            children: [
-                                                /*#__PURE__*/ jsx_runtime_.jsx("img", {
-                                                    src: url,
-                                                    alt: "Urban\xedstico",
-                                                    className: (residencial_AreasVerdes_module_default()).modalImage,
-                                                    style: {
-                                                        border: "3px solid white"
-                                                    }
-                                                }),
-                                                /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                                    className: (residencial_AreasVerdes_module_default()).plantaLightboxClose,
-                                                    href: "#planta"
-                                                }),
-                                                /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                                    className: (residencial_AreasVerdes_module_default()).BodyplantaLightboxClose,
-                                                    href: "#",
-                                                    onClick: closeModal
-                                                })
-                                            ]
-                                        })
-                                    })
-                                ]
-                            }),
-                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                className: (residencial_AreasVerdes_module_default()).textContent,
-                                children: [
-                                    /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                        className: (residencial_AreasVerdes_module_default()).textItem,
-                                        children: areasVerdes[currentIndex].title_area_verde
-                                    }),
-                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                        className: (residencial_AreasVerdes_module_default()).pagination,
-                                        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                            className: (residencial_AreasVerdes_module_default()).contentPg,
-                                            children: [
-                                                /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                                                    children: currentIndex + 1 < 10 ? "0" + (currentIndex + 1) : currentIndex + 1
-                                                }),
-                                                /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                                                    children: areasVerdes.length < 10 ? "0" + areasVerdes.length : areasVerdes.length
-                                                })
-                                            ]
-                                        })
-                                    })
-                                ]
-                            }),
-                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                className: `${(residencial_AreasVerdes_module_default()).arrowButton} ${(residencial_AreasVerdes_module_default()).next}`,
-                                onClick: nextSlide
-                            })
-                        ]
-                    })
-                ]
-            })
-        })
+            }),
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("header", {
+                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_navMenu_navMenu__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Z, {
+                    location: location
+                })
+            }),
+            outContainer,
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                id: "layout",
+                className: "layout " + active + " " + cssClass,
+                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_3__.Container, {
+                    className: "container-layout",
+                    children: children
+                })
+            }),
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                children: layoutResidencial
+            }),
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                style: {
+                    paddingTop: "5%",
+                    paddingBottom: "5%",
+                    backgroundColor: "#f3f3f3"
+                },
+                children: galeriaImagem
+            }),
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                children: seguranca
+            }),
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_3__.Container, {
+                    className: "container-layout",
+                    children: residencialLayout
+                })
+            }),
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                id: "saiba-mais",
+                children: ProdutoInteresse
+            }),
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                children: outBottomContainer
+            }),
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_footer_footer__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Z, {})
+        ]
     });
 };
-
-// EXTERNAL MODULE: ./_share/service/search.js
-var service_search = __webpack_require__(398);
-// EXTERNAL MODULE: ./_share/service/home.js
-var home = __webpack_require__(9590);
-// EXTERNAL MODULE: ./node_modules/next/dynamic.js
-var dynamic = __webpack_require__(5152);
-var dynamic_default = /*#__PURE__*/__webpack_require__.n(dynamic);
-// EXTERNAL MODULE: ./_share/components/teaserMap/teaser-map.jsx
-var teaser_map = __webpack_require__(8244);
-// EXTERNAL MODULE: external "next/router"
-var router_ = __webpack_require__(1853);
-;// CONCATENATED MODULE: ./pages/residencial/[id]/index.jsx
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (layout);
 
 
+/***/ }),
+
+/***/ 7479:
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6689);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _share_components_alphaMenu_alphaMenu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(3899);
+/* harmony import */ var _share_components_residencialBanner_banner_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(6402);
+/* harmony import */ var _share_service_enterprises__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(2750);
+/* harmony import */ var _share_components_formSaibaMais__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(3331);
+/* harmony import */ var _share_layouts_residencialLayout_main__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(7258);
+/* harmony import */ var _share_components_residencialGaleriaImagem_residencial_GaleriaImagem__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(9957);
+/* harmony import */ var _share_components_teaserCarrosselSimples_teaser_carrossel_simples__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(5298);
+/* harmony import */ var _share_components_teaserSuaSeguranca_teaser_sua_seguranca__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(9123);
+/* harmony import */ var _share_components_teaserVideo_teaser_video__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(7382);
+/* harmony import */ var _share_components_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(9479);
+/* harmony import */ var _share_components_residencialPlantaConceitual_residencial_PlantaConceitual__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(468);
+/* harmony import */ var _share_components_residencialConceito_residencial_Conceito__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(7678);
+/* harmony import */ var _share_components_residencialSeguranca_residencial_Seguranca__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(8065);
+/* harmony import */ var _share_components_residencialAutoGestao_residencial_AutoGestao__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(4046);
+/* harmony import */ var _share_components_residencialLocalizacaoEstrategica_residencial_LocalizacaoEstrategica__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(8867);
+/* harmony import */ var _share_components_residencialProdutoInteresse_residencial_ProdutoInteresse__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(2337);
+/* harmony import */ var _share_components_residencialStandVendas_residencial_StandVendas__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(5936);
+/* harmony import */ var _share_components_residencialOutrosEmpreendimentos_residencial_OutrosEmpreendimentos__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(5983);
+/* harmony import */ var _share_components_residencialAreasVerdes_residencial_AreasVerdes__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(5339);
+/* harmony import */ var _share_service_search__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(398);
+/* harmony import */ var _share_service_home__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(9590);
+/* harmony import */ var _share_service_util__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(1659);
+/* harmony import */ var next_dynamic__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(5152);
+/* harmony import */ var next_dynamic__WEBPACK_IMPORTED_MODULE_24___default = /*#__PURE__*/__webpack_require__.n(next_dynamic__WEBPACK_IMPORTED_MODULE_24__);
+/* harmony import */ var _share_components_teaserMap_teaser_map__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(8244);
+/* harmony import */ var _share_components_residencialModuloFusao_residencial_Fusao__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(4332);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(1853);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_27___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_27__);
+var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_share_components_residencialModuloFusao_residencial_Fusao__WEBPACK_IMPORTED_MODULE_26__]);
+_share_components_residencialModuloFusao_residencial_Fusao__WEBPACK_IMPORTED_MODULE_26__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
 
 
 
@@ -3137,7 +3837,10 @@ var router_ = __webpack_require__(1853);
 
 
 
-const TeaserFloatModal = dynamic_default()(null, {
+
+
+
+const TeaserFloatModal = next_dynamic__WEBPACK_IMPORTED_MODULE_24___default()(null, {
     loadableGenerated: {
         modules: [
             "residencial\\[id]\\index.jsx -> " + "../../../_share/components/teaserFloatModal/teaser-float-modal"
@@ -3145,7 +3848,7 @@ const TeaserFloatModal = dynamic_default()(null, {
     },
     ssr: false
 });
-const TeaserFooterText = dynamic_default()(null, {
+const TeaserFooterText = next_dynamic__WEBPACK_IMPORTED_MODULE_24___default()(null, {
     loadableGenerated: {
         modules: [
             "residencial\\[id]\\index.jsx -> " + "../../../_share/components/teaserFooterText"
@@ -3154,25 +3857,25 @@ const TeaserFooterText = dynamic_default()(null, {
     ssr: false
 });
 const ResidencialPage = ({ homeContent , showAlphaMenu , slugDomPedro , location , empreendimentosjson , displayColor , other ,  })=>{
-    const router = (0,router_.useRouter)();
-    const { 0: isMobile , 1: setisMobile  } = (0,external_react_.useState)(false);
+    const router = (0,next_router__WEBPACK_IMPORTED_MODULE_27__.useRouter)();
+    const { 0: isMobile , 1: setisMobile  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false);
     const { id , title , banner , metaProps  } = homeContent;
-    (0,external_react_.useEffect)(()=>{
+    (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(()=>{
         window.outerWidth <= 768 ? setisMobile(true) : setisMobile(false);
     // console.log(window.outerWidth);
     }, []);
-    const util = new service_util/* default */.Z();
+    const util = new _share_service_util__WEBPACK_IMPORTED_MODULE_23__/* ["default"] */ .Z();
     const otherVentures = other;
     const ofertsTitle = "Outros empreendimentos";
-    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(residencialLayout_main, {
+    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_share_layouts_residencialLayout_main__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Z, {
         metaProps: util.changeTitleMetaProps(metaProps, title),
         homeContent: homeContent,
         url: "/",
         active: "residencial",
         location: location,
         cssClass: displayColor + " teaserLayoutPage",
-        outContainer: /*#__PURE__*/ jsx_runtime_.jsx(jsx_runtime_.Fragment, {
-            children: /*#__PURE__*/ jsx_runtime_.jsx(Banner, {
+        outContainer: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_share_components_residencialBanner_banner_component__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Z, {
                 bannerList: banner,
                 upBner: true,
                 showButton: false,
@@ -3183,70 +3886,77 @@ const ResidencialPage = ({ homeContent , showAlphaMenu , slugDomPedro , location
                 colors: homeContent.displayColors
             })
         }),
-        galeriaImagem: /*#__PURE__*/ jsx_runtime_.jsx(jsx_runtime_.Fragment, {
-            children: /*#__PURE__*/ jsx_runtime_.jsx(TeaserCarrosselCadaSorriso, {
+        galeriaImagem: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_share_components_residencialGaleriaImagem_residencial_GaleriaImagem__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .Z, {
                 isTeaser: true,
                 homeContent: homeContent,
                 isMobile: isMobile,
                 colors: homeContent.displayColors
             })
         }),
-        residencialLayout: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
+        residencialLayout: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
             children: [
-                isMobile == false ? /*#__PURE__*/ jsx_runtime_.jsx(residencial_AutoGestao, {
+                isMobile == false ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_share_components_residencialAutoGestao_residencial_AutoGestao__WEBPACK_IMPORTED_MODULE_15__/* ["default"] */ .Z, {
                     homeContent: homeContent,
                     colors: homeContent.displayColors,
                     isMobile: isMobile
                 }) : null,
-                isMobile == false ? /*#__PURE__*/ jsx_runtime_.jsx(residencial_AreasVerdes_TeaserCarrosselCadaSorriso, {
+                isMobile == false ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_share_components_residencialAreasVerdes_residencial_AreasVerdes__WEBPACK_IMPORTED_MODULE_20__/* ["default"] */ .Z, {
                     isTeaser: true,
                     homeContent: homeContent,
                     isMobile: isMobile,
                     colors: homeContent.displayColors
                 }) : null,
-                isMobile == false ? /*#__PURE__*/ jsx_runtime_.jsx(residencial_LocalizacaoEstrategica, {
+                isMobile == false ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_share_components_residencialLocalizacaoEstrategica_residencial_LocalizacaoEstrategica__WEBPACK_IMPORTED_MODULE_16__/* ["default"] */ .Z, {
                     homeContent: homeContent,
                     colors: homeContent.displayColors,
                     isMobile: isMobile
                 }) : null
             ]
         }),
-        seguranca: /*#__PURE__*/ jsx_runtime_.jsx(jsx_runtime_.Fragment, {
-            children: isMobile == false ? /*#__PURE__*/ jsx_runtime_.jsx(residencial_Seguranca, {
+        seguranca: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+            children: isMobile == false ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_share_components_residencialSeguranca_residencial_Seguranca__WEBPACK_IMPORTED_MODULE_14__/* ["default"] */ .Z, {
                 homeContent: homeContent,
                 colors: homeContent.displayColors,
                 isMobile: isMobile
             }) : null
         }),
-        layoutResidencial: /*#__PURE__*/ jsx_runtime_.jsx(jsx_runtime_.Fragment, {
-            children: isMobile == false ? /*#__PURE__*/ jsx_runtime_.jsx(residencial_Conceito, {
+        layoutResidencial: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+            children: isMobile == false ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_share_components_residencialConceito_residencial_Conceito__WEBPACK_IMPORTED_MODULE_13__/* ["default"] */ .Z, {
                 homeContent: homeContent,
                 colors: homeContent.displayColors,
                 isMobile: isMobile
             }) : null
         }),
-        ProdutoInteresse: /*#__PURE__*/ jsx_runtime_.jsx(residencial_ProdutoInteresse, {
-            homeContent: homeContent,
-            isMobile: isMobile,
-            colors: homeContent.displayColors
+        ProdutoInteresse: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+            children: [
+                isMobile == true ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_share_components_residencialModuloFusao_residencial_Fusao__WEBPACK_IMPORTED_MODULE_26__/* ["default"] */ .Z, {
+                    homeContent: homeContent
+                }) : null,
+                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_share_components_residencialProdutoInteresse_residencial_ProdutoInteresse__WEBPACK_IMPORTED_MODULE_17__/* ["default"] */ .Z, {
+                    homeContent: homeContent,
+                    isMobile: isMobile,
+                    colors: homeContent.displayColors
+                })
+            ]
         }),
-        outBottomContainer: /*#__PURE__*/ jsx_runtime_.jsx("div", {
+        outBottomContainer: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
             className: "teaserLayoutPage",
-            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+            children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                 style: {
                     backgroundColor: "#F7F5F5",
                     position: "relative"
                 },
                 children: [
-                    homeContent.statusStand == 1 ? /*#__PURE__*/ jsx_runtime_.jsx(jsx_runtime_.Fragment, {
-                        children: isMobile == false ? /*#__PURE__*/ jsx_runtime_.jsx(TeaserMap, {
+                    homeContent.statusStand == 1 ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+                        children: isMobile == false ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_share_components_residencialStandVendas_residencial_StandVendas__WEBPACK_IMPORTED_MODULE_18__/* ["default"] */ .Z, {
                             isMobile: isMobile,
                             id: "nosso-stand",
                             colors: homeContent.displayColors,
                             standVendas: homeContent.standVendas
                         }) : null
                     }) : null,
-                    /*#__PURE__*/ jsx_runtime_.jsx(Oferts, {
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_share_components_residencialOutrosEmpreendimentos_residencial_OutrosEmpreendimentos__WEBPACK_IMPORTED_MODULE_19__/* ["default"] */ .Z, {
                         content: homeContent,
                         prmContainer: false,
                         prmNostand: false,
@@ -3261,9 +3971,10 @@ const ResidencialPage = ({ homeContent , showAlphaMenu , slugDomPedro , location
             })
         }),
         children: [
-            showAlphaMenu ? /*#__PURE__*/ jsx_runtime_.jsx(alphaMenu/* default */.Z, {
+            showAlphaMenu ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_share_components_alphaMenu_alphaMenu__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z, {
                 isInternal: true,
                 isTeaser: false,
+                isResidencialAlpha: true,
                 colors: homeContent.displayColors,
                 homeContent: homeContent,
                 isMobile: true,
@@ -3271,12 +3982,12 @@ const ResidencialPage = ({ homeContent , showAlphaMenu , slugDomPedro , location
                 statusStand: homeContent.statusStand,
                 linkStatus: homeContent.linkStandAtivo
             }) : "",
-            /*#__PURE__*/ jsx_runtime_.jsx(residencial_ProjetoUrbanistico, {
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_share_components_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico__WEBPACK_IMPORTED_MODULE_11__/* ["default"] */ .Z, {
                 homeContent: homeContent,
                 colors: homeContent.displayColors,
                 isMobile: isMobile
             }),
-            isMobile == false ? /*#__PURE__*/ jsx_runtime_.jsx(residencial_PlantaConceitual, {
+            isMobile == false ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_share_components_residencialPlantaConceitual_residencial_PlantaConceitual__WEBPACK_IMPORTED_MODULE_12__/* ["default"] */ .Z, {
                 homeContent: homeContent,
                 colors: homeContent.displayColors,
                 isMobile: isMobile
@@ -3289,13 +4000,13 @@ ResidencialPage.getInitialProps = async (ctx)=>{
     console.log("****************  query: ", query);
     let empreendimento = {};
     try {
-        const enterpriseService = new enterprises/* default */.Z();
+        const enterpriseService = new _share_service_enterprises__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Z();
         empreendimento = await enterpriseService.getEnterpriseBySlugTitle(query.id, true);
         if (empreendimento.statusObra.id == "5" || empreendimento.statusObra.id == "1") {
             throw new Exception();
         }
     } catch (error) {
-        const util = new service_util/* default */.Z();
+        const util = new _share_service_util__WEBPACK_IMPORTED_MODULE_23__/* ["default"] */ .Z();
         if (ctx.query.utm_content && util.isTeaserRedirect(ctx.query.utm_content)) {
             res.writeHead(307, {
                 Location: "https://api.whatsapp.com/send?phone=5519997188929",
@@ -3314,9 +4025,9 @@ ResidencialPage.getInitialProps = async (ctx)=>{
     }
     let otherVentures = [];
     let homeDuoContent = {};
-    const homeService = new home/* default */.Z();
+    const homeService = new _share_service_home__WEBPACK_IMPORTED_MODULE_22__/* ["default"] */ .Z();
     homeDuoContent = await homeService.getContent();
-    const search = new service_search/* default */.Z();
+    const search = new _share_service_search__WEBPACK_IMPORTED_MODULE_21__/* ["default"] */ .Z();
     const searchByLocation = {
         latitude: -23.5431786,
         longitude: -46.6291845,
@@ -3333,8 +4044,10 @@ ResidencialPage.getInitialProps = async (ctx)=>{
         empreendimentosjson: {}
     };
 };
-/* harmony default export */ const _id_ = (ResidencialPage);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ResidencialPage);
 
+__webpack_async_result__();
+} catch(e) { __webpack_async_result__(e); } });
 
 /***/ }),
 
@@ -3682,11 +4395,27 @@ module.exports = require("react-id-swiper");
 
 /***/ }),
 
+/***/ 6158:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("react-image-zoom");
+
+/***/ }),
+
 /***/ 8290:
 /***/ ((module) => {
 
 "use strict";
 module.exports = require("react-responsive-picture");
+
+/***/ }),
+
+/***/ 8096:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("react-slick");
 
 /***/ }),
 
@@ -3730,6 +4459,14 @@ module.exports = require("swiper/react");
 
 /***/ }),
 
+/***/ 1301:
+/***/ ((module) => {
+
+"use strict";
+module.exports = import("react-icons/fa");;
+
+/***/ }),
+
 /***/ 7147:
 /***/ ((module) => {
 
@@ -3745,7 +4482,7 @@ module.exports = require("fs");
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [2952,1270,1664,1890,5152,1790,5176,1659,8933,2750,3899,3124], () => (__webpack_exec__(7260)));
+var __webpack_exports__ = __webpack_require__.X(0, [2952,1270,1664,1890,5152,1790,5176,1659,8933,2750,3899,3124], () => (__webpack_exec__(7479)));
 module.exports = __webpack_exports__;
 
 })();

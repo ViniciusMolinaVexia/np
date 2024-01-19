@@ -738,6 +738,7 @@ class Oferts extends external_react_.Component {
                 }),
                 /*#__PURE__*/ jsx_runtime_.jsx((Row_default()), {
                     children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                        className: "area-outros-emp-carousel",
                         style: {
                             width: this.state.width + "px"
                         },
@@ -748,7 +749,7 @@ class Oferts extends external_react_.Component {
                                 getSwiper: this.swiperRef,
                                 children: this.props.prmItems.map((ofert, ofertId)=>{
                                     const imgBannerMobile = Envirioment/* ENDPOINT_BASE */.GU + "/" + ofert.images_default[0].image_mobile || Envirioment/* ENDPOINT_BASE */.GU + "/" + ofert.images_default[0].image;
-                                    const classBtnColor = this.setClassOfBtn(ofert.empreendimento.type_lote);
+                                    const classBtnColor = "btn-oferts " + this.setClassOfBtn(ofert.empreendimento.type_lote);
                                     return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                                         className: "banner-images",
                                         children: [
@@ -766,17 +767,14 @@ class Oferts extends external_react_.Component {
                                             /*#__PURE__*/ jsx_runtime_.jsx("p", {
                                                 children: ofert.empreendimento.description
                                             }),
-                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                                className: "btn-oferts",
-                                                children: /*#__PURE__*/ jsx_runtime_.jsx(LinkCustom_component/* default */.Z, {
-                                                    className: classBtnColor,
-                                                    arrayLink: [
-                                                        ofert.type.title.toLowerCase(),
-                                                        ofert.empreendimento.slug
-                                                    ],
-                                                    children: /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                                                        children: "CONHE\xc7A"
-                                                    })
+                                            /*#__PURE__*/ jsx_runtime_.jsx(LinkCustom_component/* default */.Z, {
+                                                className: classBtnColor,
+                                                arrayLink: [
+                                                    ofert.type.title.toLowerCase(),
+                                                    ofert.empreendimento.slug
+                                                ],
+                                                children: /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                                                    children: "CONHE\xc7A"
                                                 })
                                             })
                                         ]
