@@ -124,6 +124,7 @@ class EnterpriseModel {
         this.greenArsTitle = data.empreendimento.green_ars_title;
         this.greenArsDescription = data.empreendimento.green_ars_description;
         this.areasVerdes = data.areas_verdes;
+        this.sct_image_mob_alt = data.sct_image_mob_alt;
         this.typeId = {
             id: data.empreendimento.type_id,
             title: this.getTypeIdTitle(data.empreendimento.type_id)
@@ -169,7 +170,7 @@ class EnterpriseModel {
         this.imagemProjetoUrbanistico = Envirioment/* ENDPOINT_BASE */.GU + "/" + data.empreendimento.prj_ubnt_image;
         this.secondImageSeguranca = Envirioment/* ENDPOINT_BASE */.GU + "/" + data.empreendimento.sct_second_image;
         this.lczEtgImage = Envirioment/* ENDPOINT_BASE */.GU + "/" + data.empreendimento.lcz_etg_image;
-        this.imagemSuaSegurancaMob = data.empreendimento.sct_image_mob;
+        this.imagemSuaSegurancaMob = Envirioment/* ENDPOINT_BASE */.GU + "/" + data.empreendimento.sct_image_mob;
         this.imgConceito = Envirioment/* ENDPOINT_BASE */.GU + "/" + data.empreendimento.atm_image;
         this.imgProjUrbanistico = Envirioment/* ENDPOINT_BASE */.GU + "/" + data.empreendimento.plt_prj_image;
         this.areaLazer = Envirioment/* ENDPOINT_BASE */.GU + "/" + data.empreendimento.plt_area_image;

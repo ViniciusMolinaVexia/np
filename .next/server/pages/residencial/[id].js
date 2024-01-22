@@ -212,6 +212,7 @@ module.exports = {
 	"iconClass": "residencial-Fusao_iconClass__pVfvS",
 	"descriptionSeguranca": "residencial-Fusao_descriptionSeguranca__GfMxe",
 	"areaContent": "residencial-Fusao_areaContent__WX6gf",
+	"imgResponsive": "residencial-Fusao_imgResponsive__DKn_P",
 	"areaContentLocalizacao": "residencial-Fusao_areaContentLocalizacao__qULZ_",
 	"Container": "residencial-Fusao_Container___3J6M",
 	"row": "residencial-Fusao_row__45luA",
@@ -228,7 +229,8 @@ module.exports = {
 	"selected": "residencial-Fusao_selected__zfT_H",
 	"infoContainer": "residencial-Fusao_infoContainer__Or3CC",
 	"itemContent": "residencial-Fusao_itemContent__ewg6I",
-	"expanded": "residencial-Fusao_expanded__uLbF1"
+	"expanded": "residencial-Fusao_expanded__uLbF1",
+	"expandedDiv": "residencial-Fusao_expandedDiv__tjs0O"
 };
 
 
@@ -1625,10 +1627,11 @@ react_icons_fa__WEBPACK_IMPORTED_MODULE_2__ = (__webpack_async_dependencies__.th
 
 const Module = ({ homeContent  })=>{
     const { 0: expandedItem , 1: setExpandedItem  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(null);
+    const titleSuaSeguranca = homeContent.titleSuaSeguranca;
     const items = [
         {
             Menu: 1,
-            title: "A seguran\xe7a que \xe9 concreta e n\xe3o abstrata",
+            title: titleSuaSeguranca,
             content: "Conte\xfado da Seguran\xe7a..."
         },
         {
@@ -1655,6 +1658,14 @@ const Module = ({ homeContent  })=>{
     const standVendas = homeContent.standVendas;
     const plt_prj_description_mob = homeContent.plt_prj_description_mob;
     const lista = homeContent.areaDeLazer;
+    const sct_image_mob_alt = homeContent.sct_image_mob_alt;
+    const Img = false;
+    if (imagemSuaSegurancaMob && imagemSuaSegurancaMob.includes("null")) {
+        Img = true;
+    } else {
+        // A palavra "null" não está presente na string ou a variável é nula/undefined
+        Img = false;
+    }
     const defaultProps = {
         center: {
             lat: standVendas.stdLatitude,
@@ -1675,7 +1686,7 @@ const Module = ({ homeContent  })=>{
         x: 0,
         y: 0
     });
-    const { 0: selectedButton , 1: setSelectedButton  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(null);
+    const { 0: selectedButton , 1: setSelectedButton  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)("urbanistico");
     const handleMouseMove = (e)=>{
         setCursorPosition({
             x: e.nativeEvent.offsetX,
@@ -1721,14 +1732,14 @@ const Module = ({ homeContent  })=>{
                         className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().itemComponent),
                         children: [
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().itemHeader),
+                                className: `${(_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().itemHeader)} ${expandedItem === index ? (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().expandedDiv) : ""}`,
                                 onClick: ()=>handleExpand(index),
                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h4", {
                                     children: item.title
                                 })
                             }),
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().buttonHeader),
+                                className: `${(_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().buttonHeader)} ${expandedItem === index ? (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().expandedDiv) : ""}`,
                                 onClick: ()=>handleExpand(index),
                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
                                     className: `${(_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().iconClass)} ${expandedItem === index ? "expanded" : ""}`,
@@ -1759,6 +1770,17 @@ const Module = ({ homeContent  })=>{
                                             className: "row",
                                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                                 className: "col-xs-12"
+                                            })
+                                        }),
+                                        Img === false && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                            class: "row",
+                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                className: "col-xs-12",
+                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
+                                                    src: imagemSuaSegurancaMob,
+                                                    className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().imgResponsive),
+                                                    alt: sct_image_mob_alt
+                                                })
                                             })
                                         }),
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
@@ -1838,46 +1860,50 @@ const Module = ({ homeContent  })=>{
                                         })
                                     ]
                                 }),
-                                item.Menu === 3 && /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                    className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().Container),
+                                item.Menu === 3 && /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
                                     children: [
-                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                            className: "row",
-                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                                className: "col-xs-12",
-                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                                    className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().areaContentLocalizacao),
-                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                                        dangerouslySetInnerHTML: {
-                                                            __html: lcz_etg_description
-                                                        }
+                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                            className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().Container),
+                                            children: [
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                    className: "row",
+                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                        className: "col-xs-12",
+                                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                            className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().areaContentLocalizacao),
+                                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                                                dangerouslySetInnerHTML: {
+                                                                    __html: lcz_etg_description
+                                                                }
+                                                            })
+                                                        })
+                                                    })
+                                                }),
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                    className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().row),
+                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                        className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().itensLocalizacao),
+                                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("ul", {
+                                                            children: localizacaoEstrategicas.map((local, index)=>/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("li", {
+                                                                    children: [
+                                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                                            className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().itemTitle),
+                                                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("strong", {
+                                                                                children: local.title
+                                                                            })
+                                                                        }),
+                                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                                            className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().itemArea),
+                                                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                                                                children: local.area
+                                                                            })
+                                                                        })
+                                                                    ]
+                                                                }, index))
+                                                        })
                                                     })
                                                 })
-                                            })
-                                        }),
-                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                            className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().row),
-                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                                className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().itensLocalizacao),
-                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("ul", {
-                                                    children: localizacaoEstrategicas.map((local, index)=>/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("li", {
-                                                            children: [
-                                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                                                    className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().itemTitle),
-                                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("strong", {
-                                                                        children: local.title
-                                                                    })
-                                                                }),
-                                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                                                    className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().itemArea),
-                                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                                                                        children: local.area
-                                                                    })
-                                                                })
-                                                            ]
-                                                        }, index))
-                                                })
-                                            })
+                                            ]
                                         }),
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                             className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().rowStandVendas),
@@ -1894,13 +1920,6 @@ const Module = ({ homeContent  })=>{
                                                         })
                                                     ]
                                                 })
-                                            })
-                                        }),
-                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                            className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().map),
-                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_google_maps_google_map__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Z, {
-                                                isMobile: false,
-                                                objLatLng: defaultProps.center
                                             })
                                         })
                                     ]

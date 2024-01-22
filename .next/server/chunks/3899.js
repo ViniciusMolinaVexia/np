@@ -1600,6 +1600,7 @@ class DesktopAlphaMenu extends external_react_.Component {
                                         className: "icon"
                                     }),
                                     /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                                        className: "whatsapp",
                                         children: "WHATSAPP"
                                     })
                                 ]
@@ -1691,6 +1692,7 @@ class DesktopAlphaMenu extends external_react_.Component {
                                         className: "icon"
                                     }),
                                     /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                                        className: "whatsapp",
                                         children: "WHATSAPP"
                                     })
                                 ]
@@ -1707,6 +1709,7 @@ class DesktopAlphaMenu extends external_react_.Component {
                                     className: "icon"
                                 }),
                                 /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                                    className: "whatsapp",
                                     children: "STAND DE VENDAS"
                                 })
                             ]
@@ -1896,6 +1899,7 @@ class MobileAlphaMenu extends external_react_.Component {
                                             className: "icon"
                                         }),
                                         /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                                            className: "whatsapp",
                                             children: "WHATSAPP"
                                         })
                                     ]
@@ -1950,6 +1954,7 @@ class MobileAlphaMenu extends external_react_.Component {
                                             className: "icon"
                                         }),
                                         /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                                            className: "whatsapp",
                                             children: "WHATSAPP"
                                         })
                                     ]
