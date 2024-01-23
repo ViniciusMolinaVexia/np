@@ -159,6 +159,7 @@ module.exports = {
 // Exports
 module.exports = {
 	"areaProdutoLocalizacao": "residencial-LocalizacaoEstrategica_areaProdutoLocalizacao__fu4Vd",
+	"prmSpace": "residencial-LocalizacaoEstrategica_prmSpace__GXlt9",
 	"titleLocalizacao": "residencial-LocalizacaoEstrategica_titleLocalizacao__511ge",
 	"subtitleLocalizacao": "residencial-LocalizacaoEstrategica_subtitleLocalizacao__SH6C7",
 	"imgLocalizacao": "residencial-LocalizacaoEstrategica_imgLocalizacao__F103X",
@@ -255,6 +256,7 @@ module.exports = {
 	"botaoContainer": "residencial-PlantaConceitual_botaoContainer__G_bWm",
 	"escolhaDescricao": "residencial-PlantaConceitual_escolhaDescricao__HunAf",
 	"descricaoConceitual": "residencial-PlantaConceitual_descricaoConceitual__gyE1j",
+	"btnParana": "residencial-PlantaConceitual_btnParana__3amdh",
 	"DadosTecnicos": "residencial-PlantaConceitual_DadosTecnicos__hNPZC",
 	"LinkTecnico": "residencial-PlantaConceitual_LinkTecnico__wyBy3",
 	"divTecnico": "residencial-PlantaConceitual_divTecnico__CfpI6",
@@ -331,6 +333,7 @@ module.exports = {
 	"container": "residencial-ProjetoUrbanistico_container__Man9j",
 	"Conteudo": "residencial-ProjetoUrbanistico_Conteudo__RNHec",
 	"imgProduto": "residencial-ProjetoUrbanistico_imgProduto__NDX1t",
+	"imgProdutoProjeto": "residencial-ProjetoUrbanistico_imgProdutoProjeto__auhhN",
 	"containerIcon": "residencial-ProjetoUrbanistico_containerIcon__Z7wqN",
 	"produtoEspecificacao": "residencial-ProjetoUrbanistico_produtoEspecificacao__9xSvz",
 	"divTitle": "residencial-ProjetoUrbanistico_divTitle__8bLcg",
@@ -346,7 +349,6 @@ module.exports = {
 	"ConteudoTitle": "residencial-ProjetoUrbanistico_ConteudoTitle__Ky_6I",
 	"produtoTitle": "residencial-ProjetoUrbanistico_produtoTitle__ZxYrZ",
 	"produtoSubProjeto": "residencial-ProjetoUrbanistico_produtoSubProjeto__hHW0k",
-	"imgProdutoProjeto": "residencial-ProjetoUrbanistico_imgProdutoProjeto__auhhN",
 	"produtoEspecificacaoPin": "residencial-ProjetoUrbanistico_produtoEspecificacaoPin__IwgaZ",
 	"produtoEspecificacaoHome": "residencial-ProjetoUrbanistico_produtoEspecificacaoHome__t02dj",
 	"divTitleTree": "residencial-ProjetoUrbanistico_divTitleTree__v6K_h",
@@ -1574,7 +1576,7 @@ function ProjetoUrbanistico({ homeContent , colors , isMobile , isTeaser  }) {
                                 ]
                             }),
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                className: `col-xs-7 np ${(_residencialLocalizacaoEstrategica_residencial_LocalizacaoEstrategica_module_scss__WEBPACK_IMPORTED_MODULE_7___default().prmSpace) ? "img-space-localizacao" : ""}`,
+                                className: (_residencialLocalizacaoEstrategica_residencial_LocalizacaoEstrategica_module_scss__WEBPACK_IMPORTED_MODULE_7___default().prmSpace),
                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                                     src: `${lczEtgImage}`,
                                     alt: lcz_etg_image_alt,
@@ -2524,6 +2526,8 @@ function ProjetoUrbanistico({ homeContent , colors , isMobile , isTeaser  }) {
     const { 0: conteudo , 1: setConteudo  } = (0,external_react_.useState)("urbanistico");
     const { 0: showModal , 1: setShowModal  } = (0,external_react_.useState)(false);
     const { 0: showModalConteudo , 1: setShowModalConteudo  } = (0,external_react_.useState)(false);
+    const slug = homeContent.slug;
+    const UrlParana = homeContent.Parana;
     const handleConteudoClick = ()=>{
         setShowModalConteudo(true);
     };
@@ -2613,6 +2617,13 @@ function ProjetoUrbanistico({ homeContent , colors , isMobile , isTeaser  }) {
                                                         __html: descricao
                                                     }
                                                 }),
+                                                slug === "alphaville-parana" && /*#__PURE__*/ jsx_runtime_.jsx("button", {
+                                                    className: (residencial_PlantaConceitual_module_default()).btnParana,
+                                                    children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                                        href: UrlParana,
+                                                        children: "Clique aqui para acessar o Processo de Licenciamento Ambiental e de aprova\xe7\xe3o do Estudo de Impacto de Vizinhan\xe7a do Alphaville Paran\xe1 na \xedntegra"
+                                                    })
+                                                }),
                                                 /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                                                     className: (residencial_PlantaConceitual_module_default()).divTecnico,
                                                     children: [
@@ -2666,6 +2677,13 @@ function ProjetoUrbanistico({ homeContent , colors , isMobile , isTeaser  }) {
                                                 /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                                     className: (residencial_PlantaConceitual_module_default()).descricaoConceitual,
                                                     children: listaRenderizada
+                                                }),
+                                                slug === "alphaville-parana" && /*#__PURE__*/ jsx_runtime_.jsx("button", {
+                                                    className: (residencial_PlantaConceitual_module_default()).btnParana,
+                                                    children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                                        href: UrlParana,
+                                                        children: "Clique aqui para acessar o Processo de Licenciamento Ambiental e de aprova\xe7\xe3o do Estudo de Impacto de Vizinhan\xe7a do Alphaville Paran\xe1 na \xedntegra"
+                                                    })
                                                 }),
                                                 /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                                                     className: (residencial_PlantaConceitual_module_default()).divTecnico,
@@ -3295,7 +3313,7 @@ function ProjetoUrbanistico({ homeContent , colors , isMobile , isTeaser  }) {
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                         className: `${(_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().produtoSubProjeto)}`,
                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                            className: "produto-sub-projeto",
+                                            className: (_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().produtoSubProjeto),
                                             dangerouslySetInnerHTML: {
                                                 __html: descricao
                                             }
@@ -3755,7 +3773,6 @@ const layout = ({ children , outContainer , outBottomContainer , residencialLayo
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                 style: {
-                    paddingTop: "5%",
                     paddingBottom: "5%",
                     backgroundColor: "#f3f3f3"
                 },

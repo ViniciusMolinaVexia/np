@@ -174,6 +174,7 @@ class EnterpriseModel {
         this.imgConceito = Envirioment/* ENDPOINT_BASE */.GU + "/" + data.empreendimento.atm_image;
         this.imgProjUrbanistico = Envirioment/* ENDPOINT_BASE */.GU + "/" + data.empreendimento.plt_prj_image;
         this.areaLazer = Envirioment/* ENDPOINT_BASE */.GU + "/" + data.empreendimento.plt_area_image;
+        this.Parana = Envirioment/* ENDPOINT_BASE */.GU + "/regulamento-parana/";
         this.plt_area_image_mob = Envirioment/* ENDPOINT_BASE */.GU + "/" + data.empreendimento.plt_area_image_mob;
         this.videoTitle = data.empreendimento.video_titulo;
         this.videoDescription = data.empreendimento.video_descricao;
