@@ -3133,7 +3133,7 @@ const FormSaibaMais = ({ setNameFormulario , colors , homeContent , isTeaser , i
         }
     }
     return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("section", {
-        className: (_residencial_residencial_ProdutoInteresse_module_scss__WEBPACK_IMPORTED_MODULE_10___default().areaProdutoInteresse),
+        className: `${(_residencial_residencial_ProdutoInteresse_module_scss__WEBPACK_IMPORTED_MODULE_10___default().areaProdutoInteresse)} ${lote}`,
         children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__.Container, {
             children: [
                 /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
