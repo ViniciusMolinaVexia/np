@@ -226,6 +226,8 @@ module.exports = {
 	"zoomableImage": "residencial-Fusao_zoomableImage__uIRNU",
 	"buttonsContainer": "residencial-Fusao_buttonsContainer__x2rj6",
 	"textProjetoUrbanistico": "residencial-Fusao_textProjetoUrbanistico__vGoJr",
+	"dadosTecnicos": "residencial-Fusao_dadosTecnicos__CBR2J",
+	"TerrasAlphaville": "residencial-Fusao_TerrasAlphaville__XmOPG",
 	"descricaoConceitual": "residencial-Fusao_descricaoConceitual__EXHZb",
 	"selected": "residencial-Fusao_selected__zfT_H",
 	"infoContainer": "residencial-Fusao_infoContainer__Or3CC",
@@ -259,6 +261,7 @@ module.exports = {
 	"btnParana": "residencial-PlantaConceitual_btnParana__3amdh",
 	"DadosTecnicos": "residencial-PlantaConceitual_DadosTecnicos__hNPZC",
 	"LinkTecnico": "residencial-PlantaConceitual_LinkTecnico__wyBy3",
+	"TerrasAlphaville": "residencial-PlantaConceitual_TerrasAlphaville__iZ0W2",
 	"divTecnico": "residencial-PlantaConceitual_divTecnico__CfpI6",
 	"iconSeta": "residencial-PlantaConceitual_iconSeta__5nthy",
 	"colunaLista": "residencial-PlantaConceitual_colunaLista__JUmcL",
@@ -283,6 +286,7 @@ module.exports = {
 // Exports
 module.exports = {
 	"areaProdutoInteresse": "residencial-residencial-ProdutoInteresse_areaProdutoInteresse__WE_Ji",
+	"TerrasAlphaville": "residencial-residencial-ProdutoInteresse_TerrasAlphaville__2tPjW",
 	"areaConteudo": "residencial-residencial-ProdutoInteresse_areaConteudo__LnYNr",
 	"areaTitle": "residencial-residencial-ProdutoInteresse_areaTitle__tLCLw",
 	"saibaMaisTitle": "residencial-residencial-ProdutoInteresse_saibaMaisTitle__VgjfE",
@@ -392,6 +396,7 @@ module.exports = {
 	"dadosEndereco": "residencial-StandVendas_dadosEndereco__E1_Bs",
 	"divBtn": "residencial-StandVendas_divBtn__uJqov",
 	"btnComoChegar": "residencial-StandVendas_btnComoChegar__gnCPE",
+	"TerrasAlphaville": "residencial-StandVendas_TerrasAlphaville__ozmEp",
 	"map": "residencial-StandVendas_map__wxaVD",
 	"enderecoStand": "residencial-StandVendas_enderecoStand__Yd7tn",
 	"horarioFuncionamento": "residencial-StandVendas_horarioFuncionamento__cduAy"
@@ -1485,6 +1490,71 @@ function TeaserCarrosselCadaSorriso({ homeContent , colors , isMobile , isTeaser
 
 /***/ }),
 
+/***/ 8212:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6689);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _react_google_maps_api__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2433);
+/* harmony import */ var _react_google_maps_api__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_react_google_maps_api__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _Envirioment_Envirioment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(1790);
+
+
+
+
+function GoogleMapComponent({ objLatLng , isMobile  }) {
+    const { isLoaded  } = (0,_react_google_maps_api__WEBPACK_IMPORTED_MODULE_2__.useJsApiLoader)({
+        id: "google-map-script",
+        googleMapsApiKey: _Envirioment_Envirioment__WEBPACK_IMPORTED_MODULE_3__/* .API_GOOGLE_MAP_KEY */ .o2
+    });
+    const { 0: Map , 1: setMap  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(null);
+    const containerStyle = {
+        width: "100%",
+        height: isMobile ? "354px" : "100%"
+    };
+    const latitude = parseFloat(objLatLng.lat);
+    const longitude = parseFloat(objLatLng.lng);
+    const onLoad = (0,react__WEBPACK_IMPORTED_MODULE_1__.useCallback)((map)=>{
+        const latitude = parseFloat(objLatLng.lat);
+        const longitude = parseFloat(objLatLng.lng);
+        // Verificar se o código está sendo executado no ambiente do navegador
+        if (false) {} else {
+            console.error("A API do Google Maps n\xe3o est\xe1 carregada.");
+        }
+        setMap(map);
+    }, [
+        objLatLng
+    ]);
+    const onUnmount = (0,react__WEBPACK_IMPORTED_MODULE_1__.useCallback)((map)=>{
+        setMap(null);
+    }, []);
+    return isLoaded ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_react_google_maps_api__WEBPACK_IMPORTED_MODULE_2__.GoogleMap, {
+        mapContainerStyle: containerStyle,
+        center: objLatLng,
+        options: {
+            minZoom: 4,
+            maxZoom: 18
+        },
+        onLoad: onLoad,
+        onUnmount: onUnmount,
+        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_react_google_maps_api__WEBPACK_IMPORTED_MODULE_2__.Marker, {
+            position: objLatLng
+        })
+    }) : /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
+        children: "Sem Mapa"
+    });
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (GoogleMapComponent);
+
+
+/***/ }),
+
 /***/ 8867:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -1504,8 +1574,10 @@ function TeaserCarrosselCadaSorriso({ homeContent , colors , isMobile , isTeaser
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _teaserCarrosselBase__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(6696);
 /* harmony import */ var _teaserVideoPlayer_teaser_video_player__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(4590);
-/* harmony import */ var _residencialLocalizacaoEstrategica_residencial_LocalizacaoEstrategica_module_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(9525);
-/* harmony import */ var _residencialLocalizacaoEstrategica_residencial_LocalizacaoEstrategica_module_scss__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_residencialLocalizacaoEstrategica_residencial_LocalizacaoEstrategica_module_scss__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _residencialLocalizacaoEstrategica_residencial_LocalizacaoEstrategica_module_scss__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(9525);
+/* harmony import */ var _residencialLocalizacaoEstrategica_residencial_LocalizacaoEstrategica_module_scss__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_residencialLocalizacaoEstrategica_residencial_LocalizacaoEstrategica_module_scss__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _residencialGoogleMap_googleMap__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(8212);
+
 
 
 
@@ -1523,8 +1595,14 @@ function ProjetoUrbanistico({ homeContent , colors , isMobile , isTeaser  }) {
     const lczEtgImage = homeContent.lczEtgImage;
     //const aut_mgnt_item_5 = homeContent.aut_mgnt_item_5;
     const aut_mgnt_item_5 = homeContent.aut_mgnt_item_5;
+    const defaultProps = {
+        center: {
+            lat: homeContent.latitude,
+            lng: homeContent.longitude
+        }
+    };
     return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("section", {
-        className: (_residencialLocalizacaoEstrategica_residencial_LocalizacaoEstrategica_module_scss__WEBPACK_IMPORTED_MODULE_7___default().areaProdutoLocalizacao),
+        className: (_residencialLocalizacaoEstrategica_residencial_LocalizacaoEstrategica_module_scss__WEBPACK_IMPORTED_MODULE_8___default().areaProdutoLocalizacao),
         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
             className: "hidden-xs",
             children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
@@ -1536,11 +1614,11 @@ function ProjetoUrbanistico({ homeContent , colors , isMobile , isTeaser  }) {
                             className: "col-xs-8",
                             children: [
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
-                                    className: (_residencialLocalizacaoEstrategica_residencial_LocalizacaoEstrategica_module_scss__WEBPACK_IMPORTED_MODULE_7___default().titleLocalizacao),
+                                    className: (_residencialLocalizacaoEstrategica_residencial_LocalizacaoEstrategica_module_scss__WEBPACK_IMPORTED_MODULE_8___default().titleLocalizacao),
                                     children: "LOCALIZA\xc7\xc3O ESTRAT\xc9GICA"
                                 }),
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                    className: (_residencialLocalizacaoEstrategica_residencial_LocalizacaoEstrategica_module_scss__WEBPACK_IMPORTED_MODULE_7___default().subtitleLocalizacao),
+                                    className: (_residencialLocalizacaoEstrategica_residencial_LocalizacaoEstrategica_module_scss__WEBPACK_IMPORTED_MODULE_8___default().subtitleLocalizacao),
                                     children: lcz_etg_sub_title
                                 })
                             ]
@@ -1553,7 +1631,7 @@ function ProjetoUrbanistico({ homeContent , colors , isMobile , isTeaser  }) {
                                 className: "col-xs-5",
                                 children: [
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                        className: (_residencialLocalizacaoEstrategica_residencial_LocalizacaoEstrategica_module_scss__WEBPACK_IMPORTED_MODULE_7___default().descricaoLocalizacao),
+                                        className: (_residencialLocalizacaoEstrategica_residencial_LocalizacaoEstrategica_module_scss__WEBPACK_IMPORTED_MODULE_8___default().descricaoLocalizacao),
                                         dangerouslySetInnerHTML: {
                                             __html: lcz_etg_description
                                         }
@@ -1576,12 +1654,20 @@ function ProjetoUrbanistico({ homeContent , colors , isMobile , isTeaser  }) {
                                 ]
                             }),
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                className: (_residencialLocalizacaoEstrategica_residencial_LocalizacaoEstrategica_module_scss__WEBPACK_IMPORTED_MODULE_7___default().prmSpace),
-                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                    src: `${lczEtgImage}`,
-                                    alt: lcz_etg_image_alt,
-                                    title: lcz_etg_image_alt,
-                                    className: (_residencialLocalizacaoEstrategica_residencial_LocalizacaoEstrategica_module_scss__WEBPACK_IMPORTED_MODULE_7___default().imgResponsive)
+                                className: (_residencialLocalizacaoEstrategica_residencial_LocalizacaoEstrategica_module_scss__WEBPACK_IMPORTED_MODULE_8___default().prmSpace),
+                                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+                                    children: [
+                                        lczEtgImage !== "https://www.alphaville.com.br/be_alphaville/public/null" && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
+                                            src: `${lczEtgImage}`,
+                                            alt: lcz_etg_image_alt,
+                                            title: lcz_etg_image_alt,
+                                            className: (_residencialLocalizacaoEstrategica_residencial_LocalizacaoEstrategica_module_scss__WEBPACK_IMPORTED_MODULE_8___default().imgResponsive)
+                                        }),
+                                        lczEtgImage === "https://www.alphaville.com.br/be_alphaville/public/null" && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_residencialGoogleMap_googleMap__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .Z, {
+                                            isMobile: isMobile,
+                                            objLatLng: defaultProps.center
+                                        })
+                                    ]
                                 })
                             })
                         ]
@@ -1614,7 +1700,7 @@ __webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __we
 /* harmony import */ var _residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(358);
 /* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_bootstrap__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _google_maps_google_map__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(2070);
+/* harmony import */ var _residencialGoogleMap_googleMap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(8212);
 /* harmony import */ var react_image_zoom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(6158);
 /* harmony import */ var react_image_zoom__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_image_zoom__WEBPACK_IMPORTED_MODULE_5__);
 var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([react_icons_fa__WEBPACK_IMPORTED_MODULE_2__]);
@@ -1662,6 +1748,27 @@ const Module = ({ homeContent  })=>{
     const lista = homeContent.areaDeLazer;
     const sct_image_mob_alt = homeContent.sct_image_mob_alt;
     const Img = false;
+    const Id = homeContent.typeLote.id;
+    let lote = "Alphaville";
+    let color = "#f26522";
+    switch(Id){
+        case "1":
+            lote = "Alphaville";
+            color = "#39bb9c";
+            break;
+        case "2":
+            lote = "TerrasAlpha";
+            break;
+        case "3":
+            lote = "JardimAlpha";
+            break;
+        case "5":
+            lote = (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().TerrasAlphaville);
+            color = "#f26522";
+            break;
+    }
+    let teste = lote;
+    let teste2 = teste;
     if (imagemSuaSegurancaMob && imagemSuaSegurancaMob.includes("null")) {
         Img = true;
     } else {
@@ -1833,12 +1940,12 @@ const Module = ({ homeContent  })=>{
                                             children: [
                                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
                                                     onClick: ()=>handleButtonClick("urbanistico"),
-                                                    className: selectedButton === "urbanistico" ? (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().selected) : "",
+                                                    className: selectedButton === "urbanistico" ? `${(_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().selected)} ${lote}` : "",
                                                     children: "Projeto Urban\xedstico"
                                                 }),
                                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
                                                     onClick: ()=>handleButtonClick("lazer"),
-                                                    className: selectedButton === "lazer" ? (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().selected) : "",
+                                                    className: selectedButton === "lazer" ? `${(_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().selected)} ${lote}` : "",
                                                     children: "\xc1rea de Lazer"
                                                 })
                                             ]
@@ -1846,12 +1953,22 @@ const Module = ({ homeContent  })=>{
                                         /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                                             className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().infoContainer),
                                             children: [
-                                                selectedInfo.Menu === 1 && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                                    className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().textProjetoUrbanistico),
-                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h5", {
-                                                        dangerouslySetInnerHTML: {
-                                                            __html: plt_prj_description_mob
-                                                        }
+                                                selectedInfo.Menu === 1 && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+                                                    children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                                        className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().textProjetoUrbanistico),
+                                                        children: [
+                                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h5", {
+                                                                dangerouslySetInnerHTML: {
+                                                                    __html: plt_prj_description_mob
+                                                                }
+                                                            }),
+                                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                                className: `${(_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().dadosTecnicos)} ${lote}`,
+                                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                                                    children: "Ver dados tecnicos "
+                                                                })
+                                                            })
+                                                        ]
                                                     })
                                                 }),
                                                 selectedInfo.Menu === 2 && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
@@ -1919,6 +2036,10 @@ const Module = ({ homeContent  })=>{
                                                         }),
                                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
                                                             children: standVendas.subTitle
+                                                        }),
+                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_residencialGoogleMap_googleMap__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Z, {
+                                                            isMobile: false,
+                                                            objLatLng: defaultProps.center
                                                         })
                                                     ]
                                                 })
@@ -2316,6 +2437,23 @@ var residencial_ModalPlanta_module_default = /*#__PURE__*/__webpack_require__.n(
 const OutraModal = ({ showModal , closeModal , conteudoHTML , homeContent  })=>{
     const name = homeContent.title;
     const plantaDetalhes = homeContent.plantaDetalhes;
+    const id = homeContent.typeLote.id;
+    let lote = "Alphaville";
+    switch(id){
+        case "1":
+            lote = "Alphaville";
+            break;
+        case "2":
+            lote = "TerrasAlpha";
+            break;
+        case "3":
+            lote = "JardimAlpha";
+            break;
+        case "5":
+            lote = "TerrasAlphaville";
+            break;
+    }
+    let teste = lote;
     const handleCloseModal = ()=>{
         closeModal(false);
     };
@@ -2528,6 +2666,25 @@ function ProjetoUrbanistico({ homeContent , colors , isMobile , isTeaser  }) {
     const { 0: showModalConteudo , 1: setShowModalConteudo  } = (0,external_react_.useState)(false);
     const slug = homeContent.slug;
     const UrlParana = homeContent.Parana;
+    const id = homeContent.typeLote.id;
+    let lote = "Alphaville";
+    let color = "#f26522";
+    switch(id){
+        case "1":
+            lote = "Alphaville";
+            color = "#39bb9c";
+            break;
+        case "2":
+            lote = "TerrasAlpha";
+            break;
+        case "3":
+            lote = "JardimAlpha";
+            break;
+        case "5":
+            lote = (residencial_PlantaConceitual_module_default()).TerrasAlphaville;
+            color = "#f26522";
+            break;
+    }
     const handleConteudoClick = ()=>{
         setShowModalConteudo(true);
     };
@@ -2590,7 +2747,7 @@ function ProjetoUrbanistico({ homeContent , colors , isMobile , isTeaser  }) {
                                             onClick: ()=>mostrarConteudo("urbanistico"),
                                             style: {
                                                 background: conteudo === "urbanistico" ? "white" : "#fff",
-                                                color: conteudo === "urbanistico" ? "#39bb9c" : "#bdbdbd",
+                                                color: conteudo === "urbanistico" ? color : "#bdbdbd",
                                                 boxShadow: conteudo === "urbanistico" ? "0 2px 15px 0 rgba(0,0,0,0.15)" : "none"
                                             },
                                             children: "PROJETO URBAN\xcdSTICO"
@@ -2599,7 +2756,7 @@ function ProjetoUrbanistico({ homeContent , colors , isMobile , isTeaser  }) {
                                             onClick: ()=>mostrarConteudo("lazer"),
                                             style: {
                                                 background: conteudo === "lazer" ? "white" : "#fff",
-                                                color: conteudo === "lazer" ? "#39bb9c" : "#bdbdbd",
+                                                color: conteudo === "lazer" ? color : "#bdbdbd",
                                                 boxShadow: conteudo === "lazer" ? "0 2px 15px 0 rgba(0,0,0,0.15)" : "none"
                                             },
                                             children: "\xc1REA DE LAZER"
@@ -2631,7 +2788,7 @@ function ProjetoUrbanistico({ homeContent , colors , isMobile , isTeaser  }) {
                                                             className: (residencial_PlantaConceitual_module_default()).DadosTecnicos,
                                                             children: [
                                                                 /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                                                    className: (residencial_PlantaConceitual_module_default()).LinkTecnico,
+                                                                    className: `${(residencial_PlantaConceitual_module_default()).LinkTecnico} ${lote}`,
                                                                     href: "#",
                                                                     onClick: (e)=>{
                                                                         e.preventDefault();
@@ -2654,7 +2811,7 @@ function ProjetoUrbanistico({ homeContent , colors , isMobile , isTeaser  }) {
                                                                     className: `${(residencial_PlantaConceitual_module_default()).iconSeta}`
                                                                 }),
                                                                 /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                                                    className: (residencial_PlantaConceitual_module_default()).LinkTecnico,
+                                                                    className: `${(residencial_PlantaConceitual_module_default()).LinkTecnico} ${lote}`,
                                                                     href: urlUrbanistico,
                                                                     target: "_blank",
                                                                     rel: "noreferrer",
@@ -2692,7 +2849,7 @@ function ProjetoUrbanistico({ homeContent , colors , isMobile , isTeaser  }) {
                                                             className: (residencial_PlantaConceitual_module_default()).DadosTecnicos,
                                                             children: [
                                                                 /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                                                    className: (residencial_PlantaConceitual_module_default()).LinkTecnico,
+                                                                    className: `${(residencial_PlantaConceitual_module_default()).LinkTecnico} ${lote}`,
                                                                     href: "#",
                                                                     onClick: (e)=>{
                                                                         e.preventDefault();
@@ -2715,7 +2872,7 @@ function ProjetoUrbanistico({ homeContent , colors , isMobile , isTeaser  }) {
                                                                     className: `${(residencial_PlantaConceitual_module_default()).iconSeta}`
                                                                 }),
                                                                 /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                                                    className: (residencial_PlantaConceitual_module_default()).LinkTecnico,
+                                                                    className: `${(residencial_PlantaConceitual_module_default()).LinkTecnico} ${lote}`,
                                                                     href: urlLazer,
                                                                     target: "_blank",
                                                                     rel: "noreferrer",
@@ -2925,6 +3082,25 @@ const FormSaibaMais = ({ setNameFormulario , colors , homeContent , isTeaser , i
     const lcz_etg_image_alt = homeContent.lcz_etg_image_alt;
     const lczEtgImage = homeContent.lczEtgImage;
     const aut_mgnt_item_5 = homeContent.aut_mgnt_item_5;
+    const id = homeContent.typeLote.id;
+    let lote = "Alphaville";
+    let color = "#f26522";
+    switch(id){
+        case "1":
+            lote = "Alphaville";
+            color = "#39bb9c";
+            break;
+        case "2":
+            lote = "TerrasAlpha";
+            break;
+        case "3":
+            lote = "JardimAlpha";
+            break;
+        case "5":
+            lote = (_residencial_residencial_ProdutoInteresse_module_scss__WEBPACK_IMPORTED_MODULE_10___default().TerrasAlphaville);
+            color = "#f26522";
+            break;
+    }
     (0,react__WEBPACK_IMPORTED_MODULE_3__.useEffect)(()=>{
         const sendRd = new _rdStation_sendRdstation__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Z();
         sendRd.fillRdStation(window.location.pathname, {}, "teaser-saibamais.form");
@@ -3604,10 +3780,29 @@ function ProjetoUrbanistico({ homeContent , colors , isMobile , isTeaser  }) {
 
 
 
-function TeaserMap({ colors , standVendas , isMobile , id  }) {
+function TeaserMap({ colors , standVendas , isMobile , id , homeContent  }) {
     const colorTitle = {
         color: colors.colorFlat
     };
+    const Id = homeContent.typeLote.id;
+    let lote = "Alphaville";
+    let color = "#f26522";
+    switch(Id){
+        case "1":
+            lote = "Alphaville";
+            color = "#39bb9c";
+            break;
+        case "2":
+            lote = "TerrasAlpha";
+            break;
+        case "3":
+            lote = "JardimAlpha";
+            break;
+        case "5":
+            lote = (_residencial_StandVendas_module_scss__WEBPACK_IMPORTED_MODULE_4___default().TerrasAlphaville);
+            color = "#f26522";
+            break;
+    }
     const defaultProps = {
         center: {
             lat: standVendas.stdLatitude,
@@ -3662,7 +3857,7 @@ function TeaserMap({ colors , standVendas , isMobile , id  }) {
                                             rel: "noreferrer",
                                             target: "_blank",
                                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
-                                                className: (_residencial_StandVendas_module_scss__WEBPACK_IMPORTED_MODULE_4___default().btnComoChegar),
+                                                className: `${(_residencial_StandVendas_module_scss__WEBPACK_IMPORTED_MODULE_4___default().btnComoChegar)} ${lote}`,
                                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
                                                     children: "COMO CHEGAR"
                                                 })
@@ -3989,7 +4184,8 @@ const ResidencialPage = ({ homeContent , showAlphaMenu , slugDomPedro , location
                             isMobile: isMobile,
                             id: "nosso-stand",
                             colors: homeContent.displayColors,
-                            standVendas: homeContent.standVendas
+                            standVendas: homeContent.standVendas,
+                            homeContent: homeContent
                         }) : null
                     }) : null,
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_share_components_residencialOutrosEmpreendimentos_residencial_OutrosEmpreendimentos__WEBPACK_IMPORTED_MODULE_19__/* ["default"] */ .Z, {

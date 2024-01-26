@@ -2281,14 +2281,30 @@ class ConstrutorVendasService {
         let traffic_source = Utm_source;
         const c_utmz = utils.getCookie("__utmz");
         const rdtrk = utils.getCookie("_rdtrk");
-        traffic_source = traffic_source || "CH";
+        //traffic_source = traffic_source || 'CH';
+        if (traffic_source == undefined) {
+            if (origemenvio == "home_whats.form") {
+                traffic_source = "CH";
+            } else {
+                traffic_source = "website";
+            }
+        }
         //Utm_medium = Utm_medium || 'referral';
         let traffic_medium = Utm_medium || "(none)"; //'CPC' = busca paga
         let traffic_campaign = Utm_campaign;
         let traffic_value = Utm_term;
         let traffic_content = Utm_content;
+        let idsituacao = "1";
         if (origemenvio == "home_whats.form") {
             idEmpreendimento = dddAdicional;
+            idsituacao = "10";
+        } else {
+            idEmpreendimento = idCv;
+            idsituacao = "3";
+        }
+        let origem = "CH";
+        if (origemenvio == "home_whats.form") {
+            origem = "CH";
         } else {
             idEmpreendimento = idCv;
         }
@@ -2306,7 +2322,7 @@ class ConstrutorVendasService {
             "descricao_cv": descricaoCv,
             //"tipo": tipo,
             //"praca": praca,
-            "idsituacao": "10",
+            "idsituacao": idsituacao,
             "origin_utm_source": traffic_source,
             "origin_utm_medium": traffic_medium,
             "origin_utm_campaign": traffic_campaign,
