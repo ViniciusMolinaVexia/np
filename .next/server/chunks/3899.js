@@ -2282,7 +2282,7 @@ class ConstrutorVendasService {
         const c_utmz = utils.getCookie("__utmz");
         const rdtrk = utils.getCookie("_rdtrk");
         //traffic_source = traffic_source || 'CH';
-        if (traffic_source == undefined) {
+        if (traffic_source == "") {
             if (origemenvio == "home_whats.form") {
                 traffic_source = "CH";
             } else {
