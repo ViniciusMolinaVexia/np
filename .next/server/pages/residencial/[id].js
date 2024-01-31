@@ -347,6 +347,7 @@ module.exports = {
 	"line": "residencial-ProjetoUrbanistico_line__9608D",
 	"especificacaoSubtxt": "residencial-ProjetoUrbanistico_especificacaoSubtxt__gc09_",
 	"iconPin": "residencial-ProjetoUrbanistico_iconPin__cY0iR",
+	"TerrasAlphaville": "residencial-ProjetoUrbanistico_TerrasAlphaville__ysngk",
 	"iconHome": "residencial-ProjetoUrbanistico_iconHome__mzfPd",
 	"iconTree": "residencial-ProjetoUrbanistico_iconTree__NykSa",
 	"iconSwin": "residencial-ProjetoUrbanistico_iconSwin__T3UHI",
@@ -3469,6 +3470,25 @@ function ProjetoUrbanistico({ homeContent , colors , isMobile , isTeaser  }) {
     const Id = homeContent.typeId.id;
     const Area = homeContent.Area;
     const IdEmp = homeContent.id;
+    const id = homeContent.typeLote.id;
+    let lote = "Alphaville";
+    let color = "#f26522";
+    switch(id){
+        case "1":
+            lote = (_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().Alphaville);
+            color = "#39bb9c";
+            break;
+        case "2":
+            lote = "TerrasAlpha";
+            break;
+        case "3":
+            lote = "JardimAlpha";
+            break;
+        case "5":
+            lote = (_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().TerrasAlphaville);
+            color = "#f26522";
+            break;
+    }
     return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("section", {
         className: `${(_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().areaTeaserVideoJardimAlpha)}`,
         children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
@@ -3519,7 +3539,7 @@ function ProjetoUrbanistico({ homeContent , colors , isMobile , isTeaser  }) {
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                         className: (_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().alinhamentoItens),
                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
-                                            className: `${(_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().iconPin)}` + " col-xs-4"
+                                            className: `${(_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().iconPin)}` + ` ${lote}`
                                         })
                                     }),
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
@@ -3548,7 +3568,7 @@ function ProjetoUrbanistico({ homeContent , colors , isMobile , isTeaser  }) {
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                         className: (_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().alinhamentoItens),
                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
-                                            className: `${(_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().iconHome)}` + " col-xs-4"
+                                            className: `${(_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().iconHome)}` + ` ${lote}`
                                         })
                                     }),
                                     /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
@@ -3576,7 +3596,7 @@ function ProjetoUrbanistico({ homeContent , colors , isMobile , isTeaser  }) {
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                         className: (_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().alinhamentoItens),
                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
-                                            className: `${(_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().iconTree)}` + " col-xs-4"
+                                            className: `${(_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().iconTree)}` + ` ${lote}`
                                         })
                                     }),
                                     /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
@@ -3604,7 +3624,7 @@ function ProjetoUrbanistico({ homeContent , colors , isMobile , isTeaser  }) {
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                         className: (_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().alinhamentoItens),
                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
-                                            className: `${(_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().iconSwin)}` + ` ${(_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().iconSwinMobile)}`
+                                            className: `${(_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().iconSwin)}` + ` ${(_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().iconSwinMobile)}` + ` ${lote}`
                                         })
                                     }),
                                     /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
