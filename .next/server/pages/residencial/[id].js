@@ -210,6 +210,7 @@ module.exports = {
 	"moduleItem": "residencial-Fusao_moduleItem__aDfHo",
 	"itemHeader": "residencial-Fusao_itemHeader__Uj7SQ",
 	"buttonHeader": "residencial-Fusao_buttonHeader__ZvQbn",
+	"iconReturn": "residencial-Fusao_iconReturn__w5vmQ",
 	"iconClass": "residencial-Fusao_iconClass__pVfvS",
 	"descriptionSeguranca": "residencial-Fusao_descriptionSeguranca__GfMxe",
 	"areaContent": "residencial-Fusao_areaContent__WX6gf",
@@ -2025,15 +2026,8 @@ const Module = ({ homeContent  })=>{
                                                                                             backgroundColor: "#3e3c42",
                                                                                             color: "#3e3c42"
                                                                                         },
-                                                                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                                                                            src: "/static/images/icons/icon-back.svg",
-                                                                                            alt: "Fechar Modal",
-                                                                                            style: {
-                                                                                                width: "23px",
-                                                                                                height: "22px",
-                                                                                                cursor: "pointer",
-                                                                                                margin: "20px"
-                                                                                            },
+                                                                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
+                                                                                            className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_7___default().iconReturn),
                                                                                             onClick: closeModal
                                                                                         })
                                                                                     }),
