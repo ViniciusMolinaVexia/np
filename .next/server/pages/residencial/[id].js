@@ -1697,16 +1697,19 @@ __webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __we
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6689);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react_icons_fa__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1301);
-/* harmony import */ var _residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(4317);
-/* harmony import */ var _residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(4317);
+/* harmony import */ var _residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(358);
 /* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_bootstrap__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _residencialGoogleMap_googleMap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(8212);
 /* harmony import */ var react_image_zoom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(6158);
 /* harmony import */ var react_image_zoom__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_image_zoom__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var react_modal__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(9931);
+/* harmony import */ var react_modal__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_modal__WEBPACK_IMPORTED_MODULE_6__);
 var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([react_icons_fa__WEBPACK_IMPORTED_MODULE_2__]);
 react_icons_fa__WEBPACK_IMPORTED_MODULE_2__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
 // Module.js
+
 
 
 
@@ -1749,6 +1752,8 @@ const Module = ({ homeContent  })=>{
     const lista = homeContent.areaDeLazer;
     const sct_image_mob_alt = homeContent.sct_image_mob_alt;
     const Img = false;
+    const descricaoCv = homeContent.descricaoCv;
+    const plantaDetalhes = homeContent.plantaDetalhes;
     const Id = homeContent.typeLote.id;
     let lote = "Alphaville";
     let color = "#f26522";
@@ -1764,7 +1769,7 @@ const Module = ({ homeContent  })=>{
             lote = "JardimAlpha";
             break;
         case "5":
-            lote = (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().TerrasAlphaville);
+            lote = (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_7___default().TerrasAlphaville);
             color = "#f26522";
             break;
     }
@@ -1783,7 +1788,7 @@ const Module = ({ homeContent  })=>{
         }
     };
     const listaRenderizada = /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("ol", {
-        className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().colunaLista),
+        className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_7___default().colunaLista),
         children: lista.map((item, index)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
                 children: item.description
             }, index))
@@ -1797,6 +1802,13 @@ const Module = ({ homeContent  })=>{
         y: 0
     });
     const { 0: selectedButton , 1: setSelectedButton  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)("urbanistico");
+    const { 0: modalIsOpen , 1: setModalIsOpen  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false);
+    const openModal = ()=>{
+        setModalIsOpen(true);
+    };
+    const closeModal = ()=>{
+        setModalIsOpen(false);
+    };
     const handleMouseMove = (e)=>{
         setCursorPosition({
             x: e.nativeEvent.offsetX,
@@ -1834,41 +1846,42 @@ const Module = ({ homeContent  })=>{
     };
     const selectedInfo = selectedButton === "urbanistico" ? projectInfo : leisureAreaInfo;
     return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-        className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().moduleContainer),
+        id: "moduleContainer",
+        className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_7___default().moduleContainer),
         children: items.map((item, index)=>/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                className: `${(_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().moduleItem)} ${expandedItem === index ? "expanded" : ""}`,
+                className: `${(_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_7___default().moduleItem)} ${expandedItem === index ? "expanded" : ""}`,
                 children: [
                     /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                        className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().itemComponent),
+                        className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_7___default().itemComponent),
                         children: [
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                className: `${(_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().itemHeader)} ${expandedItem === index ? (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().expandedDiv) : ""}`,
+                                className: `${(_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_7___default().itemHeader)} ${expandedItem === index ? (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_7___default().expandedDiv) : ""}`,
                                 onClick: ()=>handleExpand(index),
                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h4", {
                                     children: item.title
                                 })
                             }),
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                className: `${(_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().buttonHeader)} ${expandedItem === index ? (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().expandedDiv) : ""}`,
+                                className: `${(_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_7___default().buttonHeader)} ${expandedItem === index ? (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_7___default().expandedDiv) : ""}`,
                                 onClick: ()=>handleExpand(index),
                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
-                                    className: `${(_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().iconClass)} ${expandedItem === index ? "expanded" : ""}`,
+                                    className: `${(_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_7___default().iconClass)} ${expandedItem === index ? "expanded" : ""}`,
                                     children: expandedItem === index
                                 })
                             })
                         ]
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                        className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().itemComponentShow),
+                        className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_7___default().itemComponentShow),
                         children: expandedItem === index && /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
-                            className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().itemContent),
+                            className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_7___default().itemContent),
                             children: [
                                 item.Menu === 1 && /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_3__.Container, {
                                     children: [
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                             className: "row",
                                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                                className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().descriptionSeguranca),
+                                                className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_7___default().descriptionSeguranca),
                                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h5", {
                                                     dangerouslySetInnerHTML: {
                                                         __html: descriptionSuaSeguranca
@@ -1888,7 +1901,7 @@ const Module = ({ homeContent  })=>{
                                                 className: "col-xs-12",
                                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                                                     src: imagemSuaSegurancaMob,
-                                                    className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().imgResponsive),
+                                                    className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_7___default().imgResponsive),
                                                     alt: sct_image_mob_alt
                                                 })
                                             })
@@ -1896,7 +1909,7 @@ const Module = ({ homeContent  })=>{
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                             className: "row",
                                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                                className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().areaContent),
+                                                className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_7___default().areaContent),
                                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("ul", {
                                                     children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                                                         className: "col-xs-12",
@@ -1926,7 +1939,7 @@ const Module = ({ homeContent  })=>{
                                 item.Menu === 2 && /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                                     children: [
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                            className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().zoomableImage),
+                                            className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_7___default().zoomableImage),
                                             onMouseMove: handleMouseMove,
                                             onMouseEnter: handleMouseEnter,
                                             onMouseLeave: handleMouseLeave,
@@ -1937,43 +1950,379 @@ const Module = ({ homeContent  })=>{
                                             })
                                         }),
                                         /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                            className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().buttonsContainer),
+                                            className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_7___default().buttonsContainer),
                                             children: [
                                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
                                                     onClick: ()=>handleButtonClick("urbanistico"),
-                                                    className: selectedButton === "urbanistico" ? `${(_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().selected)} ${lote}` : "",
+                                                    className: selectedButton === "urbanistico" ? `${(_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_7___default().selected)} ${lote}` : "",
                                                     children: "Projeto Urban\xedstico"
                                                 }),
                                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
                                                     onClick: ()=>handleButtonClick("lazer"),
-                                                    className: selectedButton === "lazer" ? `${(_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().selected)} ${lote}` : "",
+                                                    className: selectedButton === "lazer" ? `${(_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_7___default().selected)} ${lote}` : "",
                                                     children: "\xc1rea de Lazer"
                                                 })
                                             ]
                                         }),
                                         /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                            className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().infoContainer),
+                                            className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_7___default().infoContainer),
                                             children: [
                                                 selectedInfo.Menu === 1 && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
                                                     children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                                        className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().textProjetoUrbanistico),
+                                                        className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_7___default().textProjetoUrbanistico),
                                                         children: [
                                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h5", {
                                                                 dangerouslySetInnerHTML: {
                                                                     __html: plt_prj_description_mob
                                                                 }
                                                             }),
-                                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                                                className: `${(_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().dadosTecnicos)} ${lote}`,
-                                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                                                    children: "Ver dados tecnicos "
-                                                                })
+                                                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                                                id: "btnTecnico",
+                                                                className: `${(_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_7___default().dadosTecnicos)} ${lote}`,
+                                                                children: [
+                                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                                                        href: "#moduleContainer",
+                                                                        className: `${(_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_7___default().dadosTecnicos)} ${lote}`,
+                                                                        onClick: openModal,
+                                                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("u", {
+                                                                            children: "Ver dados t\xe9cnicos"
+                                                                        })
+                                                                    }),
+                                                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)((react_modal__WEBPACK_IMPORTED_MODULE_6___default()), {
+                                                                        isOpen: modalIsOpen,
+                                                                        onRequestClose: closeModal,
+                                                                        contentLabel: "Exemplo de Modal",
+                                                                        style: {
+                                                                            overlay: {
+                                                                                position: "fixed",
+                                                                                top: 0,
+                                                                                left: 0,
+                                                                                right: 0,
+                                                                                bottom: 0,
+                                                                                zIndex: 100,
+                                                                                width: "100%",
+                                                                                backgroundColor: "rgba(0, 0, 0, 0.5)" // Cor de fundo semi-transparente
+                                                                            },
+                                                                            content: {
+                                                                                position: "absolute",
+                                                                                backgroundColor: "#fff",
+                                                                                height: "100%",
+                                                                                width: "100%",
+                                                                                inset: "0px",
+                                                                                padding: "0",
+                                                                                border: "0",
+                                                                                borderRadius: "0px"
+                                                                            }
+                                                                        },
+                                                                        children: [
+                                                                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                                                                children: [
+                                                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                                                        style: {
+                                                                                            float: "left",
+                                                                                            width: "17%",
+                                                                                            height: "60px",
+                                                                                            backgroundColor: "#3e3c42",
+                                                                                            color: "#3e3c42"
+                                                                                        },
+                                                                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
+                                                                                            src: "/static/images/icons/icon-back.svg",
+                                                                                            alt: "Fechar Modal",
+                                                                                            style: {
+                                                                                                width: "23px",
+                                                                                                height: "22px",
+                                                                                                cursor: "pointer",
+                                                                                                margin: "20px"
+                                                                                            },
+                                                                                            onClick: closeModal
+                                                                                        })
+                                                                                    }),
+                                                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                                                        style: {
+                                                                                            float: "left",
+                                                                                            width: "83%",
+                                                                                            height: "60px",
+                                                                                            backgroundColor: "black",
+                                                                                            color: "black"
+                                                                                        },
+                                                                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
+                                                                                            style: {
+                                                                                                color: "#fff",
+                                                                                                fontSize: "15px",
+                                                                                                lineHeight: "20px",
+                                                                                                margin: "20px"
+                                                                                            },
+                                                                                            children: descricaoCv
+                                                                                        })
+                                                                                    })
+                                                                                ]
+                                                                            }),
+                                                                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                                                                style: {
+                                                                                    padding: "20px",
+                                                                                    display: "grid"
+                                                                                },
+                                                                                children: [
+                                                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("row", {
+                                                                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
+                                                                                            style: {
+                                                                                                color: "#3f3e45",
+                                                                                                fontSize: "33px",
+                                                                                                lineHeight: "40px",
+                                                                                                margin: "0",
+                                                                                                fontWeight: "300",
+                                                                                                textTransform: "uppercase"
+                                                                                            },
+                                                                                            children: "Dados T\xe9cnicos"
+                                                                                        })
+                                                                                    }),
+                                                                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("row", {
+                                                                                        children: [
+                                                                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                                                                className: "area-description-subtitle-dt",
+                                                                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                                                                    className: "col-xs-12",
+                                                                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h3", {
+                                                                                                        className: "subtitle",
+                                                                                                        style: {
+                                                                                                            color: "#494850",
+                                                                                                            fontSize: "15px",
+                                                                                                            lineHeight: "30px",
+                                                                                                            margin: "20px 0 0"
+                                                                                                        },
+                                                                                                        children: "ESTAT\xcdSTICA DE \xc1REAS"
+                                                                                                    })
+                                                                                                })
+                                                                                            }),
+                                                                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                                                                className: "area-description-content",
+                                                                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("ul", {
+                                                                                                    children: plantaDetalhes.map((first_content, index)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+                                                                                                            children: first_content.type == 1 && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+                                                                                                                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                                                                                                    style: {
+                                                                                                                        display: "flex"
+                                                                                                                    },
+                                                                                                                    children: [
+                                                                                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                                                                                            style: {
+                                                                                                                                flexGrow: 1,
+                                                                                                                                position: "relative",
+                                                                                                                                minHeight: "1px",
+                                                                                                                                paddingRight: "15px"
+                                                                                                                            },
+                                                                                                                            children: first_content.title.length ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                                                                                                                style: {
+                                                                                                                                    fontSize: "11px",
+                                                                                                                                    lineHeight: "20px",
+                                                                                                                                    color: "#838190"
+                                                                                                                                },
+                                                                                                                                children: first_content.title
+                                                                                                                            }) : /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                                                                                                                children: "------"
+                                                                                                                            })
+                                                                                                                        }),
+                                                                                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                                                                                            style: {
+                                                                                                                                flexGrow: 1,
+                                                                                                                                position: "relative",
+                                                                                                                                minHeight: "1px",
+                                                                                                                                paddingRight: "15px",
+                                                                                                                                paddingLeft: "15px",
+                                                                                                                                textAlign: "right"
+                                                                                                                            },
+                                                                                                                            children: first_content.description.length ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                                                                                                                dangerouslySetInnerHTML: {
+                                                                                                                                    __html: first_content.description
+                                                                                                                                },
+                                                                                                                                style: {
+                                                                                                                                    fontSize: "11px",
+                                                                                                                                    lineHeight: "20px",
+                                                                                                                                    color: "#838190"
+                                                                                                                                }
+                                                                                                                            }) : /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                                                                                                                children: "------"
+                                                                                                                            })
+                                                                                                                        })
+                                                                                                                    ]
+                                                                                                                })
+                                                                                                            })
+                                                                                                        }, index))
+                                                                                                })
+                                                                                            })
+                                                                                        ]
+                                                                                    }),
+                                                                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("row", {
+                                                                                        children: [
+                                                                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                                                                className: "area-description-subtitle-dt",
+                                                                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                                                                    className: "col-xs-12",
+                                                                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h3", {
+                                                                                                        className: "subtitle",
+                                                                                                        style: {
+                                                                                                            color: "#494850",
+                                                                                                            fontSize: "15px",
+                                                                                                            lineHeight: "30px",
+                                                                                                            margin: "20px 0 0"
+                                                                                                        },
+                                                                                                        children: "\xc1REAS VERDES"
+                                                                                                    })
+                                                                                                })
+                                                                                            }),
+                                                                                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                                                                                className: "area-description-content",
+                                                                                                children: [
+                                                                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("ul", {
+                                                                                                        children: plantaDetalhes.map((second_content, index)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+                                                                                                                children: second_content.type == 2 && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+                                                                                                                    children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                                                                                                        style: {
+                                                                                                                            display: "flex"
+                                                                                                                        },
+                                                                                                                        children: [
+                                                                                                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                                                                                                style: {
+                                                                                                                                    flexGrow: 1,
+                                                                                                                                    position: "relative",
+                                                                                                                                    minHeight: "1px",
+                                                                                                                                    paddingRight: "15px"
+                                                                                                                                },
+                                                                                                                                children: second_content.title.length ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                                                                                                                    style: {
+                                                                                                                                        fontSize: "11px",
+                                                                                                                                        lineHeight: "20px",
+                                                                                                                                        color: "#838190"
+                                                                                                                                    },
+                                                                                                                                    children: second_content.title
+                                                                                                                                }) : /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                                                                                                                    children: "------"
+                                                                                                                                })
+                                                                                                                            }),
+                                                                                                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                                                                                                style: {
+                                                                                                                                    flexGrow: 1,
+                                                                                                                                    position: "relative",
+                                                                                                                                    minHeight: "1px",
+                                                                                                                                    paddingRight: "15px",
+                                                                                                                                    paddingLeft: "15px",
+                                                                                                                                    textAlign: "right"
+                                                                                                                                },
+                                                                                                                                children: second_content.description.length ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                                                                                                                    dangerouslySetInnerHTML: {
+                                                                                                                                        __html: second_content.description
+                                                                                                                                    },
+                                                                                                                                    style: {
+                                                                                                                                        fontSize: "11px",
+                                                                                                                                        lineHeight: "20px",
+                                                                                                                                        color: "#838190"
+                                                                                                                                    }
+                                                                                                                                }) : /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                                                                                                                    children: "------"
+                                                                                                                                })
+                                                                                                                            })
+                                                                                                                        ]
+                                                                                                                    })
+                                                                                                                })
+                                                                                                            }, index))
+                                                                                                    }),
+                                                                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                                                                        className: "col-xs-12",
+                                                                                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("small", {
+                                                                                                            style: {
+                                                                                                                fontSize: "11px",
+                                                                                                                lineHeight: "20px",
+                                                                                                                color: "#bdbdbd",
+                                                                                                                marginTop: "10px"
+                                                                                                            },
+                                                                                                            children: "* Esse total contempla \xe1reas verdes + APP + Sistemas de lazer + Clube"
+                                                                                                        })
+                                                                                                    })
+                                                                                                ]
+                                                                                            })
+                                                                                        ]
+                                                                                    }),
+                                                                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("row", {
+                                                                                        children: [
+                                                                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                                                                className: "area-description-subtitle-dt",
+                                                                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                                                                    className: "col-xs-12",
+                                                                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h3", {
+                                                                                                        className: "subtitle",
+                                                                                                        style: {
+                                                                                                            color: "#494850",
+                                                                                                            fontSize: "15px",
+                                                                                                            lineHeight: "30px",
+                                                                                                            margin: "20px 0 0"
+                                                                                                        },
+                                                                                                        children: "SERVI\xc7OS DE INFRAESTRUTURA"
+                                                                                                    })
+                                                                                                })
+                                                                                            }),
+                                                                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                                                                className: "area-description-content",
+                                                                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("ul", {
+                                                                                                    children: plantaDetalhes.map((third_content, index)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+                                                                                                            children: third_content.type == 3 && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+                                                                                                                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                                                                                                    style: {
+                                                                                                                        display: "flex"
+                                                                                                                    },
+                                                                                                                    children: [
+                                                                                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                                                                                            className: "col-xs-8",
+                                                                                                                            style: {
+                                                                                                                                flexGrow: 1,
+                                                                                                                                position: "relative",
+                                                                                                                                minHeight: "1px",
+                                                                                                                                paddingRight: "15px"
+                                                                                                                            },
+                                                                                                                            children: third_content.title.length ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                                                                                                                style: {
+                                                                                                                                    fontSize: "11px",
+                                                                                                                                    lineHeight: "20px",
+                                                                                                                                    color: "#838190"
+                                                                                                                                },
+                                                                                                                                children: third_content.title
+                                                                                                                            }) : /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                                                                                                                children: "------"
+                                                                                                                            })
+                                                                                                                        }),
+                                                                                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                                                                                            className: "col-xs-4",
+                                                                                                                            children: third_content.description.length ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                                                                                                                dangerouslySetInnerHTML: {
+                                                                                                                                    __html: third_content.description
+                                                                                                                                },
+                                                                                                                                style: {
+                                                                                                                                    fontSize: "11px",
+                                                                                                                                    lineHeight: "20px",
+                                                                                                                                    color: "#838190"
+                                                                                                                                }
+                                                                                                                            }) : /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                                                                                                                children: "------"
+                                                                                                                            })
+                                                                                                                        })
+                                                                                                                    ]
+                                                                                                                })
+                                                                                                            })
+                                                                                                        }, index))
+                                                                                                })
+                                                                                            })
+                                                                                        ]
+                                                                                    })
+                                                                                ]
+                                                                            })
+                                                                        ]
+                                                                    })
+                                                                ]
                                                             })
                                                         ]
                                                     })
                                                 }),
                                                 selectedInfo.Menu === 2 && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                                    className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().descricaoConceitual),
+                                                    className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_7___default().descricaoConceitual),
                                                     children: listaRenderizada
                                                 })
                                             ]
@@ -1983,14 +2332,14 @@ const Module = ({ homeContent  })=>{
                                 item.Menu === 3 && /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
                                     children: [
                                         /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                            className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().Container),
+                                            className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_7___default().Container),
                                             children: [
                                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                                     className: "row",
                                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                                         className: "col-xs-12",
                                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                                            className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().areaContentLocalizacao),
+                                                            className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_7___default().areaContentLocalizacao),
                                                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
                                                                 dangerouslySetInnerHTML: {
                                                                     __html: lcz_etg_description
@@ -2000,20 +2349,20 @@ const Module = ({ homeContent  })=>{
                                                     })
                                                 }),
                                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                                    className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().row),
+                                                    className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_7___default().row),
                                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                                        className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().itensLocalizacao),
+                                                        className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_7___default().itensLocalizacao),
                                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("ul", {
                                                             children: localizacaoEstrategicas.map((local, index)=>/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("li", {
                                                                     children: [
                                                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                                                            className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().itemTitle),
+                                                                            className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_7___default().itemTitle),
                                                                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("strong", {
                                                                                 children: local.title
                                                                             })
                                                                         }),
                                                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                                                            className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().itemArea),
+                                                                            className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_7___default().itemArea),
                                                                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
                                                                                 children: local.area
                                                                             })
@@ -2026,11 +2375,11 @@ const Module = ({ homeContent  })=>{
                                             ]
                                         }),
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                            className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().rowStandVendas),
+                                            className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_7___default().rowStandVendas),
                                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                                className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().areaStandVendas),
+                                                className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_7___default().areaStandVendas),
                                                 children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                                    className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_6___default().textoStandVendas),
+                                                    className: (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_7___default().textoStandVendas),
                                                     children: [
                                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h4", {
                                                             children: "Visite o stand de vendas"
@@ -4652,6 +5001,14 @@ module.exports = require("react-id-swiper");
 
 "use strict";
 module.exports = require("react-image-zoom");
+
+/***/ }),
+
+/***/ 9931:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("react-modal");
 
 /***/ }),
 

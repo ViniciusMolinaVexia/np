@@ -6,12 +6,14 @@
   "/busca": "pages/busca.js",
   "/busca/[id]": "pages/busca/[id].js",
   "/canal-de-solicitacao-de-direitos-lgpd": "pages/canal-de-solicitacao-de-direitos-lgpd.js",
+  "/cidade-alpha/[id]": "pages/cidade-alpha/[id].js",
   "/comercial/[id]": "pages/comercial/[id].js",
   "/experiencia-alpha": "pages/experiencia-alpha.js",
   "/fale-conosco": "pages/fale-conosco.js",
   "/faq": "pages/faq.js",
   "/home": "pages/home.js",
   "/": "pages/index.js",
+  "/labtest/geolocation": "pages/labtest/geolocation.js",
   "/labtest/horizontalCollapse": "pages/labtest/horizontalCollapse.js",
   "/labtest/imageSizeTest": "pages/labtest/imageSizeTest.js",
   "/labtest": "pages/labtest.js",
@@ -32,7 +34,5 @@
   "/residencial/[id]": "pages/residencial/[id].js",
   "/teaser/[empreendimento]/agradecimento": "pages/teaser/[empreendimento]/agradecimento.js",
   "/teaser/[empreendimento]": "pages/teaser/[empreendimento].js",
-  "/termos-de-uso": "pages/termos-de-uso.js",
-  "/cidade-alpha/[id]": "pages/cidade-alpha/[id].js",
-  "/labtest/geolocation": "pages/labtest/geolocation.js"
+  "/termos-de-uso": "pages/termos-de-uso.js"
 }
