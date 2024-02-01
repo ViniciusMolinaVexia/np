@@ -2388,7 +2388,7 @@ const Module = ({ homeContent  })=>{
                                                             children: standVendas.subTitle
                                                         }),
                                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_residencialGoogleMap_googleMap__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Z, {
-                                                            isMobile: false,
+                                                            isMobile: true,
                                                             objLatLng: defaultProps.center
                                                         })
                                                     ]
