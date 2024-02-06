@@ -426,8 +426,9 @@ class ModalEmail extends external_react_.Component {
                                                                         "Li e concordo com a",
                                                                         /*#__PURE__*/ jsx_runtime_.jsx("a", {
                                                                             className: "underlined-link",
-                                                                            href: "/politica-de-privacidade",
+                                                                            href: "https://privacy-central.securiti.ai/#/notices/22e561ae-20a4-4796-ad55-4f2c15e26b02",
                                                                             target: "_blank",
+                                                                            rel: "noreferrer",
                                                                             children: " Pol\xedtica de Privacidade"
                                                                         }),
                                                                         ",",
@@ -1276,8 +1277,9 @@ class ModalWhatsapp extends external_react_.Component {
                                                                         "Li e concordo com a",
                                                                         /*#__PURE__*/ jsx_runtime_.jsx("a", {
                                                                             className: "underlined-link",
-                                                                            href: "/politica-de-privacidade",
+                                                                            href: "https://privacy-central.securiti.ai/#/notices/22e561ae-20a4-4796-ad55-4f2c15e26b02",
                                                                             target: "_blank",
+                                                                            rel: "noreferrer",
                                                                             children: " Pol\xedtica de Privacidade"
                                                                         }),
                                                                         ",",

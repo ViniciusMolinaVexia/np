@@ -976,11 +976,11 @@ class CookiePolicy extends external_react_.Component {
                                 children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
                                     children: [
                                         "Utilizamos cookies e outras tecnologias para lhe oferecer uma experi\xeancia de navega\xe7\xe3o melhor, analisar o tr\xe1fego do site e personalizar o conte\xfado, de acordo com a nossa ",
-                                        /*#__PURE__*/ jsx_runtime_.jsx(LinkCustom_component/* default */.Z, {
-                                            text: "Pol\xedtica de Privacidade",
-                                            arrayLink: [
-                                                "politica-de-privacidade"
-                                            ]
+                                        /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                            href: "https://privacy-central.securiti.ai/#/notices/22e561ae-20a4-4796-ad55-4f2c15e26b02",
+                                            target: "_blank",
+                                            rel: "noreferrer",
+                                            children: "Pol\xedtica de Privacidade"
                                         }),
                                         " e ",
                                         /*#__PURE__*/ jsx_runtime_.jsx(LinkCustom_component/* default */.Z, {

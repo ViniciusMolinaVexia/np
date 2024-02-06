@@ -320,11 +320,11 @@ class PoliticaDePrivacidade extends react__WEBPACK_IMPORTED_MODULE_2__.Component
                                 className: "description",
                                 children: [
                                     "A Alphaville possu\xed uma ",
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_share_components_LinkCustom_LinkCustom_component__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Z, {
-                                        text: "Pol\xedtica de Privacidade",
-                                        arrayLink: [
-                                            "politica-de-privacidade"
-                                        ]
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                        href: "https://privacy-central.securiti.ai/#/notices/22e561ae-20a4-4796-ad55-4f2c15e26b02",
+                                        target: "_blank",
+                                        rel: "noreferrer",
+                                        children: "Pol\xedtica de Privacidade"
                                     }),
                                     ", que regula o tratamento dado \xe0s informa\xe7\xf5es de cadastro e demais informa\xe7\xf5es e dados coletados. \xc9 dever dos USU\xc1RIOS conhecer este regulamento.",
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {

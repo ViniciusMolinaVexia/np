@@ -477,7 +477,8 @@ const FormSaibaMais = ({ setNameFormulario , colors , homeContent , isTeaser ,  
                                                             "Li e concordo com a\xa0",
                                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
                                                                 className: (_form_saiba_mais_module_scss__WEBPACK_IMPORTED_MODULE_10___default().underlinedLink),
-                                                                href: "/politica-de-privacidade",
+                                                                href: "https://privacy-central.securiti.ai/#/notices/22e561ae-20a4-4796-ad55-4f2c15e26b02",
+                                                                rel: "noreferrer",
                                                                 target: "_blank",
                                                                 children: "Pol\xedtica de Privacidade"
                                                             }),

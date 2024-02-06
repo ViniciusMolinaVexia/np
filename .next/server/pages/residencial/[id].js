@@ -229,6 +229,7 @@ module.exports = {
 	"textProjetoUrbanistico": "residencial-Fusao_textProjetoUrbanistico__vGoJr",
 	"dadosTecnicos": "residencial-Fusao_dadosTecnicos__CBR2J",
 	"TerrasAlphaville": "residencial-Fusao_TerrasAlphaville__XmOPG",
+	"JardimAlpha": "residencial-Fusao_JardimAlpha__ZELtg",
 	"descricaoConceitual": "residencial-Fusao_descricaoConceitual__EXHZb",
 	"selected": "residencial-Fusao_selected__zfT_H",
 	"infoContainer": "residencial-Fusao_infoContainer__Or3CC",
@@ -263,6 +264,7 @@ module.exports = {
 	"DadosTecnicos": "residencial-PlantaConceitual_DadosTecnicos__hNPZC",
 	"LinkTecnico": "residencial-PlantaConceitual_LinkTecnico__wyBy3",
 	"TerrasAlphaville": "residencial-PlantaConceitual_TerrasAlphaville__iZ0W2",
+	"JardimAlpha": "residencial-PlantaConceitual_JardimAlpha__n_OT1",
 	"divTecnico": "residencial-PlantaConceitual_divTecnico__CfpI6",
 	"iconSeta": "residencial-PlantaConceitual_iconSeta__5nthy",
 	"colunaLista": "residencial-PlantaConceitual_colunaLista__JUmcL",
@@ -288,6 +290,7 @@ module.exports = {
 module.exports = {
 	"areaProdutoInteresse": "residencial-residencial-ProdutoInteresse_areaProdutoInteresse__WE_Ji",
 	"TerrasAlphaville": "residencial-residencial-ProdutoInteresse_TerrasAlphaville__2tPjW",
+	"JardimAlpha": "residencial-residencial-ProdutoInteresse_JardimAlpha__OiSLe",
 	"areaConteudo": "residencial-residencial-ProdutoInteresse_areaConteudo__LnYNr",
 	"areaTitle": "residencial-residencial-ProdutoInteresse_areaTitle__tLCLw",
 	"saibaMaisTitle": "residencial-residencial-ProdutoInteresse_saibaMaisTitle__VgjfE",
@@ -349,6 +352,7 @@ module.exports = {
 	"especificacaoSubtxt": "residencial-ProjetoUrbanistico_especificacaoSubtxt__gc09_",
 	"iconPin": "residencial-ProjetoUrbanistico_iconPin__cY0iR",
 	"TerrasAlphaville": "residencial-ProjetoUrbanistico_TerrasAlphaville__ysngk",
+	"JardimAlpha": "residencial-ProjetoUrbanistico_JardimAlpha__udKRL",
 	"iconHome": "residencial-ProjetoUrbanistico_iconHome__mzfPd",
 	"iconTree": "residencial-ProjetoUrbanistico_iconTree__NykSa",
 	"iconSwin": "residencial-ProjetoUrbanistico_iconSwin__T3UHI",
@@ -1767,7 +1771,8 @@ const Module = ({ homeContent  })=>{
             lote = "TerrasAlpha";
             break;
         case "3":
-            lote = "JardimAlpha";
+            lote = (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_7___default().JardimAlpha);
+            color = "#f26522";
             break;
         case "5":
             lote = (_residencial_Fusao_module_scss__WEBPACK_IMPORTED_MODULE_7___default().TerrasAlphaville);
@@ -3022,7 +3027,8 @@ function ProjetoUrbanistico({ homeContent , colors , isMobile , isTeaser  }) {
             lote = "TerrasAlpha";
             break;
         case "3":
-            lote = "JardimAlpha";
+            lote = (residencial_PlantaConceitual_module_default()).JardimAlpha;
+            color = "#bc589d";
             break;
         case "5":
             lote = (residencial_PlantaConceitual_module_default()).TerrasAlphaville;
@@ -3438,7 +3444,7 @@ const FormSaibaMais = ({ setNameFormulario , colors , homeContent , isTeaser , i
             lote = "TerrasAlpha";
             break;
         case "3":
-            lote = "JardimAlpha";
+            lote = (_residencial_residencial_ProdutoInteresse_module_scss__WEBPACK_IMPORTED_MODULE_10___default().JardimAlpha);
             break;
         case "5":
             lote = (_residencial_residencial_ProdutoInteresse_module_scss__WEBPACK_IMPORTED_MODULE_10___default().TerrasAlphaville);
@@ -3725,8 +3731,9 @@ const FormSaibaMais = ({ setNameFormulario , colors , homeContent , isTeaser , i
                                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("u", {
                                                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
                                                                     className: (_residencial_residencial_ProdutoInteresse_module_scss__WEBPACK_IMPORTED_MODULE_10___default().underlinedLink),
-                                                                    href: "/politica-de-privacidade",
+                                                                    href: "https://privacy-central.securiti.ai/#/notices/22e561ae-20a4-4796-ad55-4f2c15e26b02",
                                                                     target: "_blank",
+                                                                    rel: "noreferrer",
                                                                     children: "Pol\xedtica de Privacidade"
                                                                 })
                                                             }),
@@ -3825,7 +3832,7 @@ function ProjetoUrbanistico({ homeContent , colors , isMobile , isTeaser  }) {
             lote = "TerrasAlpha";
             break;
         case "3":
-            lote = "JardimAlpha";
+            lote = (_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().JardimAlpha);
             break;
         case "5":
             lote = (_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().TerrasAlphaville);
