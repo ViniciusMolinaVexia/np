@@ -4166,7 +4166,8 @@ function TeaserMap({ colors , standVendas , isMobile , id , homeContent  }) {
             lote = "TerrasAlpha";
             break;
         case "3":
-            lote = "JardimAlpha";
+            lote = (_residencial_StandVendas_module_scss__WEBPACK_IMPORTED_MODULE_4___default().TerrasAlphaville);
+            color = "#f26522";
             break;
         case "5":
             lote = (_residencial_StandVendas_module_scss__WEBPACK_IMPORTED_MODULE_4___default().TerrasAlphaville);
@@ -4582,7 +4583,8 @@ const ResidencialPage = ({ homeContent , showAlphaMenu , slugDomPedro , location
                 isMobile: true,
                 empreendimentosjson: empreendimentosjson,
                 statusStand: homeContent.statusStand,
-                linkStatus: homeContent.linkStandAtivo
+                linkStatus: homeContent.linkStandAtivo,
+                whatsAppAtivo: homeContent.whatsAppAtivo
             }) : "",
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_share_components_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico__WEBPACK_IMPORTED_MODULE_11__/* ["default"] */ .Z, {
                 homeContent: homeContent,

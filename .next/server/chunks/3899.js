@@ -1657,7 +1657,7 @@ class DesktopAlphaMenu extends external_react_.Component {
         } else {
             return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
                 children: [
-                    /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Col, {
+                    this.props.homeContent?.telefoneAtivo == 1 ? /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Col, {
                         as: "li",
                         className: "alpha-menu__item alpha-menu__item--phone " + bgTeaserPhone,
                         onClick: this.togglePhoneState,
@@ -1680,8 +1680,8 @@ class DesktopAlphaMenu extends external_react_.Component {
                                 })
                             ]
                         })
-                    }),
-                    /*#__PURE__*/ jsx_runtime_.jsx(modalForm_component, {
+                    }) : null,
+                    this.props.homeContent?.whatsAppAtivo == 1 ? /*#__PURE__*/ jsx_runtime_.jsx(modalForm_component, {
                         id: "whatsapp1",
                         empreendimentosjson: this.props.empreendimentosjson,
                         children: /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Col, {
@@ -1700,8 +1700,8 @@ class DesktopAlphaMenu extends external_react_.Component {
                                 ]
                             })
                         })
-                    }),
-                    /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Col, {
+                    }) : null,
+                    this.props.statusStand == 1 ? /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Col, {
                         as: "li",
                         className: isInternal ? "alpha-menu__item alpha-menu__item--sales shown" : "alpha-menu__item alpha-menu__item--sales hidden",
                         children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("a", {
@@ -1716,7 +1716,7 @@ class DesktopAlphaMenu extends external_react_.Component {
                                 })
                             ]
                         })
-                    })
+                    }) : null
                 ]
             });
         }

@@ -119,7 +119,7 @@ class Utils {
             error = "required";
         } else if (tel.length >= digits) {
             if (!/^(?:(?:\+|00)?(55)\s?)?(?:\(?([1-9][0-9])\)?\s?)?(?:((?:9\d|[2-9])\d{3})\-?(\d{4}))$/g.test(this.foneMask(tel))) error = "invalid";
-        } else if (tel.length < digits) {
+        } else if (tel.length < 14) {
             error = "invalid";
         }
         return error;
