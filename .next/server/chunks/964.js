@@ -693,10 +693,14 @@ class Oferts extends external_react_.Component {
         let classBtnColor = "btn-color-0";
         switch(typeLote){
             case 1:
+                classBtnColor = "btn-color-2";
+                break;
             case 4:
                 classBtnColor = "btn-color-0";
                 break;
             case 2:
+                classBtnColor = "btn-color-2";
+                break;
             case 5:
                 classBtnColor = "btn-color-1";
                 break;

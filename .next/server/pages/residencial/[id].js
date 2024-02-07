@@ -349,6 +349,7 @@ module.exports = {
 	"Row": "residencial-ProjetoUrbanistico_Row__1lnjp",
 	"especificacaoMetros": "residencial-ProjetoUrbanistico_especificacaoMetros__oM6aw",
 	"line": "residencial-ProjetoUrbanistico_line__9608D",
+	"lineAlign": "residencial-ProjetoUrbanistico_lineAlign__TS_Y5",
 	"especificacaoSubtxt": "residencial-ProjetoUrbanistico_especificacaoSubtxt__gc09_",
 	"iconPin": "residencial-ProjetoUrbanistico_iconPin__cY0iR",
 	"TerrasAlphaville": "residencial-ProjetoUrbanistico_TerrasAlphaville__ysngk",
@@ -2483,18 +2484,23 @@ class Oferts extends react__WEBPACK_IMPORTED_MODULE_1__.Component {
         new _service_util__WEBPACK_IMPORTED_MODULE_9__/* ["default"] */ .Z().goToUrl(hrefArray, "_self", false, e);
     };
     setClassOfBtn = (typeLote)=>{
+        let id = this.props.content.typeLote.id;
         let classBtnColor = "btn-color-0";
-        switch(typeLote){
-            case 1:
-            case 4:
+        switch(id){
+            case "1":
                 classBtnColor = "btn-color-0";
                 break;
-            case 2:
-            case 5:
+            case "2":
                 classBtnColor = "btn-color-1";
                 break;
-            case 3:
+            case "3":
                 classBtnColor = "btn-color-2";
+                break;
+            case "4":
+                classBtnColor = "btn-color-0";
+                break;
+            case "5":
+                classBtnColor = "btn-color-1";
                 break;
             default:
                 classBtnColor = "btn-color-0";
@@ -3823,6 +3829,7 @@ function ProjetoUrbanistico({ homeContent , colors , isMobile , isTeaser  }) {
     const id = homeContent.typeLote.id;
     let lote = "Alphaville";
     let color = "#f26522";
+    let lineAlign = "";
     switch(id){
         case "1":
             lote = (_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().Alphaville);
@@ -3838,6 +3845,11 @@ function ProjetoUrbanistico({ homeContent , colors , isMobile , isTeaser  }) {
             lote = (_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().TerrasAlphaville);
             color = "#f26522";
             break;
+    }
+    if (Area && Area.length > 0) {
+        lineAlign = (_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().lineAlign);
+    } else {
+        lineAlign = "item";
     }
     return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("section", {
         className: `${(_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().areaTeaserVideoJardimAlpha)}`,
@@ -3905,7 +3917,7 @@ function ProjetoUrbanistico({ homeContent , colors , isMobile , isTeaser  }) {
                                                     children: Id == 1 ? "\xe1rea do empreendimento" : Id == 2 ? "\xe1rea total da Cidade Alpha" : ""
                                                 }),
                                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                                                    className: (_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().line)
+                                                    className: `${(_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().line)}` + ` ${lineAlign}`
                                                 })
                                             ]
                                         })
@@ -3933,7 +3945,7 @@ function ProjetoUrbanistico({ homeContent , colors , isMobile , isTeaser  }) {
                                                 children: Id == 1 && IdEmp != 1179 ? `de área média nos lotes das ${unidatesTerreno} unidades` : Id == 1 && IdEmp == 1179 ? `de área mínima dos lotes das ${unidatesTerreno} unidades` : Id == 2 ? "habitantes previstos" : ""
                                             }),
                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                                                className: (_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().line)
+                                                className: `${(_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().line)}` + ` ${lineAlign}`
                                             })
                                         ]
                                     })
@@ -3961,7 +3973,7 @@ function ProjetoUrbanistico({ homeContent , colors , isMobile , isTeaser  }) {
                                                 children: Id == 1 ? "de \xe1reas verdes" : Id == 2 ? "totais de \xe1reas verdes" : ""
                                             }),
                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                                                className: (_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().line)
+                                                className: `${(_residencialProjetoUrbanistico_residencial_ProjetoUrbanistico_module_scss__WEBPACK_IMPORTED_MODULE_7___default().line)}` + ` ${lineAlign}`
                                             })
                                         ]
                                     })
