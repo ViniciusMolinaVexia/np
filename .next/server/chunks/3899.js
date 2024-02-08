@@ -1657,7 +1657,7 @@ class DesktopAlphaMenu extends external_react_.Component {
         } else {
             return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
                 children: [
-                    this.props.homeContent?.telefoneAtivo == 1 ? /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Col, {
+                    this.props.homeContent?.telefoneAtivo == 1 || isResidencialAlpha === "home" ? /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Col, {
                         as: "li",
                         className: "alpha-menu__item alpha-menu__item--phone " + bgTeaserPhone,
                         onClick: this.togglePhoneState,
@@ -1681,7 +1681,7 @@ class DesktopAlphaMenu extends external_react_.Component {
                             ]
                         })
                     }) : null,
-                    this.props.homeContent?.whatsAppAtivo == 1 ? /*#__PURE__*/ jsx_runtime_.jsx(modalForm_component, {
+                    this.props.homeContent?.whatsAppAtivo == 1 || isResidencialAlpha === "home" ? /*#__PURE__*/ jsx_runtime_.jsx(modalForm_component, {
                         id: "whatsapp1",
                         empreendimentosjson: this.props.empreendimentosjson,
                         children: /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Col, {
@@ -1701,7 +1701,7 @@ class DesktopAlphaMenu extends external_react_.Component {
                             })
                         })
                     }) : null,
-                    this.props.statusStand == 1 ? /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Col, {
+                    this.props.statusStand == 1 || isResidencialAlpha === "home" ? /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Col, {
                         as: "li",
                         className: isInternal ? "alpha-menu__item alpha-menu__item--sales shown" : "alpha-menu__item alpha-menu__item--sales hidden",
                         children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("a", {
@@ -1731,6 +1731,7 @@ class DesktopAlphaMenu extends external_react_.Component {
         const isInternal = this.props.isInternal;
         const isTeaser = this.props.isTeaser;
         const bgTeaserSaibaMais = isTeaser;
+        const pageHome1 = this.props.pageHome;
         const isResidencialAlpha = this.props.isResidencialAlpha ? `bg-teaser${this.setColorDisplaySaibaMais(this.props.colors.displayColor, isTeaser)}--saiba-mais` : "";
         const bgTeaserPhone = isTeaser ? `bg-teaser${this.setColorDisplaySaibaMais(this.props.colors.displayColor, isTeaser)}--phone` : "";
         const bgTeaserWhatsapp = isTeaser ? `bg-teaser${this.setColorDisplaySaibaMais(this.props.colors.displayColor, isTeaser)}--whatsapp` : "";
@@ -1819,7 +1820,7 @@ class DesktopAlphaMenu extends external_react_.Component {
                         children: /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Row, {
                             as: "ul",
                             className: isInternal ? "alpha-menu__items alpha-menu__items--internal" : "alpha-menu__items",
-                            children: this.setShowTeaserAlphaMenu(isTeaser, bgTeaserPhone, bgTeaserWhatsapp, bgTeaserSales, isInternal)
+                            children: this.setShowTeaserAlphaMenu(isTeaser, bgTeaserPhone, bgTeaserWhatsapp, bgTeaserSales, isInternal, pageHome1)
                         })
                     })
                 ]
@@ -2023,7 +2024,7 @@ class MobileAlphaMenu extends external_react_.Component {
                         ]
                     })
                 }),
-                this.setShowTeaserAlphaMenuMobile(isTeaser, bgTeaserPhone, bgTeaserSaibaMais, bgTeaserWhatsapp)
+                this.setShowTeaserAlphaMenuMobile(isTeaser, bgTeaserPhone, bgTeaserSaibaMais, bgTeaserWhatsapp, pageHome)
             ]
         });
     }

@@ -1562,7 +1562,8 @@ class Home extends external_react_.Component {
                 this.state.showAlphaMenu ? /*#__PURE__*/ jsx_runtime_.jsx(alphaMenu/* default */.Z, {
                     displayColor: this.state.homeContent.displayColor,
                     isInternal: false,
-                    empreendimentosjson: this.props.empreendimentosjson
+                    empreendimentosjson: this.props.empreendimentosjson,
+                    pageHome: "home"
                 }) : "",
                 /*#__PURE__*/ jsx_runtime_.jsx(CitiesAlpha, {
                     content: this.state.homeContent
