@@ -4571,17 +4571,19 @@ const ResidencialPage = ({ homeContent , showAlphaMenu , slugDomPedro , location
                             homeContent: homeContent
                         }) : null
                     }) : null,
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_share_components_residencialOutrosEmpreendimentos_residencial_OutrosEmpreendimentos__WEBPACK_IMPORTED_MODULE_19__/* ["default"] */ .Z, {
-                        content: homeContent,
-                        prmContainer: false,
-                        prmNostand: false,
-                        prmMin: "0",
-                        prmItems: otherVentures,
-                        prmTitleMobile: "Outros empreendimentos",
-                        prmSubTitleMobile: "",
-                        title: ofertsTitle,
-                        prmDescription: "Os empreendimentos da Alphaville s\xe3o desenvolvidos para oferecer conforto, seguran\xe7a e comodidade para sua fam\xedlia."
-                    })
+                    other.length > 0 ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_share_components_residencialOutrosEmpreendimentos_residencial_OutrosEmpreendimentos__WEBPACK_IMPORTED_MODULE_19__/* ["default"] */ .Z, {
+                            content: homeContent,
+                            prmContainer: false,
+                            prmNostand: false,
+                            prmMin: "0",
+                            prmItems: otherVentures,
+                            prmTitleMobile: "Outros empreendimentos",
+                            prmSubTitleMobile: "",
+                            title: ofertsTitle,
+                            prmDescription: "Os empreendimentos da Alphaville s\xe3o desenvolvidos para oferecer conforto, seguran\xe7a e comodidade para sua fam\xedlia."
+                        })
+                    }) : null
                 ]
             })
         }),
@@ -4641,6 +4643,7 @@ ResidencialPage.getInitialProps = async (ctx)=>{
     }
     let otherVentures = [];
     let homeDuoContent = {};
+    let otherVenturesTwo = [];
     const homeService = new _share_service_home__WEBPACK_IMPORTED_MODULE_22__/* ["default"] */ .Z();
     homeDuoContent = await homeService.getContent();
     const search = new _share_service_search__WEBPACK_IMPORTED_MODULE_21__/* ["default"] */ .Z();
@@ -4650,11 +4653,17 @@ ResidencialPage.getInitialProps = async (ctx)=>{
         query: "where=destaque=1 AND status_obra > 1",
         limit: 4
     };
-    const contentBanners = await search.searchPreLoadBanners(searchByLocation.latitude, searchByLocation.longitude, searchByLocation.limit, searchByLocation.query, homeDuoContent.campaings);
+    const searchByOther = {
+        limit: 2,
+        query: "where=destaque=1 AND status_obra > 1"
+    };
+    const outrosEmp = await search.searchOtherVenture(searchByOther.limit, empreendimento.outros_empreendimentos);
+    const contentBanners = await search.searchPreLoadBanners(searchByLocation.latitude, searchByLocation.longitude, searchByLocation.limit, searchByLocation.query, empreendimento.outros_empreendimentos);
     otherVentures = contentBanners.otherVentures;
+    otherVenturesTwo = outrosEmp;
     return {
         homeContent: empreendimento,
-        other: otherVentures,
+        other: otherVenturesTwo,
         showAlphaMenu: true,
         location: {},
         empreendimentosjson: {}

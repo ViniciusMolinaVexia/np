@@ -125,6 +125,7 @@ class EnterpriseModel {
         this.greenArsDescription = data.empreendimento.green_ars_description;
         this.areasVerdes = data.areas_verdes;
         this.sct_image_mob_alt = data.sct_image_mob_alt;
+        this.outros_empreendimentos = data.empreendimento_relacionado;
         this.typeId = {
             id: data.empreendimento.type_id,
             title: this.getTypeIdTitle(data.empreendimento.type_id)

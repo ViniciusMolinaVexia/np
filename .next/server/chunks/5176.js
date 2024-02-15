@@ -163,6 +163,7 @@ class Provider {
 
 
 
+
 class Search {
     searchLocations = async (latitude, longitude, term, where)=>{
         latitude = latitude || "-23.5400516";
@@ -238,6 +239,21 @@ class Search {
         }
         return bannerList;
     };
+    searchOtherVenture = async (limit, campaings)=>{
+        let Valor = campaings;
+        let urlSearch = _Envirioment_Envirioment__WEBPACK_IMPORTED_MODULE_2__/* .ENDPOINT_SEARCH_LOCATION */ .YO;
+        let Limit = limit;
+        const res = await _api__WEBPACK_IMPORTED_MODULE_0__/* ["default"].get */ .Z.get(urlSearch);
+        let otherVentures = [];
+        let ValorIds = Valor.map((item)=>item.relacionado_id);
+        let bannerList = [];
+        if (res.data) {
+            bannerList = await res.data.search.filter((obj)=>ValorIds.includes(obj.empreendimento.id.toString())).slice(0, Limit).map((obj)=>{
+                return obj;
+            });
+        }
+        return bannerList;
+    };
     searchPreLoadBanners = async (latitude, longitude, limit, query, campaings)=>{
         latitude = latitude || "-23.5400516";
         longitude = longitude || "-46.3834606";
@@ -256,7 +272,7 @@ class Search {
             bannerList = bannerListCamp;
         }
         numBanner = limit - bannerList.length;
-        //Busca de banners principais destaque=1 | status_obra=1
+        //Busca de banners principais destaque=1 | status_obra=10
         const mainBannersList = await this.searchMainBanners(numBanner);
         bannerList = bannerList.concat(mainBannersList);
         numBanner = limit - bannerList.length;
