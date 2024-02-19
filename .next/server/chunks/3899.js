@@ -1731,7 +1731,7 @@ class DesktopAlphaMenu extends external_react_.Component {
         const isInternal = this.props.isInternal;
         const isTeaser = this.props.isTeaser;
         const bgTeaserSaibaMais = isTeaser;
-        const pageHome1 = this.props.pageHome;
+        const pageHome = this.props.pageHome;
         const isResidencialAlpha = this.props.isResidencialAlpha ? `bg-teaser${this.setColorDisplaySaibaMais(this.props.colors.displayColor, isTeaser)}--saiba-mais` : "";
         const bgTeaserPhone = isTeaser ? `bg-teaser${this.setColorDisplaySaibaMais(this.props.colors.displayColor, isTeaser)}--phone` : "";
         const bgTeaserWhatsapp = isTeaser ? `bg-teaser${this.setColorDisplaySaibaMais(this.props.colors.displayColor, isTeaser)}--whatsapp` : "";
@@ -1820,7 +1820,7 @@ class DesktopAlphaMenu extends external_react_.Component {
                         children: /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Row, {
                             as: "ul",
                             className: isInternal ? "alpha-menu__items alpha-menu__items--internal" : "alpha-menu__items",
-                            children: this.setShowTeaserAlphaMenu(isTeaser, bgTeaserPhone, bgTeaserWhatsapp, bgTeaserSales, isInternal, pageHome1)
+                            children: this.setShowTeaserAlphaMenu(isTeaser, bgTeaserPhone, bgTeaserWhatsapp, bgTeaserSales, isInternal, pageHome)
                         })
                     })
                 ]
@@ -1971,6 +1971,7 @@ class MobileAlphaMenu extends external_react_.Component {
     }
     render() {
         const isTeaser = this.props.isTeaser;
+        const pageHome = this.props.pageHome;
         const bgTeaserSaibaMais = isTeaser ? `bg-teaser${this.setColorByDisplayColor(this.props.colors.displayColor)}--saiba-mais` : "";
         const bgTeaserPhone = isTeaser ? `bg-teaser${this.setColorByDisplayColor(this.props.colors.displayColor)}--phone` : "";
         const bgTeaserWhatsapp = isTeaser ? `bg-teaser${this.setColorByDisplayColor(this.props.colors.displayColor)}--whatsapp` : "";
