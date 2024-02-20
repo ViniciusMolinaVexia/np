@@ -45,7 +45,7 @@ const layout = ({ children , outContainer , outBottomContainer , metaProps , hom
         gtag("config", "UA-27437785-3", {
             cookie_expires: 0
         });
-        const mainUrl = "https://www.alphaville.com.br";
+        const mainUrl = "http://qa.alphaville.com.br";
     // if (window.location.origin != mainUrl) {
     //   window.location.href = mainUrl + window.location.pathname;
     // }
