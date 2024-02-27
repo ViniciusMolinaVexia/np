@@ -1,8 +1,8 @@
 {
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
-  "/404": "pages/404.js",
   "/_document": "pages/_document.js",
+  "/404": "pages/404.js",
   "/busca": "pages/busca.js",
   "/busca/[id]": "pages/busca/[id].js",
   "/canal-de-solicitacao-de-direitos-lgpd": "pages/canal-de-solicitacao-de-direitos-lgpd.js",
@@ -22,17 +22,17 @@
   "/labtest/verifyApi": "pages/labtest/verifyApi.js",
   "/labtest/verifyApiSearch": "pages/labtest/verifyApiSearch.js",
   "/lancamento/[id]": "pages/lancamento/[id].js",
-  "/manutencao": "pages/manutencao.js",
   "/linha-de-produtos": "pages/linha-de-produtos.js",
+  "/manutencao": "pages/manutencao.js",
   "/politica-de-cookies": "pages/politica-de-cookies.js",
   "/politica-de-privacidade": "pages/politica-de-privacidade.js",
+  "/redirect": "pages/redirect.js",
   "/relacao-com-os-investidores": "pages/relacao-com-os-investidores.js",
   "/residencia/[empreendimento]/agradecimento": "pages/residencia/[empreendimento]/agradecimento.js",
-  "/redirect": "pages/redirect.js",
   "/residencia/[empreendimento]": "pages/residencia/[empreendimento].js",
-  "/teaser/[empreendimento]/agradecimento": "pages/teaser/[empreendimento]/agradecimento.js",
+  "/residencial/[id]/agradecimento": "pages/residencial/[id]/agradecimento.js",
   "/residencial/[id]": "pages/residencial/[id].js",
-  "/termos-de-uso": "pages/termos-de-uso.js",
+  "/teaser/[empreendimento]/agradecimento": "pages/teaser/[empreendimento]/agradecimento.js",
   "/teaser/[empreendimento]": "pages/teaser/[empreendimento].js",
-  "/residencial/[id]/agradecimento": "pages/residencial/[id]/agradecimento.js"
+  "/termos-de-uso": "pages/termos-de-uso.js"
 }
