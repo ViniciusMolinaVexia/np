@@ -4088,7 +4088,7 @@ function ProjetoUrbanistico({ homeContent , colors , isMobile , isTeaser  }) {
                                                 __html: descriptionSuaSeguranca
                                             }
                                         }),
-                                        servicoSeguranca.length > 0 && /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+                                        servicoSeguranca && servicoSeguranca.length > 0 && /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
                                             children: [
                                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
                                                     className: (_residencialSeguranca_residencial_Seguranca_module_scss__WEBPACK_IMPORTED_MODULE_7___default().servicosSeguranca),
@@ -4099,7 +4099,7 @@ function ProjetoUrbanistico({ homeContent , colors , isMobile , isTeaser  }) {
                                                 })
                                             ]
                                         }),
-                                        servicoSegurancaSecond.length > 0 && /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+                                        servicoSegurancaSecond && servicoSegurancaSecond.length > 0 && /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
                                             children: [
                                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
                                                     className: (_residencialSeguranca_residencial_Seguranca_module_scss__WEBPACK_IMPORTED_MODULE_7___default().servicosSeguranca),
@@ -4110,7 +4110,7 @@ function ProjetoUrbanistico({ homeContent , colors , isMobile , isTeaser  }) {
                                                 })
                                             ]
                                         }),
-                                        servicoSegurancaThird.length > 0 && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                        servicoSegurancaThird && servicoSegurancaThird.length > 0 && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
                                             className: `${(_residencialSeguranca_residencial_Seguranca_module_scss__WEBPACK_IMPORTED_MODULE_7___default().servicosSeguranca)}` + " col-xs-offset-2",
                                             children: servicoSegurancaThird
                                         })
@@ -4303,7 +4303,7 @@ const layout = ({ children , outContainer , outBottomContainer , residencialLayo
         gtag("config", "UA-27437785-3", {
             cookie_expires: 0
         });
-        const mainUrl = "https://qa.alphaville.com.br";
+        const mainUrl = "https://www.alphaville.com.br";
     // if (window.location.origin != mainUrl) {
     //   window.location.href = mainUrl + window.location.pathname;
     // }
