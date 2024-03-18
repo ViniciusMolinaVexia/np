@@ -3605,9 +3605,8 @@ const FormSaibaMais = ({ setNameFormulario , colors , homeContent , isTeaser , i
                                         window.dataLayer.push({
                                             event: "ga_event",
                                             event_name: "conversao_formulario_empreendimento",
-                                            ec: "whatsapp",
-                                            ea: "envio",
-                                            el: "sucesso"
+                                            email: values.email,
+                                            phone: phone.phone.replace(/\D/g, "")
                                         });
                                         setSendSuccess(true);
                                         window.location.href = `/${isTeaser ? "teaser" : "residencial"}/${homeContent.slug}/agradecimento?success=${success ? "true" : "false"}`;

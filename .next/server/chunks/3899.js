@@ -909,18 +909,6 @@ class ModalWhatsapp extends external_react_.Component {
     componentWillUnmount() {
         this.isMounted = false;
     }
-    sandDataLayer = ()=>{
-        let whats = "sim";
-        if (dataLayer) {
-            dataLayer.push({
-                event: "novoLead",
-                ec: "whatsapp",
-                ea: "click",
-                el: "enviar"
-            });
-        }
-        ;
-    };
     handleCity(nomeEstado, event) {
         const nomeCidade = event.target.options[event.target.options.selectedIndex];
         if (nomeCidade.label) {
@@ -1037,18 +1025,9 @@ class ModalWhatsapp extends external_react_.Component {
                                     if (res.success) {
                                         window.dataLayer.push({
                                             event: "ga_event",
-                                            event_name: "conversao_clique_whatsapp",
-                                            ec: "whatsapp",
-                                            ea: "envio",
-                                            el: "sucesso"
-                                        });
-                                    } else {
-                                        window.dataLayer.push({
-                                            event: "ga_event",
-                                            event_name: "conversao_clique_whatsapp",
-                                            ec: "whatsapp",
-                                            ea: "envio",
-                                            el: "erro"
+                                            event_name: "conversao_formulario_whatsapp",
+                                            email: values.email,
+                                            phone: phone.phone.replace(/\D/g, "")
                                         });
                                     }
                                     setTimeout(()=>{
@@ -1342,7 +1321,6 @@ class ModalWhatsapp extends external_react_.Component {
                                                 children: /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Button, {
                                                     type: "submit",
                                                     className: "btn btn-success",
-                                                    onClick: this.sandDataLayer,
                                                     disabled: isSubmitting,
                                                     children: "Enviar"
                                                 })
