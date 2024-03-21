@@ -1526,25 +1526,28 @@ class DesktopAlphaMenu extends external_react_.Component {
             isPhoneShown: true
         });
     };
-    handleClick = ()=>{
-        // Enviar os dados para o Google Analytics
-        window.dataLayer.push({
-            event: "ga_event",
-            event_name: "conversao_formulario_empreendimento",
-            ec: "whatsapp",
-            ea: "envio",
-            el: "sucesso"
-        });
-    };
+    setColorDisplaySaibaMais(displayColor, teaser) {
+        let textColor = "";
+        if (teaser) {
+            if (displayColor === "logoJardim") {
+                textColor = "--jardim";
+            } else if (displayColor === "logoTerras") {
+                textColor = "--terras";
+            } else {
+                textColor = "--alphaville";
+            }
+        }
+        return textColor;
+    }
     setShowTeaserAlphaMenu(isTeaser, bgTeaserPhone, bgTeaserWhatsapp, bgTeaserSales, isInternal, isResidencialAlpha) {
+        const handleClick = ()=>{
+            // Enviar os dados para o Google Analytics
+            window.dataLayer.push({
+                event: "ga_event",
+                event_name: "conversao_clique_telefone"
+            });
+        };
         if (isTeaser) {
-            const handleClick = ()=>{
-                // Enviar os dados para o Google Analytics
-                window.dataLayer.push({
-                    event: "ga_event",
-                    event_name: "conversao_clique_telefone"
-                });
-            };
             return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
                 children: [
                     this.props.homeContent?.telefoneAtivo == 1 && /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Col, {
@@ -1638,13 +1641,6 @@ class DesktopAlphaMenu extends external_react_.Component {
                 ]
             });
         } else {
-            const handleClick1 = ()=>{
-                // Enviar os dados para o Google Analytics
-                window.dataLayer.push({
-                    event: "ga_event",
-                    event_name: "conversao_clique_telefone"
-                });
-            };
             return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
                 children: [
                     this.props.homeContent?.telefoneAtivo == 1 || isResidencialAlpha === "home" ? /*#__PURE__*/ jsx_runtime_.jsx(external_react_bootstrap_.Col, {
@@ -1653,7 +1649,7 @@ class DesktopAlphaMenu extends external_react_.Component {
                         onClick: this.togglePhoneState,
                         children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("a", {
                             href: "tel:0800 512 3399",
-                            onClick: handleClick1,
+                            onClick: handleClick,
                             children: [
                                 /*#__PURE__*/ jsx_runtime_.jsx("span", {
                                     className: "icon"
