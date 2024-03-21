@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/QrnGH5f5UERLnXj-X9peT/_buildManifest.js",
-    "static/QrnGH5f5UERLnXj-X9peT/_ssgManifest.js"
+    "static/rMXG0eyp_16deIWv_BQJP/_buildManifest.js",
+    "static/rMXG0eyp_16deIWv_BQJP/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
@@ -24,7 +24,7 @@
       "static/chunks/5176-d44f52f4df42a4c4.js",
       "static/chunks/8933-f916e70f37ffc313.js",
       "static/chunks/7501-62027e2218e3736c.js",
-      "static/chunks/3899-da1c348df2d822b9.js",
+      "static/chunks/3899-ba66e7765082e549.js",
       "static/chunks/964-db1038b8cace8c7f.js",
       "static/css/637ead0c1e18042c.css",
       "static/chunks/pages/index-ea3ad25bef5c505a.js"
@@ -162,7 +162,7 @@
       "static/chunks/5176-d44f52f4df42a4c4.js",
       "static/chunks/8933-f916e70f37ffc313.js",
       "static/chunks/7501-62027e2218e3736c.js",
-      "static/chunks/3899-da1c348df2d822b9.js",
+      "static/chunks/3899-ba66e7765082e549.js",
       "static/chunks/964-db1038b8cace8c7f.js",
       "static/css/637ead0c1e18042c.css",
       "static/chunks/pages/home-47d66c0d4eac470e.js"
@@ -313,7 +313,7 @@
       "static/chunks/5176-d44f52f4df42a4c4.js",
       "static/chunks/8933-f916e70f37ffc313.js",
       "static/chunks/7501-62027e2218e3736c.js",
-      "static/chunks/3899-da1c348df2d822b9.js",
+      "static/chunks/3899-ba66e7765082e549.js",
       "static/css/ca1a4d73e849722b.css",
       "static/chunks/3131-70c9fdd032181d7e.js",
       "static/css/1cac1a78f60da739.css",
@@ -349,7 +349,7 @@
       "static/chunks/9285-06fe0ca5c1cfe84b.js",
       "static/chunks/5176-d44f52f4df42a4c4.js",
       "static/chunks/8933-f916e70f37ffc313.js",
-      "static/chunks/3899-da1c348df2d822b9.js",
+      "static/chunks/3899-ba66e7765082e549.js",
       "static/css/ca1a4d73e849722b.css",
       "static/chunks/3131-70c9fdd032181d7e.js",
       "static/css/f2486fbb829ed763.css",
@@ -384,7 +384,7 @@
       "static/chunks/5176-d44f52f4df42a4c4.js",
       "static/chunks/8933-f916e70f37ffc313.js",
       "static/chunks/7501-62027e2218e3736c.js",
-      "static/chunks/3899-da1c348df2d822b9.js",
+      "static/chunks/3899-ba66e7765082e549.js",
       "static/css/ca1a4d73e849722b.css",
       "static/chunks/3131-70c9fdd032181d7e.js",
       "static/css/1cac1a78f60da739.css",
