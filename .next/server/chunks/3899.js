@@ -1027,7 +1027,7 @@ class ModalWhatsapp extends external_react_.Component {
                                             event: "ga_event",
                                             event_name: "conversao_formulario_whatsapp",
                                             email: values.email,
-                                            phone: "+55" + "(" + phone.ddd + ")" + phone.phone
+                                            phone: "+55" + phone.ddd + phone.phone
                                         });
                                     }
                                     setTimeout(()=>{
