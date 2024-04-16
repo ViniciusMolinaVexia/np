@@ -3606,7 +3606,7 @@ const FormSaibaMais = ({ setNameFormulario , colors , homeContent , isTeaser , i
                                             event: "ga_event",
                                             event_name: "conversao_formulario_empreendimento",
                                             email: values.email,
-                                            phone: "+55" + phone.ddd + phone.phone
+                                            phone: "+55" + phone.ddd + phone.phone.replace(/-/g, "")
                                         });
                                         setSendSuccess(true);
                                         window.location.href = `/${isTeaser ? "teaser" : "residencial"}/${homeContent.slug}/agradecimento?success=${success ? "true" : "false"}`;
