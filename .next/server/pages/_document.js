@@ -66,23 +66,22 @@ class MyDocument extends next_document["default"] {
                             id: "cookie-consent",
                             strategy: "afterInteractive",
                             children: `
-              (function () {
-                var s = document.createElement('script');
-                s.src = 'https://cdn-prod.securiti.ai/consent/cookie-consent-sdk.js';
-                s.setAttribute('data-tenant-uuid', '08bc6a4f-262d-41cf-a888-f7a13846ae79');
-                s.setAttribute('data-domain-uuid', '3558c130-f4d7-40bd-a2fe-b6b20b2adb85');
-                s.setAttribute('data-backend-url', 'https://app.securiti.ai');
-                s.defer = true;
-                var parent_node = document.head || document.body;
-                parent_node.appendChild(s);
-                s.addEventListener('load', function() { window.initCmp(); });
+             (function () {
+                    var s = document.createElement('script');
+                    s.src = 'https://cdn-prod.securiti.ai/consent/cookie-consent-sdk-loader.js';
+                    s.setAttribute('data-tenant-uuid', '08bc6a4f-262d-41cf-a888-f7a13846ae79');
+                    s.setAttribute('data-domain-uuid', '745da5f8-0fbe-47a8-839f-9fe7da39d026');
+                    s.setAttribute('data-backend-url', 'https://app.securiti.ai');
+                    s.setAttribute('data-skip-css', 'false');
+                    s.defer = true;
+                    var parent_node = document.head || document.body;
+                    parent_node.appendChild(s);
               })()
             `
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx((script_default()), {
                             type: "text/javascript",
-                            src: "https://cdn-prod.securiti.ai/consent/auto_blocking/08bc6a4f-262d-41cf-a888-f7a13846ae79/3558c130-f4d7-40bd-a2fe-b6b20b2adb85.js",
-                            strategy: "beforeInteractive"
+                            src: "https://cdn-prod.securiti.ai/consent/auto_blocking/08bc6a4f-262d-41cf-a888-f7a13846ae79/745da5f8-0fbe-47a8-839f-9fe7da39d026.js"
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("link", {
                             rel: "stylesheet",
