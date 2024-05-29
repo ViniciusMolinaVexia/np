@@ -227,7 +227,8 @@ class Search {
         };
     };
     searchMainBanners = async (limit)=>{
-        let query = "?latitude=1&longitude=1&where=destaque=1%20AND%20status_obra=1&limit=6";
+        //let query = '?latitude=1&longitude=1&where=destaque=1%20AND%20status_obra=1&limit=6';
+        let query = "";
         let urlSearch = _Envirioment_Envirioment__WEBPACK_IMPORTED_MODULE_2__/* .ENDPOINT_SEARCH_LOCATION */ .YO + query;
         const res = await _api__WEBPACK_IMPORTED_MODULE_0__/* ["default"].get */ .Z.get(urlSearch);
         let bannerList = [];
